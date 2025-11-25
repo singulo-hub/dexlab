@@ -9,7 +9,7 @@ export class DataManager {
     async loadData() {
         try {
             const [pokemonRes, templatesRes] = await Promise.all([
-                fetch('data/pokemon.json'),
+                fetch('data/all-pokemon.json'),
                 fetch('data/templates.json')
             ]);
             this.allPokemon = await pokemonRes.json();

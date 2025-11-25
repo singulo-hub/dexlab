@@ -4,7 +4,7 @@ import json
 import os
 import time
 
-OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'pokemon.json')
+OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'all-pokemon.json')
 
 async def fetch_url(session, url):
     try:
