@@ -34,11 +34,13 @@ async def get_generations(session):
 async def get_species_from_gen(session, gen_url, gen_id):
     data = await fetch_url(session, gen_url)
     species_list = []
+    region_name = "Unknown"
     if data:
+        region_name = data.get('main_region', {}).get('name', 'Unknown').capitalize()
         for s in data['pokemon_species']:
             s['gen_id'] = gen_id
             species_list.append(s)
-    return species_list
+    return species_list, region_name
 
 async def process_species(session, species_entry):
     url = species_entry['url']
@@ -132,6 +134,7 @@ async def main():
 
         # 2. Get Species List per Gen
         tasks = []
+        gen_metadata = []
         for i, gen in enumerate(gens):
             # Gen ID is i+1 usually, or extract from url
             gen_id = int(gen['url'].split('/')[-2])
@@ -139,8 +142,14 @@ async def main():
         
         results = await asyncio.gather(*tasks)
         all_species_entries = []
-        for res in results:
+        
+        for i, (res, region) in enumerate(results):
             all_species_entries.extend(res)
+            gen_id = int(gens[i]['url'].split('/')[-2])
+            gen_metadata.append({
+                'id': gen_id,
+                'region': region
+            })
             
         print(f"Found {len(all_species_entries)} species total.")
         
@@ -159,10 +168,42 @@ async def main():
         # Sort by ID
         final_pokemon.sort(key=lambda x: x['id'])
 
-        # Save
+        # Save Pokemon
         print(f"Saving {len(final_pokemon)} pokemon to {OUTPUT_FILE}...")
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
             json.dump(final_pokemon, f, indent=2)
+
+        # Generate and Save Templates
+        templates = []
+        # Sort metadata by ID just in case
+        gen_metadata.sort(key=lambda x: x['id'])
+        
+        for gen in gen_metadata:
+            gen_id = gen['id']
+            region = gen['region']
+            
+            # Get pokemon IDs for this gen
+            pids = [p['id'] for p in final_pokemon if p['gen'] == gen_id]
+            pids.sort()
+            
+            templates.append({
+                "name": f"{region} (Gen {gen_id})",
+                "description": f"All Pokémon introduced in the {region} region.",
+                "pokemonIds": pids
+            })
+            
+        # Add Empty
+        templates.append({
+            "name": "Empty",
+            "description": "Start from scratch.",
+            "pokemonIds": []
+        })
+        
+        TEMPLATES_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'templates.json')
+        print(f"Saving templates to {TEMPLATES_FILE}...")
+        with open(TEMPLATES_FILE, 'w', encoding='utf-8') as f:
+            json.dump(templates, f, indent=2)
+
         print("Done!")
 
 if __name__ == "__main__":
