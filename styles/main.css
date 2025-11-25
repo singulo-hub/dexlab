@@ -146,6 +146,13 @@ button.secondary {
     padding: 10px;
 }
 
+.pokemon-list.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
 .pokemon-item {
     display: flex;
     justify-content: space-between;
@@ -164,41 +171,87 @@ button.secondary {
     cursor: default;
 }
 
-.pokemon-info {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-
-.pokemon-id {
-    color: #888;
-    width: 40px;
-}
-
-.pokemon-types span {
-    font-size: 0.8rem;
-    padding: 2px 6px;
-    border-radius: 4px;
-    background-color: var(--border-color);
-    margin-left: 4px;
-}
-
-.action-btn {
-    background: none;
+.pokemon-card {
+    background-color: var(--bg-color);
     border: 1px solid var(--border-color);
-    color: var(--text-color);
-    padding: 2px 8px;
-    font-size: 0.8rem;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    transition: transform 0.2s;
 }
 
-.action-btn:hover {
-    background-color: var(--accent-color);
+.pokemon-card:hover {
+    transform: translateY(-2px);
     border-color: var(--accent-color);
 }
 
-.remove-btn:hover {
-    background-color: var(--danger-color);
-    border-color: var(--danger-color);
+.pokemon-card.added {
+    opacity: 0.5;
+}
+
+.card-img-container {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    image-rendering: pixelated;
+}
+
+.card-info .pokemon-id {
+    display: block;
+    font-size: 0.7rem;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+.card-info .pokemon-name {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.card-info .pokemon-types {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.card-info .pokemon-types span {
+    font-size: 0.6rem;
+    padding: 1px 4px;
+}
+
+.pokemon-card .add-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--panel-bg);
+    border: 1px solid var(--border-color);
+}
+
+.pokemon-card .add-btn:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 /* Modal */

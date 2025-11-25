@@ -90,6 +90,25 @@ async def process_species(session, species_entry):
     is_mythical = species_data['is_mythical']
     is_pseudo = (bst >= 600) and (not is_legendary) and (not is_mythical) and (pokemon_data['name'] != 'slaking')
 
+    # Download Sprite
+    sprite_url = pokemon_data['sprites']['front_default']
+    sprite_path = None
+    if sprite_url:
+        try:
+            sprite_filename = f"{species_data['id']}.png"
+            sprite_full_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'sprites', sprite_filename)
+            
+            # Ensure directory exists (redundant but safe)
+            os.makedirs(os.path.dirname(sprite_full_path), exist_ok=True)
+
+            async with session.get(sprite_url) as resp:
+                if resp.status == 200:
+                    with open(sprite_full_path, 'wb') as f:
+                        f.write(await resp.read())
+                    sprite_path = f"data/sprites/{sprite_filename}"
+        except Exception as e:
+            print(f"Error downloading sprite for {species_data['name']}: {e}")
+
     return {
         "id": species_data['id'],
         "name": species_data['name'].capitalize(),
@@ -101,7 +120,8 @@ async def process_species(session, species_entry):
         "weight": pokemon_data['weight'] / 10, # hg to kg
         "isLegendary": is_legendary or is_mythical,
         "isPseudo": is_pseudo,
-        "description": description
+        "description": description,
+        "sprite": sprite_path
     }
 
 async def main():

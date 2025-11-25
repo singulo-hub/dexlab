@@ -17,6 +17,18 @@ export class UI {
         // Modal
         this.modal = document.getElementById('template-modal');
         this.templateListEl = document.getElementById('template-list');
+        
+        this.isGridView = false;
+        this.viewToggleBtn = document.getElementById('view-toggle-btn');
+        
+        this.viewToggleBtn.addEventListener('click', () => {
+            this.isGridView = !this.isGridView;
+            this.viewToggleBtn.textContent = this.isGridView ? 'List View' : 'Grid View';
+            this.sourceListEl.classList.toggle('grid-view', this.isGridView);
+            // Re-trigger render
+            const event = new CustomEvent('filter-update');
+            document.dispatchEvent(event);
+        });
     }
 
     init() {
@@ -54,17 +66,35 @@ export class UI {
         pokemonList.forEach(p => {
             const isAdded = this.dataManager.customDex.some(d => d.id === p.id);
             const item = document.createElement('div');
-            item.className = `pokemon-item ${isAdded ? 'added' : ''}`;
-            item.innerHTML = `
-                <div class="pokemon-info">
-                    <span class="pokemon-id">#${p.id}</span>
-                    <span class="pokemon-name">${p.name}</span>
-                    <div class="pokemon-types">
-                        ${p.types.map(t => `<span>${t}</span>`).join('')}
+            
+            if (this.isGridView) {
+                item.className = `pokemon-card ${isAdded ? 'added' : ''}`;
+                item.innerHTML = `
+                    <div class="card-img-container">
+                        <img src="${p.sprite || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'}" alt="${p.name}" loading="lazy">
                     </div>
-                </div>
-                ${!isAdded ? '<button class="action-btn add-btn">+</button>' : ''}
-            `;
+                    <div class="card-info">
+                        <span class="pokemon-id">#${p.id}</span>
+                        <span class="pokemon-name">${p.name}</span>
+                        <div class="pokemon-types">
+                            ${p.types.map(t => `<span>${t}</span>`).join('')}
+                        </div>
+                    </div>
+                    ${!isAdded ? '<button class="action-btn add-btn">+</button>' : ''}
+                `;
+            } else {
+                item.className = `pokemon-item ${isAdded ? 'added' : ''}`;
+                item.innerHTML = `
+                    <div class="pokemon-info">
+                        <span class="pokemon-id">#${p.id}</span>
+                        <span class="pokemon-name">${p.name}</span>
+                        <div class="pokemon-types">
+                            ${p.types.map(t => `<span>${t}</span>`).join('')}
+                        </div>
+                    </div>
+                    ${!isAdded ? '<button class="action-btn add-btn">+</button>' : ''}
+                `;
+            }
             
             if (!isAdded) {
                 item.querySelector('.add-btn').addEventListener('click', (e) => {
