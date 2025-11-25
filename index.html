@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DexLab - Custom Pokédex Builder</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>DexLab</h1>
+        <div class="header-controls">
+            <button id="export-btn">Export JSON</button>
+            <button id="import-btn">Import JSON</button>
+            <button id="reset-btn">New / Reset</button>
+            <input type="file" id="file-input" style="display: none;" accept=".json">
+        </div>
+    </header>
+
+    <div id="dashboard" class="dashboard">
+        <!-- Analytics will be injected here -->
+        <div class="stat-card" id="stat-count">
+            <h3>Count</h3>
+            <p>-</p>
+        </div>
+        <div class="stat-card" id="stat-types">
+            <h3>Top Type</h3>
+            <p>-</p>
+        </div>
+        <div class="stat-card" id="stat-bst">
+            <h3>Avg BST</h3>
+            <p>-</p>
+        </div>
+        <div class="stat-card" id="stat-alerts">
+            <h3>Alerts</h3>
+            <ul id="alert-list"></ul>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="panel left-panel">
+            <div class="panel-header">
+                <h2>Source List</h2>
+                <div class="filters">
+                    <input type="text" id="search-input" placeholder="Search Pokémon...">
+                    <select id="type-filter">
+                        <option value="">All Types</option>
+                        <!-- Options populated by JS -->
+                    </select>
+                    <select id="gen-filter">
+                        <option value="">All Gens</option>
+                        <!-- Options populated by JS -->
+                    </select>
+                </div>
+            </div>
+            <div id="source-list" class="pokemon-list">
+                <!-- Source items injected here -->
+            </div>
+        </section>
+
+        <section class="panel right-panel">
+            <div class="panel-header">
+                <h2>My Custom Dex</h2>
+                <span id="dex-count">0 Pokémon</span>
+            </div>
+            <div id="custom-dex" class="pokemon-list">
+                <!-- Custom items injected here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Template Selection Modal -->
+    <div id="template-modal" class="modal">
+        <div class="modal-content">
+            <h2>Welcome to DexLab</h2>
+            <p>Select a starting point for your custom Pokédex:</p>
+            <div id="template-list" class="template-grid">
+                <!-- Templates injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>

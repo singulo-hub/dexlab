@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Kanto (Gen 1)",
+    "description": "The original 151 Pokémon.",
+    "pokemonIds": [1, 4, 7, 25, 149, 150]
+  },
+  {
+    "name": "Johto (Gen 2)",
+    "description": "Includes Gen 1 and Gen 2 Pokémon.",
+    "pokemonIds": [1, 4, 7, 25, 149, 150, 152, 248]
+  },
+  {
+    "name": "Empty",
+    "description": "Start from scratch.",
+    "pokemonIds": []
+  }
+]
