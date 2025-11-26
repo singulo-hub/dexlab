@@ -68,6 +68,9 @@ async def process_species(session, species_entry):
     for eg in species_data.get('egg_groups', []):
         name = eg['name'].capitalize()
         egg_groups.append(egg_group_renames.get(name, name))
+    
+    # Get capture rate
+    capture_rate = species_data.get('capture_rate', 0)
             
     # Get default variety
     default_variety = next((v for v in species_data['varieties'] if v['is_default']), species_data['varieties'][0])
@@ -128,6 +131,7 @@ async def process_species(session, species_entry):
         "name": species_data['name'].capitalize(),
         "types": types,
         "eggGroups": egg_groups,
+        "captureRate": capture_rate,
         "stats": stats,
         "bst": bst,
         "gen": gen_id,

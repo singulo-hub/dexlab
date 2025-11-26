@@ -12,6 +12,9 @@ export class Analytics {
                 avgBst: 0,
                 minBst: 0,
                 maxBst: 0,
+                minCaptureRate: 0,
+                avgCaptureRate: 0,
+                maxCaptureRate: 0,
                 alerts: [],
                 typeCounts: {},
                 eggGroupCounts: {},
@@ -31,6 +34,9 @@ export class Analytics {
         let totalBst = 0;
         let minBst = Infinity;
         let maxBst = -Infinity;
+        let totalCaptureRate = 0;
+        let minCaptureRate = Infinity;
+        let maxCaptureRate = -Infinity;
         let pseudoCount = 0;
         let legendaryCount = 0;
 
@@ -51,6 +57,12 @@ export class Analytics {
             totalBst += p.bst;
             if (p.bst < minBst) minBst = p.bst;
             if (p.bst > maxBst) maxBst = p.bst;
+            
+            // Capture Rate
+            const cr = p.captureRate || 0;
+            totalCaptureRate += cr;
+            if (cr < minCaptureRate) minCaptureRate = cr;
+            if (cr > maxCaptureRate) maxCaptureRate = cr;
 
             // Balance checks
             if (p.isPseudo) pseudoCount++;
@@ -106,6 +118,9 @@ export class Analytics {
             avgBst,
             minBst,
             maxBst,
+            minCaptureRate: minCaptureRate === Infinity ? 0 : minCaptureRate,
+            avgCaptureRate: Math.round(totalCaptureRate / count),
+            maxCaptureRate: maxCaptureRate === -Infinity ? 0 : maxCaptureRate,
             alerts: this.alerts,
             typeCounts,
             eggGroupCounts,

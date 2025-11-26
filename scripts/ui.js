@@ -12,6 +12,9 @@ export class UI {
         this.statBstEl = document.querySelector('#stat-bst p');
         this.statMinBstEl = document.getElementById('min-bst-val');
         this.statMaxBstEl = document.getElementById('max-bst-val');
+        this.statMinCrEl = document.getElementById('min-cr-val');
+        this.statAvgCrEl = document.getElementById('avg-cr-val');
+        this.statMaxCrEl = document.getElementById('max-cr-val');
         this.alertListEl = document.getElementById('alert-list');
 
         // Modal
@@ -168,6 +171,9 @@ export class UI {
         this.statBstEl.textContent = stats.avgBst;
         this.statMinBstEl.textContent = stats.minBst || '-';
         this.statMaxBstEl.textContent = stats.maxBst || '-';
+        this.statMinCrEl.textContent = stats.minCaptureRate || '-';
+        this.statAvgCrEl.textContent = stats.avgCaptureRate || '-';
+        this.statMaxCrEl.textContent = stats.maxCaptureRate || '-';
 
         this.alertListEl.innerHTML = '';
         stats.alerts.forEach(alert => {
