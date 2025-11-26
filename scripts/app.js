@@ -104,6 +104,7 @@ document.getElementById('file-input').addEventListener('change', async (e) => {
 document.getElementById('reset-btn').addEventListener('click', () => {
     if (confirm('Are you sure you want to reset? This will clear your current custom dex.')) {
         dataManager.reset();
+        ui.init();
         ui.showModal();
         ui.updateAll();
     }
