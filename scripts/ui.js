@@ -185,42 +185,69 @@ export class UI {
         const data = Object.values(typeCounts);
         const backgroundColors = labels.map(t => this.typeColors[t] || '#888888');
         
-        if (this.typeChart) {
-            this.typeChart.destroy();
-        }
-        
         if (labels.length === 0) {
+            if (this.typeChart) {
+                this.typeChart.destroy();
+                this.typeChart = null;
+            }
             return;
         }
         
-        this.typeChart = new Chart(this.typeChartCanvas, {
-            type: 'pie',
-            data: {
-                labels: labels,
-                datasets: [{
-                    data: data,
-                    backgroundColor: backgroundColors,
-                    borderColor: '#1e1e1e',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false
+        if (this.typeChart) {
+            // Check if labels changed (new type added or type removed)
+            const currentLabels = [...this.typeChart.data.labels].sort();
+            const newLabels = [...labels].sort();
+            const labelsChanged = JSON.stringify(currentLabels) !== JSON.stringify(newLabels);
+            
+            if (labelsChanged) {
+                // Labels changed - rebuild chart without animation
+                this.typeChart.data.labels = labels;
+                this.typeChart.data.datasets[0].data = data;
+                this.typeChart.data.datasets[0].backgroundColor = backgroundColors;
+                this.typeChart.update('none');
+            } else {
+                // Same labels - update data in the same order as existing labels
+                const existingLabels = this.typeChart.data.labels;
+                const reorderedData = existingLabels.map(label => typeCounts[label] || 0);
+                const reorderedColors = existingLabels.map(label => this.typeColors[label] || '#888888');
+                this.typeChart.data.datasets[0].data = reorderedData;
+                this.typeChart.data.datasets[0].backgroundColor = reorderedColors;
+                this.typeChart.update({ duration: 300 });
+            }
+        } else {
+            // Create new chart
+            this.typeChart = new Chart(this.typeChartCanvas, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: backgroundColors,
+                        borderColor: '#1e1e1e',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 300
                     },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return `${context.label}: ${context.raw}`;
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.label}: ${context.raw}`;
+                                }
                             }
                         }
                     }
                 }
-            }
-        });
+            });
+        }
     }
 
     updateAll() {
