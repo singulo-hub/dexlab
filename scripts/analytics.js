@@ -10,7 +10,15 @@ export class Analytics {
                 count: 0,
                 topType: '-',
                 avgBst: 0,
-                alerts: []
+                alerts: [],
+                typeCounts: {},
+                bstDistribution: {
+                    '< 300': 0,
+                    '300-399': 0,
+                    '400-499': 0,
+                    '500-599': 0,
+                    '600+': 0
+                }
             };
         }
 

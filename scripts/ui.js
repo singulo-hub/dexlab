@@ -5,7 +5,6 @@ export class UI {
 
         // Elements
         this.pokemonListEl = document.getElementById('pokemon-list');
-        this.dexCountEl = document.getElementById('dex-count');
         
         // Dashboard Elements
         this.statCountEl = document.querySelector('#stat-count p');
@@ -95,8 +94,6 @@ export class UI {
         pokemonList.forEach(p => {
             const isAdded = this.dataManager.customDex.some(d => d.id === p.id);
             const item = document.createElement('div');
-            const btnClass = isAdded ? 'remove-btn' : 'add-btn';
-            const btnText = isAdded ? '-' : '+';
             
             if (this.isGridView) {
                 item.className = `pokemon-card ${isAdded ? 'added' : ''}`;
@@ -111,7 +108,6 @@ export class UI {
                             ${p.types.map(t => `<span>${t}</span>`).join('')}
                         </div>
                     </div>
-                    <button class="action-btn ${btnClass}">${btnText}</button>
                 `;
             } else {
                 item.className = `pokemon-item ${isAdded ? 'added' : ''}`;
@@ -123,12 +119,10 @@ export class UI {
                             ${p.types.map(t => `<span>${t}</span>`).join('')}
                         </div>
                     </div>
-                    <button class="action-btn ${btnClass}">${btnText}</button>
                 `;
             }
             
-            item.querySelector('.action-btn').addEventListener('click', (e) => {
-                e.stopPropagation();
+            item.addEventListener('click', () => {
                 if (isAdded) {
                     this.dataManager.removeFromDex(p.id);
                 } else {
@@ -324,7 +318,6 @@ export class UI {
         document.dispatchEvent(event);
 
         // Update selected count
-        this.dexCountEl.textContent = `${this.dataManager.customDex.length} selected`;
         this.updateDashboard();
     }
 }
