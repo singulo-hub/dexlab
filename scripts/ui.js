@@ -15,6 +15,8 @@ export class UI {
         this.statMinCrEl = document.getElementById('min-cr-val');
         this.statAvgCrEl = document.getElementById('avg-cr-val');
         this.statMaxCrEl = document.getElementById('max-cr-val');
+        this.hardCrListEl = document.getElementById('hard-cr-list');
+        this.easyCrListEl = document.getElementById('easy-cr-list');
         this.alertListEl = document.getElementById('alert-list');
 
         // Modal
@@ -174,6 +176,20 @@ export class UI {
         this.statMinCrEl.textContent = stats.minCaptureRate || '-';
         this.statAvgCrEl.textContent = stats.avgCaptureRate || '-';
         this.statMaxCrEl.textContent = stats.maxCaptureRate || '-';
+        
+        this.hardCrListEl.innerHTML = '';
+        stats.hard5CaptureRate.forEach(p => {
+            const li = document.createElement('li');
+            li.textContent = `${p.name} (${p.captureRate})`;
+            this.hardCrListEl.appendChild(li);
+        });
+        
+        this.easyCrListEl.innerHTML = '';
+        stats.easiest5CaptureRate.forEach(p => {
+            const li = document.createElement('li');
+            li.textContent = `${p.name} (${p.captureRate})`;
+            this.easyCrListEl.appendChild(li);
+        });
 
         this.alertListEl.innerHTML = '';
         stats.alerts.forEach(alert => {

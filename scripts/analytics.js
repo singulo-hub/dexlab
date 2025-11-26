@@ -15,6 +15,8 @@ export class Analytics {
                 minCaptureRate: 0,
                 avgCaptureRate: 0,
                 maxCaptureRate: 0,
+                hard5CaptureRate: [],
+                easiest5CaptureRate: [],
                 alerts: [],
                 typeCounts: {},
                 eggGroupCounts: {},
@@ -112,6 +114,18 @@ export class Analytics {
             else bstBuckets['600+']++;
         });
 
+        // Hard 5 by capture rate (lowest = hardest to catch)
+        const hard5CaptureRate = [...dex]
+            .sort((a, b) => (a.captureRate || 0) - (b.captureRate || 0))
+            .slice(0, 5)
+            .map(p => ({ name: p.name, captureRate: p.captureRate || 0 }));
+        
+        // Easiest 5 by capture rate (highest = easiest to catch)
+        const easiest5CaptureRate = [...dex]
+            .sort((a, b) => (b.captureRate || 0) - (a.captureRate || 0))
+            .slice(0, 5)
+            .map(p => ({ name: p.name, captureRate: p.captureRate || 0 }));
+
         return {
             count,
             topType: `${topType} (${maxTypeCount})`,
@@ -121,6 +135,8 @@ export class Analytics {
             minCaptureRate: minCaptureRate === Infinity ? 0 : minCaptureRate,
             avgCaptureRate: Math.round(totalCaptureRate / count),
             maxCaptureRate: maxCaptureRate === -Infinity ? 0 : maxCaptureRate,
+            hard5CaptureRate,
+            easiest5CaptureRate,
             alerts: this.alerts,
             typeCounts,
             eggGroupCounts,

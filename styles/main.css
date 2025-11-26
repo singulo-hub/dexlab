@@ -60,7 +60,7 @@ button.secondary {
 
 .dashboard {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     gap: 10px;
     padding: 10px 20px;
     background-color: var(--bg-color);
@@ -104,6 +104,46 @@ button.secondary {
 #alert-list li {
     color: var(--warning-color);
     margin-bottom: 4px;
+}
+
+#hard-cr-list {
+    list-style: none;
+    font-size: 0.75rem;
+    padding-left: 0;
+    counter-reset: cr-counter;
+}
+
+#hard-cr-list li {
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#hard-cr-list li::before {
+    counter-increment: cr-counter;
+    content: counter(cr-counter) ". ";
+    color: #888;
+}
+
+#easy-cr-list {
+    list-style: none;
+    font-size: 0.75rem;
+    padding-left: 0;
+    counter-reset: easy-cr-counter;
+}
+
+#easy-cr-list li {
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#easy-cr-list li::before {
+    counter-increment: easy-cr-counter;
+    content: counter(easy-cr-counter) ". ";
+    color: #888;
 }
 
 .container {
