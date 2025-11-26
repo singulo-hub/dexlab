@@ -10,6 +10,8 @@ export class Analytics {
                 count: 0,
                 topType: '-',
                 avgBst: 0,
+                minBst: 0,
+                maxBst: 0,
                 alerts: [],
                 typeCounts: {},
                 bstDistribution: {
@@ -25,6 +27,8 @@ export class Analytics {
         const count = dex.length;
         const typeCounts = {};
         let totalBst = 0;
+        let minBst = Infinity;
+        let maxBst = -Infinity;
         let pseudoCount = 0;
         let legendaryCount = 0;
 
@@ -36,6 +40,8 @@ export class Analytics {
 
             // BST
             totalBst += p.bst;
+            if (p.bst < minBst) minBst = p.bst;
+            if (p.bst > maxBst) maxBst = p.bst;
 
             // Balance checks
             if (p.isPseudo) pseudoCount++;
@@ -89,6 +95,8 @@ export class Analytics {
             count,
             topType: `${topType} (${maxTypeCount})`,
             avgBst,
+            minBst,
+            maxBst,
             alerts: this.alerts,
             typeCounts,
             bstDistribution: bstBuckets
