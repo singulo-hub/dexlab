@@ -60,7 +60,7 @@ button.secondary {
 
 .dashboard {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 10px;
     padding: 10px 20px;
     background-color: var(--bg-color);

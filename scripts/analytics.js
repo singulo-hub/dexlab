@@ -61,12 +61,29 @@ export class Analytics {
             this.alerts.push(`High Avg BST (${avgBst})`);
         }
 
+        // BST Distribution buckets
+        const bstBuckets = {
+            '< 300': 0,
+            '300-399': 0,
+            '400-499': 0,
+            '500-599': 0,
+            '600+': 0
+        };
+        dex.forEach(p => {
+            if (p.bst < 300) bstBuckets['< 300']++;
+            else if (p.bst < 400) bstBuckets['300-399']++;
+            else if (p.bst < 500) bstBuckets['400-499']++;
+            else if (p.bst < 600) bstBuckets['500-599']++;
+            else bstBuckets['600+']++;
+        });
+
         return {
             count,
             topType: `${topType} (${maxTypeCount})`,
             avgBst,
             alerts: this.alerts,
-            typeCounts
+            typeCounts,
+            bstDistribution: bstBuckets
         };
     }
 }

@@ -33,6 +33,10 @@ export class UI {
         this.typeChartCanvas = document.getElementById('type-chart');
         this.typeChart = null;
         
+        // BST Chart
+        this.bstChartCanvas = document.getElementById('bst-chart');
+        this.bstChart = null;
+        
         // Type colors for the chart
         this.typeColors = {
             Normal: '#A8A878',
@@ -152,6 +156,9 @@ export class UI {
         
         // Update Type Chart
         this.updateTypeChart(stats.typeCounts);
+        
+        // Update BST Chart
+        this.updateBstChart(stats.bstDistribution);
     }
     
     updateTypeChart(typeCounts) {
@@ -218,6 +225,84 @@ export class UI {
                                 label: function(context) {
                                     return `${context.label}: ${context.raw}`;
                                 }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    }
+    
+    updateBstChart(bstDistribution) {
+        if (!bstDistribution) { return; }
+        
+        const labels = Object.keys(bstDistribution);
+        const data = Object.values(bstDistribution);
+        const hasData = data.some(v => v > 0);
+        
+        if (!hasData) {
+            if (this.bstChart) {
+                this.bstChart.destroy();
+                this.bstChart = null;
+            }
+            return;
+        }
+        
+        // Gradient colors from low BST (red) to high BST (purple)
+        const bstColors = [
+            '#f44336',  // < 300 - red
+            '#ff9800',  // 300-399 - orange
+            '#ffeb3b',  // 400-499 - yellow
+            '#4caf50',  // 500-599 - green
+            '#9c27b0'   // 600+ - purple
+        ];
+        
+        if (this.bstChart) {
+            this.bstChart.data.datasets[0].data = data;
+            this.bstChart.update({ duration: 300 });
+        } else {
+            this.bstChart = new Chart(this.bstChartCanvas, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: bstColors,
+                        borderColor: '#1e1e1e',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 300
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                color: '#888',
+                                stepSize: 1
+                            },
+                            grid: {
+                                color: '#3e3e42'
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                color: '#888',
+                                font: {
+                                    size: 9
+                                }
+                            },
+                            grid: {
+                                display: false
                             }
                         }
                     }
