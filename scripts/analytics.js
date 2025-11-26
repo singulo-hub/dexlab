@@ -65,7 +65,8 @@ export class Analytics {
             count,
             topType: `${topType} (${maxTypeCount})`,
             avgBst,
-            alerts: this.alerts
+            alerts: this.alerts,
+            typeCounts
         };
     }
 }

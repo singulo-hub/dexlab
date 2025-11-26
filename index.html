@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DexLab - Custom Pokédex Builder</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="./data/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="libs/chart.js/chart.umd.js"></script>
+    <script type="module" src="scripts/app.js"></script>
 </head>
 <body>
     <header>
@@ -35,6 +38,10 @@
         <div class="stat-card" id="stat-alerts">
             <h3>Alerts</h3>
             <ul id="alert-list"></ul>
+        </div>
+        <div class="stat-card chart-card" id="stat-type-chart">
+            <h3>Type Distribution</h3>
+            <canvas id="type-chart"></canvas>
         </div>
     </div>
 
@@ -83,7 +90,5 @@
             </div>
         </div>
     </div>
-
-    <script type="module" src="scripts/app.js"></script>
 </body>
 </html>

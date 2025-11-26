@@ -29,6 +29,32 @@ export class UI {
             const event = new CustomEvent('filter-update');
             document.dispatchEvent(event);
         });
+        
+        // Type Chart
+        this.typeChartCanvas = document.getElementById('type-chart');
+        this.typeChart = null;
+        
+        // Type colors for the chart
+        this.typeColors = {
+            Normal: '#A8A878',
+            Fire: '#F08030',
+            Water: '#6890F0',
+            Electric: '#F8D030',
+            Grass: '#78C850',
+            Ice: '#98D8D8',
+            Fighting: '#C03028',
+            Poison: '#A040A0',
+            Ground: '#E0C068',
+            Flying: '#A890F0',
+            Psychic: '#F85888',
+            Bug: '#A8B820',
+            Rock: '#B8A038',
+            Ghost: '#705898',
+            Dragon: '#7038F8',
+            Dark: '#705848',
+            Steel: '#B8B8D0',
+            Fairy: '#EE99AC'
+        };
     }
 
     init() {
@@ -146,6 +172,54 @@ export class UI {
             const li = document.createElement('li');
             li.textContent = alert;
             this.alertListEl.appendChild(li);
+        });
+        
+        // Update Type Chart
+        this.updateTypeChart(stats.typeCounts);
+    }
+    
+    updateTypeChart(typeCounts) {
+        if (!typeCounts) { return; }
+
+        const labels = Object.keys(typeCounts);
+        const data = Object.values(typeCounts);
+        const backgroundColors = labels.map(t => this.typeColors[t] || '#888888');
+        
+        if (this.typeChart) {
+            this.typeChart.destroy();
+        }
+        
+        if (labels.length === 0) {
+            return;
+        }
+        
+        this.typeChart = new Chart(this.typeChartCanvas, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: data,
+                    backgroundColor: backgroundColors,
+                    borderColor: '#1e1e1e',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `${context.label}: ${context.raw}`;
+                            }
+                        }
+                    }
+                }
+            }
         });
     }
 
