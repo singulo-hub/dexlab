@@ -69,7 +69,7 @@ function filterAndRender() {
         return matchesSearch && matchesType && matchesGen;
     });
 
-    ui.renderSourceList(filtered);
+    ui.renderPokemonList(filtered);
 }
 
 // Event Listeners

@@ -4,8 +4,7 @@ export class UI {
         this.analytics = analytics;
 
         // Elements
-        this.sourceListEl = document.getElementById('source-list');
-        this.customDexEl = document.getElementById('custom-dex');
+        this.pokemonListEl = document.getElementById('pokemon-list');
         this.dexCountEl = document.getElementById('dex-count');
         
         // Dashboard Elements
@@ -24,7 +23,7 @@ export class UI {
         this.viewToggleBtn.addEventListener('click', () => {
             this.isGridView = !this.isGridView;
             this.viewToggleBtn.textContent = this.isGridView ? 'List View' : 'Grid View';
-            this.sourceListEl.classList.toggle('grid-view', this.isGridView);
+            this.pokemonListEl.classList.toggle('grid-view', this.isGridView);
             // Re-trigger render
             const event = new CustomEvent('filter-update');
             document.dispatchEvent(event);
@@ -87,11 +86,13 @@ export class UI {
         this.modal.classList.add('hidden');
     }
 
-    renderSourceList(pokemonList) {
-        this.sourceListEl.innerHTML = '';
+    renderPokemonList(pokemonList) {
+        this.pokemonListEl.innerHTML = '';
         pokemonList.forEach(p => {
             const isAdded = this.dataManager.customDex.some(d => d.id === p.id);
             const item = document.createElement('div');
+            const btnClass = isAdded ? 'remove-btn' : 'add-btn';
+            const btnText = isAdded ? '-' : '+';
             
             if (this.isGridView) {
                 item.className = `pokemon-card ${isAdded ? 'added' : ''}`;
@@ -106,7 +107,7 @@ export class UI {
                             ${p.types.map(t => `<span>${t}</span>`).join('')}
                         </div>
                     </div>
-                    ${!isAdded ? '<button class="action-btn add-btn">+</button>' : ''}
+                    <button class="action-btn ${btnClass}">${btnText}</button>
                 `;
             } else {
                 item.className = `pokemon-item ${isAdded ? 'added' : ''}`;
@@ -118,47 +119,22 @@ export class UI {
                             ${p.types.map(t => `<span>${t}</span>`).join('')}
                         </div>
                     </div>
-                    ${!isAdded ? '<button class="action-btn add-btn">+</button>' : ''}
+                    <button class="action-btn ${btnClass}">${btnText}</button>
                 `;
             }
             
-            if (!isAdded) {
-                item.querySelector('.add-btn').addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    this.dataManager.addToDex(p.id);
-                    this.updateAll();
-                });
-            }
-            
-            this.sourceListEl.appendChild(item);
-        });
-    }
-
-    renderCustomDex() {
-        this.customDexEl.innerHTML = '';
-        this.dataManager.customDex.forEach(p => {
-            const item = document.createElement('div');
-            item.className = 'pokemon-item';
-            item.innerHTML = `
-                <div class="pokemon-info">
-                    <span class="pokemon-id">#${p.id}</span>
-                    <span class="pokemon-name">${p.name}</span>
-                    <div class="pokemon-types">
-                        ${p.types.map(t => `<span>${t}</span>`).join('')}
-                    </div>
-                </div>
-                <button class="action-btn remove-btn">-</button>
-            `;
-            
-            item.querySelector('.remove-btn').addEventListener('click', (e) => {
+            item.querySelector('.action-btn').addEventListener('click', (e) => {
                 e.stopPropagation();
-                this.dataManager.removeFromDex(p.id);
+                if (isAdded) {
+                    this.dataManager.removeFromDex(p.id);
+                } else {
+                    this.dataManager.addToDex(p.id);
+                }
                 this.updateAll();
             });
             
-            this.customDexEl.appendChild(item);
+            this.pokemonListEl.appendChild(item);
         });
-        this.dexCountEl.textContent = `${this.dataManager.customDex.length} Pokémon`;
     }
 
     updateDashboard() {
@@ -252,9 +228,6 @@ export class UI {
 
     updateAll() {
         // Re-render source list to update "added" status
-        // Note: In a real app with large lists, we'd want to optimize this
-        // by only re-rendering the changed item or using a virtual list.
-        // For now, we'll just re-filter the current view.
         const searchVal = document.getElementById('search-input').value;
         const typeVal = document.getElementById('type-filter').value;
         const genVal = document.getElementById('gen-filter').value;
@@ -265,7 +238,8 @@ export class UI {
         });
         document.dispatchEvent(event);
 
-        this.renderCustomDex();
+        // Update selected count
+        this.dexCountEl.textContent = `${this.dataManager.customDex.length} selected`;
         this.updateDashboard();
     }
 }

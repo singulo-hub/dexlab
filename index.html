@@ -46,9 +46,10 @@
     </div>
 
     <main class="container">
-        <section class="panel left-panel">
+        <section class="panel full-panel">
             <div class="panel-header">
-                <h2>Source List</h2>
+                <h2>Pokémon</h2>
+                <span id="dex-count">0 selected</span>
                 <div class="filters">
                     <input type="text" id="search-input" placeholder="Search Pokémon...">
                     <select id="type-filter">
@@ -64,18 +65,8 @@
                     </button>
                 </div>
             </div>
-            <div id="source-list" class="pokemon-list">
-                <!-- Source items injected here -->
-            </div>
-        </section>
-
-        <section class="panel right-panel">
-            <div class="panel-header">
-                <h2>My Custom Dex</h2>
-                <span id="dex-count">0 Pokémon</span>
-            </div>
-            <div id="custom-dex" class="pokemon-list">
-                <!-- Custom items injected here -->
+            <div id="pokemon-list" class="pokemon-list">
+                <!-- Pokemon items injected here -->
             </div>
         </section>
     </main>

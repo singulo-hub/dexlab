@@ -116,12 +116,11 @@ button.secondary {
     flex: 1;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid var(--border-color);
     background-color: var(--panel-bg);
 }
 
-.panel:last-child {
-    border-right: none;
+.full-panel {
+    width: 100%;
 }
 
 .panel-header {
@@ -133,6 +132,18 @@ button.secondary {
 .panel-header h2 {
     font-size: 1rem;
     margin-bottom: 10px;
+}
+
+.panel-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+#dex-count {
+    font-size: 0.9rem;
+    color: #888;
 }
 
 .filters {
@@ -175,8 +186,12 @@ button.secondary {
 }
 
 .pokemon-item.added {
-    opacity: 0.5;
-    cursor: default;
+    background-color: rgba(0, 122, 204, 0.1);
+}
+
+.pokemon-card.added {
+    background-color: rgba(0, 122, 204, 0.2);
+    border-color: var(--accent-color);
 }
 
 .pokemon-card {
@@ -197,8 +212,15 @@ button.secondary {
     border-color: var(--accent-color);
 }
 
-.pokemon-card.added {
-    opacity: 0.5;
+.pokemon-card.added .add-btn,
+.pokemon-card .remove-btn {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--border-color);
+}
+
+.pokemon-card .remove-btn:hover {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
 }
 
 .card-img-container {
