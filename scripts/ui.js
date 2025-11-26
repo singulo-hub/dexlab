@@ -38,6 +38,10 @@ export class UI {
         this.bstChartCanvas = document.getElementById('bst-chart');
         this.bstChart = null;
         
+        // Egg Group Chart
+        this.eggChartCanvas = document.getElementById('egg-chart');
+        this.eggChart = null;
+        
         // Type colors for the chart
         this.typeColors = {
             Normal: '#A8A878',
@@ -58,6 +62,26 @@ export class UI {
             Dark: '#705848',
             Steel: '#B8B8D0',
             Fairy: '#EE99AC'
+        };
+        
+        // Egg group colors
+        this.eggGroupColors = {
+            Monster: '#D25064',
+            'Water 1': '#6890F0',
+            'Water 2': '#4A7ACA',
+            'Water 3': '#3A6AB8',
+            Bug: '#A8B820',
+            Flying: '#A890F0',
+            Ground: '#E0C068',
+            Fairy: '#EE99AC',
+            Plant: '#78C850',
+            Humanshape: '#C03028',
+            Mineral: '#B8A038',
+            Amorphous: '#705898',
+            Ditto: '#A040A0',
+            Dragon: '#7038F8',
+            Indeterminate: '#333333',
+            'No Eggs': '#333333'
         };
     }
 
@@ -157,6 +181,9 @@ export class UI {
         
         // Update BST Chart
         this.updateBstChart(stats.bstDistribution);
+        
+        // Update Egg Group Chart
+        this.updateEggChart(stats.eggGroupCounts);
     }
     
     updateTypeChart(typeCounts) {
@@ -301,6 +328,74 @@ export class UI {
                             },
                             grid: {
                                 display: false
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    }
+    
+    updateEggChart(eggGroupCounts) {
+        if (!eggGroupCounts) { return; }
+        
+        const labels = Object.keys(eggGroupCounts);
+        const data = Object.values(eggGroupCounts);
+        const backgroundColors = labels.map(eg => this.eggGroupColors[eg] || '#888888');
+        
+        if (labels.length === 0) {
+            if (this.eggChart) {
+                this.eggChart.destroy();
+                this.eggChart = null;
+            }
+            return;
+        }
+        
+        if (this.eggChart) {
+            const currentLabels = [...this.eggChart.data.labels].sort();
+            const newLabels = [...labels].sort();
+            const labelsChanged = JSON.stringify(currentLabels) !== JSON.stringify(newLabels);
+            
+            if (labelsChanged) {
+                this.eggChart.data.labels = labels;
+                this.eggChart.data.datasets[0].data = data;
+                this.eggChart.data.datasets[0].backgroundColor = backgroundColors;
+                this.eggChart.update('none');
+            } else {
+                const existingLabels = this.eggChart.data.labels;
+                const reorderedData = existingLabels.map(label => eggGroupCounts[label] || 0);
+                const reorderedColors = existingLabels.map(label => this.eggGroupColors[label] || '#888888');
+                this.eggChart.data.datasets[0].data = reorderedData;
+                this.eggChart.data.datasets[0].backgroundColor = reorderedColors;
+                this.eggChart.update({ duration: 300 });
+            }
+        } else {
+            this.eggChart = new Chart(this.eggChartCanvas, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: backgroundColors,
+                        borderColor: '#1e1e1e',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 300
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.label}: ${context.raw}`;
+                                }
                             }
                         }
                     }

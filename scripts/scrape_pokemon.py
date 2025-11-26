@@ -56,6 +56,18 @@ async def process_species(session, species_entry):
         if entry['language']['name'] == 'en':
             description = entry['flavor_text'].replace('\n', ' ').replace('\f', ' ')
             break
+    
+    # Get egg groups
+    egg_group_renames = {
+        'Water1': 'Water 1',
+        'Water2': 'Water 2',
+        'Water3': 'Water 3',
+        'No-eggs': 'No Eggs'
+    }
+    egg_groups = []
+    for eg in species_data.get('egg_groups', []):
+        name = eg['name'].capitalize()
+        egg_groups.append(egg_group_renames.get(name, name))
             
     # Get default variety
     default_variety = next((v for v in species_data['varieties'] if v['is_default']), species_data['varieties'][0])
@@ -115,6 +127,7 @@ async def process_species(session, species_entry):
         "id": species_data['id'],
         "name": species_data['name'].capitalize(),
         "types": types,
+        "eggGroups": egg_groups,
         "stats": stats,
         "bst": bst,
         "gen": gen_id,

@@ -14,6 +14,7 @@ export class Analytics {
                 maxBst: 0,
                 alerts: [],
                 typeCounts: {},
+                eggGroupCounts: {},
                 bstDistribution: {
                     '< 300': 0,
                     '300-399': 0,
@@ -26,6 +27,7 @@ export class Analytics {
 
         const count = dex.length;
         const typeCounts = {};
+        const eggGroupCounts = {};
         let totalBst = 0;
         let minBst = Infinity;
         let maxBst = -Infinity;
@@ -37,6 +39,13 @@ export class Analytics {
             p.types.forEach(t => {
                 typeCounts[t] = (typeCounts[t] || 0) + 1;
             });
+            
+            // Egg Groups
+            if (p.eggGroups) {
+                p.eggGroups.forEach(eg => {
+                    eggGroupCounts[eg] = (eggGroupCounts[eg] || 0) + 1;
+                });
+            }
 
             // BST
             totalBst += p.bst;
@@ -99,6 +108,7 @@ export class Analytics {
             maxBst,
             alerts: this.alerts,
             typeCounts,
+            eggGroupCounts,
             bstDistribution: bstBuckets
         };
     }
