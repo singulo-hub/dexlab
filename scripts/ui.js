@@ -57,6 +57,20 @@ export class UI {
             const event = new CustomEvent('filter-update');
             document.dispatchEvent(event);
         });
+        
+        // Drag selection state for list view
+        this.isDragging = false;
+        this.dragAction = null; // 'add' or 'remove' - determined by first item's state
+        this.draggedIds = new Set(); // Track which IDs have been toggled this drag
+        
+        // Global mouseup listener to end drag
+        document.addEventListener('mouseup', () => {
+            if (this.isDragging) {
+                this.isDragging = false;
+                this.dragAction = null;
+                this.draggedIds.clear();
+            }
+        });
     }
 
     init() {
@@ -121,6 +135,16 @@ export class UI {
                         </div>
                     </div>
                 `;
+                
+                // Grid view: simple click toggle
+                item.addEventListener('click', () => {
+                    if (isAdded) {
+                        this.dataManager.removeFromDex(p.id);
+                    } else {
+                        this.dataManager.addToDex(p.id);
+                    }
+                    this.updateAll();
+                });
             } else {
                 item.className = `pokemon-item ${isAdded ? 'added' : ''}`;
                 item.innerHTML = `
@@ -132,19 +156,42 @@ export class UI {
                         </div>
                     </div>
                 `;
+                
+                // List view: drag selection support
+                item.addEventListener('mousedown', (e) => {
+                    e.preventDefault(); // Prevent text selection
+                    this.isDragging = true;
+                    this.draggedIds.clear();
+                    
+                    // Determine action based on first item's current state
+                    const currentlyAdded = this.dataManager.customDex.some(d => d.id === p.id);
+                    this.dragAction = currentlyAdded ? 'remove' : 'add';
+                    
+                    // Toggle this first item
+                    this.togglePokemonDrag(p.id);
+                });
+                
+                item.addEventListener('mouseenter', () => {
+                    if (this.isDragging && !this.draggedIds.has(p.id)) {
+                        this.togglePokemonDrag(p.id);
+                    }
+                });
             }
-            
-            item.addEventListener('click', () => {
-                if (isAdded) {
-                    this.dataManager.removeFromDex(p.id);
-                } else {
-                    this.dataManager.addToDex(p.id);
-                }
-                this.updateAll();
-            });
             
             this.pokemonListEl.appendChild(item);
         });
+    }
+    
+    togglePokemonDrag(pokemonId) {
+        this.draggedIds.add(pokemonId);
+        
+        if (this.dragAction === 'add') {
+            this.dataManager.addToDex(pokemonId);
+        } else {
+            this.dataManager.removeFromDex(pokemonId);
+        }
+        
+        this.updateAll();
     }
 
     updateDashboard() {
