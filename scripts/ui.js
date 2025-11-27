@@ -47,11 +47,11 @@ export class UI {
         });
         
         this.isGridView = false;
-        this.viewToggleBtn = document.getElementById('view-toggle-btn');
+        this.viewToggle = document.getElementById('view-toggle');
         
-        this.viewToggleBtn.addEventListener('click', () => {
+        this.viewToggle.addEventListener('click', () => {
             this.isGridView = !this.isGridView;
-            this.viewToggleBtn.textContent = this.isGridView ? 'List View' : 'Grid View';
+            this.viewToggle.classList.toggle('grid-active', this.isGridView);
             this.pokemonListEl.classList.toggle('grid-view', this.isGridView);
             // Re-trigger render
             const event = new CustomEvent('filter-update');
