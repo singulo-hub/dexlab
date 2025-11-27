@@ -10,6 +10,8 @@ export class UI {
         this.statCountEl = document.querySelector('#stat-count p');
         this.rareTypeEl = document.getElementById('rare-type-val');
         this.commonTypeEl = document.getElementById('common-type-val');
+        this.rareEggEl = document.getElementById('rare-egg-val');
+        this.commonEggEl = document.getElementById('common-egg-val');
         this.statBstEl = document.getElementById('avg-bst-val');
         this.statMinBstEl = document.getElementById('min-bst-val');
         this.statMaxBstEl = document.getElementById('max-bst-val');
@@ -201,6 +203,8 @@ export class UI {
         this.statCountEl.textContent = stats.count;
         this.rareTypeEl.textContent = stats.rareType;
         this.commonTypeEl.textContent = stats.commonType;
+        this.rareEggEl.textContent = stats.rareEggGroup;
+        this.commonEggEl.textContent = stats.commonEggGroup;
         this.statBstEl.textContent = stats.avgBst;
         this.statMinBstEl.textContent = stats.minBst || '-';
         this.statMaxBstEl.textContent = stats.maxBst || '-';
@@ -290,7 +294,7 @@ export class UI {
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
+                    maintainAspectRatio: true,
                     animation: {
                         duration: 300
                     },
@@ -436,7 +440,7 @@ export class UI {
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
+                    maintainAspectRatio: true,
                     animation: {
                         duration: 300
                     },

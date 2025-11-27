@@ -10,6 +10,8 @@ export class Analytics {
                 count: 0,
                 rareType: '-',
                 commonType: '-',
+                rareEggGroup: '-',
+                commonEggGroup: '-',
                 avgBst: 0,
                 minBst: 0,
                 maxBst: 0,
@@ -91,6 +93,26 @@ export class Analytics {
                 rareType = type;
             }
         }
+        
+        // Most Common Egg Group (highest count)
+        let commonEggGroup = '-';
+        let maxEggCount = 0;
+        for (const [egg, c] of Object.entries(eggGroupCounts)) {
+            if (c > maxEggCount) {
+                maxEggCount = c;
+                commonEggGroup = egg;
+            }
+        }
+        
+        // Rare Egg Group (lowest count)
+        let rareEggGroup = '-';
+        let minEggCount = Infinity;
+        for (const [egg, c] of Object.entries(eggGroupCounts)) {
+            if (c < minEggCount) {
+                minEggCount = c;
+                rareEggGroup = egg;
+            }
+        }
 
         // Avg BST
         const avgBst = Math.round(totalBst / count);
@@ -141,6 +163,8 @@ export class Analytics {
             count,
             rareType: `${rareType} (${minTypeCount === Infinity ? 0 : minTypeCount})`,
             commonType: `${commonType} (${maxTypeCount})`,
+            rareEggGroup: `${rareEggGroup} (${minEggCount === Infinity ? 0 : minEggCount})`,
+            commonEggGroup: `${commonEggGroup} (${maxEggCount})`,
             avgBst,
             minBst,
             maxBst,
