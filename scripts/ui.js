@@ -10,8 +10,6 @@ export class UI {
         this.statCountEl = document.querySelector('#stat-count p');
         this.rareTypeEl = document.getElementById('rare-type-val');
         this.commonTypeEl = document.getElementById('common-type-val');
-        this.rareEggEl = document.getElementById('rare-egg-val');
-        this.commonEggEl = document.getElementById('common-egg-val');
         this.statBstEl = document.getElementById('avg-bst-val');
         this.statMinBstEl = document.getElementById('min-bst-val');
         this.statMaxBstEl = document.getElementById('max-bst-val');
@@ -207,8 +205,6 @@ export class UI {
         this.statCountEl.textContent = stats.count;
         this.rareTypeEl.textContent = stats.rareType;
         this.commonTypeEl.textContent = stats.commonType;
-        this.rareEggEl.textContent = stats.rareEggGroup;
-        this.commonEggEl.textContent = stats.commonEggGroup;
         this.statBstEl.textContent = stats.avgBst;
         this.statMinBstEl.textContent = stats.minBst || '-';
         this.statMaxBstEl.textContent = stats.maxBst || '-';
@@ -407,8 +403,10 @@ export class UI {
     updateEggChart(eggGroupCounts) {
         if (!eggGroupCounts) { return; }
         
-        const labels = Object.keys(eggGroupCounts);
-        const data = Object.values(eggGroupCounts);
+        // Sort by count descending for better visualization
+        const sorted = Object.entries(eggGroupCounts).sort((a, b) => b[1] - a[1]);
+        const labels = sorted.map(([label]) => label);
+        const data = sorted.map(([, count]) => count);
         const backgroundColors = labels.map(eg => this.eggGroupColors[eg] || '#888888');
         
         if (labels.length === 0) {
@@ -420,26 +418,13 @@ export class UI {
         }
         
         if (this.eggChart) {
-            const currentLabels = [...this.eggChart.data.labels].sort();
-            const newLabels = [...labels].sort();
-            const labelsChanged = JSON.stringify(currentLabels) !== JSON.stringify(newLabels);
-            
-            if (labelsChanged) {
-                this.eggChart.data.labels = labels;
-                this.eggChart.data.datasets[0].data = data;
-                this.eggChart.data.datasets[0].backgroundColor = backgroundColors;
-                this.eggChart.update('none');
-            } else {
-                const existingLabels = this.eggChart.data.labels;
-                const reorderedData = existingLabels.map(label => eggGroupCounts[label] || 0);
-                const reorderedColors = existingLabels.map(label => this.eggGroupColors[label] || '#888888');
-                this.eggChart.data.datasets[0].data = reorderedData;
-                this.eggChart.data.datasets[0].backgroundColor = reorderedColors;
-                this.eggChart.update({ duration: 300 });
-            }
+            this.eggChart.data.labels = labels;
+            this.eggChart.data.datasets[0].data = data;
+            this.eggChart.data.datasets[0].backgroundColor = backgroundColors;
+            this.eggChart.update({ duration: 300 });
         } else {
             this.eggChart = new Chart(this.eggChartCanvas, {
-                type: 'pie',
+                type: 'bar',
                 data: {
                     labels: labels,
                     datasets: [{
@@ -450,20 +435,53 @@ export class UI {
                     }]
                 },
                 options: {
+                    indexAxis: 'y',
                     responsive: true,
-                    maintainAspectRatio: true,
+                    maintainAspectRatio: false,
                     animation: {
                         duration: 300
+                    },
+                    interaction: {
+                        mode: 'y',
+                        intersect: true
                     },
                     plugins: {
                         legend: {
                             display: false
                         },
                         tooltip: {
+                            mode: 'y',
+                            intersect: true,
                             callbacks: {
                                 label: function(context) {
-                                    return `${context.label}: ${context.raw}`;
+                                    const count = context.raw;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = total > 0 ? ((count / total) * 100).toFixed(1) : 0;
+                                    return `${count} Pokémon (${percentage}%)`;
                                 }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: {
+                                color: '#888',
+                                stepSize: 1
+                            },
+                            grid: {
+                                color: '#3e3e42'
+                            }
+                        },
+                        y: {
+                            ticks: {
+                                color: '#888',
+                                font: {
+                                    size: 10
+                                }
+                            },
+                            grid: {
+                                display: false
                             }
                         }
                     }

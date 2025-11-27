@@ -60,7 +60,7 @@ button.secondary {
 
 .dashboard {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     padding: 20px;
@@ -203,25 +203,6 @@ button.secondary {
 }
 
 .type-stats strong {
-    color: var(--text-color);
-}
-
-/* Egg Chart Stats */
-.egg-stats {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 8px;
-    margin-top: 8px;
-    border-top: 1px solid var(--border-color);
-    font-size: 0.8rem;
-    width: 100%;
-}
-
-.egg-stats span {
-    color: #888;
-}
-
-.egg-stats strong {
     color: var(--text-color);
 }
 
