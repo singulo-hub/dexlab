@@ -12,7 +12,10 @@ export class UI {
         this.pokemonListEl = document.getElementById('pokemon-list');
         
         // Dashboard Elements
-        this.statCountEl = document.querySelector('#stat-count p');
+        this.statCountEl = document.getElementById('stat-total-count');
+        this.stat1StageEl = document.getElementById('stat-1stage');
+        this.stat2StageEl = document.getElementById('stat-2stage');
+        this.stat3StageEl = document.getElementById('stat-3stage');
         this.rareTypeEl = document.getElementById('rare-type-val');
         this.commonTypeEl = document.getElementById('common-type-val');
         this.statBstEl = document.getElementById('avg-bst-val');
@@ -197,6 +200,9 @@ export class UI {
     updateDashboard() {
         const stats = this.analytics.analyze(this.dataManager.customDex);
         this.statCountEl.textContent = stats.count;
+        this.stat1StageEl.textContent = stats.evolutionDepthCounts[1] || 0;
+        this.stat2StageEl.textContent = stats.evolutionDepthCounts[2] || 0;
+        this.stat3StageEl.textContent = stats.evolutionDepthCounts[3] || 0;
         this.rareTypeEl.textContent = stats.rareType;
         this.commonTypeEl.textContent = stats.commonType;
         this.statBstEl.textContent = stats.avgBst;

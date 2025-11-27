@@ -40,6 +40,32 @@
     font-weight: bold;
 }
 
+/* Stat Breakdown */
+.stat-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.75rem;
+}
+
+.stat-breakdown label {
+    font-size: 0.7rem;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.stat-breakdown span {
+    color: #888;
+}
+
+.stat-breakdown strong {
+    color: var(--text-color);
+}
+
 /* Chart Cards */
 .chart-card {
     display: flex;

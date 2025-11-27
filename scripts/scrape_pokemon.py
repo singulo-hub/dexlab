@@ -6,6 +6,103 @@ import time
 
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'all-pokemon.json')
 
+# Cache for evolution chain data: species_name -> evolution_depth
+evolution_depth_cache = {}
+# Cache for evolution family: species_name -> list of all species IDs in the family
+evolution_family_cache = {}
+
+async def fetch_url(session, url):
+    try:
+        async with session.get(url) as response:
+            if response.status == 200:
+                return await response.json()
+            else:
+                print(f"Error fetching {url}: {response.status}")
+                return None
+    except Exception as e:
+        print(f"Exception fetching {url}: {e}")
+        return None
+
+async def fetch_all_evolution_chains(session):
+    """Fetch all evolution chains and build a mapping of species name to evolution stage."""
+    print("Fetching evolution chains...")
+    
+    # Get total count of evolution chains
+    url = "https://pokeapi.co/api/v2/evolution-chain/?limit=1"
+    data = await fetch_url(session, url)
+    if not data:
+        return
+    
+    total_chains = data['count']
+    print(f"Found {total_chains} evolution chains to process.")
+    
+    # Fetch all chain URLs
+    url = f"https://pokeapi.co/api/v2/evolution-chain/?limit={total_chains}"
+    data = await fetch_url(session, url)
+    if not data:
+        return
+    
+    chain_urls = [item['url'] for item in data['results']]
+    
+    # Process chains in chunks
+    chunk_size = 50
+    for i in range(0, len(chain_urls), chunk_size):
+        chunk = chain_urls[i:i+chunk_size]
+        print(f"Processing evolution chains {i} to {i+len(chunk)}...")
+        tasks = [fetch_url(session, url) for url in chunk]
+        results = await asyncio.gather(*tasks)
+        
+        for chain_data in results:
+            if chain_data:
+                process_evolution_chain(chain_data['chain'], 1)
+        
+        await asyncio.sleep(0.3)
+    
+    print(f"Cached evolution data for {len(evolution_depth_cache)} species.")
+
+def get_max_chain_depth(chain):
+    """Recursively find the maximum depth of an evolution chain."""
+    if not chain.get('evolves_to') or len(chain['evolves_to']) == 0:
+        return 1
+    
+    max_depth = 0
+    for evolution in chain['evolves_to']:
+        depth = get_max_chain_depth(evolution)
+        max_depth = max(max_depth, depth)
+    
+    return 1 + max_depth
+
+def process_evolution_chain(chain, current_stage, max_stage=None, family_ids=None):
+    """Process an evolution chain and cache species with their evolution depth and family.
+    
+    The evolution depth represents how many total stages exist in this Pokemon's
+    evolution line. The evolution family is a list of all Pokemon IDs in the line.
+    For example: Bulbasaur has depth 3 and family [1, 2, 3].
+    """
+    # First pass: calculate max depth and collect all family IDs
+    if max_stage is None:
+        max_stage = get_max_chain_depth(chain)
+        family_ids = collect_family_ids(chain)
+    
+    species_name = chain['species']['name']
+    evolution_depth_cache[species_name] = max_stage
+    evolution_family_cache[species_name] = family_ids
+    
+    for evolution in chain.get('evolves_to', []):
+        process_evolution_chain(evolution, current_stage + 1, max_stage, family_ids)
+
+def collect_family_ids(chain):
+    """Recursively collect all species IDs in an evolution chain."""
+    # Extract ID from species URL (e.g., ".../pokemon-species/1/" -> 1)
+    species_url = chain['species']['url']
+    species_id = int(species_url.rstrip('/').split('/')[-1])
+    
+    ids = [species_id]
+    for evolution in chain.get('evolves_to', []):
+        ids.extend(collect_family_ids(evolution))
+    
+    return sorted(ids)
+
 async def fetch_url(session, url):
     try:
         async with session.get(url) as response:
@@ -106,6 +203,10 @@ async def process_species(session, species_entry):
     is_legendary = species_data['is_legendary']
     is_mythical = species_data['is_mythical']
     is_pseudo = (bst >= 600) and (not is_legendary) and (not is_mythical) and (pokemon_data['name'] != 'slaking')
+    
+    # Evolution depth and family (from cached data)
+    evolution_depth = evolution_depth_cache.get(species_data['name'], 1)
+    evolution_family = evolution_family_cache.get(species_data['name'], [species_data['id']])
 
     # Download Sprite
     sprite_url = pokemon_data['sprites']['front_default']
@@ -139,17 +240,22 @@ async def process_species(session, species_entry):
         "weight": pokemon_data['weight'] / 10, # hg to kg
         "isLegendary": is_legendary or is_mythical,
         "isPseudo": is_pseudo,
+        "evolutionDepth": evolution_depth,
+        "evolutionFamily": evolution_family,
         "description": description,
         "sprite": sprite_path
     }
 
 async def main():
     async with aiohttp.ClientSession() as session:
-        # 1. Get Generations
+        # 1. Fetch all evolution chains first
+        await fetch_all_evolution_chains(session)
+        
+        # 2. Get Generations
         gens = await get_generations(session)
         print(f"Found {len(gens)} generations.")
 
-        # 2. Get Species List per Gen
+        # 3. Get Species List per Gen
         tasks = []
         gen_metadata = []
         for i, gen in enumerate(gens):
@@ -170,7 +276,7 @@ async def main():
             
         print(f"Found {len(all_species_entries)} species total.")
         
-        # 3. Process Species (in chunks to avoid rate limits/overload)
+        # 4. Process Species (in chunks to avoid rate limits/overload)
         final_pokemon = []
         chunk_size = 50
         for i in range(0, len(all_species_entries), chunk_size):

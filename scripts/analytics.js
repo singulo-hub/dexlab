@@ -8,6 +8,7 @@ export class Analytics {
         if (!dex || dex.length === 0) {
             return {
                 count: 0,
+                evolutionDepthCounts: { 1: 0, 2: 0, 3: 0 },
                 rareType: '-',
                 commonType: '-',
                 rareEggGroup: '-',
@@ -38,6 +39,8 @@ export class Analytics {
         const count = dex.length;
         const typeCounts = {};
         const eggGroupCounts = {};
+        const evolutionDepthCounts = { 1: 0, 2: 0, 3: 0 };
+        const countedFamilies = new Set(); // Track which evolution families we've already counted
         let totalBst = 0;
         let minBst = Infinity;
         let maxBst = -Infinity;
@@ -74,6 +77,16 @@ export class Analytics {
             // Balance checks
             if (p.isPseudo) pseudoCount++;
             if (p.isLegendary) legendaryCount++;
+            
+            // Evolution depth - only count each family once
+            // Use the family array as a key (sorted IDs joined)
+            if (p.evolutionDepth >= 1 && p.evolutionDepth <= 3 && p.evolutionFamily) {
+                const familyKey = p.evolutionFamily.join(',');
+                if (!countedFamilies.has(familyKey)) {
+                    countedFamilies.add(familyKey);
+                    evolutionDepthCounts[p.evolutionDepth]++;
+                }
+            }
         });
 
         // Most Common Type (highest count)
@@ -187,6 +200,7 @@ export class Analytics {
 
         return {
             count,
+            evolutionDepthCounts,
             rareType: `${rareType} (${minTypeCount === Infinity ? 0 : minTypeCount})`,
             commonType: `${commonType} (${maxTypeCount})`,
             rareEggGroup: `${rareEggGroup} (${minEggCount === Infinity ? 0 : minEggCount})`,
