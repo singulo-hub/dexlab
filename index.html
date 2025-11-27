@@ -24,8 +24,19 @@
 
     <main class="main-content">
         <div id="dashboard" class="dashboard">
-            <!-- Row 1-3, Column 1-2: Capture Rate Group -->
-            <div class="stat-card span-2-cols span-3-rows" id="stat-capture-lists">
+            <div class="stat-card" id="stat-count">
+                <h3>Count</h3>
+                <p>-</p>
+            </div>
+            <div class="stat-card" id="stat-alerts">
+                <h3>Alerts</h3>
+                <ul id="alert-list"></ul>
+            </div>
+            <div class="stat-card chart-card" id="stat-egg-chart">
+                <h3>Egg Group Distribution</h3>
+                <canvas id="egg-chart"></canvas>
+            </div>
+            <div class="stat-card span-2-cols" id="stat-capture-lists">
                 <h3>Capture Rate Rankings</h3>
                 <div class="capture-lists-container">
                     <div class="capture-list-section">
@@ -43,60 +54,24 @@
                     <span>Max: <strong id="max-cr-val">-</strong></span>
                 </div>
             </div>
-
-            <!-- Row 1, Column 3: Count -->
-            <div class="stat-card" id="stat-count">
-                <h3>Count</h3>
-                <p>-</p>
-            </div>
-
-            <!-- Row 1-2, Column 4-5: Type Distribution Chart -->
+            
             <div class="stat-card chart-card span-2-cols span-2-rows" id="stat-type-chart">
                 <h3>Type Distribution</h3>
                 <canvas id="type-chart"></canvas>
             </div>
-
-            <!-- Row 2, Column 3: Top Type -->
             <div class="stat-card" id="stat-types">
                 <h3>Top Type</h3>
                 <p>-</p>
             </div>
-
-            <!-- Row 3, Column 3: Alerts -->
-            <div class="stat-card" id="stat-alerts">
-                <h3>Alerts</h3>
-                <ul id="alert-list"></ul>
-            </div>
-
-            <!-- Row 3, Column 4-5: Egg Group Distribution Chart -->
-            <div class="stat-card chart-card span-2-cols" id="stat-egg-chart">
-                <h3>Egg Group Distribution</h3>
-                <canvas id="egg-chart"></canvas>
-            </div>
-
-            <!-- Row 4-5, Column 1-2: BST Stats Group -->
-            <div class="stat-card span-2-cols span-2-rows" id="stat-bst-group">
-                <h3>Base Stat Total</h3>
-                <div class="bst-stats">
-                    <div class="bst-stat-item">
-                        <span class="bst-label">Average</span>
-                        <span class="bst-value" id="avg-bst-val">-</span>
-                    </div>
-                    <div class="bst-stat-item">
-                        <span class="bst-label">Minimum</span>
-                        <span class="bst-value" id="min-bst-val">-</span>
-                    </div>
-                    <div class="bst-stat-item">
-                        <span class="bst-label">Maximum</span>
-                        <span class="bst-value" id="max-bst-val">-</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Row 4-5, Column 3-5: BST Distribution Chart -->
-            <div class="stat-card chart-card span-3-cols span-2-rows" id="stat-bst-chart">
+            
+            <div class="stat-card chart-card span-3-cols span-3-rows" id="stat-bst-chart">
                 <h3>BST Distribution</h3>
                 <canvas id="bst-chart"></canvas>
+                <div class="bst-stats">
+                    <span>Min: <strong id="min-bst-val">-</strong></span>
+                    <span>Avg: <strong id="avg-bst-val">-</strong></span>
+                    <span>Max: <strong id="max-bst-val">-</strong></span>
+                </div>
             </div>
         </div>
     </main>

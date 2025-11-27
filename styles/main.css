@@ -61,7 +61,7 @@ button.secondary {
 .dashboard {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     padding: 20px;
     background-color: var(--bg-color);
@@ -78,12 +78,28 @@ button.secondary {
     grid-column: span 3;
 }
 
+.span-4-cols {
+    grid-column: span 4;
+}
+
+.span-5-cols {
+    grid-column: span 5;
+}
+
 .span-2-rows {
     grid-row: span 2;
 }
 
 .span-3-rows {
     grid-row: span 3;
+}
+
+.span-4-rows {
+    grid-row: span 4;
+}
+
+.span-5-rows {
+    grid-row: span 5;
 }
 
 .stat-card {
@@ -220,41 +236,21 @@ button.secondary {
     color: var(--text-color);
 }
 
-/* BST Group Card */
-#stat-bst-group {
+/* BST Chart with Stats */
+#stat-bst-chart .bst-stats {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 8px;
+    margin-top: 8px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
 }
 
-#stat-bst-group > h3 {
-    margin-bottom: 10px;
-}
-
-.bst-stats {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    flex: 1;
-    justify-content: center;
-}
-
-.bst-stat-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 12px;
-    background-color: var(--bg-color);
-    border-radius: 4px;
-}
-
-.bst-label {
-    font-size: 0.85rem;
+#stat-bst-chart .bst-stats span {
     color: #888;
 }
 
-.bst-value {
-    font-size: 1.4rem;
-    font-weight: bold;
+#stat-bst-chart .bst-stats strong {
     color: var(--text-color);
 }
 
