@@ -1,0 +1,58 @@
+/* Modal Overlay */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: var(--panel-bg);
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    border: 1px solid var(--border-color);
+}
+
+/* Template Selection Grid */
+.template-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.template-card {
+    background-color: var(--bg-color);
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.template-card:hover {
+    border-color: var(--accent-color);
+}
+
+.template-card h3 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+.template-card p {
+    font-size: 0.8rem;
+    color: #888;
+}
