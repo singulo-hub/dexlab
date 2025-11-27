@@ -28,7 +28,7 @@
 }
 
 .pokemon-item.added {
-    background-color: rgba(0, 122, 204, 0.1);
+    background-color: rgba(0, 122, 204, 0.2);
 }
 
 /* Pokemon Card (Grid View) */

@@ -66,10 +66,12 @@ function populateFilters() {
 function addFilter(type, value, label) {
     if (type === 'type' && !activeFilters.types.includes(value)) {
         activeFilters.types.push(value);
+        updateFilterDropdowns();
         renderFilterChips();
         filterAndRender();
     } else if (type === 'gen' && !activeFilters.gens.includes(value)) {
         activeFilters.gens.push(value);
+        updateFilterDropdowns();
         renderFilterChips();
         filterAndRender();
     }
@@ -81,8 +83,26 @@ function removeFilter(type, value) {
     } else if (type === 'gen') {
         activeFilters.gens = activeFilters.gens.filter(g => g !== value);
     }
+    updateFilterDropdowns();
     renderFilterChips();
     filterAndRender();
+}
+
+function updateFilterDropdowns() {
+    const typeSelect = document.getElementById('type-select');
+    const genSelect = document.getElementById('gen-select');
+    
+    // Hide/show type options based on active filters
+    Array.from(typeSelect.options).forEach(opt => {
+        if (opt.value === '') return; // Skip placeholder
+        opt.hidden = activeFilters.types.includes(opt.value);
+    });
+    
+    // Hide/show gen options based on active filters
+    Array.from(genSelect.options).forEach(opt => {
+        if (opt.value === '') return; // Skip placeholder
+        opt.hidden = activeFilters.gens.includes(opt.value);
+    });
 }
 
 function renderFilterChips() {
