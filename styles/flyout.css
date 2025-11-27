@@ -92,14 +92,16 @@
 .view-toggle {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     background: var(--bg-color);
     border: 1px solid var(--border-color);
-    border-radius: 20px;
-    padding: 6px 10px;
+    border-radius: 16px;
+    padding: 4px 8px;
     cursor: pointer;
     position: relative;
     user-select: none;
+    height: 32px;
+    box-sizing: border-box;
 }
 
 .view-toggle i {
@@ -125,15 +127,18 @@
 
 .toggle-slider {
     position: absolute;
-    left: 6px;
-    width: 24px;
-    height: 24px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 32px;
     background: var(--accent-color);
-    border-radius: 50%;
-    transition: transform 0.25s ease;
+    border-radius: 16px 8px 8px 16px;
+    transition: left 0.25s ease;
     opacity: 0.3;
 }
 
 .view-toggle.grid-active .toggle-slider {
-    transform: translateX(22px);
+    left: calc(100% - 28px);
+    border-radius: 8px 16px 16px 8px;
 }
