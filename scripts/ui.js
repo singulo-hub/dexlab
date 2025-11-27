@@ -16,10 +16,10 @@ export class UI {
         this.statMinBstEl = document.getElementById('min-bst-val');
         this.statMaxBstEl = document.getElementById('max-bst-val');
         this.statMinCrEl = document.getElementById('min-cr-val');
-        this.statAvgCrEl = document.getElementById('avg-cr-val');
+        this.statQ1CrEl = document.getElementById('q1-cr-val');
+        this.statMedianCrEl = document.getElementById('median-cr-val');
+        this.statQ3CrEl = document.getElementById('q3-cr-val');
         this.statMaxCrEl = document.getElementById('max-cr-val');
-        this.hardCrListEl = document.getElementById('hard-cr-list');
-        this.easyCrListEl = document.getElementById('easy-cr-list');
         this.alertListEl = document.getElementById('alert-list');
 
         // Modal
@@ -66,6 +66,10 @@ export class UI {
         // Egg Group Chart
         this.eggChartCanvas = document.getElementById('egg-chart');
         this.eggChart = null;
+        
+        // Capture Rate Chart
+        this.captureChartCanvas = document.getElementById('capture-chart');
+        this.captureChart = null;
         
         // Type colors for the chart
         this.typeColors = {
@@ -209,22 +213,10 @@ export class UI {
         this.statMinBstEl.textContent = stats.minBst || '-';
         this.statMaxBstEl.textContent = stats.maxBst || '-';
         this.statMinCrEl.textContent = stats.minCaptureRate || '-';
-        this.statAvgCrEl.textContent = stats.avgCaptureRate || '-';
+        this.statQ1CrEl.textContent = stats.q1CaptureRate || '-';
+        this.statMedianCrEl.textContent = stats.medianCaptureRate || '-';
+        this.statQ3CrEl.textContent = stats.q3CaptureRate || '-';
         this.statMaxCrEl.textContent = stats.maxCaptureRate || '-';
-        
-        this.hardCrListEl.innerHTML = '';
-        stats.hard5CaptureRate.forEach(p => {
-            const li = document.createElement('li');
-            li.textContent = `${p.name} (${p.captureRate})`;
-            this.hardCrListEl.appendChild(li);
-        });
-        
-        this.easyCrListEl.innerHTML = '';
-        stats.easiest5CaptureRate.forEach(p => {
-            const li = document.createElement('li');
-            li.textContent = `${p.name} (${p.captureRate})`;
-            this.easyCrListEl.appendChild(li);
-        });
 
         this.alertListEl.innerHTML = '';
         stats.alerts.forEach(alert => {
@@ -241,6 +233,9 @@ export class UI {
         
         // Update Egg Group Chart
         this.updateEggChart(stats.eggGroupCounts);
+        
+        // Update Capture Rate Box Plot
+        this.updateCaptureChart(stats.captureRateBoxPlot);
     }
     
     updateTypeChart(typeCounts) {
@@ -459,6 +454,149 @@ export class UI {
                 }
             });
         }
+    }
+    
+    updateCaptureChart(boxPlotData) {
+        if (!boxPlotData) {
+            if (this.captureChart) {
+                this.captureChart.destroy();
+                this.captureChart = null;
+            }
+            return;
+        }
+        
+        const { min, q1, median, q3, max, outliers } = boxPlotData;
+        
+        // Draw box and whisker plot using a custom bar chart approach
+        const ctx = this.captureChartCanvas.getContext('2d');
+        
+        if (this.captureChart) {
+            this.captureChart.destroy();
+        }
+        
+        // Create a custom plugin for drawing box and whisker plot
+        const boxWhiskerPlugin = {
+            id: 'boxWhisker',
+            afterDatasetsDraw: (chart) => {
+                const ctx = chart.ctx;
+                const chartArea = chart.chartArea;
+                const yScale = chart.scales.y;
+                
+                const centerX = (chartArea.left + chartArea.right) / 2;
+                const boxWidth = Math.min(80, (chartArea.right - chartArea.left) * 0.4);
+                
+                // Get Y positions
+                const minY = yScale.getPixelForValue(min);
+                const q1Y = yScale.getPixelForValue(q1);
+                const medianY = yScale.getPixelForValue(median);
+                const q3Y = yScale.getPixelForValue(q3);
+                const maxY = yScale.getPixelForValue(max);
+                
+                ctx.save();
+                
+                // Draw whisker lines (vertical lines from min to q1 and q3 to max)
+                ctx.strokeStyle = '#888';
+                ctx.lineWidth = 2;
+                
+                // Lower whisker (min to q1)
+                ctx.beginPath();
+                ctx.moveTo(centerX, minY);
+                ctx.lineTo(centerX, q1Y);
+                ctx.stroke();
+                
+                // Upper whisker (q3 to max)
+                ctx.beginPath();
+                ctx.moveTo(centerX, q3Y);
+                ctx.lineTo(centerX, maxY);
+                ctx.stroke();
+                
+                // Whisker caps
+                const capWidth = boxWidth * 0.5;
+                ctx.beginPath();
+                ctx.moveTo(centerX - capWidth / 2, minY);
+                ctx.lineTo(centerX + capWidth / 2, minY);
+                ctx.stroke();
+                
+                ctx.beginPath();
+                ctx.moveTo(centerX - capWidth / 2, maxY);
+                ctx.lineTo(centerX + capWidth / 2, maxY);
+                ctx.stroke();
+                
+                // Draw box (q1 to q3)
+                ctx.fillStyle = 'rgba(0, 122, 204, 0.6)';
+                ctx.strokeStyle = '#007acc';
+                ctx.lineWidth = 2;
+                ctx.fillRect(centerX - boxWidth / 2, q3Y, boxWidth, q1Y - q3Y);
+                ctx.strokeRect(centerX - boxWidth / 2, q3Y, boxWidth, q1Y - q3Y);
+                
+                // Draw median line
+                ctx.strokeStyle = '#4ec9b0';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(centerX - boxWidth / 2, medianY);
+                ctx.lineTo(centerX + boxWidth / 2, medianY);
+                ctx.stroke();
+                
+                // Draw outliers
+                if (outliers && outliers.length > 0) {
+                    ctx.fillStyle = '#f44336';
+                    outliers.forEach(value => {
+                        const y = yScale.getPixelForValue(value);
+                        ctx.beginPath();
+                        ctx.arc(centerX, y, 4, 0, Math.PI * 2);
+                        ctx.fill();
+                    });
+                }
+                
+                ctx.restore();
+            }
+        };
+        
+        this.captureChart = new Chart(this.captureChartCanvas, {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    data: [] // Empty data, we draw everything in plugin
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: false
+                    }
+                },
+                scales: {
+                    x: {
+                        display: false,
+                        min: 0,
+                        max: 1
+                    },
+                    y: {
+                        min: 0,
+                        max: 255,
+                        ticks: {
+                            color: '#888',
+                            stepSize: 50
+                        },
+                        grid: {
+                            color: '#3e3e42'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Rate',
+                            color: '#888'
+                        }
+                    }
+                }
+            },
+            plugins: [boxWhiskerPlugin]
+        });
     }
 
     updateAll() {

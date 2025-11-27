@@ -152,80 +152,17 @@ button.secondary {
     margin-bottom: 4px;
 }
 
-#hard-cr-list {
-    list-style: none;
-    font-size: 0.75rem;
-    padding-left: 0;
-    counter-reset: cr-counter;
-}
-
-#hard-cr-list li {
-    margin-bottom: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#hard-cr-list li::before {
-    counter-increment: cr-counter;
-    content: counter(cr-counter) ". ";
-    color: #888;
-}
-
-#easy-cr-list {
-    list-style: none;
-    font-size: 0.75rem;
-    padding-left: 0;
-    counter-reset: easy-cr-counter;
-}
-
-#easy-cr-list li {
-    margin-bottom: 2px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-#easy-cr-list li::before {
-    counter-increment: easy-cr-counter;
-    content: counter(easy-cr-counter) ". ";
-    color: #888;
-}
-
-/* Capture Rate Rankings Card */
-#stat-capture-lists {
-    display: flex;
-    flex-direction: column;
-}
-
-#stat-capture-lists > h3 {
-    margin-bottom: 8px;
-}
-
-.capture-lists-container {
-    display: flex;
-    gap: 15px;
-    flex: 1;
-    overflow: hidden;
-}
-
-.capture-list-section {
-    flex: 1;
+/* Capture Rate Chart */
+#stat-capture-chart {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
-.capture-list-section h4 {
-    font-size: 0.75rem;
-    color: #888;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-}
-
-.capture-list-section ol {
+#stat-capture-chart canvas {
     flex: 1;
-    overflow-y: auto;
+    min-height: 0;
+    max-width: 100%;
 }
 
 .capture-stats {
@@ -234,7 +171,18 @@ button.secondary {
     padding-top: 8px;
     margin-top: 8px;
     border-top: 1px solid var(--border-color);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.capture-stats span {
+    color: #888;
+}
+
+.capture-stats strong {
+    color: var(--text-color);
 }
 
 /* Type Chart Stats */
@@ -272,14 +220,6 @@ button.secondary {
 }
 
 .egg-stats strong {
-    color: var(--text-color);
-}
-
-.capture-stats span {
-    color: #888;
-}
-
-.capture-stats strong {
     color: var(--text-color);
 }
 

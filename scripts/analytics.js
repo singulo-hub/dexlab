@@ -18,8 +18,10 @@ export class Analytics {
                 minCaptureRate: 0,
                 avgCaptureRate: 0,
                 maxCaptureRate: 0,
-                hard5CaptureRate: [],
-                easiest5CaptureRate: [],
+                q1CaptureRate: 0,
+                medianCaptureRate: 0,
+                q3CaptureRate: 0,
+                captureRateBoxPlot: null,
                 alerts: [],
                 typeCounts: {},
                 eggGroupCounts: {},
@@ -147,17 +149,34 @@ export class Analytics {
             else bstBuckets['600+']++;
         });
 
-        // Hard 5 by capture rate (lowest = hardest to catch)
-        const hard5CaptureRate = [...dex]
-            .sort((a, b) => (a.captureRate || 0) - (b.captureRate || 0))
-            .slice(0, 5)
-            .map(p => ({ name: p.name, captureRate: p.captureRate || 0 }));
+        // Calculate quartiles for box plot
+        const sortedCaptureRates = [...dex]
+            .map(p => p.captureRate || 0)
+            .sort((a, b) => a - b);
         
-        // Easiest 5 by capture rate (highest = easiest to catch)
-        const easiest5CaptureRate = [...dex]
-            .sort((a, b) => (b.captureRate || 0) - (a.captureRate || 0))
-            .slice(0, 5)
-            .map(p => ({ name: p.name, captureRate: p.captureRate || 0 }));
+        const getQuartile = (arr, q) => {
+            const pos = (arr.length - 1) * q;
+            const base = Math.floor(pos);
+            const rest = pos - base;
+            if (arr[base + 1] !== undefined) {
+                return Math.round(arr[base] + rest * (arr[base + 1] - arr[base]));
+            } else {
+                return arr[base];
+            }
+        };
+        
+        const q1CaptureRate = getQuartile(sortedCaptureRates, 0.25);
+        const medianCaptureRate = getQuartile(sortedCaptureRates, 0.5);
+        const q3CaptureRate = getQuartile(sortedCaptureRates, 0.75);
+        
+        // Calculate outliers (values outside 1.5 * IQR)
+        const iqr = q3CaptureRate - q1CaptureRate;
+        const lowerFence = q1CaptureRate - 1.5 * iqr;
+        const upperFence = q3CaptureRate + 1.5 * iqr;
+        
+        const outliers = sortedCaptureRates.filter(v => v < lowerFence || v > upperFence);
+        const whiskerMin = sortedCaptureRates.find(v => v >= lowerFence) || minCaptureRate;
+        const whiskerMax = [...sortedCaptureRates].reverse().find(v => v <= upperFence) || maxCaptureRate;
 
         return {
             count,
@@ -171,8 +190,17 @@ export class Analytics {
             minCaptureRate: minCaptureRate === Infinity ? 0 : minCaptureRate,
             avgCaptureRate: Math.round(totalCaptureRate / count),
             maxCaptureRate: maxCaptureRate === -Infinity ? 0 : maxCaptureRate,
-            hard5CaptureRate,
-            easiest5CaptureRate,
+            q1CaptureRate,
+            medianCaptureRate,
+            q3CaptureRate,
+            captureRateBoxPlot: {
+                min: whiskerMin,
+                q1: q1CaptureRate,
+                median: medianCaptureRate,
+                q3: q3CaptureRate,
+                max: whiskerMax,
+                outliers: outliers
+            },
             alerts: this.alerts,
             typeCounts,
             eggGroupCounts,
