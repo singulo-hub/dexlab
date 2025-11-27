@@ -537,14 +537,22 @@ export class UI {
                 ctx.lineTo(centerX + boxWidth / 2, medianY);
                 ctx.stroke();
                 
-                // Draw outliers
+                // Draw outliers and store their positions for tooltips
+                chart.outlierPositions = [];
                 if (outliers && outliers.length > 0) {
                     ctx.fillStyle = '#f44336';
-                    outliers.forEach(value => {
-                        const y = yScale.getPixelForValue(value);
+                    outliers.forEach(outlier => {
+                        const y = yScale.getPixelForValue(outlier.captureRate);
                         ctx.beginPath();
-                        ctx.arc(centerX, y, 4, 0, Math.PI * 2);
+                        ctx.arc(centerX, y, 5, 0, Math.PI * 2);
                         ctx.fill();
+                        // Store position for tooltip detection
+                        chart.outlierPositions.push({
+                            x: centerX,
+                            y: y,
+                            name: outlier.name,
+                            captureRate: outlier.captureRate
+                        });
                     });
                 }
                 
@@ -597,6 +605,78 @@ export class UI {
             },
             plugins: [boxWhiskerPlugin]
         });
+        
+        // Add custom tooltip for outliers
+        this.setupCaptureChartTooltip();
+    }
+    
+    setupCaptureChartTooltip() {
+        // Create tooltip element if it doesn't exist
+        if (!this.captureTooltip) {
+            this.captureTooltip = document.createElement('div');
+            this.captureTooltip.className = 'capture-chart-tooltip';
+            this.captureTooltip.style.cssText = `
+                position: absolute;
+                background: #252526;
+                border: 1px solid #3e3e42;
+                border-radius: 4px;
+                padding: 6px 10px;
+                font-size: 0.8rem;
+                color: #d4d4d4;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.15s;
+                z-index: 100;
+                white-space: nowrap;
+            `;
+            document.body.appendChild(this.captureTooltip);
+        }
+        
+        const canvas = this.captureChartCanvas;
+        const tooltip = this.captureTooltip;
+        const chart = this.captureChart;
+        
+        // Remove existing listeners
+        canvas.removeEventListener('mousemove', canvas._tooltipHandler);
+        canvas.removeEventListener('mouseleave', canvas._tooltipLeaveHandler);
+        
+        // Add mousemove handler
+        canvas._tooltipHandler = (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+            
+            // Check if mouse is near any outlier
+            const outlierPositions = chart.outlierPositions || [];
+            let foundOutlier = null;
+            
+            for (const outlier of outlierPositions) {
+                const distance = Math.sqrt(
+                    Math.pow(mouseX - outlier.x, 2) + 
+                    Math.pow(mouseY - outlier.y, 2)
+                );
+                if (distance <= 10) {
+                    foundOutlier = outlier;
+                    break;
+                }
+            }
+            
+            if (foundOutlier) {
+                tooltip.innerHTML = `<strong>${foundOutlier.name}</strong><br>Capture Rate: ${foundOutlier.captureRate}`;
+                tooltip.style.opacity = '1';
+                tooltip.style.left = `${e.clientX + 10}px`;
+                tooltip.style.top = `${e.clientY - 10}px`;
+            } else {
+                tooltip.style.opacity = '0';
+            }
+        };
+        
+        canvas._tooltipLeaveHandler = () => {
+            tooltip.style.opacity = '0';
+        };
+        
+        canvas.addEventListener('mousemove', canvas._tooltipHandler);
+        canvas.addEventListener('mouseleave', canvas._tooltipLeaveHandler);
     }
 
     updateAll() {

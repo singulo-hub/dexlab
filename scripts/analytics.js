@@ -174,7 +174,14 @@ export class Analytics {
         const lowerFence = q1CaptureRate - 1.5 * iqr;
         const upperFence = q3CaptureRate + 1.5 * iqr;
         
-        const outliers = sortedCaptureRates.filter(v => v < lowerFence || v > upperFence);
+        // Get outliers with Pokemon names
+        const outlierPokemon = dex
+            .filter(p => {
+                const cr = p.captureRate || 0;
+                return cr < lowerFence || cr > upperFence;
+            })
+            .map(p => ({ name: p.name, captureRate: p.captureRate || 0 }));
+        
         const whiskerMin = sortedCaptureRates.find(v => v >= lowerFence) || minCaptureRate;
         const whiskerMax = [...sortedCaptureRates].reverse().find(v => v <= upperFence) || maxCaptureRate;
 
@@ -199,7 +206,7 @@ export class Analytics {
                 median: medianCaptureRate,
                 q3: q3CaptureRate,
                 max: whiskerMax,
-                outliers: outliers
+                outliers: outlierPokemon
             },
             alerts: this.alerts,
             typeCounts,
