@@ -355,9 +355,25 @@ export class UI {
                     animation: {
                         duration: 300
                     },
+                    interaction: {
+                        mode: 'index',
+                        intersect: true
+                    },
                     plugins: {
                         legend: {
                             display: false
+                        },
+                        tooltip: {
+                            mode: 'index',
+                            intersect: true,
+                            callbacks: {
+                                label: function(context) {
+                                    const count = context.raw;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = total > 0 ? ((count / total) * 100).toFixed(1) : 0;
+                                    return `${count} Pokémon (${percentage}%)`;
+                                }
+                            }
                         }
                     },
                     scales: {

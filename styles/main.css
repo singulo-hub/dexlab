@@ -130,11 +130,19 @@ button.secondary {
     align-items: center;
 }
 
-.chart-card canvas {
+.chart-container {
     flex: 1;
     min-height: 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-card canvas {
     max-width: 100%;
-    max-height: calc(100% - 40px);
+    max-height: 100%;
 }
 
 /* Bar charts should fill width */
@@ -157,12 +165,6 @@ button.secondary {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-}
-
-#stat-capture-chart canvas {
-    flex: 1;
-    min-height: 0;
-    max-width: 100%;
 }
 
 .capture-stats {
