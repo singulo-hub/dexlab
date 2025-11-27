@@ -8,7 +8,8 @@ export class UI {
         
         // Dashboard Elements
         this.statCountEl = document.querySelector('#stat-count p');
-        this.statTypesEl = document.querySelector('#stat-types p');
+        this.rareTypeEl = document.getElementById('rare-type-val');
+        this.commonTypeEl = document.getElementById('common-type-val');
         this.statBstEl = document.getElementById('avg-bst-val');
         this.statMinBstEl = document.getElementById('min-bst-val');
         this.statMaxBstEl = document.getElementById('max-bst-val');
@@ -198,7 +199,8 @@ export class UI {
     updateDashboard() {
         const stats = this.analytics.analyze(this.dataManager.customDex);
         this.statCountEl.textContent = stats.count;
-        this.statTypesEl.textContent = stats.topType;
+        this.rareTypeEl.textContent = stats.rareType;
+        this.commonTypeEl.textContent = stats.commonType;
         this.statBstEl.textContent = stats.avgBst;
         this.statMinBstEl.textContent = stats.minBst || '-';
         this.statMaxBstEl.textContent = stats.maxBst || '-';

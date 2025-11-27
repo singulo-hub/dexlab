@@ -8,7 +8,8 @@ export class Analytics {
         if (!dex || dex.length === 0) {
             return {
                 count: 0,
-                topType: '-',
+                rareType: '-',
+                commonType: '-',
                 avgBst: 0,
                 minBst: 0,
                 maxBst: 0,
@@ -71,13 +72,23 @@ export class Analytics {
             if (p.isLegendary) legendaryCount++;
         });
 
-        // Top Type
-        let topType = '-';
+        // Most Common Type (highest count)
+        let commonType = '-';
         let maxTypeCount = 0;
         for (const [type, c] of Object.entries(typeCounts)) {
             if (c > maxTypeCount) {
                 maxTypeCount = c;
-                topType = type;
+                commonType = type;
+            }
+        }
+        
+        // Rare Type (lowest count)
+        let rareType = '-';
+        let minTypeCount = Infinity;
+        for (const [type, c] of Object.entries(typeCounts)) {
+            if (c < minTypeCount) {
+                minTypeCount = c;
+                rareType = type;
             }
         }
 
@@ -92,7 +103,7 @@ export class Analytics {
             this.alerts.push(`High Pseudo count (${pseudoCount})`);
         }
         if (maxTypeCount > count * 0.3 && count > 10) {
-            this.alerts.push(`Type imbalance: ${topType}`);
+            this.alerts.push(`Type imbalance: ${commonType}`);
         }
         if (avgBst > 550) {
             this.alerts.push(`High Avg BST (${avgBst})`);
@@ -128,7 +139,8 @@ export class Analytics {
 
         return {
             count,
-            topType: `${topType} (${maxTypeCount})`,
+            rareType: `${rareType} (${minTypeCount === Infinity ? 0 : minTypeCount})`,
+            commonType: `${commonType} (${maxTypeCount})`,
             avgBst,
             minBst,
             maxBst,

@@ -228,6 +228,24 @@ button.secondary {
     font-size: 0.8rem;
 }
 
+/* Type Chart Stats */
+.type-stats {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+    margin-top: 8px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8rem;
+}
+
+.type-stats span {
+    color: #888;
+}
+
+.type-stats strong {
+    color: var(--text-color);
+}
+
 .capture-stats span {
     color: #888;
 }
