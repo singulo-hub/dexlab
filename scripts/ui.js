@@ -220,15 +220,8 @@ export class UI {
     }
 
     updateAll() {
-        // Re-render source list to update "added" status
-        const searchVal = document.getElementById('search-input').value;
-        const typeVal = document.getElementById('type-filter').value;
-        const genVal = document.getElementById('gen-filter').value;
-        
-        // Trigger a filter update which will call renderSourceList
-        const event = new CustomEvent('filter-update', { 
-            detail: { search: searchVal, type: typeVal, gen: genVal } 
-        });
+        // Trigger a filter update which will call filterAndRender in app.js
+        const event = new CustomEvent('filter-update');
         document.dispatchEvent(event);
 
         // Update selected count

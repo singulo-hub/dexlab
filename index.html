@@ -91,20 +91,34 @@
             </button>
         </div>
         <div class="flyout-filters">
-            <input type="text" id="search-input" placeholder="Search Pokémon...">
-            <select id="type-filter">
-                <option value="">All Types</option>
-                <!-- Options populated by JS -->
-            </select>
-            <select id="gen-filter">
-                <option value="">All Gens</option>
-                <!-- Options populated by JS -->
-            </select>
-            <div id="view-toggle" class="view-toggle" title="Toggle View">
-                <i class="fas fa-list"></i>
-                <div class="toggle-slider"></div>
-                <i class="fas fa-th"></i>
+            <div class="filter-row">
+                <input type="text" id="search-input" placeholder="Search Pokémon...">
+                <div class="filter-dropdown-container">
+                    <button id="filter-btn" class="filter-btn">
+                        <i class="fas fa-filter"></i> Filters
+                    </button>
+                    <div id="filter-dropdown" class="filter-dropdown">
+                        <div class="filter-section">
+                            <label>Type</label>
+                            <select id="type-select">
+                                <option value="">Select type...</option>
+                            </select>
+                        </div>
+                        <div class="filter-section">
+                            <label>Generation</label>
+                            <select id="gen-select">
+                                <option value="">Select gen...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="view-toggle" class="view-toggle" title="Toggle View">
+                    <i class="fas fa-list"></i>
+                    <div class="toggle-slider"></div>
+                    <i class="fas fa-th"></i>
+                </div>
             </div>
+            <div id="filter-chips" class="filter-chips"></div>
         </div>
         <div id="pokemon-list" class="pokemon-list">
             <!-- Pokemon items injected here -->

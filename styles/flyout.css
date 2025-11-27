@@ -36,11 +36,17 @@
 /* Flyout Filters */
 .flyout-filters {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
+    flex-direction: column;
+    gap: 10px;
     padding: 15px 20px;
     border-bottom: 1px solid var(--border-color);
     background-color: var(--panel-bg);
+}
+
+.filter-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .flyout-filters input,
@@ -58,8 +64,102 @@
     min-width: 150px;
 }
 
-.flyout-filters select {
-    flex: 0 0 auto;
+/* Filter Dropdown */
+.filter-dropdown-container {
+    position: relative;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.filter-btn:hover {
+    border-color: var(--accent-color);
+}
+
+.filter-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 4px;
+    background: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 12px;
+    min-width: 200px;
+    z-index: 100;
+    display: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.filter-dropdown.open {
+    display: block;
+}
+
+.filter-section {
+    margin-bottom: 10px;
+}
+
+.filter-section:last-child {
+    margin-bottom: 0;
+}
+
+.filter-section label {
+    display: block;
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.filter-section select {
+    width: 100%;
+}
+
+/* Filter Chips */
+.filter-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-height: 28px;
+}
+
+.filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 4px 8px 4px 10px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.filter-chip .chip-remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.65rem;
+    transition: background 0.15s;
+}
+
+.filter-chip .chip-remove:hover {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 /* Flyout Pokemon List */

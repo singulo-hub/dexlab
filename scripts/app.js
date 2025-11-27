@@ -29,10 +29,16 @@ async function init() {
     filterAndRender();
 }
 
+// Filter State
+const activeFilters = {
+    types: [],
+    gens: []
+};
+
 // Filter Logic
 function populateFilters() {
-    const typeFilter = document.getElementById('type-filter');
-    const genFilter = document.getElementById('gen-filter');
+    const typeSelect = document.getElementById('type-select');
+    const genSelect = document.getElementById('gen-select');
     
     const types = new Set();
     const gens = new Set();
@@ -46,36 +52,113 @@ function populateFilters() {
         const opt = document.createElement('option');
         opt.value = t;
         opt.textContent = t;
-        typeFilter.appendChild(opt);
+        typeSelect.appendChild(opt);
     });
 
     Array.from(gens).sort((a, b) => a - b).forEach(g => {
         const opt = document.createElement('option');
         opt.value = g;
         opt.textContent = `Gen ${g}`;
-        genFilter.appendChild(opt);
+        genSelect.appendChild(opt);
+    });
+}
+
+function addFilter(type, value, label) {
+    if (type === 'type' && !activeFilters.types.includes(value)) {
+        activeFilters.types.push(value);
+        renderFilterChips();
+        filterAndRender();
+    } else if (type === 'gen' && !activeFilters.gens.includes(value)) {
+        activeFilters.gens.push(value);
+        renderFilterChips();
+        filterAndRender();
+    }
+}
+
+function removeFilter(type, value) {
+    if (type === 'type') {
+        activeFilters.types = activeFilters.types.filter(t => t !== value);
+    } else if (type === 'gen') {
+        activeFilters.gens = activeFilters.gens.filter(g => g !== value);
+    }
+    renderFilterChips();
+    filterAndRender();
+}
+
+function renderFilterChips() {
+    const container = document.getElementById('filter-chips');
+    container.innerHTML = '';
+    
+    activeFilters.types.forEach(type => {
+        const chip = document.createElement('span');
+        chip.className = 'filter-chip';
+        chip.innerHTML = `${type} <span class="chip-remove" data-type="type" data-value="${type}"><i class="fas fa-times"></i></span>`;
+        container.appendChild(chip);
+    });
+    
+    activeFilters.gens.forEach(gen => {
+        const chip = document.createElement('span');
+        chip.className = 'filter-chip';
+        chip.innerHTML = `Gen ${gen} <span class="chip-remove" data-type="gen" data-value="${gen}"><i class="fas fa-times"></i></span>`;
+        container.appendChild(chip);
     });
 }
 
 function filterAndRender() {
     const searchVal = document.getElementById('search-input').value.toLowerCase();
-    const typeVal = document.getElementById('type-filter').value;
-    const genVal = document.getElementById('gen-filter').value;
 
     const filtered = dataManager.allPokemon.filter(p => {
         const matchesSearch = p.name.toLowerCase().includes(searchVal);
-        const matchesType = typeVal === '' || p.types.includes(typeVal);
-        const matchesGen = genVal === '' || p.gen === parseInt(genVal);
-        return matchesSearch && matchesType && matchesGen;
+        // Must match ALL selected types (AND logic)
+        const matchesTypes = activeFilters.types.length === 0 || 
+            activeFilters.types.every(t => p.types.includes(t));
+        // Must match ANY selected gen (OR logic for gens)
+        const matchesGen = activeFilters.gens.length === 0 || 
+            activeFilters.gens.includes(String(p.gen));
+        return matchesSearch && matchesTypes && matchesGen;
     });
 
     ui.renderPokemonList(filtered);
 }
 
+// Filter Event Listeners
+const filterBtn = document.getElementById('filter-btn');
+const filterDropdown = document.getElementById('filter-dropdown');
+
+filterBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    filterDropdown.classList.toggle('open');
+});
+
+document.addEventListener('click', (e) => {
+    if (!filterDropdown.contains(e.target) && e.target !== filterBtn) {
+        filterDropdown.classList.remove('open');
+    }
+});
+
+document.getElementById('type-select').addEventListener('change', (e) => {
+    if (e.target.value) {
+        addFilter('type', e.target.value);
+        e.target.value = '';
+    }
+});
+
+document.getElementById('gen-select').addEventListener('change', (e) => {
+    if (e.target.value) {
+        addFilter('gen', e.target.value);
+        e.target.value = '';
+    }
+});
+
+document.getElementById('filter-chips').addEventListener('click', (e) => {
+    const removeBtn = e.target.closest('.chip-remove');
+    if (removeBtn) {
+        removeFilter(removeBtn.dataset.type, removeBtn.dataset.value);
+    }
+});
+
 // Event Listeners
 document.getElementById('search-input').addEventListener('input', filterAndRender);
-document.getElementById('type-filter').addEventListener('change', filterAndRender);
-document.getElementById('gen-filter').addEventListener('change', filterAndRender);
 
 document.addEventListener('filter-update', () => {
     filterAndRender();
