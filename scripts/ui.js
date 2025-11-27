@@ -9,7 +9,7 @@ export class UI {
         // Dashboard Elements
         this.statCountEl = document.querySelector('#stat-count p');
         this.statTypesEl = document.querySelector('#stat-types p');
-        this.statBstEl = document.querySelector('#stat-bst p');
+        this.statBstEl = document.getElementById('avg-bst-val');
         this.statMinBstEl = document.getElementById('min-bst-val');
         this.statMaxBstEl = document.getElementById('max-bst-val');
         this.statMinCrEl = document.getElementById('min-cr-val');
@@ -22,6 +22,23 @@ export class UI {
         // Modal
         this.modal = document.getElementById('template-modal');
         this.templateListEl = document.getElementById('template-list');
+        
+        // Flyout Panel
+        this.flyoutPanel = document.getElementById('pokemon-flyout');
+        this.flyoutOverlay = document.getElementById('flyout-overlay');
+        this.addPokemonBtn = document.getElementById('add-pokemon-btn');
+        this.closeFlyoutBtn = document.getElementById('close-flyout-btn');
+        
+        this.addPokemonBtn.addEventListener('click', () => this.openFlyout());
+        this.closeFlyoutBtn.addEventListener('click', () => this.closeFlyout());
+        this.flyoutOverlay.addEventListener('click', () => this.closeFlyout());
+        
+        // Close flyout on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.flyoutPanel.classList.contains('open')) {
+                this.closeFlyout();
+            }
+        });
         
         this.isGridView = false;
         this.viewToggleBtn = document.getElementById('view-toggle-btn');
@@ -118,6 +135,18 @@ export class UI {
 
     closeModal() {
         this.modal.classList.add('hidden');
+    }
+
+    openFlyout() {
+        this.flyoutPanel.classList.add('open');
+        this.flyoutOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    closeFlyout() {
+        this.flyoutPanel.classList.remove('open');
+        this.flyoutOverlay.classList.remove('open');
+        document.body.style.overflow = '';
     }
 
     renderPokemonList(pokemonList) {
