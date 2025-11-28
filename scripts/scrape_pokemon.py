@@ -6,6 +6,7 @@ import time
 from PIL import Image
 from io import BytesIO
 import math
+import struct
 
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'all-pokemon.json')
 
@@ -13,6 +14,39 @@ OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', '
 evolution_depth_cache = {}
 # Cache for evolution family: species_name -> list of all species IDs in the family
 evolution_family_cache = {}
+
+def clean_png_data(data):
+    """Remove non-critical PNG chunks that may have bad checksums (e.g., iCCP)"""
+    if not data or len(data) < 8 or data[:8] != b'\x89PNG\r\n\x1a\n':
+        return data
+    
+    clean = data[:8]  # PNG signature
+    pos = 8
+    
+    while pos < len(data):
+        if pos + 8 > len(data):
+            break
+            
+        chunk_len = struct.unpack('>I', data[pos:pos+4])[0]
+        chunk_type = data[pos+4:pos+8]
+        chunk_end = pos + 12 + chunk_len
+        
+        if chunk_end > len(data):
+            break
+        
+        # Keep only critical chunks and safe ancillary chunks
+        # Skip chunks that may have bad checksums (iCCP, iTXt, zTXt, etc.)
+        safe_chunks = [b'IHDR', b'PLTE', b'IDAT', b'IEND', b'tRNS', b'bKGD', b'pHYs']
+        
+        if chunk_type in safe_chunks:
+            clean += data[pos:chunk_end]
+        
+        pos = chunk_end
+        
+        if chunk_type == b'IEND':
+            break
+    
+    return clean
 
 async def fetch_url(session, url):
     try:
@@ -205,7 +239,7 @@ async def process_species(session, species_entry):
     types = [t['type']['name'].capitalize() for t in pokemon_data['types']]
 
     # Pseudo detection (Heuristic: BST >= 600, Not Legendary/Mythical, usually 3 stage but we skip that check)
-    # Exclude Slaking (670) if we want, but for now simple heuristic
+    # Exclude Slaking (670), Traunt ability makes it not pseudo despite high BST
     is_legendary = species_data['is_legendary']
     is_mythical = species_data['is_mythical']
     is_pseudo = (bst >= 600) and (not is_legendary) and (not is_mythical) and (pokemon_data['name'] != 'slaking')
@@ -340,13 +374,21 @@ async def main():
             # Paste sprite if we have data
             if pokemon.get('spriteData'):
                 try:
-                    sprite_img = Image.open(BytesIO(pokemon['spriteData']))
+                    sprite_bytes = pokemon['spriteData']
+                    # Clean PNG data to remove potentially corrupted chunks (e.g., bad iCCP)
+                    clean_bytes = clean_png_data(sprite_bytes)
+                    bio = BytesIO(clean_bytes)
+                    sprite_img = Image.open(bio)
+                    sprite_img.load()  # Force decode
                     # Resize to 96x96 if needed (sprites are usually 96x96)
                     if sprite_img.size != (SPRITE_SIZE, SPRITE_SIZE):
                         sprite_img = sprite_img.resize((SPRITE_SIZE, SPRITE_SIZE), Image.Resampling.NEAREST)
-                    sprite_sheet.paste(sprite_img, (x, y), sprite_img if sprite_img.mode == 'RGBA' else None)
+                    # Convert to RGBA if needed
+                    if sprite_img.mode != 'RGBA':
+                        sprite_img = sprite_img.convert('RGBA')
+                    sprite_sheet.paste(sprite_img, (x, y), sprite_img)
                 except Exception as e:
-                    print(f"Error processing sprite for {pokemon['name']}: {e}")
+                    print(f"Error processing sprite for {pokemon['name']} (id={pokemon['id']}): {e}")
             
             # Remove sprite data from final output (not needed in JSON)
             del pokemon['spriteData']
