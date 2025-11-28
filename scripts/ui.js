@@ -143,6 +143,42 @@ export class UI {
                 document.getElementById('new-start-btn').click();
             }
         });
+        
+        // Character counter for name
+        const nameInput = document.getElementById('new-dex-name');
+        const nameCharCounter = document.getElementById('name-char-count');
+        const nameCounterContainer = nameCharCounter.parentElement;
+        
+        nameInput.addEventListener('input', () => {
+            const count = nameInput.value.length;
+            nameCharCounter.textContent = count;
+            
+            // Update styling based on count
+            nameCounterContainer.classList.remove('near-limit', 'at-limit');
+            if (count >= 50) {
+                nameCounterContainer.classList.add('at-limit');
+            } else if (count >= 40) {
+                nameCounterContainer.classList.add('near-limit');
+            }
+        });
+        
+        // Character counter for description
+        const descTextarea = document.getElementById('new-dex-desc');
+        const descCharCounter = document.getElementById('desc-char-count');
+        const descCounterContainer = descCharCounter.parentElement;
+        
+        descTextarea.addEventListener('input', () => {
+            const count = descTextarea.value.length;
+            descCharCounter.textContent = count;
+            
+            // Update styling based on count
+            descCounterContainer.classList.remove('near-limit', 'at-limit');
+            if (count >= 100) {
+                descCounterContainer.classList.add('at-limit');
+            } else if (count >= 80) {
+                descCounterContainer.classList.add('near-limit');
+            }
+        });
     }
 
     showModalStep(stepName) {
