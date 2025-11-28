@@ -64,9 +64,36 @@ header {
     align-items: center;
 }
 
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 h1 {
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.title-separator {
+    color: #555;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.dex-name {
+    font-size: 1rem;
+    color: #888;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 /* Buttons */

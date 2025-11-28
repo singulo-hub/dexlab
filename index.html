@@ -16,13 +16,17 @@
 </head>
 <body>
     <header>
-        <h1>DexLab</h1>
+        <div class="header-title">
+            <h1>DexLab</h1>
+            <span class="title-separator">/</span>
+            <span id="dex-name" class="dex-name">Untitled Dex</span>
+        </div>
         <div class="header-controls">
             <button id="add-pokemon-btn"><i class="fas fa-plus"></i> Add Pokémon</button>
-            <button id="export-btn">Export JSON</button>
-            <button id="import-btn">Import JSON</button>
+            <button id="export-btn"><i class="fas fa-file-export"></i> Export</button>
+            <button id="import-btn"><i class="fas fa-file-import"></i> Import</button>
             <button id="print-grid-btn"><i class="fas fa-image"></i> Print Grid</button>
-            <button id="reset-btn">New / Reset</button>
+            <button id="new-dex-btn"><i class="fas fa-file"></i> New / Load</button>
             <input type="file" id="file-input" style="display: none;" accept=".json">
         </div>
     </header>
@@ -148,10 +152,75 @@
     <!-- Template Selection Modal -->
     <div id="template-modal" class="modal">
         <div class="modal-content">
-            <h2>Welcome to DexLab</h2>
-            <p>Select a starting point for your custom Pokédex:</p>
-            <div id="template-list" class="template-grid">
-                <!-- Templates injected here -->
+            <!-- Step 1: Main Menu -->
+            <div id="modal-step-menu" class="modal-step">
+                <h2>Welcome to DexLab</h2>
+                <p>Create and manage your custom Pokédex</p>
+                <div class="modal-menu-grid">
+                    <button class="modal-menu-btn" id="menu-new-btn">
+                        <i class="fas fa-plus-circle"></i>
+                        <span>New</span>
+                        <small>Create a new Pokédex</small>
+                    </button>
+                    <button class="modal-menu-btn" id="menu-load-btn">
+                        <i class="fas fa-folder-open"></i>
+                        <span>Load</span>
+                        <small>Open a saved Pokédex</small>
+                    </button>
+                    <button class="modal-menu-btn" id="menu-region-btn">
+                        <i class="fas fa-globe"></i>
+                        <span>By Region</span>
+                        <small>Start with a regional dex</small>
+                    </button>
+                    <button class="modal-menu-btn" id="menu-import-btn">
+                        <i class="fas fa-file-import"></i>
+                        <span>Import</span>
+                        <small>Load from JSON file</small>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Step 2: New Dex Form -->
+            <div id="modal-step-new" class="modal-step hidden">
+                <button class="modal-back-btn" id="new-back-btn">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <h2>Create New Pokédex</h2>
+                <div class="modal-form">
+                    <div class="form-group">
+                        <label for="new-dex-name">Name</label>
+                        <input type="text" id="new-dex-name" placeholder="My Custom Dex" maxlength="50">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-dex-desc">Description <span class="optional">(optional)</span></label>
+                        <textarea id="new-dex-desc" placeholder="A brief description of your Pokédex..." rows="3" maxlength="200"></textarea>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button id="new-start-btn" class="btn-primary"><i class="fas fa-rocket"></i> Start</button>
+                </div>
+            </div>
+            
+            <!-- Step 3: Load Saved Dex -->
+            <div id="modal-step-load" class="modal-step hidden">
+                <button class="modal-back-btn" id="load-back-btn">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <h2>Load Pokédex</h2>
+                <div id="saved-dex-list" class="saved-dex-list">
+                    <!-- Saved dexes injected here -->
+                </div>
+            </div>
+            
+            <!-- Step 4: By Region -->
+            <div id="modal-step-region" class="modal-step hidden">
+                <button class="modal-back-btn" id="region-back-btn">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <h2>Select Region</h2>
+                <div id="region-list" class="saved-dex-list">
+                    <!-- Region templates injected here -->
+                </div>
             </div>
         </div>
     </div>

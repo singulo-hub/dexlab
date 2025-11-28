@@ -20,13 +20,264 @@
 .modal-content {
     background-color: var(--panel-bg);
     padding: 30px;
-    border-radius: 8px;
-    max-width: 600px;
+    border-radius: 12px;
+    max-width: 550px;
     width: 90%;
     border: 1px solid var(--border-color);
 }
 
-/* Template Selection Grid */
+.modal-content h2 {
+    margin-bottom: 8px;
+}
+
+.modal-content > p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+/* Modal Steps */
+.modal-step {
+    animation: fadeIn 0.2s ease;
+}
+
+.modal-step.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Modal Menu Grid */
+.modal-menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.modal-menu-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 24px 16px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--text-color);
+}
+
+.modal-menu-btn:hover {
+    border-color: var(--accent-color);
+    background: rgba(0, 122, 204, 0.1);
+}
+
+.modal-menu-btn i {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.modal-menu-btn span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.modal-menu-btn small {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* Back Button */
+.modal-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0;
+    margin-bottom: 16px;
+    transition: color 0.2s;
+}
+
+.modal-back-btn:hover {
+    color: var(--text-color);
+}
+
+/* Modal Form */
+.modal-form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.form-group .optional {
+    color: #666;
+    font-weight: normal;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+/* Modal Actions */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Saved Dex List */
+.saved-dex-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.saved-dex-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.saved-dex-item:hover {
+    border-color: var(--accent-color);
+    background: rgba(0, 122, 204, 0.05);
+}
+
+.saved-dex-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.saved-dex-name {
+    font-weight: 600;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.saved-dex-meta {
+    font-size: 0.8rem;
+    color: #888;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.saved-dex-actions {
+    display: flex;
+    gap: 8px;
+    margin-left: 12px;
+}
+
+.saved-dex-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.saved-dex-actions .load-btn {
+    background: var(--accent-color);
+    color: white;
+}
+
+.saved-dex-actions .load-btn:hover {
+    opacity: 0.9;
+}
+
+.saved-dex-actions .delete-btn {
+    background: transparent;
+    color: #888;
+    padding: 8px 10px;
+}
+
+.saved-dex-actions .delete-btn:hover {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+}
+
+/* Empty State */
+.saved-dex-empty {
+    text-align: center;
+    padding: 40px 20px;
+    color: #888;
+}
+
+.saved-dex-empty i {
+    font-size: 3rem;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.saved-dex-empty p {
+    font-size: 1rem;
+}
+
+/* Template Selection Grid (legacy, kept for compatibility) */
 .template-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));

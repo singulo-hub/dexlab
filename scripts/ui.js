@@ -10,6 +10,7 @@ export class UI {
 
         // Elements
         this.pokemonListEl = document.getElementById('pokemon-list');
+        this.dexNameEl = document.getElementById('dex-name');
         
         // Dashboard Elements
         this.statCountEl = document.getElementById('stat-total-count');
@@ -33,7 +34,14 @@ export class UI {
 
         // Modal
         this.modal = document.getElementById('template-modal');
-        this.templateListEl = document.getElementById('template-list');
+        this.modalSteps = {
+            menu: document.getElementById('modal-step-menu'),
+            new: document.getElementById('modal-step-new'),
+            load: document.getElementById('modal-step-load'),
+            region: document.getElementById('modal-step-region')
+        };
+        this.savedDexListEl = document.getElementById('saved-dex-list');
+        this.regionListEl = document.getElementById('region-list');
         
         // Flyout Panel
         this.flyoutPanel = document.getElementById('pokemon-flyout');
@@ -77,32 +85,181 @@ export class UI {
                 this.draggedIds.clear();
             }
         });
+        
+        // Setup modal navigation
+        this.setupModalNavigation();
+    }
+
+    setupModalNavigation() {
+        // Main menu buttons
+        document.getElementById('menu-new-btn').addEventListener('click', () => {
+            this.showModalStep('new');
+            document.getElementById('new-dex-name').value = '';
+            document.getElementById('new-dex-desc').value = '';
+            document.getElementById('new-dex-name').focus();
+        });
+        
+        document.getElementById('menu-load-btn').addEventListener('click', () => {
+            this.renderSavedDexList();
+            this.showModalStep('load');
+        });
+        
+        document.getElementById('menu-region-btn').addEventListener('click', () => {
+            this.renderRegionList();
+            this.showModalStep('region');
+        });
+        
+        document.getElementById('menu-import-btn').addEventListener('click', () => {
+            document.getElementById('file-input').click();
+        });
+        
+        // Back buttons
+        document.getElementById('new-back-btn').addEventListener('click', () => {
+            this.showModalStep('menu');
+        });
+        
+        document.getElementById('load-back-btn').addEventListener('click', () => {
+            this.showModalStep('menu');
+        });
+        
+        document.getElementById('region-back-btn').addEventListener('click', () => {
+            this.showModalStep('menu');
+        });
+        
+        // New dex start button
+        document.getElementById('new-start-btn').addEventListener('click', () => {
+            const name = document.getElementById('new-dex-name').value.trim() || 'Untitled Dex';
+            const desc = document.getElementById('new-dex-desc').value.trim();
+            
+            this.dataManager.createNewDex(name, desc);
+            this.closeModal();
+            this.updateAll();
+            this.updateDexTitle();
+        });
+        
+        // Enter key on name input starts the dex
+        document.getElementById('new-dex-name').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                document.getElementById('new-start-btn').click();
+            }
+        });
+    }
+
+    showModalStep(stepName) {
+        Object.values(this.modalSteps).forEach(step => {
+            step.classList.add('hidden');
+        });
+        this.modalSteps[stepName].classList.remove('hidden');
     }
 
     init() {
-        this.renderTemplates();
+        this.showModalStep('menu');
     }
 
-    renderTemplates() {
-        this.templateListEl.innerHTML = '';
-        this.dataManager.templates.forEach(template => {
-            const card = document.createElement('div');
-            card.className = 'template-card';
-            card.innerHTML = `
-                <h3>${template.name}</h3>
-                <p>${template.description}</p>
+    renderSavedDexList() {
+        const saves = this.dataManager.getSavesList();
+        
+        if (saves.length === 0) {
+            this.savedDexListEl.innerHTML = `
+                <div class="saved-dex-empty">
+                    <i class="fas fa-folder-open"></i>
+                    <p>No saved Pokédexes yet</p>
+                </div>
             `;
-            card.addEventListener('click', () => {
+            return;
+        }
+        
+        this.savedDexListEl.innerHTML = '';
+        saves.forEach(save => {
+            const item = document.createElement('div');
+            item.className = 'saved-dex-item';
+            item.innerHTML = `
+                <div class="saved-dex-info">
+                    <div class="saved-dex-name">${this.escapeHtml(save.name)}</div>
+                    <div class="saved-dex-meta">
+                        ${save.count} Pokémon${save.description ? ' • ' + this.escapeHtml(save.description) : ''}
+                    </div>
+                </div>
+                <div class="saved-dex-actions">
+                    <button class="delete-btn" data-id="${save.id}" title="Delete">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            `;
+            
+            // Click to load
+            item.addEventListener('click', (e) => {
+                if (!e.target.closest('.delete-btn')) {
+                    this.dataManager.loadDex(save.id);
+                    this.closeModal();
+                    this.updateAll();
+                    this.updateDexTitle();
+                }
+            });
+            
+            // Delete button
+            const deleteBtn = item.querySelector('.delete-btn');
+            deleteBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (confirm(`Delete "${save.name}"?`)) {
+                    this.dataManager.deleteDex(save.id);
+                    this.renderSavedDexList();
+                }
+            });
+            
+            this.savedDexListEl.appendChild(item);
+        });
+    }
+
+    renderRegionList() {
+        this.regionListEl.innerHTML = '';
+        
+        // Filter templates to only show regional ones (exclude "Empty")
+        const regions = this.dataManager.templates.filter(t => t.name !== 'Empty');
+        
+        regions.forEach(template => {
+            const item = document.createElement('div');
+            item.className = 'saved-dex-item region-item';
+            item.innerHTML = `
+                <div class="saved-dex-info">
+                    <div class="saved-dex-name">${template.name}</div>
+                    <div class="saved-dex-meta">
+                        ${template.pokemonIds.length} Pokémon • ${template.description}
+                    </div>
+                </div>
+                <div class="saved-dex-actions">
+                    <button class="load-btn">
+                        <i class="fas fa-download"></i> Use
+                    </button>
+                </div>
+            `;
+            
+            item.addEventListener('click', () => {
+                // Create a new dex with the region name
+                this.dataManager.createNewDex(template.name, template.description);
                 this.dataManager.loadTemplate(template.name);
                 this.closeModal();
                 this.updateAll();
+                this.updateDexTitle();
             });
-            this.templateListEl.appendChild(card);
+            
+            this.regionListEl.appendChild(item);
         });
+    }
+
+    escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    updateDexTitle() {
+        this.dexNameEl.textContent = this.dataManager.currentDexName;
     }
 
     showModal() {
         this.modal.classList.remove('hidden');
+        this.showModalStep('menu');
     }
 
     closeModal() {
@@ -232,6 +389,9 @@ export class UI {
     }
 
     updateAll() {
+        // Update dex title
+        this.updateDexTitle();
+        
         // Trigger a filter update which will call filterAndRender in app.js
         const event = new CustomEvent('filter-update');
         document.dispatchEvent(event);

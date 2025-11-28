@@ -21,6 +21,7 @@ async function init() {
     if (dataManager.loadFromStorage()) {
         ui.closeModal();
         ui.updateAll();
+        ui.updateDexTitle();
     } else {
         ui.init(); // Shows template modal
     }
@@ -196,7 +197,9 @@ document.getElementById('file-input').addEventListener('change', async (e) => {
     if (e.target.files.length > 0) {
         try {
             await dataManager.importJSON(e.target.files[0]);
+            ui.closeModal();
             ui.updateAll();
+            ui.updateDexTitle();
             e.target.value = ''; // Reset input
         } catch (err) {
             alert(err);
@@ -204,13 +207,8 @@ document.getElementById('file-input').addEventListener('change', async (e) => {
     }
 });
 
-document.getElementById('reset-btn').addEventListener('click', () => {
-    if (confirm('Are you sure you want to reset? This will clear your current custom dex.')) {
-        dataManager.reset();
-        ui.init();
-        ui.showModal();
-        ui.updateAll();
-    }
+document.getElementById('new-dex-btn').addEventListener('click', () => {
+    ui.showModal();
 });
 
 document.getElementById('print-grid-btn').addEventListener('click', () => {
