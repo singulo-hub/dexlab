@@ -3,6 +3,9 @@ import aiohttp
 import json
 import os
 import time
+from PIL import Image
+from io import BytesIO
+import math
 
 OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'all-pokemon.json')
 
@@ -211,25 +214,14 @@ async def process_species(session, species_entry):
     evolution_depth = evolution_depth_cache.get(species_data['name'], 1)
     evolution_family = evolution_family_cache.get(species_data['name'], [species_data['id']])
 
-    # Download Sprite (only if missing)
+    # Download Sprite to memory (will be combined into sprite sheet later)
     sprite_url = pokemon_data['sprites']['front_default']
-    sprite_path = None
+    sprite_data = None
     if sprite_url:
         try:
-            sprite_filename = f"{species_data['id']}.png"
-            sprite_full_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'sprites', sprite_filename)
-            
-            # Ensure directory exists
-            os.makedirs(os.path.dirname(sprite_full_path), exist_ok=True)
-
-            # Only download if file doesn't exist
-            if not os.path.exists(sprite_full_path):
-                async with session.get(sprite_url) as resp:
-                    if resp.status == 200:
-                        with open(sprite_full_path, 'wb') as f:
-                            f.write(await resp.read())
-            
-            sprite_path = f"data/sprites/{sprite_filename}"
+            async with session.get(sprite_url) as resp:
+                if resp.status == 200:
+                    sprite_data = await resp.read()
         except Exception as e:
             print(f"Error downloading sprite for {species_data['name']}: {e}")
 
@@ -272,7 +264,7 @@ async def process_species(session, species_entry):
         "evolutionDepth": evolution_depth,
         "evolutionFamily": evolution_family,
         "description": description,
-        "sprite": sprite_path,
+        "spriteData": sprite_data,  # Raw sprite bytes for sprite sheet
         "artwork": artwork_path
     }
 
@@ -320,6 +312,49 @@ async def main():
 
         # Sort by ID
         final_pokemon.sort(key=lambda x: x['id'])
+
+        # Generate Sprite Sheet
+        print("Generating sprite sheet...")
+        SPRITE_SIZE = 96
+        # Calculate grid dimensions (use a square-ish layout)
+        total_pokemon = len(final_pokemon)
+        cols = math.ceil(math.sqrt(total_pokemon))
+        rows = math.ceil(total_pokemon / cols)
+        
+        # Create sprite sheet image
+        sheet_width = cols * SPRITE_SIZE
+        sheet_height = rows * SPRITE_SIZE
+        sprite_sheet = Image.new('RGBA', (sheet_width, sheet_height), (0, 0, 0, 0))
+        
+        # Place each sprite and record position
+        for i, pokemon in enumerate(final_pokemon):
+            col = i % cols
+            row = i // cols
+            x = col * SPRITE_SIZE
+            y = row * SPRITE_SIZE
+            
+            # Store sprite position in pokemon data
+            pokemon['spriteX'] = col
+            pokemon['spriteY'] = row
+            
+            # Paste sprite if we have data
+            if pokemon.get('spriteData'):
+                try:
+                    sprite_img = Image.open(BytesIO(pokemon['spriteData']))
+                    # Resize to 96x96 if needed (sprites are usually 96x96)
+                    if sprite_img.size != (SPRITE_SIZE, SPRITE_SIZE):
+                        sprite_img = sprite_img.resize((SPRITE_SIZE, SPRITE_SIZE), Image.Resampling.NEAREST)
+                    sprite_sheet.paste(sprite_img, (x, y), sprite_img if sprite_img.mode == 'RGBA' else None)
+                except Exception as e:
+                    print(f"Error processing sprite for {pokemon['name']}: {e}")
+            
+            # Remove sprite data from final output (not needed in JSON)
+            del pokemon['spriteData']
+        
+        # Save sprite sheet
+        sprite_sheet_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'spritesheet.png')
+        sprite_sheet.save(sprite_sheet_path, 'PNG', optimize=True)
+        print(f"Sprite sheet saved: {cols}x{rows} grid ({sheet_width}x{sheet_height}px)")
 
         # Save Pokemon
         print(f"Saving {len(final_pokemon)} pokemon to {OUTPUT_FILE}...")

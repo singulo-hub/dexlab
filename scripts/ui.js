@@ -131,7 +131,7 @@ export class UI {
                 item.className = `pokemon-card ${isAdded ? 'added' : ''}`;
                 item.innerHTML = `
                     <div class="card-img-container">
-                        <img src="${p.sprite || 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'}" alt="${p.name}" loading="lazy">
+                        <div class="pokemon-sprite" style="background-position: ${-p.spriteX * 96}px ${-p.spriteY * 96}px;"></div>
                     </div>
                     <div class="card-info">
                         <span class="pokemon-id">#${p.id}</span>
