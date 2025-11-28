@@ -137,7 +137,7 @@ export class UI {
                         <span class="pokemon-id">#${p.id}</span>
                         <span class="pokemon-name">${p.name}</span>
                         <div class="pokemon-types">
-                            ${p.types.map(t => `<span>${t}</span>`).join('')}
+                            ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
                         </div>
                     </div>
                 `;
@@ -158,7 +158,7 @@ export class UI {
                         <span class="pokemon-id">#${p.id}</span>
                         <span class="pokemon-name">${p.name}</span>
                         <div class="pokemon-types">
-                            ${p.types.map(t => `<span>${t}</span>`).join('')}
+                            ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
                         </div>
                     </div>
                 `;

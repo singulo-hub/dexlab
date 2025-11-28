@@ -159,7 +159,10 @@ async def process_species(session, species_entry):
         'Water1': 'Water 1',
         'Water2': 'Water 2',
         'Water3': 'Water 3',
-        'No-eggs': 'No Eggs'
+        'No-eggs': 'No Eggs',
+        'Ground': 'Field',
+        'Humanshape': 'Human-Like',
+        'Plant': 'Grass'
     }
     egg_groups = []
     for eg in species_data.get('egg_groups', []):

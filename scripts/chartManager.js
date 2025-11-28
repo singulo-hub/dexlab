@@ -20,44 +20,44 @@ export class ChartManager {
         
         // Type colors
         this.typeColors = {
-            Normal: '#A8A878',
-            Fire: '#F08030',
-            Water: '#6890F0',
-            Electric: '#F8D030',
-            Grass: '#78C850',
-            Ice: '#98D8D8',
-            Fighting: '#C03028',
-            Poison: '#A040A0',
-            Ground: '#E0C068',
-            Flying: '#A890F0',
-            Psychic: '#F85888',
-            Bug: '#A8B820',
-            Rock: '#B8A038',
-            Ghost: '#705898',
-            Dragon: '#7038F8',
-            Dark: '#705848',
-            Steel: '#B8B8D0',
-            Fairy: '#EE99AC'
+            Normal: '#A8A77A',
+            Fire: '#EE8130',
+            Water: '#6390F0',
+            Electric: '#F7D02C',
+            Grass: '#7AC74C',
+            Ice: '#96D9D6',
+            Fighting: '#C22E28',
+            Poison: '#A33EA1',
+            Ground: '#E2BF65',
+            Flying: '#A98FF3',
+            Psychic: '#F95587',
+            Bug: '#A6B91A',
+            Rock: '#B6A136',
+            Ghost: '#735797',
+            Dragon: '#6F35FC',
+            Dark: '#705746',
+            Steel: '#B7B7CE',
+            Fairy: '#D685AD'
         };
         
-        // Egg group colors
+        // Egg group colors (from Bulbapedia)
         this.eggGroupColors = {
-            Monster: '#D25064',
-            'Water 1': '#6890F0',
-            'Water 2': '#4A7ACA',
-            'Water 3': '#3A6AB8',
-            Bug: '#A8B820',
-            Flying: '#A890F0',
-            Ground: '#E0C068',
-            Fairy: '#EE99AC',
-            Plant: '#78C850',
-            Humanshape: '#C03028',
-            Mineral: '#B8A038',
-            Amorphous: '#705898',
-            Ditto: '#A040A0',
-            Dragon: '#7038F8',
-            Indeterminate: '#333333',
-            'No Eggs': '#333333'
+            Monster: '#97724C',
+            'Water 1': '#6BD1F9',
+            'Water 2': '#4B94ED',
+            'Water 3': '#2271B4',
+            Bug: '#AAC22A',
+            Flying: '#90AFF1',
+            Field: '#E5BA65',
+            Fairy: '#FF9EB9',
+            Grass: '#82D25A',
+            'Human-Like': '#47B7AE',
+            Mineral: '#979067',
+            Amorphous: '#9F82CC',
+            Ditto: '#B6AAD5',
+            Dragon: '#5E57BF',
+            'No Eggs': '#EFCF00',
+            Indeterminate: '#0090C0'
         };
     }
 

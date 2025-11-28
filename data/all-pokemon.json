@@ -8,7 +8,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -45,7 +45,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -82,7 +82,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -656,7 +656,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -690,7 +690,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 127,
     "stats": {
@@ -794,7 +794,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Dragon"
     ],
     "captureRate": 255,
@@ -829,7 +829,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Dragon"
     ],
     "captureRate": 90,
@@ -864,7 +864,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 190,
@@ -900,7 +900,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 75,
@@ -936,7 +936,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -970,7 +970,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -1005,7 +1005,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 235,
     "stats": {
@@ -1112,7 +1112,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 235,
     "stats": {
@@ -1148,7 +1148,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -1185,7 +1185,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -1290,7 +1290,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -1324,7 +1324,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -1503,7 +1503,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 255,
     "stats": {
@@ -1540,7 +1540,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -1577,7 +1577,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -1615,7 +1615,7 @@
     ],
     "eggGroups": [
       "Bug",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -1651,7 +1651,7 @@
     ],
     "eggGroups": [
       "Bug",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -1755,7 +1755,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -1789,7 +1789,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 50,
     "stats": {
@@ -1823,7 +1823,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -1858,7 +1858,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -1894,7 +1894,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -1929,7 +1929,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -1963,7 +1963,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -1998,7 +1998,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -2033,7 +2033,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -2067,7 +2067,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -2210,7 +2210,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 200,
     "stats": {
@@ -2245,7 +2245,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 100,
     "stats": {
@@ -2280,7 +2280,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 50,
     "stats": {
@@ -2315,7 +2315,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 180,
     "stats": {
@@ -2350,7 +2350,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 90,
     "stats": {
@@ -2385,7 +2385,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -2421,7 +2421,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 255,
     "stats": {
@@ -2457,7 +2457,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -2493,7 +2493,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -2706,7 +2706,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -2740,7 +2740,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -2922,7 +2922,7 @@
     ],
     "eggGroups": [
       "Flying",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -3027,7 +3027,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -3063,7 +3063,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -3377,7 +3377,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 190,
     "stats": {
@@ -3411,7 +3411,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 75,
     "stats": {
@@ -3582,7 +3582,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 90,
     "stats": {
@@ -3617,7 +3617,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -3719,7 +3719,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -3755,7 +3755,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -3895,7 +3895,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -3932,7 +3932,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -4002,7 +4002,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -4279,7 +4279,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -4351,7 +4351,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -4385,7 +4385,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -4420,7 +4420,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -4488,7 +4488,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -4660,7 +4660,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -4701,7 +4701,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -4742,7 +4742,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -4783,7 +4783,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -5349,7 +5349,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -5385,7 +5385,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -5421,7 +5421,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -5456,7 +5456,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -5491,7 +5491,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -5526,7 +5526,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -5669,7 +5669,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -5703,7 +5703,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -6302,7 +6302,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 235,
     "stats": {
@@ -6338,7 +6338,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -6374,7 +6374,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -6409,7 +6409,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -6591,7 +6591,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 255,
     "stats": {
@@ -6628,7 +6628,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -6665,7 +6665,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -6700,7 +6700,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -6734,7 +6734,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 235,
     "stats": {
@@ -6768,7 +6768,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -6839,7 +6839,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -6876,7 +6876,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -6911,7 +6911,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -6952,7 +6952,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -7167,7 +7167,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -7270,7 +7270,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -7374,7 +7374,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 190,
@@ -7409,7 +7409,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 75,
@@ -7584,7 +7584,7 @@
       "Ice"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -7619,7 +7619,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -7654,7 +7654,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -7759,7 +7759,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 225,
     "stats": {
@@ -7795,7 +7795,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -7938,7 +7938,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -8041,7 +8041,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -8076,7 +8076,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -8147,7 +8147,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -8181,7 +8181,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -8250,7 +8250,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -8284,7 +8284,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -8353,7 +8353,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -8494,7 +8494,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -8979,7 +8979,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -9015,7 +9015,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -9051,7 +9051,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -9196,7 +9196,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -9230,7 +9230,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 127,
     "stats": {
@@ -9264,7 +9264,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -9299,7 +9299,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -9523,7 +9523,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 255,
     "stats": {
@@ -9560,7 +9560,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -9597,7 +9597,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -9632,8 +9632,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 255,
     "stats": {
@@ -9669,8 +9669,8 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -9706,8 +9706,8 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -9885,7 +9885,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Humanshape",
+      "Human-Like",
       "Indeterminate"
     ],
     "captureRate": 235,
@@ -9923,7 +9923,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Humanshape",
+      "Human-Like",
       "Indeterminate"
     ],
     "captureRate": 120,
@@ -9961,7 +9961,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Humanshape",
+      "Human-Like",
       "Indeterminate"
     ],
     "captureRate": 45,
@@ -10071,7 +10071,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 255,
     "stats": {
@@ -10107,7 +10107,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 90,
     "stats": {
@@ -10141,7 +10141,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -10176,7 +10176,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -10211,7 +10211,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -10355,7 +10355,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -10391,7 +10391,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -10427,7 +10427,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -10462,7 +10462,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 180,
     "stats": {
@@ -10496,7 +10496,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 200,
     "stats": {
@@ -10600,7 +10600,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 255,
@@ -10635,7 +10635,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 60,
@@ -10671,7 +10671,7 @@
       "Ghost"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -10705,7 +10705,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 45,
@@ -10848,7 +10848,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 180,
     "stats": {
@@ -10883,7 +10883,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 90,
     "stats": {
@@ -10917,7 +10917,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -10951,7 +10951,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -11052,7 +11052,7 @@
     ],
     "eggGroups": [
       "Bug",
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 150,
     "stats": {
@@ -11086,7 +11086,7 @@
     ],
     "eggGroups": [
       "Bug",
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 150,
     "stats": {
@@ -11121,7 +11121,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 150,
     "stats": {
@@ -11294,7 +11294,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Water 2"
     ],
     "captureRate": 125,
@@ -11329,7 +11329,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Water 2"
     ],
     "captureRate": 60,
@@ -11365,7 +11365,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -11400,7 +11400,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 150,
     "stats": {
@@ -11434,7 +11434,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -11467,7 +11467,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -11501,7 +11501,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -11535,8 +11535,8 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 255,
     "stats": {
@@ -11679,8 +11679,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant",
-      "Humanshape"
+      "Grass",
+      "Human-Like"
     ],
     "captureRate": 190,
     "stats": {
@@ -11715,8 +11715,8 @@
       "Dark"
     ],
     "eggGroups": [
-      "Plant",
-      "Humanshape"
+      "Grass",
+      "Human-Like"
     ],
     "captureRate": 60,
     "stats": {
@@ -11822,7 +11822,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -11855,7 +11855,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Dragon"
     ],
     "captureRate": 90,
@@ -12412,7 +12412,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 200,
     "stats": {
@@ -12585,7 +12585,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 200,
     "stats": {
@@ -12652,7 +12652,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 30,
     "stats": {
@@ -12793,7 +12793,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -12830,7 +12830,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -12867,7 +12867,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -13624,7 +13624,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -13660,7 +13660,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -13697,7 +13697,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -13732,8 +13732,8 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -13769,8 +13769,8 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -13806,8 +13806,8 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -13843,7 +13843,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -13879,7 +13879,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -13916,7 +13916,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -14060,7 +14060,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -14096,7 +14096,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 127,
     "stats": {
@@ -14198,7 +14198,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 235,
     "stats": {
@@ -14233,7 +14233,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -14268,7 +14268,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -14341,7 +14341,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -14691,7 +14691,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 200,
@@ -14726,7 +14726,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -14761,7 +14761,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -14796,7 +14796,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -14831,7 +14831,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -14936,7 +14936,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -15040,8 +15040,8 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 190,
     "stats": {
@@ -15075,8 +15075,8 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 60,
     "stats": {
@@ -15179,7 +15179,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -15213,7 +15213,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -15282,7 +15282,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 225,
     "stats": {
@@ -15317,7 +15317,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -15774,8 +15774,8 @@
       "Steel"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -15809,7 +15809,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 140,
     "stats": {
@@ -15843,7 +15843,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -15950,7 +15950,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 140,
     "stats": {
@@ -15985,7 +15985,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 75,
     "stats": {
@@ -16019,7 +16019,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 200,
     "stats": {
@@ -16157,7 +16157,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -16193,7 +16193,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Plant"
+      "Grass"
     ],
     "captureRate": 60,
     "stats": {
@@ -16228,7 +16228,7 @@
       "Ice"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -16335,7 +16335,7 @@
     ],
     "eggGroups": [
       "Monster",
-      "Ground"
+      "Field"
     ],
     "captureRate": 30,
     "stats": {
@@ -16370,7 +16370,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 30,
     "stats": {
@@ -16404,7 +16404,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 30,
     "stats": {
@@ -16439,7 +16439,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 30,
     "stats": {
@@ -16546,7 +16546,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -16587,7 +16587,7 @@
       "Ice"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -16664,7 +16664,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 50,
     "stats": {
@@ -16735,7 +16735,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape",
+      "Human-Like",
       "Indeterminate"
     ],
     "captureRate": 45,
@@ -17417,8 +17417,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -17453,8 +17453,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -17489,8 +17489,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -17525,7 +17525,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -17561,7 +17561,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -17597,7 +17597,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -17632,7 +17632,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -17667,7 +17667,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -17702,7 +17702,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -17737,7 +17737,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -17771,7 +17771,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -17805,7 +17805,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -17840,7 +17840,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -17875,7 +17875,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -17910,7 +17910,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -17944,7 +17944,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -17978,7 +17978,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -18012,7 +18012,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -18046,7 +18046,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -18080,7 +18080,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -18114,7 +18114,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -18148,7 +18148,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -18182,7 +18182,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -18216,7 +18216,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -18358,7 +18358,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -18392,7 +18392,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -18532,7 +18532,7 @@
       "Flying"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Flying"
     ],
     "captureRate": 190,
@@ -18568,7 +18568,7 @@
       "Flying"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Flying"
     ],
     "captureRate": 45,
@@ -18603,7 +18603,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -18638,7 +18638,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -18705,7 +18705,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 180,
     "stats": {
@@ -18740,7 +18740,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 90,
     "stats": {
@@ -18775,7 +18775,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -18917,7 +18917,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -18950,7 +18950,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -19200,7 +19200,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Fairy"
     ],
     "captureRate": 190,
@@ -19236,7 +19236,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Fairy"
     ],
     "captureRate": 75,
@@ -19271,7 +19271,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -19305,7 +19305,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -19374,7 +19374,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 180,
     "stats": {
@@ -19410,7 +19410,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -19446,7 +19446,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -19481,7 +19481,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -19515,7 +19515,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -19549,7 +19549,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 255,
     "stats": {
@@ -19655,7 +19655,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Dragon"
     ],
     "captureRate": 180,
@@ -19691,7 +19691,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Dragon"
     ],
     "captureRate": 90,
@@ -20044,7 +20044,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -20078,7 +20078,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -20112,7 +20112,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -20146,7 +20146,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -20180,7 +20180,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 200,
     "stats": {
@@ -20215,7 +20215,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 100,
     "stats": {
@@ -20250,7 +20250,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 50,
     "stats": {
@@ -20568,7 +20568,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -20603,7 +20603,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -20638,7 +20638,7 @@
       "Flying"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 200,
     "stats": {
@@ -20741,7 +20741,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -20776,7 +20776,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -20985,7 +20985,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Mineral"
     ],
     "captureRate": 255,
@@ -21021,7 +21021,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Mineral"
     ],
     "captureRate": 90,
@@ -21266,7 +21266,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 255,
     "stats": {
@@ -21300,7 +21300,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 90,
     "stats": {
@@ -21550,7 +21550,7 @@
       "Ice"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -21584,7 +21584,7 @@
       "Ice"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -21754,8 +21754,8 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 180,
     "stats": {
@@ -21789,8 +21789,8 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -21929,7 +21929,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 120,
     "stats": {
@@ -21965,7 +21965,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -22000,7 +22000,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -22173,7 +22173,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -22825,7 +22825,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -22860,7 +22860,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -22896,7 +22896,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -22931,7 +22931,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -22966,7 +22966,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -23002,7 +23002,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -23143,7 +23143,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -23178,7 +23178,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 127,
     "stats": {
@@ -23427,7 +23427,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 220,
     "stats": {
@@ -23462,7 +23462,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 65,
     "stats": {
@@ -23601,7 +23601,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 200,
     "stats": {
@@ -23635,7 +23635,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -23669,8 +23669,8 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 220,
     "stats": {
@@ -23705,8 +23705,8 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 65,
     "stats": {
@@ -23740,7 +23740,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 160,
     "stats": {
@@ -23773,7 +23773,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -23807,7 +23807,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -24583,7 +24583,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -24626,7 +24626,7 @@
     ],
     "eggGroups": [
       "Flying",
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 100,
     "stats": {
@@ -24660,7 +24660,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 180,
@@ -24869,7 +24869,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Indeterminate"
     ],
     "captureRate": 120,
@@ -24905,7 +24905,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Indeterminate"
     ],
     "captureRate": 60,
@@ -25463,7 +25463,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -25498,7 +25498,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -25534,7 +25534,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -25570,7 +25570,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -25606,7 +25606,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -25643,7 +25643,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -25786,7 +25786,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -25820,7 +25820,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 127,
     "stats": {
@@ -26136,7 +26136,7 @@
       "Rock"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -26170,7 +26170,7 @@
       "Rock"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -26307,7 +26307,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -26341,7 +26341,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -26447,7 +26447,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -26481,7 +26481,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -26516,7 +26516,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -26551,7 +26551,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -26658,7 +26658,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 140,
     "stats": {
@@ -26693,7 +26693,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 70,
     "stats": {
@@ -26727,7 +26727,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 235,
     "stats": {
@@ -26762,7 +26762,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -26797,7 +26797,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -26832,7 +26832,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 60,
     "stats": {
@@ -26866,7 +26866,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -26899,7 +26899,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -27209,7 +27209,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -27278,7 +27278,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 180,
@@ -28412,8 +28412,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -28448,8 +28448,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -28484,8 +28484,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -28520,8 +28520,8 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -28556,8 +28556,8 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -28592,8 +28592,8 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground",
-      "Humanshape"
+      "Field",
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -28629,7 +28629,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -28665,7 +28665,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -28701,7 +28701,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -28736,7 +28736,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -28770,7 +28770,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -29017,7 +29017,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -29051,7 +29051,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 127,
     "stats": {
@@ -29085,7 +29085,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -29119,7 +29119,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -29153,7 +29153,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -29187,7 +29187,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 127,
     "stats": {
@@ -29292,7 +29292,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -29326,7 +29326,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -29468,7 +29468,7 @@
       "Dragon"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Dragon"
     ],
     "captureRate": 255,
@@ -29507,7 +29507,7 @@
       "Dragon"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Dragon"
     ],
     "captureRate": 45,
@@ -29546,7 +29546,7 @@
       "Dragon"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Dragon"
     ],
     "captureRate": 45,
@@ -29584,7 +29584,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Dragon"
     ],
     "captureRate": 255,
@@ -29619,7 +29619,7 @@
       "Ground"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Dragon"
     ],
     "captureRate": 120,
@@ -29793,7 +29793,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -29898,7 +29898,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 180,
     "stats": {
@@ -29933,7 +29933,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -30145,7 +30145,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 255,
     "stats": {
@@ -30182,7 +30182,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 120,
     "stats": {
@@ -30219,7 +30219,7 @@
     ],
     "eggGroups": [
       "Fairy",
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -30255,7 +30255,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -30290,7 +30290,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -30361,7 +30361,7 @@
     ],
     "eggGroups": [
       "Flying",
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -30396,7 +30396,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 45,
     "stats": {
@@ -30710,7 +30710,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -30778,7 +30778,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 180,
@@ -30812,7 +30812,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Mineral"
     ],
     "captureRate": 190,
@@ -30847,7 +30847,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Mineral"
     ],
     "captureRate": 90,
@@ -31535,7 +31535,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 135,
     "stats": {
@@ -31606,7 +31606,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -31677,7 +31677,7 @@
       "Poison"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 135,
     "stats": {
@@ -31781,8 +31781,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -31817,8 +31817,8 @@
       "Grass"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -31854,8 +31854,8 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground",
-      "Plant"
+      "Field",
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -31890,7 +31890,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -31925,7 +31925,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -31961,7 +31961,7 @@
       "Ghost"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -32105,7 +32105,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 255,
     "stats": {
@@ -32139,7 +32139,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 100,
     "stats": {
@@ -32310,7 +32310,7 @@
       "Electric"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -32346,7 +32346,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 80,
     "stats": {
@@ -32382,7 +32382,7 @@
       "Fighting"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -32417,7 +32417,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 150,
@@ -32452,7 +32452,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Fairy"
     ],
     "captureRate": 75,
@@ -32487,7 +32487,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Mineral"
     ],
     "captureRate": 190,
@@ -32522,7 +32522,7 @@
       "Fairy"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Mineral"
     ],
     "captureRate": 90,
@@ -32558,7 +32558,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 255,
     "stats": {
@@ -32594,7 +32594,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 120,
     "stats": {
@@ -32630,7 +32630,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -32804,7 +32804,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 90,
     "stats": {
@@ -32840,7 +32840,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 25,
     "stats": {
@@ -32876,7 +32876,7 @@
       "Ghost"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 25,
     "stats": {
@@ -33051,7 +33051,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 150,
     "stats": {
@@ -33085,7 +33085,7 @@
       "Dark"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 75,
     "stats": {
@@ -33120,7 +33120,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -33155,7 +33155,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -33190,7 +33190,7 @@
       "Ghost"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -33225,7 +33225,7 @@
       "Ghost"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 45,
     "stats": {
@@ -33260,7 +33260,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -33295,7 +33295,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 90,
     "stats": {
@@ -33362,7 +33362,7 @@
       "Grass"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 190,
     "stats": {
@@ -33397,7 +33397,7 @@
       "Fire"
     ],
     "eggGroups": [
-      "Plant"
+      "Grass"
     ],
     "captureRate": 75,
     "stats": {
@@ -33778,7 +33778,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Water 2"
     ],
     "captureRate": 200,
@@ -33813,7 +33813,7 @@
       "Water"
     ],
     "eggGroups": [
-      "Ground",
+      "Field",
       "Water 2"
     ],
     "captureRate": 45,
@@ -33919,7 +33919,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 190,
     "stats": {
@@ -33952,7 +33952,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 25,
     "stats": {
@@ -34055,7 +34055,7 @@
       "Ghost"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 120,
     "stats": {
@@ -34089,7 +34089,7 @@
       "Ghost"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 60,
     "stats": {
@@ -34157,7 +34157,7 @@
       "Ice"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 150,
     "stats": {
@@ -34191,7 +34191,7 @@
       "Ice"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 50,
     "stats": {
@@ -34327,7 +34327,7 @@
       "Ghost"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -34364,7 +34364,7 @@
     ],
     "eggGroups": [
       "Water 1",
-      "Ground"
+      "Field"
     ],
     "captureRate": 90,
     "stats": {
@@ -34400,7 +34400,7 @@
       "Psychic"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -34434,7 +34434,7 @@
       "Normal"
     ],
     "eggGroups": [
-      "Ground"
+      "Field"
     ],
     "captureRate": 45,
     "stats": {
@@ -34469,7 +34469,7 @@
       "Steel"
     ],
     "eggGroups": [
-      "Humanshape"
+      "Human-Like"
     ],
     "captureRate": 25,
     "stats": {
@@ -35433,7 +35433,7 @@
       "Dragon"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Dragon"
     ],
     "captureRate": 45,
@@ -35715,7 +35715,7 @@
       "Dragon"
     ],
     "eggGroups": [
-      "Plant",
+      "Grass",
       "Dragon"
     ],
     "captureRate": 10,

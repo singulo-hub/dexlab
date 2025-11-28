@@ -98,7 +98,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 6px;
 }
 
 .pokemon-info .pokemon-types span,
@@ -118,4 +118,35 @@
 .pokemon-item .pokemon-info .pokemon-name {
     margin-bottom: 0;
 }
+
+/* Type Badges */
+.type-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.type-badge.type-normal { background-color: var(--type-normal); }
+.type-badge.type-fire { background-color: var(--type-fire); }
+.type-badge.type-water { background-color: var(--type-water); }
+.type-badge.type-electric { background-color: var(--type-electric); }
+.type-badge.type-grass { background-color: var(--type-grass); }
+.type-badge.type-ice { background-color: var(--type-ice); }
+.type-badge.type-fighting { background-color: var(--type-fighting); }
+.type-badge.type-poison { background-color: var(--type-poison); }
+.type-badge.type-ground { background-color: var(--type-ground); }
+.type-badge.type-flying { background-color: var(--type-flying); }
+.type-badge.type-psychic { background-color: var(--type-psychic); }
+.type-badge.type-bug { background-color: var(--type-bug); }
+.type-badge.type-rock { background-color: var(--type-rock); }
+.type-badge.type-ghost { background-color: var(--type-ghost); }
+.type-badge.type-dragon { background-color: var(--type-dragon); }
+.type-badge.type-dark { background-color: var(--type-dark); }
+.type-badge.type-steel { background-color: var(--type-steel); }
+.type-badge.type-fairy { background-color: var(--type-fairy); }
 
