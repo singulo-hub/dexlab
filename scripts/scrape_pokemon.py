@@ -208,7 +208,7 @@ async def process_species(session, species_entry):
     evolution_depth = evolution_depth_cache.get(species_data['name'], 1)
     evolution_family = evolution_family_cache.get(species_data['name'], [species_data['id']])
 
-    # Download Sprite
+    # Download Sprite (only if missing)
     sprite_url = pokemon_data['sprites']['front_default']
     sprite_path = None
     if sprite_url:
@@ -216,16 +216,41 @@ async def process_species(session, species_entry):
             sprite_filename = f"{species_data['id']}.png"
             sprite_full_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'sprites', sprite_filename)
             
-            # Ensure directory exists (redundant but safe)
+            # Ensure directory exists
             os.makedirs(os.path.dirname(sprite_full_path), exist_ok=True)
 
-            async with session.get(sprite_url) as resp:
-                if resp.status == 200:
-                    with open(sprite_full_path, 'wb') as f:
-                        f.write(await resp.read())
-                    sprite_path = f"data/sprites/{sprite_filename}"
+            # Only download if file doesn't exist
+            if not os.path.exists(sprite_full_path):
+                async with session.get(sprite_url) as resp:
+                    if resp.status == 200:
+                        with open(sprite_full_path, 'wb') as f:
+                            f.write(await resp.read())
+            
+            sprite_path = f"data/sprites/{sprite_filename}"
         except Exception as e:
             print(f"Error downloading sprite for {species_data['name']}: {e}")
+
+    # Download Official Artwork (only if missing)
+    artwork_url = pokemon_data['sprites'].get('other', {}).get('official-artwork', {}).get('front_default')
+    artwork_path = None
+    if artwork_url:
+        try:
+            artwork_filename = f"{species_data['id']}.png"
+            artwork_full_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'artwork', artwork_filename)
+            
+            # Ensure directory exists
+            os.makedirs(os.path.dirname(artwork_full_path), exist_ok=True)
+
+            # Only download if file doesn't exist
+            if not os.path.exists(artwork_full_path):
+                async with session.get(artwork_url) as resp:
+                    if resp.status == 200:
+                        with open(artwork_full_path, 'wb') as f:
+                            f.write(await resp.read())
+            
+            artwork_path = f"data/artwork/{artwork_filename}"
+        except Exception as e:
+            print(f"Error downloading artwork for {species_data['name']}: {e}")
 
     return {
         "id": species_data['id'],
@@ -244,7 +269,8 @@ async def process_species(session, species_entry):
         "evolutionDepth": evolution_depth,
         "evolutionFamily": evolution_family,
         "description": description,
-        "sprite": sprite_path
+        "sprite": sprite_path,
+        "artwork": artwork_path
     }
 
 async def main():

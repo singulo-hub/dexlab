@@ -156,7 +156,7 @@ export class Analytics {
             this.alerts.push(`Missing types: ${missingTypes.join(', ')}`);
         }
         
-        if (avgBst > 550) {
+        if (avgBst > 450) {
             this.alerts.push(`High Avg BST (${avgBst})`);
         }
 

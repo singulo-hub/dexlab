@@ -67,7 +67,9 @@ export class DataManager {
     loadFromStorage() {
         const stored = localStorage.getItem(this.STORAGE_KEY);
         if (stored) {
-            this.customDex = JSON.parse(stored);
+            const storedDex = JSON.parse(stored);
+            // Refresh Pokemon data from allPokemon to get latest fields
+            this.customDex = storedDex.map(p => this.getPokemonById(p.id)).filter(p => p);
             return true;
         }
         return false;

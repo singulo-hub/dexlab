@@ -220,7 +220,7 @@ export class ChartManager {
                             beginAtZero: true,
                             ticks: {
                                 color: '#888',
-                                stepSize: 1
+                                stepSize: 5
                             },
                             grid: {
                                 color: '#3e3e42'
@@ -313,7 +313,7 @@ export class ChartManager {
                             beginAtZero: true,
                             ticks: {
                                 color: '#888',
-                                stepSize: 1
+                                stepSize: 3
                             },
                             grid: {
                                 color: '#3e3e42'
@@ -470,7 +470,7 @@ export class ChartManager {
                         max: 255,
                         ticks: {
                             color: '#888',
-                            stepSize: 50
+                            stepSize: 25
                         },
                         grid: {
                             color: '#3e3e42'
