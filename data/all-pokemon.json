@@ -24,6 +24,7 @@
     "height": 0.7,
     "weight": 6.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -59,6 +60,7 @@
     "height": 1.0,
     "weight": 13.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -94,6 +96,7 @@
     "height": 2.0,
     "weight": 100.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -128,6 +131,7 @@
     "height": 0.6,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -162,6 +166,7 @@
     "height": 1.1,
     "weight": 19.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -197,6 +202,7 @@
     "height": 1.7,
     "weight": 90.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -231,6 +237,7 @@
     "height": 0.5,
     "weight": 9.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -265,6 +272,7 @@
     "height": 1.0,
     "weight": 22.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -299,6 +307,7 @@
     "height": 1.6,
     "weight": 85.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -332,6 +341,7 @@
     "height": 0.3,
     "weight": 2.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -365,6 +375,7 @@
     "height": 0.7,
     "weight": 9.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -399,6 +410,7 @@
     "height": 1.1,
     "weight": 32.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -433,6 +445,7 @@
     "height": 0.3,
     "weight": 3.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -467,6 +480,7 @@
     "height": 0.6,
     "weight": 10.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -501,6 +515,7 @@
     "height": 1.0,
     "weight": 29.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -535,6 +550,7 @@
     "height": 0.3,
     "weight": 1.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -569,6 +585,7 @@
     "height": 1.1,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -603,6 +620,7 @@
     "height": 1.5,
     "weight": 39.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -636,6 +654,7 @@
     "height": 0.3,
     "weight": 3.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -668,6 +687,7 @@
     "height": 0.7,
     "weight": 18.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -701,6 +721,7 @@
     "height": 0.3,
     "weight": 2.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -734,6 +755,7 @@
     "height": 1.2,
     "weight": 38.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -767,6 +789,7 @@
     "height": 2.0,
     "weight": 6.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -800,6 +823,7 @@
     "height": 3.5,
     "weight": 65.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -833,6 +857,7 @@
     "height": 0.4,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -867,6 +892,7 @@
     "height": 0.8,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -900,6 +926,7 @@
     "height": 0.6,
     "weight": 12.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -932,6 +959,7 @@
     "height": 1.0,
     "weight": 29.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -965,6 +993,7 @@
     "height": 0.4,
     "weight": 7.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -998,6 +1027,7 @@
     "height": 0.8,
     "weight": 20.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1032,6 +1062,7 @@
     "height": 1.3,
     "weight": 60.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1066,6 +1097,7 @@
     "height": 0.5,
     "weight": 9.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1100,6 +1132,7 @@
     "height": 0.9,
     "weight": 19.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1135,6 +1168,7 @@
     "height": 1.4,
     "weight": 62.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1168,6 +1202,7 @@
     "height": 0.6,
     "weight": 7.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1201,6 +1236,7 @@
     "height": 1.3,
     "weight": 40.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1234,6 +1270,7 @@
     "height": 0.6,
     "weight": 9.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1266,6 +1303,7 @@
     "height": 1.1,
     "weight": 19.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1299,6 +1337,7 @@
     "height": 0.5,
     "weight": 5.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1333,6 +1372,7 @@
     "height": 1.0,
     "weight": 12.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1367,6 +1407,7 @@
     "height": 0.8,
     "weight": 7.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1401,6 +1442,7 @@
     "height": 1.6,
     "weight": 55.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1435,6 +1477,7 @@
     "height": 0.5,
     "weight": 5.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1470,6 +1513,7 @@
     "height": 0.8,
     "weight": 8.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1505,6 +1549,7 @@
     "height": 1.2,
     "weight": 18.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1541,6 +1586,7 @@
     "height": 0.3,
     "weight": 5.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1575,6 +1621,7 @@
     "height": 1.0,
     "weight": 29.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1608,6 +1655,7 @@
     "height": 1.0,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1641,6 +1689,7 @@
     "height": 1.5,
     "weight": 12.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1673,6 +1722,7 @@
     "height": 0.2,
     "weight": 0.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1705,6 +1755,7 @@
     "height": 0.7,
     "weight": 33.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1737,6 +1788,7 @@
     "height": 0.4,
     "weight": 4.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1770,6 +1822,7 @@
     "height": 1.0,
     "weight": 32.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1804,6 +1857,7 @@
     "height": 0.8,
     "weight": 19.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1837,6 +1891,7 @@
     "height": 1.7,
     "weight": 76.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1869,6 +1924,7 @@
     "height": 0.5,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1902,6 +1958,7 @@
     "height": 1.0,
     "weight": 32.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -1935,6 +1992,7 @@
     "height": 0.7,
     "weight": 19.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1967,6 +2025,7 @@
     "height": 1.9,
     "weight": 155.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -1999,6 +2058,7 @@
     "height": 0.6,
     "weight": 12.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2033,6 +2093,7 @@
     "height": 1.0,
     "weight": 20.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2068,6 +2129,7 @@
     "height": 1.3,
     "weight": 54.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2102,6 +2164,7 @@
     "height": 0.9,
     "weight": 19.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2135,6 +2198,7 @@
     "height": 1.3,
     "weight": 56.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2168,6 +2232,7 @@
     "height": 1.5,
     "weight": 48.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2201,6 +2266,7 @@
     "height": 0.8,
     "weight": 19.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2234,6 +2300,7 @@
     "height": 1.5,
     "weight": 70.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2267,6 +2334,7 @@
     "height": 1.6,
     "weight": 130.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2301,6 +2369,7 @@
     "height": 0.7,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2335,6 +2404,7 @@
     "height": 1.0,
     "weight": 6.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2369,6 +2439,7 @@
     "height": 1.7,
     "weight": 15.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2403,6 +2474,7 @@
     "height": 0.9,
     "weight": 45.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2436,6 +2508,7 @@
     "height": 1.6,
     "weight": 55.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2469,6 +2542,7 @@
     "height": 0.4,
     "weight": 20.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2503,6 +2577,7 @@
     "height": 1.0,
     "weight": 105.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2537,6 +2612,7 @@
     "height": 1.4,
     "weight": 300.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2570,6 +2646,7 @@
     "height": 1.0,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2602,6 +2679,7 @@
     "height": 1.7,
     "weight": 95.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2636,6 +2714,7 @@
     "height": 1.2,
     "weight": 36.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2671,6 +2750,7 @@
     "height": 1.6,
     "weight": 78.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2705,6 +2785,7 @@
     "height": 0.3,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2739,6 +2820,7 @@
     "height": 1.0,
     "weight": 60.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -2774,6 +2856,7 @@
     "height": 0.8,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2807,6 +2890,7 @@
     "height": 1.4,
     "weight": 39.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2840,6 +2924,7 @@
     "height": 1.8,
     "weight": 85.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2873,6 +2958,7 @@
     "height": 1.1,
     "weight": 90.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2907,6 +2993,7 @@
     "height": 1.7,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2939,6 +3026,7 @@
     "height": 0.9,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -2971,6 +3059,7 @@
     "height": 1.2,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3003,6 +3092,7 @@
     "height": 0.3,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3036,6 +3126,7 @@
     "height": 1.5,
     "weight": 132.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3069,6 +3160,7 @@
     "height": 1.3,
     "weight": 0.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -3103,6 +3195,7 @@
     "height": 1.6,
     "weight": 0.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -3137,6 +3230,7 @@
     "height": 1.5,
     "weight": 40.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -3171,6 +3265,7 @@
     "height": 8.8,
     "weight": 210.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3203,6 +3298,7 @@
     "height": 1.0,
     "weight": 32.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3235,6 +3331,7 @@
     "height": 1.6,
     "weight": 75.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3267,6 +3364,7 @@
     "height": 0.4,
     "weight": 6.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3299,6 +3397,7 @@
     "height": 1.3,
     "weight": 60.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3331,6 +3430,7 @@
     "height": 0.5,
     "weight": 10.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3363,6 +3463,7 @@
     "height": 1.2,
     "weight": 66.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3396,6 +3497,7 @@
     "height": 0.4,
     "weight": 2.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3429,6 +3531,7 @@
     "height": 2.0,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3461,6 +3564,7 @@
     "height": 0.4,
     "weight": 6.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3493,6 +3597,7 @@
     "height": 1.0,
     "weight": 45.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3525,6 +3630,7 @@
     "height": 1.5,
     "weight": 49.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3559,6 +3665,7 @@
     "height": 1.4,
     "weight": 50.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3593,6 +3700,7 @@
     "height": 1.2,
     "weight": 65.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3625,6 +3733,7 @@
     "height": 0.6,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3657,6 +3766,7 @@
     "height": 1.2,
     "weight": 9.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3691,6 +3801,7 @@
     "height": 1.0,
     "weight": 115.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -3726,6 +3837,7 @@
     "height": 1.9,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -3759,6 +3871,7 @@
     "height": 1.1,
     "weight": 34.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -3792,6 +3905,7 @@
     "height": 1.0,
     "weight": 35.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3824,6 +3938,7 @@
     "height": 2.2,
     "weight": 80.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -3856,6 +3971,7 @@
     "height": 0.4,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -3890,6 +4006,7 @@
     "height": 1.2,
     "weight": 25.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -3923,6 +4040,7 @@
     "height": 0.6,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3955,6 +4073,7 @@
     "height": 1.3,
     "weight": 39.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -3987,6 +4106,7 @@
     "height": 0.8,
     "weight": 34.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4020,6 +4140,7 @@
     "height": 1.1,
     "weight": 80.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4053,6 +4174,7 @@
     "height": 1.3,
     "weight": 54.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -4087,6 +4209,7 @@
     "height": 1.5,
     "weight": 56.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4121,6 +4244,7 @@
     "height": 1.4,
     "weight": 40.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4153,6 +4277,7 @@
     "height": 1.1,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -4186,6 +4311,7 @@
     "height": 1.3,
     "weight": 44.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -4219,6 +4345,7 @@
     "height": 1.5,
     "weight": 55.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -4250,6 +4377,7 @@
     "height": 1.4,
     "weight": 88.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -4282,6 +4410,7 @@
     "height": 0.9,
     "weight": 10.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4316,6 +4445,7 @@
     "height": 6.5,
     "weight": 235.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4350,6 +4480,7 @@
     "height": 2.5,
     "weight": 220.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -4381,6 +4512,7 @@
     "height": 0.3,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -4412,6 +4544,7 @@
     "height": 0.3,
     "weight": 6.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4451,6 +4584,7 @@
     "height": 1.0,
     "weight": 29.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4490,6 +4624,7 @@
     "height": 0.8,
     "weight": 24.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4529,6 +4664,7 @@
     "height": 0.9,
     "weight": 25.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4568,6 +4704,7 @@
     "height": 0.8,
     "weight": 36.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -4603,6 +4740,7 @@
     "height": 0.4,
     "weight": 7.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4637,6 +4775,7 @@
     "height": 1.0,
     "weight": 35.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4671,6 +4810,7 @@
     "height": 0.5,
     "weight": 11.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4705,6 +4845,7 @@
     "height": 1.3,
     "weight": 40.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4738,6 +4879,7 @@
     "height": 1.8,
     "weight": 59.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -4769,6 +4911,7 @@
     "height": 2.1,
     "weight": 460.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -4802,6 +4945,7 @@
     "height": 1.7,
     "weight": 55.4,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -4834,6 +4978,7 @@
     "height": 1.6,
     "weight": 52.6,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -4866,6 +5011,7 @@
     "height": 2.0,
     "weight": 60.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -4898,6 +5044,7 @@
     "height": 1.8,
     "weight": 3.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -4932,6 +5079,7 @@
     "height": 4.0,
     "weight": 16.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -4967,6 +5115,7 @@
     "height": 2.2,
     "weight": 210.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5000,6 +5149,7 @@
     "height": 2.0,
     "weight": 122.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -5030,7 +5180,8 @@
     "gen": 1,
     "height": 0.4,
     "weight": 4.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -5063,6 +5214,7 @@
     "height": 0.9,
     "weight": 6.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5097,6 +5249,7 @@
     "height": 1.2,
     "weight": 15.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5131,6 +5284,7 @@
     "height": 1.8,
     "weight": 100.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5164,6 +5318,7 @@
     "height": 0.5,
     "weight": 7.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5197,6 +5352,7 @@
     "height": 0.9,
     "weight": 19.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5230,6 +5386,7 @@
     "height": 1.7,
     "weight": 79.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5264,6 +5421,7 @@
     "height": 0.6,
     "weight": 9.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5298,6 +5456,7 @@
     "height": 1.1,
     "weight": 25.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5332,6 +5491,7 @@
     "height": 2.3,
     "weight": 88.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5365,6 +5525,7 @@
     "height": 0.8,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5397,6 +5558,7 @@
     "height": 1.8,
     "weight": 32.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5430,6 +5592,7 @@
     "height": 0.7,
     "weight": 21.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5463,6 +5626,7 @@
     "height": 1.6,
     "weight": 40.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5496,6 +5660,7 @@
     "height": 1.0,
     "weight": 10.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5529,6 +5694,7 @@
     "height": 1.4,
     "weight": 35.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5562,6 +5728,7 @@
     "height": 0.5,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5595,6 +5762,7 @@
     "height": 1.1,
     "weight": 33.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5628,6 +5796,7 @@
     "height": 1.8,
     "weight": 75.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5662,6 +5831,7 @@
     "height": 0.5,
     "weight": 12.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5695,6 +5865,7 @@
     "height": 1.2,
     "weight": 22.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5727,6 +5898,7 @@
     "height": 0.3,
     "weight": 2.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5760,6 +5932,7 @@
     "height": 0.3,
     "weight": 3.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5794,6 +5967,7 @@
     "height": 0.3,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5827,6 +6001,7 @@
     "height": 0.3,
     "weight": 1.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5862,6 +6037,7 @@
     "height": 0.6,
     "weight": 3.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5896,6 +6072,7 @@
     "height": 0.2,
     "weight": 2.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5929,6 +6106,7 @@
     "height": 1.5,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -5962,6 +6140,7 @@
     "height": 0.6,
     "weight": 7.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -5996,6 +6175,7 @@
     "height": 0.8,
     "weight": 13.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6030,6 +6210,7 @@
     "height": 1.4,
     "weight": 61.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6063,6 +6244,7 @@
     "height": 0.4,
     "weight": 5.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6099,6 +6281,7 @@
     "height": 0.4,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6134,6 +6317,7 @@
     "height": 0.8,
     "weight": 28.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6167,6 +6351,7 @@
     "height": 1.2,
     "weight": 38.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6199,6 +6384,7 @@
     "height": 1.1,
     "weight": 33.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6235,6 +6421,7 @@
     "height": 0.4,
     "weight": 0.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6270,6 +6457,7 @@
     "height": 0.6,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6305,6 +6493,7 @@
     "height": 0.8,
     "weight": 3.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -6338,6 +6527,7 @@
     "height": 0.8,
     "weight": 11.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6370,6 +6560,7 @@
     "height": 0.3,
     "weight": 1.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6402,6 +6593,7 @@
     "height": 0.8,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6435,6 +6627,7 @@
     "height": 1.2,
     "weight": 38.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6469,6 +6662,7 @@
     "height": 0.4,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6504,6 +6698,7 @@
     "height": 1.4,
     "weight": 75.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6537,6 +6732,7 @@
     "height": 0.9,
     "weight": 26.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6576,6 +6772,7 @@
     "height": 1.0,
     "weight": 27.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6616,6 +6813,7 @@
     "height": 0.5,
     "weight": 2.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6650,6 +6848,7 @@
     "height": 2.0,
     "weight": 79.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6683,6 +6882,7 @@
     "height": 0.7,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6715,6 +6915,7 @@
     "height": 0.5,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -6746,6 +6947,7 @@
     "height": 1.3,
     "weight": 28.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6779,6 +6981,7 @@
     "height": 1.5,
     "weight": 41.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6811,6 +7014,7 @@
     "height": 0.6,
     "weight": 7.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6844,6 +7048,7 @@
     "height": 1.2,
     "weight": 125.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6876,6 +7081,7 @@
     "height": 1.5,
     "weight": 14.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6909,6 +7115,7 @@
     "height": 1.1,
     "weight": 64.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6942,6 +7149,7 @@
     "height": 9.2,
     "weight": 400.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -6975,6 +7183,7 @@
     "height": 0.6,
     "weight": 7.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7008,6 +7217,7 @@
     "height": 1.4,
     "weight": 48.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7041,6 +7251,7 @@
     "height": 0.5,
     "weight": 3.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7074,6 +7285,7 @@
     "height": 1.8,
     "weight": 118.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7108,6 +7320,7 @@
     "height": 0.6,
     "weight": 20.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -7140,6 +7353,7 @@
     "height": 1.5,
     "weight": 54.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -7172,6 +7386,7 @@
     "height": 0.9,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7205,6 +7420,7 @@
     "height": 0.6,
     "weight": 8.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -7238,6 +7454,7 @@
     "height": 1.8,
     "weight": 125.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -7271,6 +7488,7 @@
     "height": 0.7,
     "weight": 35.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7304,6 +7522,7 @@
     "height": 0.8,
     "weight": 55.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7337,6 +7556,7 @@
     "height": 0.4,
     "weight": 6.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -7371,6 +7591,7 @@
     "height": 1.1,
     "weight": 55.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -7406,6 +7627,7 @@
     "height": 0.6,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7439,6 +7661,7 @@
     "height": 0.6,
     "weight": 12.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7472,6 +7695,7 @@
     "height": 0.9,
     "weight": 28.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7506,6 +7730,7 @@
     "height": 0.9,
     "weight": 16.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -7538,6 +7763,7 @@
     "height": 2.1,
     "weight": 220.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7571,6 +7797,7 @@
     "height": 1.7,
     "weight": 50.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -7603,6 +7830,7 @@
     "height": 0.6,
     "weight": 10.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7636,6 +7864,7 @@
     "height": 1.4,
     "weight": 35.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7670,6 +7899,7 @@
     "height": 1.8,
     "weight": 152.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -7703,6 +7933,7 @@
     "height": 0.5,
     "weight": 33.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7735,6 +7966,7 @@
     "height": 1.1,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7767,6 +7999,7 @@
     "height": 0.6,
     "weight": 32.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -7800,6 +8033,7 @@
     "height": 1.4,
     "weight": 71.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7832,6 +8066,7 @@
     "height": 1.2,
     "weight": 58.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -7863,6 +8098,7 @@
     "height": 0.7,
     "weight": 21.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7897,6 +8133,7 @@
     "height": 1.4,
     "weight": 48.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7932,6 +8169,7 @@
     "height": 0.4,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -7964,6 +8202,7 @@
     "height": 0.6,
     "weight": 23.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -7997,6 +8236,7 @@
     "height": 0.7,
     "weight": 21.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8030,6 +8270,7 @@
     "height": 1.2,
     "weight": 75.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -8061,6 +8302,7 @@
     "height": 1.5,
     "weight": 46.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8094,6 +8336,7 @@
     "height": 1.9,
     "weight": 178.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -8125,6 +8368,7 @@
     "height": 2.1,
     "weight": 198.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -8156,6 +8400,7 @@
     "height": 2.0,
     "weight": 187.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -8188,6 +8433,7 @@
     "height": 0.6,
     "weight": 72.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8222,6 +8468,7 @@
     "height": 1.2,
     "weight": 152.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8256,6 +8503,7 @@
     "height": 2.0,
     "weight": 202.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8290,6 +8538,7 @@
     "height": 5.2,
     "weight": 216.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -8322,6 +8571,7 @@
     "height": 3.8,
     "weight": 199.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -8353,7 +8603,8 @@
     "gen": 2,
     "height": 0.6,
     "weight": 5.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -8386,6 +8637,7 @@
     "height": 0.5,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8420,6 +8672,7 @@
     "height": 0.9,
     "weight": 21.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8454,6 +8707,7 @@
     "height": 1.7,
     "weight": 52.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8487,6 +8741,7 @@
     "height": 0.4,
     "weight": 2.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8521,6 +8776,7 @@
     "height": 0.9,
     "weight": 19.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8555,6 +8811,7 @@
     "height": 1.9,
     "weight": 52.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8589,6 +8846,7 @@
     "height": 0.4,
     "weight": 7.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8624,6 +8882,7 @@
     "height": 0.7,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8659,6 +8918,7 @@
     "height": 1.5,
     "weight": 81.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8692,6 +8952,7 @@
     "height": 0.5,
     "weight": 13.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -8724,6 +8985,7 @@
     "height": 1.0,
     "weight": 37.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -8756,6 +9018,7 @@
     "height": 0.4,
     "weight": 17.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8789,6 +9052,7 @@
     "height": 0.5,
     "weight": 32.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8822,6 +9086,7 @@
     "height": 0.3,
     "weight": 3.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8857,6 +9122,7 @@
     "height": 0.6,
     "weight": 10.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8893,6 +9159,7 @@
     "height": 1.0,
     "weight": 28.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8928,6 +9195,7 @@
     "height": 0.7,
     "weight": 11.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -8964,6 +9232,7 @@
     "height": 1.2,
     "weight": 31.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9001,6 +9270,7 @@
     "height": 0.5,
     "weight": 2.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9036,6 +9306,7 @@
     "height": 1.2,
     "weight": 32.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9071,6 +9342,7 @@
     "height": 1.5,
     "weight": 55.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9105,6 +9377,7 @@
     "height": 0.5,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9140,6 +9413,7 @@
     "height": 1.0,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9175,6 +9449,7 @@
     "height": 1.3,
     "weight": 59.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9209,6 +9484,7 @@
     "height": 0.3,
     "weight": 2.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9242,6 +9518,7 @@
     "height": 0.7,
     "weight": 19.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9276,6 +9553,7 @@
     "height": 0.6,
     "weight": 9.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9310,6 +9588,7 @@
     "height": 1.2,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9344,6 +9623,7 @@
     "height": 0.4,
     "weight": 6.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9380,6 +9660,7 @@
     "height": 0.8,
     "weight": 20.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9416,6 +9697,7 @@
     "height": 1.6,
     "weight": 48.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9452,6 +9734,7 @@
     "height": 0.5,
     "weight": 1.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9486,6 +9769,7 @@
     "height": 0.8,
     "weight": 3.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9519,6 +9803,7 @@
     "height": 0.4,
     "weight": 4.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9553,6 +9838,7 @@
     "height": 1.2,
     "weight": 39.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9585,6 +9871,7 @@
     "height": 0.8,
     "weight": 24.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9618,6 +9905,7 @@
     "height": 1.4,
     "weight": 46.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9651,6 +9939,7 @@
     "height": 2.0,
     "weight": 130.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9685,6 +9974,7 @@
     "height": 0.5,
     "weight": 5.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9719,6 +10009,7 @@
     "height": 0.8,
     "weight": 12.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9753,6 +10044,7 @@
     "height": 0.8,
     "weight": 1.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9787,6 +10079,7 @@
     "height": 0.6,
     "weight": 16.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9821,6 +10114,7 @@
     "height": 1.0,
     "weight": 40.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9855,6 +10149,7 @@
     "height": 1.5,
     "weight": 84.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9888,6 +10183,7 @@
     "height": 1.0,
     "weight": 86.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9920,6 +10216,7 @@
     "height": 2.3,
     "weight": 253.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -9953,6 +10250,7 @@
     "height": 0.2,
     "weight": 2.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -9986,6 +10284,7 @@
     "height": 1.0,
     "weight": 97.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10019,6 +10318,7 @@
     "height": 0.6,
     "weight": 11.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10052,6 +10352,7 @@
     "height": 1.1,
     "weight": 32.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10085,6 +10386,7 @@
     "height": 0.5,
     "weight": 11.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -10118,6 +10420,7 @@
     "height": 0.6,
     "weight": 11.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -10150,6 +10453,7 @@
     "height": 0.4,
     "weight": 60.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -10184,6 +10488,7 @@
     "height": 0.9,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -10218,6 +10523,7 @@
     "height": 2.1,
     "weight": 360.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -10252,6 +10558,7 @@
     "height": 0.6,
     "weight": 11.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10285,6 +10592,7 @@
     "height": 1.3,
     "weight": 31.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10317,6 +10625,7 @@
     "height": 0.6,
     "weight": 15.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10349,6 +10658,7 @@
     "height": 1.5,
     "weight": 40.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10381,6 +10691,7 @@
     "height": 0.4,
     "weight": 4.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -10412,6 +10723,7 @@
     "height": 0.4,
     "weight": 4.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -10444,6 +10756,7 @@
     "height": 0.7,
     "weight": 17.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -10476,6 +10789,7 @@
     "height": 0.6,
     "weight": 17.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -10509,6 +10823,7 @@
     "height": 0.3,
     "weight": 2.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -10542,6 +10857,7 @@
     "height": 0.4,
     "weight": 10.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10574,6 +10890,7 @@
     "height": 1.7,
     "weight": 80.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10607,6 +10924,7 @@
     "height": 0.8,
     "weight": 20.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10640,6 +10958,7 @@
     "height": 1.8,
     "weight": 88.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10673,6 +10992,7 @@
     "height": 2.0,
     "weight": 130.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10706,6 +11026,7 @@
     "height": 14.5,
     "weight": 398.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10739,6 +11060,7 @@
     "height": 0.7,
     "weight": 24.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10772,6 +11094,7 @@
     "height": 1.9,
     "weight": 220.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10804,6 +11127,7 @@
     "height": 0.5,
     "weight": 80.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -10835,6 +11159,7 @@
     "height": 0.7,
     "weight": 30.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10867,6 +11192,7 @@
     "height": 0.9,
     "weight": 71.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -10900,6 +11226,7 @@
     "height": 1.1,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -10932,6 +11259,7 @@
     "height": 0.7,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -10967,6 +11295,7 @@
     "height": 1.1,
     "weight": 15.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -11002,6 +11331,7 @@
     "height": 2.0,
     "weight": 82.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -11036,6 +11366,7 @@
     "height": 0.4,
     "weight": 51.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11070,6 +11401,7 @@
     "height": 1.3,
     "weight": 77.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11104,6 +11436,7 @@
     "height": 0.4,
     "weight": 1.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11138,6 +11471,7 @@
     "height": 1.1,
     "weight": 20.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11170,6 +11504,7 @@
     "height": 1.3,
     "weight": 40.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -11202,6 +11537,7 @@
     "height": 2.7,
     "weight": 52.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -11234,6 +11570,7 @@
     "height": 1.0,
     "weight": 168.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -11266,6 +11603,7 @@
     "height": 1.2,
     "weight": 154.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -11298,6 +11636,7 @@
     "height": 0.4,
     "weight": 1.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11331,6 +11670,7 @@
     "height": 0.9,
     "weight": 23.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11364,6 +11704,7 @@
     "height": 0.6,
     "weight": 11.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11398,6 +11739,7 @@
     "height": 1.1,
     "weight": 32.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11431,6 +11773,7 @@
     "height": 0.5,
     "weight": 21.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11464,6 +11807,7 @@
     "height": 1.5,
     "weight": 108.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11497,6 +11841,7 @@
     "height": 1.0,
     "weight": 23.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11530,6 +11875,7 @@
     "height": 1.5,
     "weight": 60.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11563,6 +11909,7 @@
     "height": 0.7,
     "weight": 12.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11596,6 +11943,7 @@
     "height": 1.5,
     "weight": 68.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11629,6 +11977,7 @@
     "height": 0.6,
     "weight": 7.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11662,6 +12011,7 @@
     "height": 6.2,
     "weight": 162.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11695,6 +12045,7 @@
     "height": 0.3,
     "weight": 0.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -11726,6 +12077,7 @@
     "height": 1.0,
     "weight": 22.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -11757,6 +12109,7 @@
     "height": 0.6,
     "weight": 2.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11789,6 +12142,7 @@
     "height": 1.1,
     "weight": 12.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11821,6 +12175,7 @@
     "height": 0.8,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -11854,6 +12209,7 @@
     "height": 1.6,
     "weight": 30.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -11889,6 +12245,7 @@
     "height": 2.0,
     "weight": 100.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -11920,6 +12277,7 @@
     "height": 0.6,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -11952,6 +12310,7 @@
     "height": 1.2,
     "weight": 47.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -11983,6 +12342,7 @@
     "height": 0.6,
     "weight": 14.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -12016,6 +12376,7 @@
     "height": 0.7,
     "weight": 16.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -12050,6 +12411,7 @@
     "height": 1.5,
     "weight": 256.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -12085,6 +12447,7 @@
     "height": 0.8,
     "weight": 39.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12120,6 +12483,7 @@
     "height": 1.1,
     "weight": 87.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12155,6 +12519,7 @@
     "height": 1.4,
     "weight": 150.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12188,6 +12553,7 @@
     "height": 0.4,
     "weight": 52.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -12221,6 +12587,7 @@
     "height": 1.7,
     "weight": 27.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -12254,6 +12621,7 @@
     "height": 1.8,
     "weight": 22.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -12289,6 +12657,7 @@
     "height": 1.0,
     "weight": 23.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12320,6 +12689,7 @@
     "height": 0.6,
     "weight": 8.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12351,6 +12721,7 @@
     "height": 0.6,
     "weight": 42.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12384,6 +12755,7 @@
     "height": 1.1,
     "weight": 110.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12418,6 +12790,7 @@
     "height": 1.5,
     "weight": 102.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12452,6 +12825,7 @@
     "height": 0.6,
     "weight": 95.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12486,6 +12860,7 @@
     "height": 1.2,
     "weight": 202.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12520,6 +12895,7 @@
     "height": 1.6,
     "weight": 550.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12553,6 +12929,7 @@
     "height": 1.7,
     "weight": 230.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12584,6 +12961,7 @@
     "height": 1.8,
     "weight": 175.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12615,6 +12993,7 @@
     "height": 1.9,
     "weight": 205.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12647,6 +13026,7 @@
     "height": 1.4,
     "weight": 40.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12679,6 +13059,7 @@
     "height": 2.0,
     "weight": 60.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12710,6 +13091,7 @@
     "height": 4.5,
     "weight": 352.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12741,6 +13123,7 @@
     "height": 3.5,
     "weight": 950.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12773,6 +13156,7 @@
     "height": 7.0,
     "weight": 206.5,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12804,7 +13188,8 @@
     "gen": 3,
     "height": 0.3,
     "weight": 1.1,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12835,7 +13220,8 @@
     "gen": 3,
     "height": 1.7,
     "weight": 60.8,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -12868,6 +13254,7 @@
     "height": 0.4,
     "weight": 10.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12902,6 +13289,7 @@
     "height": 1.1,
     "weight": 97.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12937,6 +13325,7 @@
     "height": 2.2,
     "weight": 310.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -12971,6 +13360,7 @@
     "height": 0.5,
     "weight": 6.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13006,6 +13396,7 @@
     "height": 0.9,
     "weight": 22.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13041,6 +13432,7 @@
     "height": 1.2,
     "weight": 55.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13075,6 +13467,7 @@
     "height": 0.4,
     "weight": 5.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13109,6 +13502,7 @@
     "height": 0.8,
     "weight": 23.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13144,6 +13538,7 @@
     "height": 1.7,
     "weight": 84.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13178,6 +13573,7 @@
     "height": 0.3,
     "weight": 2.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13212,6 +13608,7 @@
     "height": 0.6,
     "weight": 15.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13246,6 +13643,7 @@
     "height": 1.2,
     "weight": 24.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13280,6 +13678,7 @@
     "height": 0.5,
     "weight": 20.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13314,6 +13713,7 @@
     "height": 1.0,
     "weight": 31.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13346,6 +13746,7 @@
     "height": 0.3,
     "weight": 2.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13378,6 +13779,7 @@
     "height": 1.0,
     "weight": 25.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13410,6 +13812,7 @@
     "height": 0.5,
     "weight": 9.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13443,6 +13846,7 @@
     "height": 0.9,
     "weight": 30.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13476,6 +13880,7 @@
     "height": 1.4,
     "weight": 42.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13510,6 +13915,7 @@
     "height": 0.2,
     "weight": 1.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13545,6 +13951,7 @@
     "height": 0.9,
     "weight": 14.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -13578,6 +13985,7 @@
     "height": 0.9,
     "weight": 31.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13610,6 +14018,7 @@
     "height": 1.6,
     "weight": 102.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13643,6 +14052,7 @@
     "height": 0.5,
     "weight": 57.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13676,6 +14086,7 @@
     "height": 1.3,
     "weight": 149.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13708,6 +14119,7 @@
     "height": 0.2,
     "weight": 3.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13742,6 +14154,7 @@
     "height": 0.5,
     "weight": 6.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13776,6 +14189,7 @@
     "height": 0.9,
     "weight": 23.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13810,6 +14224,7 @@
     "height": 0.3,
     "weight": 5.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13843,6 +14258,7 @@
     "height": 1.2,
     "weight": 38.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13876,6 +14292,7 @@
     "height": 0.4,
     "weight": 3.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -13908,6 +14325,7 @@
     "height": 0.7,
     "weight": 29.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13941,6 +14359,7 @@
     "height": 1.1,
     "weight": 33.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -13974,6 +14393,7 @@
     "height": 0.4,
     "weight": 3.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14007,6 +14427,7 @@
     "height": 0.5,
     "weight": 9.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14040,6 +14461,7 @@
     "height": 0.3,
     "weight": 6.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14074,6 +14496,7 @@
     "height": 0.9,
     "weight": 29.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14106,6 +14529,7 @@
     "height": 1.2,
     "weight": 20.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14139,6 +14563,7 @@
     "height": 0.4,
     "weight": 1.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14172,6 +14597,7 @@
     "height": 1.2,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14205,6 +14631,7 @@
     "height": 0.4,
     "weight": 5.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14238,6 +14665,7 @@
     "height": 1.2,
     "weight": 33.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14270,6 +14698,7 @@
     "height": 0.9,
     "weight": 4.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14303,6 +14732,7 @@
     "height": 0.9,
     "weight": 27.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14335,6 +14765,7 @@
     "height": 0.5,
     "weight": 3.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14367,6 +14798,7 @@
     "height": 1.0,
     "weight": 43.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14399,6 +14831,7 @@
     "height": 0.2,
     "weight": 0.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14432,6 +14865,7 @@
     "height": 0.4,
     "weight": 19.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14465,6 +14899,7 @@
     "height": 1.0,
     "weight": 38.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14498,6 +14933,7 @@
     "height": 0.5,
     "weight": 60.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14531,6 +14967,7 @@
     "height": 1.3,
     "weight": 187.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14563,6 +15000,7 @@
     "height": 0.5,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14596,6 +15034,7 @@
     "height": 0.6,
     "weight": 13.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -14629,6 +15068,7 @@
     "height": 0.6,
     "weight": 24.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -14663,6 +15103,7 @@
     "height": 0.5,
     "weight": 1.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -14695,6 +15136,7 @@
     "height": 1.0,
     "weight": 108.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -14728,6 +15170,7 @@
     "height": 0.7,
     "weight": 20.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -14763,6 +15206,7 @@
     "height": 1.4,
     "weight": 56.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -14798,6 +15242,7 @@
     "height": 1.9,
     "weight": 95.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -14831,6 +15276,7 @@
     "height": 0.6,
     "weight": 105.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14863,6 +15309,7 @@
     "height": 0.7,
     "weight": 20.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14897,6 +15344,7 @@
     "height": 1.2,
     "weight": 54.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14929,6 +15377,7 @@
     "height": 0.8,
     "weight": 49.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14961,6 +15410,7 @@
     "height": 2.0,
     "weight": 300.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -14995,6 +15445,7 @@
     "height": 0.8,
     "weight": 12.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15029,6 +15480,7 @@
     "height": 1.3,
     "weight": 61.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15062,6 +15514,7 @@
     "height": 0.7,
     "weight": 23.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15095,6 +15548,7 @@
     "height": 1.3,
     "weight": 44.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15127,6 +15581,7 @@
     "height": 1.4,
     "weight": 27.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -15158,6 +15613,7 @@
     "height": 0.4,
     "weight": 7.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15190,6 +15646,7 @@
     "height": 1.2,
     "weight": 24.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15223,6 +15680,7 @@
     "height": 1.0,
     "weight": 65.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15257,6 +15715,7 @@
     "height": 1.0,
     "weight": 50.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15291,6 +15750,7 @@
     "height": 2.2,
     "weight": 135.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15324,6 +15784,7 @@
     "height": 1.1,
     "weight": 34.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15358,6 +15819,7 @@
     "height": 1.2,
     "weight": 180.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15391,6 +15853,7 @@
     "height": 1.7,
     "weight": 140.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15425,6 +15888,7 @@
     "height": 2.4,
     "weight": 282.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15458,6 +15922,7 @@
     "height": 2.0,
     "weight": 128.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15490,6 +15955,7 @@
     "height": 1.8,
     "weight": 138.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15523,6 +15989,7 @@
     "height": 1.6,
     "weight": 68.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15558,6 +16025,7 @@
     "height": 1.5,
     "weight": 38.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15592,6 +16060,7 @@
     "height": 1.9,
     "weight": 51.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15624,6 +16093,7 @@
     "height": 1.0,
     "weight": 25.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15663,6 +16133,7 @@
     "height": 0.8,
     "weight": 25.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15703,6 +16174,7 @@
     "height": 2.0,
     "weight": 42.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15736,6 +16208,7 @@
     "height": 2.5,
     "weight": 291.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15769,6 +16242,7 @@
     "height": 0.9,
     "weight": 34.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15804,6 +16278,7 @@
     "height": 1.6,
     "weight": 52.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15839,6 +16314,7 @@
     "height": 1.4,
     "weight": 340.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15871,6 +16347,7 @@
     "height": 2.2,
     "weight": 106.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -15906,6 +16383,7 @@
     "height": 1.3,
     "weight": 26.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -15940,6 +16418,7 @@
     "height": 0.3,
     "weight": 0.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -15971,6 +16450,7 @@
     "height": 0.3,
     "weight": 0.3,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16002,6 +16482,7 @@
     "height": 0.3,
     "weight": 0.3,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16033,6 +16514,7 @@
     "height": 0.3,
     "weight": 0.3,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16065,6 +16547,7 @@
     "height": 5.4,
     "weight": 683.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16097,6 +16580,7 @@
     "height": 4.2,
     "weight": 336.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16129,6 +16613,7 @@
     "height": 1.7,
     "weight": 430.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16160,6 +16645,7 @@
     "height": 3.7,
     "weight": 420.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16192,6 +16678,7 @@
     "height": 4.5,
     "weight": 750.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16223,6 +16710,7 @@
     "height": 1.5,
     "weight": 85.6,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16254,7 +16742,8 @@
     "gen": 4,
     "height": 0.4,
     "weight": 3.1,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -16287,7 +16776,8 @@
     "gen": 4,
     "height": 0.3,
     "weight": 1.4,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -16319,7 +16809,8 @@
     "gen": 4,
     "height": 1.5,
     "weight": 50.5,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16350,7 +16841,8 @@
     "gen": 4,
     "height": 0.2,
     "weight": 2.1,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16381,7 +16873,8 @@
     "gen": 4,
     "height": 3.2,
     "weight": 320.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16413,7 +16906,8 @@
     "gen": 5,
     "height": 0.4,
     "weight": 4.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -16446,6 +16940,7 @@
     "height": 0.6,
     "weight": 8.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16480,6 +16975,7 @@
     "height": 0.8,
     "weight": 16.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16514,6 +17010,7 @@
     "height": 3.3,
     "weight": 63.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16547,6 +17044,7 @@
     "height": 0.5,
     "weight": 9.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16581,6 +17079,7 @@
     "height": 1.0,
     "weight": 55.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16615,6 +17114,7 @@
     "height": 1.6,
     "weight": 150.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16648,6 +17148,7 @@
     "height": 0.5,
     "weight": 5.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16681,6 +17182,7 @@
     "height": 0.8,
     "weight": 24.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16714,6 +17216,7 @@
     "height": 1.5,
     "weight": 94.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16747,6 +17250,7 @@
     "height": 0.5,
     "weight": 11.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -16779,6 +17283,7 @@
     "height": 1.1,
     "weight": 27.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -16811,6 +17316,7 @@
     "height": 0.4,
     "weight": 4.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16844,6 +17350,7 @@
     "height": 0.9,
     "weight": 14.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16877,6 +17384,7 @@
     "height": 1.2,
     "weight": 61.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -16910,6 +17418,7 @@
     "height": 0.4,
     "weight": 10.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -16942,6 +17451,7 @@
     "height": 1.1,
     "weight": 37.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -16974,6 +17484,7 @@
     "height": 0.6,
     "weight": 10.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17006,6 +17517,7 @@
     "height": 1.1,
     "weight": 30.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17038,6 +17550,7 @@
     "height": 0.6,
     "weight": 11.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17070,6 +17583,7 @@
     "height": 1.0,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17102,6 +17616,7 @@
     "height": 0.6,
     "weight": 13.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17134,6 +17649,7 @@
     "height": 1.0,
     "weight": 29.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17166,6 +17682,7 @@
     "height": 0.6,
     "weight": 23.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17198,6 +17715,7 @@
     "height": 1.1,
     "weight": 60.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17231,6 +17749,7 @@
     "height": 0.3,
     "weight": 2.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17265,6 +17784,7 @@
     "height": 0.6,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17299,6 +17819,7 @@
     "height": 1.2,
     "weight": 29.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17332,6 +17853,7 @@
     "height": 0.8,
     "weight": 29.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17364,6 +17886,7 @@
     "height": 1.6,
     "weight": 79.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17396,6 +17919,7 @@
     "height": 0.4,
     "weight": 18.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17429,6 +17953,7 @@
     "height": 0.9,
     "weight": 102.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17462,6 +17987,7 @@
     "height": 1.7,
     "weight": 260.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17497,6 +18023,7 @@
     "height": 0.4,
     "weight": 2.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17531,6 +18058,7 @@
     "height": 0.9,
     "weight": 10.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17563,6 +18091,7 @@
     "height": 0.3,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17596,6 +18125,7 @@
     "height": 0.7,
     "weight": 40.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -17628,6 +18158,7 @@
     "height": 1.1,
     "weight": 31.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -17659,6 +18190,7 @@
     "height": 0.6,
     "weight": 12.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17692,6 +18224,7 @@
     "height": 1.2,
     "weight": 40.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17725,6 +18258,7 @@
     "height": 1.4,
     "weight": 87.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17758,6 +18292,7 @@
     "height": 0.5,
     "weight": 4.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17792,6 +18327,7 @@
     "height": 0.8,
     "weight": 17.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17826,6 +18362,7 @@
     "height": 1.5,
     "weight": 62.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17859,6 +18396,7 @@
     "height": 1.3,
     "weight": 55.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -17890,6 +18428,7 @@
     "height": 1.4,
     "weight": 51.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -17922,6 +18461,7 @@
     "height": 0.3,
     "weight": 2.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17956,6 +18496,7 @@
     "height": 0.5,
     "weight": 7.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -17990,6 +18531,7 @@
     "height": 1.2,
     "weight": 20.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -18024,6 +18566,7 @@
     "height": 0.4,
     "weight": 5.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -18058,6 +18601,7 @@
     "height": 1.2,
     "weight": 58.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -18092,6 +18636,7 @@
     "height": 2.5,
     "weight": 200.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -18127,6 +18672,7 @@
     "height": 0.3,
     "weight": 0.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18161,6 +18707,7 @@
     "height": 0.7,
     "weight": 6.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18193,6 +18740,7 @@
     "height": 0.5,
     "weight": 6.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18225,6 +18773,7 @@
     "height": 1.1,
     "weight": 16.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18257,6 +18806,7 @@
     "height": 1.0,
     "weight": 18.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18290,6 +18840,7 @@
     "height": 0.7,
     "weight": 15.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -18324,6 +18875,7 @@
     "height": 1.0,
     "weight": 33.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -18358,6 +18910,7 @@
     "height": 1.5,
     "weight": 96.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -18391,6 +18944,7 @@
     "height": 0.6,
     "weight": 37.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18423,6 +18977,7 @@
     "height": 1.3,
     "weight": 92.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18455,6 +19010,7 @@
     "height": 1.0,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -18488,6 +19044,7 @@
     "height": 0.3,
     "weight": 14.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18522,6 +19079,7 @@
     "height": 1.4,
     "weight": 200.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18556,6 +19114,7 @@
     "height": 0.6,
     "weight": 11.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18590,6 +19149,7 @@
     "height": 1.1,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18623,6 +19183,7 @@
     "height": 1.4,
     "weight": 14.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -18655,6 +19216,7 @@
     "height": 0.5,
     "weight": 1.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18689,6 +19251,7 @@
     "height": 1.7,
     "weight": 76.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18724,6 +19287,7 @@
     "height": 0.7,
     "weight": 16.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18758,6 +19322,7 @@
     "height": 1.2,
     "weight": 81.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18792,6 +19357,7 @@
     "height": 0.5,
     "weight": 9.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18826,6 +19392,7 @@
     "height": 1.4,
     "weight": 32.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18858,6 +19425,7 @@
     "height": 0.6,
     "weight": 31.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18890,6 +19458,7 @@
     "height": 1.9,
     "weight": 107.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18922,6 +19491,7 @@
     "height": 0.7,
     "weight": 12.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18954,6 +19524,7 @@
     "height": 1.6,
     "weight": 81.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -18986,6 +19557,7 @@
     "height": 0.4,
     "weight": 5.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19018,6 +19590,7 @@
     "height": 0.5,
     "weight": 7.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19050,6 +19623,7 @@
     "height": 0.4,
     "weight": 5.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19083,6 +19657,7 @@
     "height": 0.7,
     "weight": 18.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19116,6 +19691,7 @@
     "height": 1.5,
     "weight": 44.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19149,6 +19725,7 @@
     "height": 0.3,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19182,6 +19759,7 @@
     "height": 0.6,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19215,6 +19793,7 @@
     "height": 1.0,
     "weight": 20.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19250,6 +19829,7 @@
     "height": 0.5,
     "weight": 5.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19284,6 +19864,7 @@
     "height": 1.3,
     "weight": 24.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19316,6 +19897,7 @@
     "height": 0.4,
     "weight": 5.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19349,6 +19931,7 @@
     "height": 1.1,
     "weight": 41.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19382,6 +19965,7 @@
     "height": 1.3,
     "weight": 57.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19416,6 +20000,7 @@
     "height": 0.6,
     "weight": 19.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19449,6 +20034,7 @@
     "height": 1.9,
     "weight": 92.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19482,6 +20068,7 @@
     "height": 0.4,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -19513,6 +20100,7 @@
     "height": 0.5,
     "weight": 5.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19546,6 +20134,7 @@
     "height": 1.0,
     "weight": 33.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19579,6 +20168,7 @@
     "height": 0.2,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19612,6 +20202,7 @@
     "height": 0.6,
     "weight": 10.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19645,6 +20236,7 @@
     "height": 1.2,
     "weight": 33.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19678,6 +20270,7 @@
     "height": 2.2,
     "weight": 135.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19711,6 +20304,7 @@
     "height": 1.2,
     "weight": 31.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -19743,6 +20337,7 @@
     "height": 0.1,
     "weight": 0.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19776,6 +20371,7 @@
     "height": 0.8,
     "weight": 14.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19810,6 +20406,7 @@
     "height": 0.6,
     "weight": 18.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19844,6 +20441,7 @@
     "height": 1.0,
     "weight": 110.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -19876,6 +20474,7 @@
     "height": 0.3,
     "weight": 21.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19909,6 +20508,7 @@
     "height": 0.6,
     "weight": 51.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19942,6 +20542,7 @@
     "height": 0.6,
     "weight": 81.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -19975,6 +20576,7 @@
     "height": 0.2,
     "weight": 0.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20008,6 +20610,7 @@
     "height": 1.2,
     "weight": 22.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20041,6 +20644,7 @@
     "height": 2.1,
     "weight": 80.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20074,6 +20678,7 @@
     "height": 0.5,
     "weight": 9.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20106,6 +20711,7 @@
     "height": 1.0,
     "weight": 34.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20139,6 +20745,7 @@
     "height": 0.3,
     "weight": 3.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20173,6 +20780,7 @@
     "height": 0.6,
     "weight": 13.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20207,6 +20815,7 @@
     "height": 1.0,
     "weight": 34.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20241,6 +20850,7 @@
     "height": 0.6,
     "weight": 18.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20275,6 +20885,7 @@
     "height": 1.0,
     "weight": 36.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20309,6 +20920,7 @@
     "height": 1.8,
     "weight": 105.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20342,6 +20954,7 @@
     "height": 0.5,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20374,6 +20987,7 @@
     "height": 2.6,
     "weight": 260.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20406,6 +21020,7 @@
     "height": 1.1,
     "weight": 148.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -20437,6 +21052,7 @@
     "height": 0.4,
     "weight": 7.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20469,6 +21085,7 @@
     "height": 0.8,
     "weight": 25.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20503,6 +21120,7 @@
     "height": 0.7,
     "weight": 11.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -20535,6 +21153,7 @@
     "height": 0.9,
     "weight": 20.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20568,6 +21187,7 @@
     "height": 1.4,
     "weight": 35.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20601,6 +21221,7 @@
     "height": 1.6,
     "weight": 139.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -20633,6 +21254,7 @@
     "height": 1.0,
     "weight": 92.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20666,6 +21288,7 @@
     "height": 2.8,
     "weight": 330.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20699,6 +21322,7 @@
     "height": 0.5,
     "weight": 10.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20733,6 +21357,7 @@
     "height": 1.6,
     "weight": 70.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -20766,6 +21391,7 @@
     "height": 1.6,
     "weight": 94.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -20798,6 +21424,7 @@
     "height": 0.5,
     "weight": 10.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20831,6 +21458,7 @@
     "height": 1.5,
     "weight": 41.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20864,6 +21492,7 @@
     "height": 0.5,
     "weight": 9.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20897,6 +21526,7 @@
     "height": 1.2,
     "weight": 39.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -20929,6 +21559,7 @@
     "height": 1.4,
     "weight": 58.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -20961,6 +21592,7 @@
     "height": 0.3,
     "weight": 33.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -20993,6 +21625,7 @@
     "height": 0.8,
     "weight": 17.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21027,6 +21660,7 @@
     "height": 1.4,
     "weight": 50.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21061,6 +21695,7 @@
     "height": 1.8,
     "weight": 160.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21095,6 +21730,7 @@
     "height": 1.1,
     "weight": 28.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -21128,6 +21764,7 @@
     "height": 1.6,
     "weight": 46.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -21161,6 +21798,7 @@
     "height": 2.1,
     "weight": 250.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21193,6 +21831,7 @@
     "height": 1.9,
     "weight": 260.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21225,6 +21864,7 @@
     "height": 2.0,
     "weight": 200.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21256,6 +21896,7 @@
     "height": 1.5,
     "weight": 63.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21288,6 +21929,7 @@
     "height": 1.5,
     "weight": 61.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21320,6 +21962,7 @@
     "height": 3.2,
     "weight": 330.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21352,6 +21995,7 @@
     "height": 2.9,
     "weight": 345.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21384,6 +22028,7 @@
     "height": 1.5,
     "weight": 68.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21416,6 +22061,7 @@
     "height": 3.0,
     "weight": 325.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21447,7 +22093,8 @@
     "gen": 5,
     "height": 1.4,
     "weight": 48.5,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21479,7 +22126,8 @@
     "gen": 5,
     "height": 0.6,
     "weight": 6.5,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21511,7 +22159,8 @@
     "gen": 5,
     "height": 1.5,
     "weight": 82.5,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -21543,6 +22192,7 @@
     "height": 0.4,
     "weight": 9.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21576,6 +22226,7 @@
     "height": 0.7,
     "weight": 29.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21610,6 +22261,7 @@
     "height": 1.6,
     "weight": 90.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21643,6 +22295,7 @@
     "height": 0.4,
     "weight": 9.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21676,6 +22329,7 @@
     "height": 1.0,
     "weight": 14.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21710,6 +22364,7 @@
     "height": 1.5,
     "weight": 39.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21743,6 +22398,7 @@
     "height": 0.3,
     "weight": 7.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21776,6 +22432,7 @@
     "height": 0.6,
     "weight": 10.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21810,6 +22467,7 @@
     "height": 1.5,
     "weight": 40.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21843,6 +22501,7 @@
     "height": 0.4,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -21876,6 +22535,7 @@
     "height": 1.0,
     "weight": 42.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -21909,6 +22569,7 @@
     "height": 0.3,
     "weight": 1.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21943,6 +22604,7 @@
     "height": 0.7,
     "weight": 16.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -21977,6 +22639,7 @@
     "height": 1.2,
     "weight": 24.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22010,6 +22673,7 @@
     "height": 0.3,
     "weight": 2.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22043,6 +22707,7 @@
     "height": 0.3,
     "weight": 8.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22077,6 +22742,7 @@
     "height": 1.2,
     "weight": 17.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22111,6 +22777,7 @@
     "height": 0.6,
     "weight": 13.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22144,6 +22811,7 @@
     "height": 1.5,
     "weight": 81.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22176,6 +22844,7 @@
     "height": 0.1,
     "weight": 0.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22209,6 +22878,7 @@
     "height": 0.2,
     "weight": 0.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22242,6 +22912,7 @@
     "height": 1.1,
     "weight": 10.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22275,6 +22946,7 @@
     "height": 0.9,
     "weight": 31.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22307,6 +22979,7 @@
     "height": 1.7,
     "weight": 91.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22340,6 +23013,7 @@
     "height": 0.6,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22374,6 +23048,7 @@
     "height": 2.1,
     "weight": 136.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22406,6 +23081,7 @@
     "height": 1.2,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -22437,6 +23113,7 @@
     "height": 0.3,
     "weight": 3.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22469,6 +23146,7 @@
     "height": 0.6,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22502,6 +23180,7 @@
     "height": 0.8,
     "weight": 2.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22536,6 +23215,7 @@
     "height": 0.8,
     "weight": 4.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22570,6 +23250,7 @@
     "height": 1.7,
     "weight": 53.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -22603,6 +23284,7 @@
     "height": 0.2,
     "weight": 0.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22635,6 +23317,7 @@
     "height": 0.8,
     "weight": 15.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22667,6 +23350,7 @@
     "height": 0.4,
     "weight": 3.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22699,6 +23383,7 @@
     "height": 0.8,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22733,6 +23418,7 @@
     "height": 0.4,
     "weight": 3.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22767,6 +23453,7 @@
     "height": 1.5,
     "weight": 47.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22800,6 +23487,7 @@
     "height": 0.5,
     "weight": 31.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22833,6 +23521,7 @@
     "height": 1.3,
     "weight": 96.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22867,6 +23556,7 @@
     "height": 0.5,
     "weight": 7.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22901,6 +23591,7 @@
     "height": 1.8,
     "weight": 81.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22934,6 +23625,7 @@
     "height": 0.5,
     "weight": 8.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -22967,6 +23659,7 @@
     "height": 1.3,
     "weight": 35.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23001,6 +23694,7 @@
     "height": 0.5,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23035,6 +23729,7 @@
     "height": 1.0,
     "weight": 21.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23069,6 +23764,7 @@
     "height": 0.8,
     "weight": 26.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23103,6 +23799,7 @@
     "height": 2.5,
     "weight": 270.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23136,6 +23833,7 @@
     "height": 1.3,
     "weight": 25.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23169,6 +23867,7 @@
     "height": 2.7,
     "weight": 225.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23201,6 +23900,7 @@
     "height": 1.0,
     "weight": 23.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23242,6 +23942,7 @@
     "height": 0.8,
     "weight": 21.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23275,6 +23976,7 @@
     "height": 0.2,
     "weight": 2.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23308,6 +24010,7 @@
     "height": 0.3,
     "weight": 5.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23339,6 +24042,7 @@
     "height": 0.3,
     "weight": 2.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -23372,6 +24076,7 @@
     "height": 0.8,
     "weight": 17.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -23405,6 +24110,7 @@
     "height": 2.0,
     "weight": 150.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -23439,6 +24145,7 @@
     "height": 0.2,
     "weight": 3.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23472,6 +24179,7 @@
     "height": 0.4,
     "weight": 7.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23506,6 +24214,7 @@
     "height": 1.5,
     "weight": 71.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23539,6 +24248,7 @@
     "height": 0.4,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23572,6 +24282,7 @@
     "height": 0.9,
     "weight": 12.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23605,6 +24316,7 @@
     "height": 1.0,
     "weight": 99.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23638,6 +24350,7 @@
     "height": 2.0,
     "weight": 505.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23672,6 +24385,7 @@
     "height": 0.5,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23706,6 +24420,7 @@
     "height": 1.5,
     "weight": 85.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -23738,6 +24453,7 @@
     "height": 3.0,
     "weight": 215.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23770,6 +24486,7 @@
     "height": 5.8,
     "weight": 203.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23802,6 +24519,7 @@
     "height": 5.0,
     "weight": 305.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23833,7 +24551,8 @@
     "gen": 6,
     "height": 0.7,
     "weight": 8.8,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23865,7 +24584,8 @@
     "gen": 6,
     "height": 0.5,
     "weight": 9.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23897,7 +24617,8 @@
     "gen": 6,
     "height": 1.7,
     "weight": 195.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -23930,6 +24651,7 @@
     "height": 0.3,
     "weight": 1.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -23964,6 +24686,7 @@
     "height": 0.7,
     "weight": 16.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -23998,6 +24721,7 @@
     "height": 1.6,
     "weight": 36.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24031,6 +24755,7 @@
     "height": 0.4,
     "weight": 4.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24064,6 +24789,7 @@
     "height": 0.7,
     "weight": 25.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24098,6 +24824,7 @@
     "height": 1.8,
     "weight": 83.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24132,6 +24859,7 @@
     "height": 0.4,
     "weight": 7.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24166,6 +24894,7 @@
     "height": 0.6,
     "weight": 17.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24201,6 +24930,7 @@
     "height": 1.8,
     "weight": 44.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24235,6 +24965,7 @@
     "height": 0.3,
     "weight": 1.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24269,6 +25000,7 @@
     "height": 0.6,
     "weight": 14.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24303,6 +25035,7 @@
     "height": 1.1,
     "weight": 26.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24336,6 +25069,7 @@
     "height": 0.4,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24368,6 +25102,7 @@
     "height": 0.7,
     "weight": 14.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24400,6 +25135,7 @@
     "height": 0.4,
     "weight": 4.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24434,6 +25170,7 @@
     "height": 0.5,
     "weight": 10.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24468,6 +25205,7 @@
     "height": 1.5,
     "weight": 45.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -24501,6 +25239,7 @@
     "height": 0.6,
     "weight": 7.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24534,6 +25273,7 @@
     "height": 1.7,
     "weight": 180.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24567,6 +25307,7 @@
     "height": 0.6,
     "weight": 3.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -24600,6 +25341,7 @@
     "height": 0.1,
     "weight": 0.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24634,6 +25376,7 @@
     "height": 0.2,
     "weight": 0.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24666,6 +25409,7 @@
     "height": 0.5,
     "weight": 9.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24698,6 +25442,7 @@
     "height": 0.8,
     "weight": 25.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24730,6 +25475,7 @@
     "height": 0.2,
     "weight": 0.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -24762,6 +25508,7 @@
     "height": 0.4,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24795,6 +25542,7 @@
     "height": 0.7,
     "weight": 14.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24827,6 +25575,7 @@
     "height": 1.0,
     "weight": 110.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24859,6 +25608,7 @@
     "height": 2.5,
     "weight": 920.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24893,6 +25643,7 @@
     "height": 0.3,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24927,6 +25678,7 @@
     "height": 1.8,
     "weight": 82.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24959,6 +25711,7 @@
     "height": 0.3,
     "weight": 1.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -24991,6 +25744,7 @@
     "height": 0.9,
     "weight": 18.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25024,6 +25778,7 @@
     "height": 0.2,
     "weight": 1.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25057,6 +25812,7 @@
     "height": 1.0,
     "weight": 11.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25091,6 +25847,7 @@
     "height": 0.6,
     "weight": 4.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25125,6 +25882,7 @@
     "height": 1.2,
     "weight": 22.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25158,6 +25916,7 @@
     "height": 0.5,
     "weight": 6.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25191,6 +25950,7 @@
     "height": 2.1,
     "weight": 135.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25223,6 +25983,7 @@
     "height": 0.3,
     "weight": 3.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -25256,6 +26017,7 @@
     "height": 0.7,
     "weight": 8.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -25289,6 +26051,7 @@
     "height": 1.2,
     "weight": 21.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -25322,6 +26085,7 @@
     "height": 0.1,
     "weight": 0.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25354,6 +26118,7 @@
     "height": 1.5,
     "weight": 76.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25385,6 +26150,7 @@
     "height": 2.0,
     "weight": 82.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25418,6 +26184,7 @@
     "height": 0.5,
     "weight": 12.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25452,6 +26219,7 @@
     "height": 2.0,
     "weight": 108.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25485,6 +26253,7 @@
     "height": 0.5,
     "weight": 70.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25518,6 +26287,7 @@
     "height": 1.3,
     "weight": 250.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25550,6 +26320,7 @@
     "height": 0.3,
     "weight": 1.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25581,6 +26352,7 @@
     "height": 1.9,
     "weight": 120.5,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25613,6 +26385,7 @@
     "height": 2.3,
     "weight": 100.5,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -25646,6 +26419,7 @@
     "height": 0.3,
     "weight": 40.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25677,6 +26451,7 @@
     "height": 0.4,
     "weight": 19.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25710,6 +26485,7 @@
     "height": 2.0,
     "weight": 212.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25743,6 +26519,7 @@
     "height": 0.3,
     "weight": 3.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25775,6 +26552,7 @@
     "height": 0.2,
     "weight": 0.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25807,6 +26585,7 @@
     "height": 0.9,
     "weight": 19.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25840,6 +26619,7 @@
     "height": 3.0,
     "weight": 185.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25872,6 +26652,7 @@
     "height": 3.9,
     "weight": 210.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -25903,6 +26684,7 @@
     "height": 0.6,
     "weight": 29.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -25937,6 +26719,7 @@
     "height": 1.2,
     "weight": 47.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -25971,6 +26754,7 @@
     "height": 1.6,
     "weight": 78.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26005,6 +26789,7 @@
     "height": 1.8,
     "weight": 20.5,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26037,6 +26822,7 @@
     "height": 1.2,
     "weight": 18.6,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26069,6 +26855,7 @@
     "height": 1.9,
     "weight": 45.5,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26101,6 +26888,7 @@
     "height": 1.3,
     "weight": 21.2,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26132,6 +26920,7 @@
     "height": 0.2,
     "weight": 0.1,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26166,6 +26955,7 @@
     "height": 0.1,
     "weight": 999.9,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26201,6 +26991,7 @@
     "height": 3.4,
     "weight": 230.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26236,6 +27027,7 @@
     "height": 4.0,
     "weight": 120.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26271,6 +27063,7 @@
     "height": 1.2,
     "weight": 55.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26303,6 +27096,7 @@
     "height": 2.4,
     "weight": 333.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26335,6 +27129,7 @@
     "height": 1.8,
     "weight": 25.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26366,6 +27161,7 @@
     "height": 3.8,
     "weight": 100.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26398,6 +27194,7 @@
     "height": 9.2,
     "weight": 999.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26430,6 +27227,7 @@
     "height": 0.3,
     "weight": 0.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26462,6 +27260,7 @@
     "height": 5.5,
     "weight": 888.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26493,6 +27292,7 @@
     "height": 2.4,
     "weight": 230.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26524,7 +27324,8 @@
     "gen": 7,
     "height": 1.0,
     "weight": 80.5,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26556,7 +27357,8 @@
     "gen": 7,
     "height": 0.7,
     "weight": 22.2,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26588,6 +27390,7 @@
     "height": 0.6,
     "weight": 1.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -26621,6 +27424,7 @@
     "height": 3.6,
     "weight": 150.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -26654,6 +27458,7 @@
     "height": 5.5,
     "weight": 820.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26686,6 +27491,7 @@
     "height": 1.8,
     "weight": 13.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26716,7 +27522,8 @@
     "gen": 7,
     "height": 1.5,
     "weight": 44.5,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26747,7 +27554,8 @@
     "gen": 7,
     "height": 0.2,
     "weight": 8.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26778,7 +27586,8 @@
     "gen": 7,
     "height": 2.5,
     "weight": 800.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -26811,6 +27620,7 @@
     "height": 0.3,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26845,6 +27655,7 @@
     "height": 0.7,
     "weight": 14.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26879,6 +27690,7 @@
     "height": 2.1,
     "weight": 90.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26913,6 +27725,7 @@
     "height": 0.3,
     "weight": 4.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26947,6 +27760,7 @@
     "height": 0.6,
     "weight": 9.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -26981,6 +27795,7 @@
     "height": 1.4,
     "weight": 33.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27015,6 +27830,7 @@
     "height": 0.3,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27049,6 +27865,7 @@
     "height": 0.7,
     "weight": 11.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27083,6 +27900,7 @@
     "height": 1.9,
     "weight": 45.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27116,6 +27934,7 @@
     "height": 0.3,
     "weight": 2.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27148,6 +27967,7 @@
     "height": 0.6,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27180,6 +28000,7 @@
     "height": 0.2,
     "weight": 1.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27213,6 +28034,7 @@
     "height": 0.8,
     "weight": 16.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27247,6 +28069,7 @@
     "height": 2.2,
     "weight": 75.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27280,6 +28103,7 @@
     "height": 0.4,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27314,6 +28138,7 @@
     "height": 0.4,
     "weight": 19.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27348,6 +28173,7 @@
     "height": 0.4,
     "weight": 40.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27381,6 +28207,7 @@
     "height": 0.6,
     "weight": 8.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27413,6 +28240,7 @@
     "height": 1.2,
     "weight": 19.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27445,6 +28273,7 @@
     "height": 0.4,
     "weight": 2.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27477,6 +28306,7 @@
     "height": 0.5,
     "weight": 2.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27509,6 +28339,7 @@
     "height": 0.6,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27541,6 +28372,7 @@
     "height": 1.3,
     "weight": 43.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27574,6 +28406,7 @@
     "height": 0.3,
     "weight": 8.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27608,6 +28441,7 @@
     "height": 1.0,
     "weight": 115.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27640,6 +28474,7 @@
     "height": 0.3,
     "weight": 13.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27672,6 +28507,7 @@
     "height": 1.0,
     "weight": 34.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27704,6 +28540,7 @@
     "height": 0.3,
     "weight": 12.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27738,6 +28575,7 @@
     "height": 1.1,
     "weight": 78.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27772,6 +28610,7 @@
     "height": 2.8,
     "weight": 310.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27807,6 +28646,7 @@
     "height": 0.2,
     "weight": 0.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27844,6 +28684,7 @@
     "height": 0.3,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27881,6 +28722,7 @@
     "height": 0.4,
     "weight": 13.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -27917,6 +28759,7 @@
     "height": 2.2,
     "weight": 7.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27950,6 +28793,7 @@
     "height": 3.8,
     "weight": 65.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -27984,6 +28828,7 @@
     "height": 0.8,
     "weight": 18.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -28015,6 +28860,7 @@
     "height": 0.5,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28047,6 +28893,7 @@
     "height": 1.3,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28080,6 +28927,7 @@
     "height": 0.4,
     "weight": 11.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28113,6 +28961,7 @@
     "height": 1.6,
     "weight": 40.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28146,6 +28995,7 @@
     "height": 0.7,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28179,6 +29029,7 @@
     "height": 3.0,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28212,6 +29063,7 @@
     "height": 0.6,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28245,6 +29097,7 @@
     "height": 1.6,
     "weight": 39.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28278,6 +29131,7 @@
     "height": 0.1,
     "weight": 0.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28311,6 +29165,7 @@
     "height": 0.2,
     "weight": 0.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28343,6 +29198,7 @@
     "height": 0.4,
     "weight": 3.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -28376,6 +29232,7 @@
     "height": 0.6,
     "weight": 4.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -28410,6 +29267,7 @@
     "height": 2.1,
     "weight": 5.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -28445,6 +29303,7 @@
     "height": 0.4,
     "weight": 5.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -28480,6 +29339,7 @@
     "height": 0.8,
     "weight": 12.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -28515,6 +29375,7 @@
     "height": 1.5,
     "weight": 61.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -28549,6 +29410,7 @@
     "height": 1.6,
     "weight": 46.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -28582,6 +29444,7 @@
     "height": 0.8,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28616,6 +29479,7 @@
     "height": 1.0,
     "weight": 0.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28649,6 +29513,7 @@
     "height": 0.8,
     "weight": 117.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28682,6 +29547,7 @@
     "height": 1.5,
     "weight": 58.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -28717,6 +29583,7 @@
     "height": 1.6,
     "weight": 66.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28751,6 +29618,7 @@
     "height": 0.2,
     "weight": 0.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28784,6 +29652,7 @@
     "height": 0.3,
     "weight": 0.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28817,6 +29686,7 @@
     "height": 3.0,
     "weight": 62.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -28849,6 +29719,7 @@
     "height": 0.3,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -28881,6 +29752,7 @@
     "height": 0.3,
     "weight": 3.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28914,6 +29786,7 @@
     "height": 1.3,
     "weight": 42.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -28946,6 +29819,7 @@
     "height": 2.5,
     "weight": 520.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -28978,6 +29852,7 @@
     "height": 1.4,
     "weight": 89.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29010,6 +29885,7 @@
     "height": 0.9,
     "weight": 28.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29043,6 +29919,7 @@
     "height": 0.3,
     "weight": 3.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29075,6 +29952,7 @@
     "height": 1.2,
     "weight": 100.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29108,6 +29986,7 @@
     "height": 3.0,
     "weight": 650.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29141,6 +30020,7 @@
     "height": 1.8,
     "weight": 190.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29173,6 +30053,7 @@
     "height": 2.3,
     "weight": 150.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29205,6 +30086,7 @@
     "height": 2.3,
     "weight": 215.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29237,6 +30119,7 @@
     "height": 2.0,
     "weight": 175.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29270,6 +30153,7 @@
     "height": 1.8,
     "weight": 40.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29304,6 +30188,7 @@
     "height": 0.5,
     "weight": 2.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -29339,6 +30224,7 @@
     "height": 1.4,
     "weight": 11.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -29374,6 +30260,7 @@
     "height": 3.0,
     "weight": 50.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -29407,6 +30294,7 @@
     "height": 2.8,
     "weight": 110.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29438,6 +30326,7 @@
     "height": 2.9,
     "weight": 210.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29470,6 +30359,7 @@
     "height": 20.0,
     "weight": 950.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29501,6 +30391,7 @@
     "height": 0.6,
     "weight": 12.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29534,6 +30425,7 @@
     "height": 1.9,
     "weight": 105.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29566,7 +30458,8 @@
     "gen": 8,
     "height": 1.8,
     "weight": 70.0,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29598,6 +30491,7 @@
     "height": 1.2,
     "weight": 145.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29629,6 +30523,7 @@
     "height": 2.1,
     "weight": 200.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29660,6 +30555,7 @@
     "height": 2.2,
     "weight": 800.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29691,6 +30587,7 @@
     "height": 2.0,
     "weight": 44.5,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29723,6 +30620,7 @@
     "height": 1.1,
     "weight": 7.7,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29755,6 +30653,7 @@
     "height": 1.8,
     "weight": 95.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29788,6 +30687,7 @@
     "height": 1.8,
     "weight": 89.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29822,6 +30722,7 @@
     "height": 2.4,
     "weight": 290.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -29856,6 +30757,7 @@
     "height": 3.0,
     "weight": 110.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29889,6 +30791,7 @@
     "height": 1.3,
     "weight": 43.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29923,6 +30826,7 @@
     "height": 2.5,
     "weight": 60.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -29956,6 +30860,7 @@
     "height": 1.6,
     "weight": 48.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -29988,6 +30893,7 @@
     "height": 0.4,
     "weight": 4.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30022,6 +30928,7 @@
     "height": 0.9,
     "weight": 12.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30057,6 +30964,7 @@
     "height": 1.5,
     "weight": 31.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30090,6 +30998,7 @@
     "height": 0.4,
     "weight": 9.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30123,6 +31032,7 @@
     "height": 1.0,
     "weight": 30.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30157,6 +31067,7 @@
     "height": 1.6,
     "weight": 326.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30191,6 +31102,7 @@
     "height": 0.5,
     "weight": 6.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30225,6 +31137,7 @@
     "height": 1.2,
     "weight": 21.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30260,6 +31173,7 @@
     "height": 1.8,
     "weight": 61.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30293,6 +31207,7 @@
     "height": 0.5,
     "weight": 10.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30325,6 +31240,7 @@
     "height": 1.0,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30357,6 +31273,7 @@
     "height": 0.3,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30389,6 +31306,7 @@
     "height": 1.0,
     "weight": 16.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30421,6 +31339,7 @@
     "height": 0.2,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30454,6 +31373,7 @@
     "height": 1.0,
     "weight": 17.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30486,6 +31406,7 @@
     "height": 0.3,
     "weight": 2.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30520,6 +31441,7 @@
     "height": 0.4,
     "weight": 6.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30554,6 +31476,7 @@
     "height": 0.9,
     "weight": 41.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30588,6 +31511,7 @@
     "height": 0.3,
     "weight": 1.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30621,6 +31545,7 @@
     "height": 0.3,
     "weight": 2.3,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30654,6 +31579,7 @@
     "height": 0.3,
     "weight": 10.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30687,6 +31613,7 @@
     "height": 0.5,
     "weight": 14.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30720,6 +31647,7 @@
     "height": 0.3,
     "weight": 6.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30754,6 +31682,7 @@
     "height": 0.6,
     "weight": 11.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30788,6 +31717,7 @@
     "height": 1.4,
     "weight": 48.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30822,6 +31752,7 @@
     "height": 0.6,
     "weight": 2.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -30853,6 +31784,7 @@
     "height": 0.4,
     "weight": 16.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30886,6 +31818,7 @@
     "height": 0.6,
     "weight": 105.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30919,6 +31852,7 @@
     "height": 2.3,
     "weight": 240.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -30952,6 +31886,7 @@
     "height": 0.6,
     "weight": 10.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -30986,6 +31921,7 @@
     "height": 1.5,
     "weight": 85.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31020,6 +31956,7 @@
     "height": 1.6,
     "weight": 62.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31053,6 +31990,7 @@
     "height": 0.3,
     "weight": 0.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31085,6 +32023,7 @@
     "height": 1.2,
     "weight": 113.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31119,6 +32058,7 @@
     "height": 0.4,
     "weight": 3.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31153,6 +32093,7 @@
     "height": 1.4,
     "weight": 38.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31185,6 +32126,7 @@
     "height": 0.5,
     "weight": 16.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31217,6 +32159,7 @@
     "height": 1.1,
     "weight": 61.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31250,6 +32193,7 @@
     "height": 0.2,
     "weight": 0.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31283,6 +32227,7 @@
     "height": 0.7,
     "weight": 27.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31316,6 +32261,7 @@
     "height": 0.6,
     "weight": 0.6,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31349,6 +32295,7 @@
     "height": 1.2,
     "weight": 6.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31382,6 +32329,7 @@
     "height": 0.9,
     "weight": 33.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31415,6 +32363,7 @@
     "height": 1.9,
     "weight": 58.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31447,6 +32396,7 @@
     "height": 1.3,
     "weight": 79.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -31478,6 +32428,7 @@
     "height": 0.3,
     "weight": 3.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31511,6 +32462,7 @@
     "height": 0.9,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31543,6 +32495,7 @@
     "height": 0.2,
     "weight": 1.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31576,6 +32529,7 @@
     "height": 0.3,
     "weight": 3.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31608,6 +32562,7 @@
     "height": 0.2,
     "weight": 1.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31640,6 +32595,7 @@
     "height": 1.9,
     "weight": 90.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31673,6 +32629,7 @@
     "height": 0.4,
     "weight": 8.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -31707,6 +32664,7 @@
     "height": 0.7,
     "weight": 59.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -31741,6 +32699,7 @@
     "height": 0.7,
     "weight": 112.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -31774,6 +32733,7 @@
     "height": 1.2,
     "weight": 1.8,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31806,6 +32766,7 @@
     "height": 1.2,
     "weight": 5.4,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31839,6 +32800,7 @@
     "height": 1.5,
     "weight": 42.9,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -31871,6 +32833,7 @@
     "height": 1.3,
     "weight": 60.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31904,6 +32867,7 @@
     "height": 1.3,
     "weight": 60.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31937,6 +32901,7 @@
     "height": 1.0,
     "weight": 35.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -31970,6 +32935,7 @@
     "height": 1.8,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32003,6 +32969,7 @@
     "height": 1.6,
     "weight": 63.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32034,6 +33001,7 @@
     "height": 2.5,
     "weight": 310.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32066,6 +33034,7 @@
     "height": 0.7,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32099,6 +33068,7 @@
     "height": 1.5,
     "weight": 45.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32131,6 +33101,7 @@
     "height": 0.6,
     "weight": 35.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32163,6 +33134,7 @@
     "height": 2.0,
     "weight": 15.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32196,6 +33168,7 @@
     "height": 1.6,
     "weight": 37.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32227,6 +33200,7 @@
     "height": 1.2,
     "weight": 45.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32259,6 +33233,7 @@
     "height": 4.5,
     "weight": 700.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32292,6 +33267,7 @@
     "height": 2.5,
     "weight": 90.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32323,6 +33299,7 @@
     "height": 12.0,
     "weight": 220.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32355,6 +33332,7 @@
     "height": 0.3,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32387,6 +33365,7 @@
     "height": 1.2,
     "weight": 56.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -32422,6 +33401,7 @@
     "height": 1.8,
     "weight": 223.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32456,6 +33436,7 @@
     "height": 3.2,
     "weight": 160.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32488,6 +33469,7 @@
     "height": 3.6,
     "weight": 39.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -32521,6 +33503,7 @@
     "height": 2.0,
     "weight": 120.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -32555,6 +33538,7 @@
     "height": 2.2,
     "weight": 320.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32587,6 +33571,7 @@
     "height": 1.2,
     "weight": 8.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32619,6 +33604,7 @@
     "height": 1.2,
     "weight": 21.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32651,6 +33637,7 @@
     "height": 1.4,
     "weight": 4.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32683,6 +33670,7 @@
     "height": 3.2,
     "weight": 92.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32715,6 +33703,7 @@
     "height": 2.3,
     "weight": 60.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32747,6 +33736,7 @@
     "height": 0.9,
     "weight": 240.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32779,6 +33769,7 @@
     "height": 0.6,
     "weight": 11.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32811,6 +33802,7 @@
     "height": 1.8,
     "weight": 380.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32843,6 +33835,7 @@
     "height": 1.3,
     "weight": 111.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32875,6 +33868,7 @@
     "height": 1.2,
     "weight": 36.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32907,6 +33901,7 @@
     "height": 1.6,
     "weight": 303.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -32940,6 +33935,7 @@
     "height": 0.5,
     "weight": 17.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -32975,6 +33971,7 @@
     "height": 0.8,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -33010,6 +34007,7 @@
     "height": 2.1,
     "weight": 210.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -33043,6 +34041,7 @@
     "height": 0.3,
     "weight": 5.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -33076,6 +34075,7 @@
     "height": 1.2,
     "weight": 30.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -33109,6 +34109,7 @@
     "height": 1.5,
     "weight": 74.2,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33141,6 +34142,7 @@
     "height": 1.9,
     "weight": 152.2,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33173,6 +34175,7 @@
     "height": 2.7,
     "weight": 699.7,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33205,6 +34208,7 @@
     "height": 0.4,
     "weight": 4.9,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33237,6 +34241,7 @@
     "height": 2.0,
     "weight": 380.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33269,6 +34274,7 @@
     "height": 1.4,
     "weight": 35.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33301,6 +34307,7 @@
     "height": 2.5,
     "weight": 303.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33333,6 +34340,7 @@
     "height": 3.5,
     "weight": 240.0,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33365,6 +34373,7 @@
     "height": 3.5,
     "weight": 280.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33397,6 +34406,7 @@
     "height": 1.5,
     "weight": 125.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33430,6 +34440,7 @@
     "height": 0.4,
     "weight": 9.7,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -33467,6 +34478,7 @@
     "height": 0.1,
     "weight": 1.1,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -33501,6 +34513,7 @@
     "height": 0.2,
     "weight": 2.2,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -33534,6 +34547,7 @@
     "height": 1.8,
     "weight": 92.2,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33566,6 +34580,7 @@
     "height": 1.0,
     "weight": 12.2,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33598,6 +34613,7 @@
     "height": 1.4,
     "weight": 30.1,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33629,6 +34645,7 @@
     "height": 1.2,
     "weight": 39.8,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33662,6 +34679,7 @@
     "height": 2.0,
     "weight": 60.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
@@ -33696,6 +34714,7 @@
     "height": 1.8,
     "weight": 93.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
@@ -33732,6 +34751,7 @@
     "height": 3.5,
     "weight": 590.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33764,6 +34784,7 @@
     "height": 5.2,
     "weight": 480.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33796,6 +34817,7 @@
     "height": 1.5,
     "weight": 162.5,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33828,6 +34850,7 @@
     "height": 1.6,
     "weight": 156.0,
     "isLegendary": false,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33859,6 +34882,7 @@
     "height": 0.2,
     "weight": 6.5,
     "isLegendary": true,
+    "isMythical": false,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
@@ -33890,7 +34914,8 @@
     "gen": 9,
     "height": 0.3,
     "weight": 0.3,
-    "isLegendary": true,
+    "isLegendary": false,
+    "isMythical": true,
     "isPseudo": false,
     "evolutionDepth": 1,
     "evolutionFamily": [

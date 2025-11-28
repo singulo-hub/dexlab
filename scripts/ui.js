@@ -16,6 +16,9 @@ export class UI {
         this.stat1StageEl = document.getElementById('stat-1stage');
         this.stat2StageEl = document.getElementById('stat-2stage');
         this.stat3StageEl = document.getElementById('stat-3stage');
+        this.statLegendaryEl = document.getElementById('stat-legendary');
+        this.statMythicalEl = document.getElementById('stat-mythical');
+        this.statPseudoEl = document.getElementById('stat-pseudo');
         this.rareTypeEl = document.getElementById('rare-type-val');
         this.commonTypeEl = document.getElementById('common-type-val');
         this.statBstEl = document.getElementById('avg-bst-val');
@@ -203,6 +206,9 @@ export class UI {
         this.stat1StageEl.textContent = stats.evolutionDepthCounts[1] || 0;
         this.stat2StageEl.textContent = stats.evolutionDepthCounts[2] || 0;
         this.stat3StageEl.textContent = stats.evolutionDepthCounts[3] || 0;
+        this.statLegendaryEl.textContent = stats.legendaryCount || 0;
+        this.statMythicalEl.textContent = stats.mythicalCount || 0;
+        this.statPseudoEl.textContent = stats.pseudoCount || 0;
         this.rareTypeEl.textContent = stats.rareType;
         this.commonTypeEl.textContent = stats.commonType;
         this.statBstEl.textContent = stats.avgBst;

@@ -238,7 +238,8 @@ async def process_species(session, species_entry):
         "gen": gen_id,
         "height": pokemon_data['height'] / 10, # dm to m
         "weight": pokemon_data['weight'] / 10, # hg to kg
-        "isLegendary": is_legendary or is_mythical,
+        "isLegendary": is_legendary,
+        "isMythical": is_mythical,
         "isPseudo": is_pseudo,
         "evolutionDepth": evolution_depth,
         "evolutionFamily": evolution_family,

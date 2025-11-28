@@ -9,6 +9,9 @@ export class Analytics {
             return {
                 count: 0,
                 evolutionDepthCounts: { 1: 0, 2: 0, 3: 0 },
+                legendaryCount: 0,
+                mythicalCount: 0,
+                pseudoCount: 0,
                 rareType: '-',
                 commonType: '-',
                 rareEggGroup: '-',
@@ -49,6 +52,7 @@ export class Analytics {
         let maxCaptureRate = -Infinity;
         let pseudoCount = 0;
         let legendaryCount = 0;
+        let mythicalCount = 0;
 
         dex.forEach(p => {
             // Types
@@ -77,6 +81,7 @@ export class Analytics {
             // Balance checks
             if (p.isPseudo) pseudoCount++;
             if (p.isLegendary) legendaryCount++;
+            if (p.isMythical) mythicalCount++;
             
             // Evolution depth - only count each family once
             // Use the family array as a key (sorted IDs joined)
@@ -210,6 +215,9 @@ export class Analytics {
         return {
             count,
             evolutionDepthCounts,
+            legendaryCount,
+            mythicalCount,
+            pseudoCount,
             rareType: `${rareType} (${minTypeCount === Infinity ? 0 : minTypeCount})`,
             commonType: `${commonType} (${maxTypeCount})`,
             rareEggGroup: `${rareEggGroup} (${minEggCount === Infinity ? 0 : minEggCount})`,
