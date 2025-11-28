@@ -113,7 +113,7 @@ export class ChartManager {
         } else {
             // Create new chart
             this.typeChart = new Chart(this.typeChartCanvas, {
-                type: 'pie',
+                type: 'doughnut',
                 data: {
                     labels: labels,
                     datasets: [{

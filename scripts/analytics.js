@@ -133,15 +133,24 @@ export class Analytics {
         const avgBst = Math.round(totalBst / count);
 
         // Alerts
-        if (legendaryCount > count * 0.1 && count > 10) {
+        if (legendaryCount > count * 0.08 && count > 15) {
             this.alerts.push(`High Legendary count (${legendaryCount})`);
         }
-        if (pseudoCount > count * 0.1 && count > 10) {
+        if (pseudoCount > count * 0.1 && count > 15) {
             this.alerts.push(`High Pseudo count (${pseudoCount})`);
         }
-        if (maxTypeCount > count * 0.3 && count > 10) {
-            this.alerts.push(`Type imbalance: ${commonType}`);
+        const evenDistribution = 1 / Object.keys(typeCounts).length;
+        if (maxTypeCount / count > evenDistribution * 1.75 && count > 15) {
+            this.alerts.push(`High ${commonType} type count (${maxTypeCount})`);
         }
+        
+        // Check for missing types (only if dex has more than 30 Pokemon)
+        const allTypes = ['Normal', 'Fire', 'Water', 'Electric', 'Grass', 'Ice', 'Fighting', 'Poison', 'Ground', 'Flying', 'Psychic', 'Bug', 'Rock', 'Ghost', 'Dragon', 'Dark', 'Steel', 'Fairy'];
+        const missingTypes = allTypes.filter(t => !typeCounts[t]);
+        if (missingTypes.length > 1 && count > 30) {
+            this.alerts.push(`Missing types: ${missingTypes.join(', ')}`);
+        }
+        
         if (avgBst > 550) {
             this.alerts.push(`High Avg BST (${avgBst})`);
         }
