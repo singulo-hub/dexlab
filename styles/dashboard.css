@@ -158,15 +158,16 @@
 
 /* Chart View Toggle - uses boxplot-active class instead of generic active */
 .chart-view-toggle.boxplot-active .toggle-slider {
-    left: calc(100% - 28px);
+    left: calc(100% - 38px);
     border-radius: 8px 16px 16px 8px;
 }
 
-.chart-view-toggle.boxplot-active i:first-of-type {
+/* When boxplot is active: first icon muted, last icon highlighted */
+.chart-view-toggle.boxplot-active > :first-child {
     color: var(--text-muted);
 }
 
-.chart-view-toggle.boxplot-active i:last-of-type {
+.chart-view-toggle.boxplot-active > :last-child {
     color: var(--text-color);
 }
 

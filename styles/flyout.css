@@ -191,7 +191,7 @@
 
 /* View Toggle - uses grid-active class instead of generic active */
 .view-toggle.grid-active .toggle-slider {
-    left: calc(100% - 28px);
+    left: calc(100% - 38px);
     border-radius: 8px 16px 16px 8px;
 }
 

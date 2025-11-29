@@ -1,6 +1,12 @@
 /**
  * ChartManager - Handles all dashboard chart rendering and updates
  */
+
+// Set Chart.js global defaults for larger fonts
+Chart.defaults.font.size = 14;
+Chart.defaults.plugins.tooltip.titleFont = { size: 14 };
+Chart.defaults.plugins.tooltip.bodyFont = { size: 13 };
+
 export class ChartManager {
     constructor() {
         // Chart canvas elements
@@ -280,7 +286,7 @@ export class ChartManager {
                         ticks: {
                             color: '#888',
                             font: {
-                                size: 9
+                                size: 12
                             }
                         },
                         grid: {
@@ -593,7 +599,7 @@ export class ChartManager {
                             ticks: {
                                 color: '#888',
                                 font: {
-                                    size: 10
+                                    size: 12
                                 }
                             },
                             grid: {
