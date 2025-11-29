@@ -66,6 +66,11 @@
     animation: fadeIn 0.2s ease;
 }
 
+.modal-step > p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
 .modal-step.hidden {
     display: none;
 }
