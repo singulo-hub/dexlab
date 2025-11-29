@@ -36,7 +36,11 @@ export class Analytics {
                     '400-499': 0,
                     '500-599': 0,
                     '600+': 0
-                }
+                },
+                bstBoxPlot: null,
+                medianBst: 0,
+                q1Bst: 0,
+                q3Bst: 0
             };
         }
 
@@ -187,11 +191,7 @@ export class Analytics {
             else bstBuckets['600+']++;
         });
 
-        // Calculate quartiles for box plot
-        const sortedCaptureRates = [...dex]
-            .map(p => p.captureRate || 0)
-            .sort((a, b) => a - b);
-        
+        // Helper function to calculate quartiles
         const getQuartile = (arr, q) => {
             const pos = (arr.length - 1) * q;
             const base = Math.floor(pos);
@@ -202,6 +202,33 @@ export class Analytics {
                 return arr[base];
             }
         };
+
+        // Calculate BST quartiles for box plot
+        const sortedBst = [...dex]
+            .map(p => p.bst)
+            .sort((a, b) => a - b);
+        
+        const q1Bst = getQuartile(sortedBst, 0.25);
+        const medianBst = getQuartile(sortedBst, 0.5);
+        const q3Bst = getQuartile(sortedBst, 0.75);
+        
+        // Calculate BST outliers (values outside 1.5 * IQR)
+        const bstIqr = q3Bst - q1Bst;
+        const bstLowerFence = q1Bst - 1.5 * bstIqr;
+        const bstUpperFence = q3Bst + 1.5 * bstIqr;
+        
+        // Get BST outliers with Pokemon names
+        const bstOutlierPokemon = dex
+            .filter(p => p.bst < bstLowerFence || p.bst > bstUpperFence)
+            .map(p => ({ name: p.name, bst: p.bst }));
+        
+        const bstWhiskerMin = sortedBst.find(v => v >= bstLowerFence) || minBst;
+        const bstWhiskerMax = [...sortedBst].reverse().find(v => v <= bstUpperFence) || maxBst;
+
+        // Calculate quartiles for capture rate box plot
+        const sortedCaptureRates = [...dex]
+            .map(p => p.captureRate || 0)
+            .sort((a, b) => a - b);
         
         const q1CaptureRate = getQuartile(sortedCaptureRates, 0.25);
         const medianCaptureRate = getQuartile(sortedCaptureRates, 0.5);
@@ -254,7 +281,18 @@ export class Analytics {
             alerts: this.alerts,
             typeCounts,
             eggGroupCounts,
-            bstDistribution: bstBuckets
+            bstDistribution: bstBuckets,
+            bstBoxPlot: {
+                min: bstWhiskerMin,
+                q1: q1Bst,
+                median: medianBst,
+                q3: q3Bst,
+                max: bstWhiskerMax,
+                outliers: bstOutlierPokemon
+            },
+            medianBst,
+            q1Bst,
+            q3Bst
         };
     }
 }

@@ -28,9 +28,9 @@
             <button id="print-grid-btn"><i class="fas fa-image"></i> Print Grid</button>
             <button id="new-dex-btn"><i class="fas fa-file"></i> Change Dex</button>
             <input type="file" id="file-input" style="display: none;" accept=".json">
-            <div class="theme-toggle" id="theme-toggle" title="Toggle theme">
+            <div class="icon-toggle theme-toggle" id="theme-toggle" title="Toggle theme">
                 <i class="fas fa-moon"></i>
-                <div class="theme-slider"></div>
+                <div class="toggle-slider"></div>
                 <i class="fas fa-sun"></i>
             </div>
         </div>
@@ -98,13 +98,22 @@
             </div>
             
             <div class="stat-card chart-card span-2-cols span-2-rows" id="stat-bst-chart">
-                <h3>BST Distribution</h3>
+                <div class="chart-header">
+                    <h3>BST Distribution</h3>
+                    <div class="icon-toggle chart-view-toggle" id="bst-chart-toggle" title="Toggle chart view">
+                        <i class="fas fa-chart-column"></i>
+                        <div class="toggle-slider"></div>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                </div>
                 <div class="chart-container">
                     <canvas id="bst-chart"></canvas>
                 </div>
                 <div class="chart-stats">
                     <span>Min: <strong id="min-bst-val">-</strong></span>
-                    <span>Avg: <strong id="avg-bst-val">-</strong></span>
+                    <span>Q1: <strong id="q1-bst-val">-</strong></span>
+                    <span>Median: <strong id="median-bst-val">-</strong></span>
+                    <span>Q3: <strong id="q3-bst-val">-</strong></span>
                     <span>Max: <strong id="max-bst-val">-</strong></span>
                 </div>
             </div>
@@ -141,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="view-toggle" class="view-toggle" title="Toggle View">
+                <div id="view-toggle" class="icon-toggle view-toggle" title="Toggle View">
                     <i class="fas fa-list"></i>
                     <div class="toggle-slider"></div>
                     <i class="fas fa-th"></i>

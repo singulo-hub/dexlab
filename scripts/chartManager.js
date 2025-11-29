@@ -15,8 +15,19 @@ export class ChartManager {
         this.eggChart = null;
         this.captureChart = null;
         
-        // Tooltip element for capture chart outliers
+        // Tooltip elements for box plot outliers
         this.captureTooltip = null;
+        this.bstTooltip = null;
+        
+        // BST chart view mode: 'histogram' or 'boxplot'
+        this.bstChartMode = 'histogram';
+        
+        // Store latest data for toggling
+        this.bstDistribution = null;
+        this.bstBoxPlotData = null;
+        
+        // Set up BST chart toggle
+        this.setupBstChartToggle();
         
         // Type colors
         this.typeColors = {
@@ -62,11 +73,31 @@ export class ChartManager {
     }
 
     /**
+     * Set up toggle between histogram and box plot for BST chart
+     */
+    setupBstChartToggle() {
+        const toggle = document.getElementById('bst-chart-toggle');
+        if (!toggle) return;
+        
+        toggle.addEventListener('click', () => {
+            this.bstChartMode = this.bstChartMode === 'histogram' ? 'boxplot' : 'histogram';
+            toggle.classList.toggle('boxplot-active', this.bstChartMode === 'boxplot');
+            
+            // Re-render the chart with current data
+            if (this.bstChartMode === 'histogram' && this.bstDistribution) {
+                this.renderBstHistogram(this.bstDistribution);
+            } else if (this.bstChartMode === 'boxplot' && this.bstBoxPlotData) {
+                this.renderBstBoxPlot(this.bstBoxPlotData);
+            }
+        });
+    }
+
+    /**
      * Update all charts with stats data
      */
     updateCharts(stats) {
         this.updateTypeChart(stats.typeCounts);
-        this.updateBstChart(stats.bstDistribution);
+        this.updateBstChart(stats.bstDistribution, stats.bstBoxPlot);
         this.updateEggChart(stats.eggGroupCounts);
         this.updateCaptureChart(stats.captureRateBoxPlot);
     }
@@ -147,12 +178,15 @@ export class ChartManager {
     }
 
     /**
-     * Update the BST Distribution bar chart
+     * Update the BST Distribution chart (histogram or box plot)
      */
-    updateBstChart(bstDistribution) {
+    updateBstChart(bstDistribution, bstBoxPlotData) {
+        // Store data for toggle
+        this.bstDistribution = bstDistribution;
+        this.bstBoxPlotData = bstBoxPlotData;
+        
         if (!bstDistribution) { return; }
         
-        const labels = Object.keys(bstDistribution);
         const data = Object.values(bstDistribution);
         const hasData = data.some(v => v > 0);
         
@@ -164,6 +198,21 @@ export class ChartManager {
             return;
         }
         
+        // Render based on current mode
+        if (this.bstChartMode === 'boxplot' && bstBoxPlotData) {
+            this.renderBstBoxPlot(bstBoxPlotData);
+        } else {
+            this.renderBstHistogram(bstDistribution);
+        }
+    }
+
+    /**
+     * Render BST as histogram bar chart
+     */
+    renderBstHistogram(bstDistribution) {
+        const labels = Object.keys(bstDistribution);
+        const data = Object.values(bstDistribution);
+        
         // Gradient colors from low BST (red) to high BST (purple)
         const bstColors = [
             '#f44336',  // < 300 - red
@@ -174,73 +223,294 @@ export class ChartManager {
         ];
         
         if (this.bstChart) {
-            this.bstChart.data.datasets[0].data = data;
-            this.bstChart.update({ duration: 300 });
-        } else {
-            this.bstChart = new Chart(this.bstChartCanvas, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        data: data,
-                        backgroundColor: bstColors,
-                        borderColor: '#1e1e1e',
-                        borderWidth: 1
-                    }]
+            this.bstChart.destroy();
+            this.bstChart = null;
+        }
+        
+        this.bstChart = new Chart(this.bstChartCanvas, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: data,
+                    backgroundColor: bstColors,
+                    borderColor: '#1e1e1e',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: {
+                    duration: 300
                 },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    animation: {
-                        duration: 300
+                interaction: {
+                    mode: 'index',
+                    intersect: true
+                },
+                plugins: {
+                    legend: {
+                        display: false
                     },
-                    interaction: {
+                    tooltip: {
                         mode: 'index',
-                        intersect: true
-                    },
-                    plugins: {
-                        legend: {
-                            display: false
-                        },
-                        tooltip: {
-                            mode: 'index',
-                            intersect: true,
-                            callbacks: {
-                                label: function(context) {
-                                    const count = context.raw;
-                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
-                                    const percentage = total > 0 ? ((count / total) * 100).toFixed(1) : 0;
-                                    return `${count} Pokémon (${percentage}%)`;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            ticks: {
-                                color: '#888',
-                                stepSize: 5
-                            },
-                            grid: {
-                                color: '#3e3e42'
-                            }
-                        },
-                        x: {
-                            ticks: {
-                                color: '#888',
-                                font: {
-                                    size: 9
-                                }
-                            },
-                            grid: {
-                                display: false
+                        intersect: true,
+                        callbacks: {
+                            label: function(context) {
+                                const count = context.raw;
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const percentage = total > 0 ? ((count / total) * 100).toFixed(1) : 0;
+                                return `${count} Pokémon (${percentage}%)`;
                             }
                         }
                     }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#888',
+                            stepSize: 5
+                        },
+                        grid: {
+                            color: '#3e3e42'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#888',
+                            font: {
+                                size: 9
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
                 }
-            });
+            }
+        });
+    }
+
+    /**
+     * Render BST as box and whisker plot
+     */
+    renderBstBoxPlot(boxPlotData) {
+        if (!boxPlotData) return;
+        
+        const { min, q1, median, q3, max, outliers } = boxPlotData;
+        
+        if (this.bstChart) {
+            this.bstChart.destroy();
+            this.bstChart = null;
         }
+        
+        // Create a custom plugin for drawing box and whisker plot
+        const boxWhiskerPlugin = {
+            id: 'bstBoxWhisker',
+            afterDatasetsDraw: (chart) => {
+                const ctx = chart.ctx;
+                const chartArea = chart.chartArea;
+                const yScale = chart.scales.y;
+                
+                const centerX = (chartArea.left + chartArea.right) / 2;
+                const boxWidth = Math.min(80, (chartArea.right - chartArea.left) * 0.4);
+                
+                // Get Y positions
+                const minY = yScale.getPixelForValue(min);
+                const q1Y = yScale.getPixelForValue(q1);
+                const medianY = yScale.getPixelForValue(median);
+                const q3Y = yScale.getPixelForValue(q3);
+                const maxY = yScale.getPixelForValue(max);
+                
+                ctx.save();
+                
+                // Draw whisker lines (vertical lines from min to q1 and q3 to max)
+                ctx.strokeStyle = '#888';
+                ctx.lineWidth = 2;
+                
+                // Lower whisker (min to q1)
+                ctx.beginPath();
+                ctx.moveTo(centerX, minY);
+                ctx.lineTo(centerX, q1Y);
+                ctx.stroke();
+                
+                // Upper whisker (q3 to max)
+                ctx.beginPath();
+                ctx.moveTo(centerX, q3Y);
+                ctx.lineTo(centerX, maxY);
+                ctx.stroke();
+                
+                // Whisker caps
+                const capWidth = boxWidth * 0.5;
+                ctx.beginPath();
+                ctx.moveTo(centerX - capWidth / 2, minY);
+                ctx.lineTo(centerX + capWidth / 2, minY);
+                ctx.stroke();
+                
+                ctx.beginPath();
+                ctx.moveTo(centerX - capWidth / 2, maxY);
+                ctx.lineTo(centerX + capWidth / 2, maxY);
+                ctx.stroke();
+                
+                // Draw box (q1 to q3) - use gradient colors
+                ctx.fillStyle = 'rgba(156, 39, 176, 0.6)'; // Purple to match BST theme
+                ctx.strokeStyle = '#9c27b0';
+                ctx.lineWidth = 2;
+                ctx.fillRect(centerX - boxWidth / 2, q3Y, boxWidth, q1Y - q3Y);
+                ctx.strokeRect(centerX - boxWidth / 2, q3Y, boxWidth, q1Y - q3Y);
+                
+                // Draw median line
+                ctx.strokeStyle = '#4ec9b0';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(centerX - boxWidth / 2, medianY);
+                ctx.lineTo(centerX + boxWidth / 2, medianY);
+                ctx.stroke();
+                
+                // Draw outliers and store their positions for tooltips
+                chart.outlierPositions = [];
+                if (outliers && outliers.length > 0) {
+                    ctx.fillStyle = '#f44336';
+                    outliers.forEach(outlier => {
+                        const y = yScale.getPixelForValue(outlier.bst);
+                        ctx.beginPath();
+                        ctx.arc(centerX, y, 5, 0, Math.PI * 2);
+                        ctx.fill();
+                        // Store position for tooltip detection
+                        chart.outlierPositions.push({
+                            x: centerX,
+                            y: y,
+                            name: outlier.name,
+                            bst: outlier.bst
+                        });
+                    });
+                }
+                
+                ctx.restore();
+            }
+        };
+        
+        this.bstChart = new Chart(this.bstChartCanvas, {
+            type: 'scatter',
+            data: {
+                datasets: [{
+                    data: [] // Empty data, we draw everything in plugin
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: false
+                    }
+                },
+                scales: {
+                    x: {
+                        display: false,
+                        min: 0,
+                        max: 1
+                    },
+                    y: {
+                        min: 100,
+                        max: 800,
+                        ticks: {
+                            color: '#888',
+                            stepSize: 100
+                        },
+                        grid: {
+                            color: '#3e3e42'
+                        },
+                        title: {
+                            display: true,
+                            text: 'BST',
+                            color: '#888'
+                        }
+                    }
+                }
+            },
+            plugins: [boxWhiskerPlugin]
+        });
+        
+        // Add custom tooltip for outliers
+        this.setupBstChartTooltip();
+    }
+
+    /**
+     * Set up custom tooltip handling for BST chart outliers
+     */
+    setupBstChartTooltip() {
+        // Create tooltip element if it doesn't exist
+        if (!this.bstTooltip) {
+            this.bstTooltip = document.createElement('div');
+            this.bstTooltip.className = 'bst-chart-tooltip';
+            this.bstTooltip.style.cssText = `
+                position: absolute;
+                background: #252526;
+                border: 1px solid #3e3e42;
+                border-radius: 4px;
+                padding: 6px 10px;
+                font-size: 0.8rem;
+                color: #d4d4d4;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity 0.15s;
+                z-index: 100;
+                white-space: nowrap;
+            `;
+            document.body.appendChild(this.bstTooltip);
+        }
+        
+        const canvas = this.bstChartCanvas;
+        const tooltip = this.bstTooltip;
+        const chart = this.bstChart;
+        
+        // Remove existing listeners
+        canvas.removeEventListener('mousemove', canvas._bstTooltipHandler);
+        canvas.removeEventListener('mouseleave', canvas._bstTooltipLeaveHandler);
+        
+        // Add mousemove handler
+        canvas._bstTooltipHandler = (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+            
+            // Check if mouse is near any outlier
+            const outlierPositions = chart.outlierPositions || [];
+            let foundOutlier = null;
+            
+            for (const outlier of outlierPositions) {
+                const distance = Math.sqrt(
+                    Math.pow(mouseX - outlier.x, 2) + 
+                    Math.pow(mouseY - outlier.y, 2)
+                );
+                if (distance <= 10) {
+                    foundOutlier = outlier;
+                    break;
+                }
+            }
+            
+            if (foundOutlier) {
+                tooltip.innerHTML = `<strong>${foundOutlier.name}</strong><br>BST: ${foundOutlier.bst}`;
+                tooltip.style.opacity = '1';
+                tooltip.style.left = `${e.clientX + 10}px`;
+                tooltip.style.top = `${e.clientY - 10}px`;
+            } else {
+                tooltip.style.opacity = '0';
+            }
+        };
+        
+        canvas._bstTooltipLeaveHandler = () => {
+            tooltip.style.opacity = '0';
+        };
+        
+        canvas.addEventListener('mousemove', canvas._bstTooltipHandler);
+        canvas.addEventListener('mouseleave', canvas._bstTooltipLeaveHandler);
     }
 
     /**

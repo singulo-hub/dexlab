@@ -24,9 +24,11 @@ export class UI {
         this.statLateEvoEl = document.getElementById('stat-late-evo');
         this.rareTypeEl = document.getElementById('rare-type-val');
         this.commonTypeEl = document.getElementById('common-type-val');
-        this.statBstEl = document.getElementById('avg-bst-val');
+        this.statMedianBstEl = document.getElementById('median-bst-val');
         this.statMinBstEl = document.getElementById('min-bst-val');
         this.statMaxBstEl = document.getElementById('max-bst-val');
+        this.statQ1BstEl = document.getElementById('q1-bst-val');
+        this.statQ3BstEl = document.getElementById('q3-bst-val');
         this.statMinCrEl = document.getElementById('min-cr-val');
         this.statQ1CrEl = document.getElementById('q1-cr-val');
         this.statMedianCrEl = document.getElementById('median-cr-val');
@@ -505,8 +507,10 @@ export class UI {
         this.statLateEvoEl.textContent = `${lateEvoCount} (${lateEvoPercent}%)`;
         this.rareTypeEl.textContent = stats.rareType;
         this.commonTypeEl.textContent = stats.commonType;
-        this.statBstEl.textContent = stats.avgBst;
         this.statMinBstEl.textContent = stats.minBst || '-';
+        this.statQ1BstEl.textContent = stats.q1Bst || '-';
+        this.statMedianBstEl.textContent = stats.medianBst || '-';
+        this.statQ3BstEl.textContent = stats.q3Bst || '-';
         this.statMaxBstEl.textContent = stats.maxBst || '-';
         this.statMinCrEl.textContent = stats.minCaptureRate || '-';
         this.statQ1CrEl.textContent = stats.q1CaptureRate || '-';
