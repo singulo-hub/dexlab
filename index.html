@@ -26,7 +26,7 @@
             <button id="export-btn"><i class="fas fa-file-export"></i> Export</button>
             <button id="import-btn"><i class="fas fa-file-import"></i> Import</button>
             <button id="print-grid-btn"><i class="fas fa-image"></i> Print Grid</button>
-            <button id="new-dex-btn"><i class="fas fa-file"></i> New / Load</button>
+            <button id="new-dex-btn"><i class="fas fa-file"></i> Change Dex</button>
             <input type="file" id="file-input" style="display: none;" accept=".json">
             <div class="theme-toggle" id="theme-toggle" title="Toggle theme">
                 <i class="fas fa-moon"></i>
@@ -158,6 +158,9 @@
     <!-- Template Selection Modal -->
     <div id="template-modal" class="modal">
         <div class="modal-content">
+            <button id="modal-close-btn" class="modal-close-btn hidden" title="Close">
+                <i class="fas fa-times"></i>
+            </button>
             <!-- Step 1: Main Menu -->
             <div id="modal-step-menu" class="modal-step">
                 <h2>Welcome to DexLab</h2>
@@ -172,6 +175,11 @@
                         <i class="fas fa-folder-open"></i>
                         <span>Load</span>
                         <small>Open a saved Pokédex</small>
+                    </button>
+                    <button class="modal-menu-btn" id="menu-edit-btn">
+                        <i class="fas fa-edit"></i>
+                        <span>Edit</span>
+                        <small>Rename current Pokédex</small>
                     </button>
                     <button class="modal-menu-btn" id="menu-region-btn">
                         <i class="fas fa-globe"></i>
@@ -206,6 +214,29 @@
                 </div>
                 <div class="modal-actions">
                     <button id="new-start-btn" class="btn-primary"><i class="fas fa-rocket"></i> Start</button>
+                </div>
+            </div>
+            
+            <!-- Step 2b: Edit Dex Form -->
+            <div id="modal-step-edit" class="modal-step hidden">
+                <button class="modal-back-btn" id="edit-back-btn">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <h2>Edit Pokédex</h2>
+                <div class="modal-form">
+                    <div class="form-group">
+                        <label for="edit-dex-name">Name</label>
+                        <input type="text" id="edit-dex-name" placeholder="My Custom Dex" maxlength="50">
+                        <div class="char-counter"><span id="edit-name-char-count">0</span> / 50</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-dex-desc">Description <span class="optional">(optional)</span></label>
+                        <textarea id="edit-dex-desc" placeholder="A brief description of your Pokédex..." rows="2" maxlength="100"></textarea>
+                        <div class="char-counter"><span id="edit-desc-char-count">0</span> / 100</div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button id="edit-save-btn" class="btn-primary"><i class="fas fa-save"></i> Save</button>
                 </div>
             </div>
             

@@ -23,7 +23,33 @@
     border-radius: 12px;
     max-width: 550px;
     width: 90%;
+    min-height: 400px;
     border: 1px solid var(--border-color);
+    position: relative;
+}
+
+/* Modal Close Button */
+.modal-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.modal-close-btn:hover {
+    color: var(--text-color);
+    background: var(--hover-color);
+}
+
+.modal-close-btn.hidden {
+    display: none;
 }
 
 .modal-content h2 {

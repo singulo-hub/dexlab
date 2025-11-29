@@ -39,6 +39,7 @@ export class UI {
         this.modalSteps = {
             menu: document.getElementById('modal-step-menu'),
             new: document.getElementById('modal-step-new'),
+            edit: document.getElementById('modal-step-edit'),
             load: document.getElementById('modal-step-load'),
             region: document.getElementById('modal-step-region')
         };
@@ -93,6 +94,11 @@ export class UI {
     }
 
     setupModalNavigation() {
+        // Close button
+        document.getElementById('modal-close-btn').addEventListener('click', () => {
+            this.closeModal();
+        });
+        
         // Main menu buttons
         document.getElementById('menu-new-btn').addEventListener('click', () => {
             this.showModalStep('new');
@@ -115,8 +121,23 @@ export class UI {
             document.getElementById('file-input').click();
         });
         
+        // Edit button - prefill with current dex data
+        document.getElementById('menu-edit-btn').addEventListener('click', () => {
+            document.getElementById('edit-dex-name').value = this.dataManager.currentDexName;
+            document.getElementById('edit-dex-desc').value = this.dataManager.currentDexDesc || '';
+            // Update character counters
+            document.getElementById('edit-name-char-count').textContent = this.dataManager.currentDexName.length;
+            document.getElementById('edit-desc-char-count').textContent = (this.dataManager.currentDexDesc || '').length;
+            this.showModalStep('edit');
+            document.getElementById('edit-dex-name').focus();
+        });
+        
         // Back buttons
         document.getElementById('new-back-btn').addEventListener('click', () => {
+            this.showModalStep('menu');
+        });
+        
+        document.getElementById('edit-back-btn').addEventListener('click', () => {
             this.showModalStep('menu');
         });
         
@@ -139,10 +160,27 @@ export class UI {
             this.updateDexTitle();
         });
         
+        // Edit dex save button
+        document.getElementById('edit-save-btn').addEventListener('click', () => {
+            const name = document.getElementById('edit-dex-name').value.trim() || 'Untitled Dex';
+            const desc = document.getElementById('edit-dex-desc').value.trim();
+            
+            this.dataManager.updateDexMeta(name, desc);
+            this.closeModal();
+            this.updateDexTitle();
+        });
+        
         // Enter key on name input starts the dex
         document.getElementById('new-dex-name').addEventListener('keydown', (e) => {
             if (e.key === 'Enter') {
                 document.getElementById('new-start-btn').click();
+            }
+        });
+        
+        // Enter key on edit name input saves
+        document.getElementById('edit-dex-name').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                document.getElementById('edit-save-btn').click();
             }
         });
         
@@ -181,6 +219,40 @@ export class UI {
                 descCounterContainer.classList.add('near-limit');
             }
         });
+        
+        // Character counter for edit name
+        const editNameInput = document.getElementById('edit-dex-name');
+        const editNameCharCounter = document.getElementById('edit-name-char-count');
+        const editNameCounterContainer = editNameCharCounter.parentElement;
+        
+        editNameInput.addEventListener('input', () => {
+            const count = editNameInput.value.length;
+            editNameCharCounter.textContent = count;
+            
+            editNameCounterContainer.classList.remove('near-limit', 'at-limit');
+            if (count >= 50) {
+                editNameCounterContainer.classList.add('at-limit');
+            } else if (count >= 40) {
+                editNameCounterContainer.classList.add('near-limit');
+            }
+        });
+        
+        // Character counter for edit description
+        const editDescTextarea = document.getElementById('edit-dex-desc');
+        const editDescCharCounter = document.getElementById('edit-desc-char-count');
+        const editDescCounterContainer = editDescCharCounter.parentElement;
+        
+        editDescTextarea.addEventListener('input', () => {
+            const count = editDescTextarea.value.length;
+            editDescCharCounter.textContent = count;
+            
+            editDescCounterContainer.classList.remove('near-limit', 'at-limit');
+            if (count >= 100) {
+                editDescCounterContainer.classList.add('at-limit');
+            } else if (count >= 80) {
+                editDescCounterContainer.classList.add('near-limit');
+            }
+        });
     }
 
     showModalStep(stepName) {
@@ -188,6 +260,19 @@ export class UI {
             step.classList.add('hidden');
         });
         this.modalSteps[stepName].classList.remove('hidden');
+    }
+
+    showModal() {
+        this.modal.classList.remove('hidden');
+        this.showModalStep('menu');
+        
+        // Show close button if a dex is already loaded
+        const closeBtn = document.getElementById('modal-close-btn');
+        if (this.dataManager.currentDexId) {
+            closeBtn.classList.remove('hidden');
+        } else {
+            closeBtn.classList.add('hidden');
+        }
     }
 
     init() {
@@ -293,11 +378,6 @@ export class UI {
 
     updateDexTitle() {
         this.dexNameEl.textContent = this.dataManager.currentDexName;
-    }
-
-    showModal() {
-        this.modal.classList.remove('hidden');
-        this.showModalStep('menu');
     }
 
     closeModal() {
