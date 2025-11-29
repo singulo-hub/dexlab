@@ -167,27 +167,22 @@
     gap: 6px;
     background: var(--accent-color);
     color: #fff;
-    padding: 4px 8px 4px 10px;
+    padding: 4px 10px;
     border-radius: 16px;
     font-size: 0.8rem;
     white-space: nowrap;
-}
-
-.filter-chip .chip-remove {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50%;
     cursor: pointer;
-    font-size: 0.65rem;
     transition: background 0.15s;
 }
 
-.filter-chip .chip-remove:hover {
-    background: rgba(255, 255, 255, 0.4);
+.filter-chip:hover {
+    background: var(--accent-color);
+    filter: brightness(1.2);
+}
+
+.filter-chip i {
+    font-size: 0.65rem;
+    opacity: 0.7;
 }
 
 /* Flyout Pokemon List */

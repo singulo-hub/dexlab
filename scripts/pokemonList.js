@@ -199,35 +199,45 @@ export class PokemonListManager {
         if (this.activeFilters.inDex) {
             const chip = document.createElement('span');
             chip.className = 'filter-chip';
-            chip.innerHTML = `In Dex <span class="chip-remove" data-type="inDex" data-value="true"><i class="fas fa-times"></i></span>`;
+            chip.dataset.type = 'inDex';
+            chip.dataset.value = 'true';
+            chip.innerHTML = `In Dex <i class="fas fa-times"></i>`;
             this.filterChipsContainer.appendChild(chip);
         }
         
         this.activeFilters.types.forEach(type => {
             const chip = document.createElement('span');
             chip.className = 'filter-chip';
-            chip.innerHTML = `${type} <span class="chip-remove" data-type="type" data-value="${type}"><i class="fas fa-times"></i></span>`;
+            chip.dataset.type = 'type';
+            chip.dataset.value = type;
+            chip.innerHTML = `${type} <i class="fas fa-times"></i>`;
             this.filterChipsContainer.appendChild(chip);
         });
         
         this.activeFilters.gens.forEach(gen => {
             const chip = document.createElement('span');
             chip.className = 'filter-chip';
-            chip.innerHTML = `Gen ${gen} <span class="chip-remove" data-type="gen" data-value="${gen}"><i class="fas fa-times"></i></span>`;
+            chip.dataset.type = 'gen';
+            chip.dataset.value = gen;
+            chip.innerHTML = `Gen ${gen} <i class="fas fa-times"></i>`;
             this.filterChipsContainer.appendChild(chip);
         });
         
         this.activeFilters.evos.forEach(evo => {
             const chip = document.createElement('span');
             chip.className = 'filter-chip';
-            chip.innerHTML = `${evo}-Stage <span class="chip-remove" data-type="evo" data-value="${evo}"><i class="fas fa-times"></i></span>`;
+            chip.dataset.type = 'evo';
+            chip.dataset.value = evo;
+            chip.innerHTML = `${evo}-Stage <i class="fas fa-times"></i>`;
             this.filterChipsContainer.appendChild(chip);
         });
         
         this.activeFilters.eggGroups.forEach(egg => {
             const chip = document.createElement('span');
             chip.className = 'filter-chip';
-            chip.innerHTML = `${egg} <span class="chip-remove" data-type="egg" data-value="${egg}"><i class="fas fa-times"></i></span>`;
+            chip.dataset.type = 'egg';
+            chip.dataset.value = egg;
+            chip.innerHTML = `${egg} <i class="fas fa-times"></i>`;
             this.filterChipsContainer.appendChild(chip);
         });
     }
@@ -437,11 +447,11 @@ export class PokemonListManager {
             this.filterAndRender();
         });
 
-        // Filter chips remove buttons
+        // Filter chips click to remove
         this.filterChipsContainer.addEventListener('click', (e) => {
-            const removeBtn = e.target.closest('.chip-remove');
-            if (removeBtn) {
-                this.removeFilter(removeBtn.dataset.type, removeBtn.dataset.value);
+            const chip = e.target.closest('.filter-chip');
+            if (chip) {
+                this.removeFilter(chip.dataset.type, chip.dataset.value);
             }
         });
 
