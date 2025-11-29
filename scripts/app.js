@@ -33,7 +33,8 @@ async function init() {
 // Filter State
 const activeFilters = {
     types: [],
-    gens: []
+    gens: [],
+    inDex: false
 };
 
 // Filter Logic
@@ -83,6 +84,9 @@ function removeFilter(type, value) {
         activeFilters.types = activeFilters.types.filter(t => t !== value);
     } else if (type === 'gen') {
         activeFilters.gens = activeFilters.gens.filter(g => g !== value);
+    } else if (type === 'inDex') {
+        activeFilters.inDex = false;
+        document.getElementById('in-dex-filter').checked = false;
     }
     updateFilterDropdowns();
     renderFilterChips();
@@ -110,6 +114,14 @@ function renderFilterChips() {
     const container = document.getElementById('filter-chips');
     container.innerHTML = '';
     
+    // In Dex chip
+    if (activeFilters.inDex) {
+        const chip = document.createElement('span');
+        chip.className = 'filter-chip';
+        chip.innerHTML = `In Dex <span class="chip-remove" data-type="inDex" data-value="true"><i class="fas fa-times"></i></span>`;
+        container.appendChild(chip);
+    }
+    
     activeFilters.types.forEach(type => {
         const chip = document.createElement('span');
         chip.className = 'filter-chip';
@@ -136,7 +148,10 @@ function filterAndRender() {
         // Must match ANY selected gen (OR logic for gens)
         const matchesGen = activeFilters.gens.length === 0 || 
             activeFilters.gens.includes(String(p.gen));
-        return matchesSearch && matchesTypes && matchesGen;
+        // If inDex filter is active, only show Pokemon in current dex
+        const matchesInDex = !activeFilters.inDex || 
+            dataManager.customDex.some(d => d.id === p.id);
+        return matchesSearch && matchesTypes && matchesGen && matchesInDex;
     });
 
     ui.renderPokemonList(filtered);
@@ -169,6 +184,12 @@ document.getElementById('gen-select').addEventListener('change', (e) => {
         addFilter('gen', e.target.value);
         e.target.value = '';
     }
+});
+
+document.getElementById('in-dex-filter').addEventListener('change', (e) => {
+    activeFilters.inDex = e.target.checked;
+    renderFilterChips();
+    filterAndRender();
 });
 
 document.getElementById('filter-chips').addEventListener('click', (e) => {

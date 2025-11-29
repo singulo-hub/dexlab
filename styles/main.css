@@ -221,15 +221,14 @@ button.secondary {
 .icon-toggle {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     background: var(--bg-color);
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 4px 8px;
+    padding: 8px 8px;
     cursor: pointer;
     position: relative;
     user-select: none;
-    height: 32px;
     box-sizing: border-box;
 }
 
@@ -264,7 +263,7 @@ button.secondary {
     top: 50%;
     transform: translateY(-50%);
     width: 38px;
-    height: 32px;
+    height: 40px;
     background: var(--accent-color);
     border-radius: 16px 8px 8px 16px;
     transition: left 0.25s ease;
