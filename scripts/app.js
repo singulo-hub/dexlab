@@ -182,6 +182,28 @@ function filterAndRender() {
     ui.renderPokemonList(filtered);
 }
 
+// Actions Dropdown
+const actionsBtn = document.getElementById('actions-btn');
+const actionsDropdown = document.getElementById('actions-dropdown');
+
+actionsBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    actionsDropdown.classList.toggle('open');
+});
+
+document.addEventListener('click', (e) => {
+    if (!actionsDropdown.contains(e.target) && e.target !== actionsBtn) {
+        actionsDropdown.classList.remove('open');
+    }
+});
+
+// Close actions dropdown when any action button is clicked
+actionsDropdown.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        actionsDropdown.classList.remove('open');
+    });
+});
+
 // Filter Event Listeners
 const filterBtn = document.getElementById('filter-btn');
 const filterDropdown = document.getElementById('filter-dropdown');
@@ -240,10 +262,6 @@ document.addEventListener('filter-update', () => {
 
 document.getElementById('export-btn').addEventListener('click', () => {
     dataManager.exportJSON();
-});
-
-document.getElementById('import-btn').addEventListener('click', () => {
-    document.getElementById('file-input').click();
 });
 
 document.getElementById('file-input').addEventListener('change', async (e) => {

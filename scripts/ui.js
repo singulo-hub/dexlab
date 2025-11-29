@@ -123,13 +123,15 @@ export class UI {
             document.getElementById('file-input').click();
         });
         
-        // Edit button - prefill with current dex data
-        document.getElementById('menu-edit-btn').addEventListener('click', () => {
+        // Edit button in header - opens edit modal directly
+        document.getElementById('edit-dex-btn').addEventListener('click', () => {
             document.getElementById('edit-dex-name').value = this.dataManager.currentDexName;
             document.getElementById('edit-dex-desc').value = this.dataManager.currentDexDesc || '';
             // Update character counters
             document.getElementById('edit-name-char-count').textContent = this.dataManager.currentDexName.length;
             document.getElementById('edit-desc-char-count').textContent = (this.dataManager.currentDexDesc || '').length;
+            this.modal.classList.remove('hidden');
+            document.getElementById('modal-close-btn').classList.remove('hidden');
             this.showModalStep('edit');
             document.getElementById('edit-dex-name').focus();
         });
@@ -140,7 +142,7 @@ export class UI {
         });
         
         document.getElementById('edit-back-btn').addEventListener('click', () => {
-            this.showModalStep('menu');
+            this.closeModal();
         });
         
         document.getElementById('load-back-btn').addEventListener('click', () => {

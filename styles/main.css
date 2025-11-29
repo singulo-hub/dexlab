@@ -125,6 +125,17 @@ h1 {
     text-overflow: ellipsis;
 }
 
+#edit-dex-btn {
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+#edit-dex-btn:hover {
+    opacity: 1;
+}
+
 .header-controls {
     display: flex;
     gap: 8px;
@@ -286,6 +297,64 @@ button.secondary {
 /* Theme Toggle - specific overrides */
 .theme-toggle {
     margin-left: 8px;
+}
+
+/* Actions Dropdown */
+.actions-dropdown-container {
+    position: relative;
+}
+
+.actions-btn {
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.actions-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.actions-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    background-color: var(--panel-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    z-index: 1000;
+    min-width: 180px;
+    overflow: hidden;
+}
+
+.actions-dropdown.open {
+    display: block;
+}
+
+.actions-dropdown button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 10px 14px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    color: var(--text-color);
+    font-size: 0.85rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.actions-dropdown button:hover {
+    background-color: var(--hover-color);
+}
+
+.actions-dropdown button i {
+    width: 16px;
+    color: var(--text-muted);
 }
 
 body[data-theme="light"] .theme-toggle i:first-of-type {

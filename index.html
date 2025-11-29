@@ -27,13 +27,20 @@
             <h1>DexLab</h1>
             <span class="title-separator">/</span>
             <span id="dex-name" class="dex-name">Untitled Dex</span>
+            <button id="edit-dex-btn" class="icon-btn" title="Edit Pokédex">
+                <i class="fas fa-edit"></i>
+            </button>
         </div>
         <div class="header-controls">
             <button id="add-pokemon-btn"><i class="fas fa-plus"></i> Add Pokémon</button>
-            <button id="export-btn"><i class="fas fa-file-export"></i> Export</button>
-            <button id="import-btn"><i class="fas fa-file-import"></i> Import</button>
-            <button id="print-grid-btn"><i class="fas fa-image"></i> Print Grid</button>
-            <button id="new-dex-btn"><i class="fas fa-file"></i> Change Dex</button>
+            <div class="actions-dropdown-container">
+                <button id="actions-btn" class="actions-btn"><i class="fas fa-ellipsis-v"></i></button>
+                <div id="actions-dropdown" class="actions-dropdown">
+                    <button id="new-dex-btn"><i class="fas fa-file"></i> Change Dex</button>
+                    <button id="export-btn"><i class="fas fa-file-export"></i> Export</button>
+                    <button id="print-grid-btn"><i class="fas fa-image"></i> Print Grid</button>
+                </div>
+            </div>
             <input type="file" id="file-input" style="display: none;" accept=".json">
             <div class="icon-toggle theme-toggle" id="theme-toggle" title="Toggle theme">
                 <i class="fas fa-moon"></i>
@@ -206,11 +213,6 @@
                         <i class="fas fa-folder-open"></i>
                         <span>Load</span>
                         <small>Open a saved Pokédex</small>
-                    </button>
-                    <button class="modal-menu-btn" id="menu-edit-btn">
-                        <i class="fas fa-edit"></i>
-                        <span>Edit</span>
-                        <small>Rename current Pokédex</small>
                     </button>
                     <button class="modal-menu-btn" id="menu-region-btn">
                         <i class="fas fa-globe"></i>
