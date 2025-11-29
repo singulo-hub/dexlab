@@ -12,6 +12,7 @@ export class Analytics {
                 legendaryCount: 0,
                 mythicalCount: 0,
                 pseudoCount: 0,
+                lateEvolutionCount: 0,
                 rareType: '-',
                 commonType: '-',
                 rareEggGroup: '-',
@@ -53,6 +54,7 @@ export class Analytics {
         let pseudoCount = 0;
         let legendaryCount = 0;
         let mythicalCount = 0;
+        let lateEvolutionCount = 0;
 
         dex.forEach(p => {
             // Types
@@ -82,6 +84,7 @@ export class Analytics {
             if (p.isPseudo) pseudoCount++;
             if (p.isLegendary) legendaryCount++;
             if (p.isMythical) mythicalCount++;
+            if (p.isLateEvolution) lateEvolutionCount++;
             
             // Evolution depth - only count each family once
             // Use the family array as a key (sorted IDs joined)
@@ -139,14 +142,22 @@ export class Analytics {
 
         // Alerts
         if (legendaryCount > count * 0.08 && count > 15) {
-            this.alerts.push(`High Legendary count (${legendaryCount})`);
+            const pct = Math.round((legendaryCount / count) * 100);
+            this.alerts.push(`High Legendary count (${legendaryCount}, ${pct}%)`);
         }
         if (pseudoCount > count * 0.1 && count > 15) {
-            this.alerts.push(`High Pseudo count (${pseudoCount})`);
+            const pct = Math.round((pseudoCount / count) * 100);
+            this.alerts.push(`High Pseudo count (${pseudoCount}, ${pct}%)`);
+        }
+        // Late evolution alert: if more than 25% of Pokemon require late-game evolution methods
+        if (lateEvolutionCount > count * 0.25 && count > 15) {
+            const pct = Math.round((lateEvolutionCount / count) * 100);
+            this.alerts.push(`High late-game evolutions (${lateEvolutionCount}, ${pct}%)`);
         }
         const evenDistribution = 1 / Object.keys(typeCounts).length;
         if (maxTypeCount / count > evenDistribution * 1.75 && count > 15) {
-            this.alerts.push(`High ${commonType} type count (${maxTypeCount})`);
+            const pct = Math.round((maxTypeCount / count) * 100);
+            this.alerts.push(`High ${commonType} type count (${maxTypeCount}, ${pct}%)`);
         }
         
         // Check for missing types (only if dex has more than 30 Pokemon)
@@ -218,6 +229,7 @@ export class Analytics {
             legendaryCount,
             mythicalCount,
             pseudoCount,
+            lateEvolutionCount,
             rareType: `${rareType} (${minTypeCount === Infinity ? 0 : minTypeCount})`,
             commonType: `${commonType} (${maxTypeCount})`,
             rareEggGroup: `${rareEggGroup} (${minEggCount === Infinity ? 0 : minEggCount})`,

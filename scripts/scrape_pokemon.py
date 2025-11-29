@@ -14,6 +14,11 @@ OUTPUT_FILE = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', '
 evolution_depth_cache = {}
 # Cache for evolution family: species_name -> list of all species IDs in the family
 evolution_family_cache = {}
+# Cache for final evolution method: species_name -> 'early' | 'late' | None
+# 'late' = evolves at level 40+, uses item, special location, trade, or other special method
+# 'early' = evolves by level-up before level 40
+# None = doesn't evolve or is base form
+evolution_method_cache = {}
 
 def clean_png_data(data):
     """Remove non-critical PNG chunks that may have bad checksums (e.g., iCCP)"""
@@ -125,7 +130,43 @@ def process_evolution_chain(chain, current_stage, max_stage=None, family_ids=Non
     evolution_depth_cache[species_name] = max_stage
     evolution_family_cache[species_name] = family_ids
     
+    # For the base form (no evolution details), set method to None
+    if not chain.get('evolution_details') or len(chain['evolution_details']) == 0:
+        evolution_method_cache[species_name] = None
+    
     for evolution in chain.get('evolves_to', []):
+        # Determine if this evolution is "late game"
+        evo_details = evolution.get('evolution_details', [])
+        is_late_game = False
+        
+        if evo_details:
+            detail = evo_details[0]  # Use first evolution method
+            trigger = detail.get('trigger', {}).get('name', '')
+            min_level = detail.get('min_level')
+            
+            # Late game conditions:
+            # 1. Level 40+
+            # 2. Uses an evolution item
+            # 3. Trade evolution
+            # 4. Special location required
+            # 5. Needs specific held item
+            # 6. Needs known move or move type (usually learned late)
+            if min_level and min_level >= 40:
+                is_late_game = True
+            elif trigger == 'use-item' or detail.get('item'):
+                is_late_game = True
+            elif trigger == 'trade':
+                is_late_game = True
+            elif detail.get('location'):
+                is_late_game = True
+            elif detail.get('held_item'):
+                is_late_game = True
+            elif detail.get('known_move') or detail.get('known_move_type'):
+                is_late_game = True
+        
+        evolved_species_name = evolution['species']['name']
+        evolution_method_cache[evolved_species_name] = 'late' if is_late_game else 'early'
+        
         process_evolution_chain(evolution, current_stage + 1, max_stage, family_ids)
 
 def collect_family_ids(chain):
@@ -247,6 +288,10 @@ async def process_species(session, species_entry):
     # Evolution depth and family (from cached data)
     evolution_depth = evolution_depth_cache.get(species_data['name'], 1)
     evolution_family = evolution_family_cache.get(species_data['name'], [species_data['id']])
+    
+    # Is this Pokemon a late-game evolution? (level 40+, item, trade, location, etc.)
+    evolution_method = evolution_method_cache.get(species_data['name'])
+    is_late_evolution = evolution_method == 'late'
 
     # Download Sprite to memory (will be combined into sprite sheet later)
     sprite_url = pokemon_data['sprites']['front_default']
@@ -295,6 +340,7 @@ async def process_species(session, species_entry):
         "isLegendary": is_legendary,
         "isMythical": is_mythical,
         "isPseudo": is_pseudo,
+        "isLateEvolution": is_late_evolution,
         "evolutionDepth": evolution_depth,
         "evolutionFamily": evolution_family,
         "description": description,

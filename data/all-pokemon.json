@@ -26,6 +26,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       1,
@@ -64,6 +65,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       1,
@@ -102,6 +104,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       1,
@@ -139,6 +142,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       4,
@@ -176,6 +180,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       4,
@@ -214,6 +219,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       4,
@@ -251,6 +257,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       7,
@@ -288,6 +295,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       7,
@@ -325,6 +333,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       7,
@@ -361,6 +370,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       10,
@@ -397,6 +407,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       10,
@@ -434,6 +445,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       10,
@@ -471,6 +483,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       13,
@@ -508,6 +521,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       13,
@@ -545,6 +559,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       13,
@@ -582,6 +597,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       16,
@@ -619,6 +635,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       16,
@@ -656,6 +673,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       16,
@@ -692,6 +710,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       19,
@@ -727,6 +746,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       19,
@@ -763,6 +783,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       21,
@@ -799,6 +820,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       21,
@@ -835,6 +857,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       23,
@@ -871,6 +894,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       23,
@@ -907,6 +931,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       25,
@@ -944,6 +969,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       25,
@@ -980,6 +1006,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       27,
@@ -1015,6 +1042,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       27,
@@ -1051,6 +1079,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       29,
@@ -1087,6 +1116,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       29,
@@ -1124,6 +1154,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       29,
@@ -1161,6 +1192,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       32,
@@ -1198,6 +1230,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       32,
@@ -1236,6 +1269,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       32,
@@ -1272,6 +1306,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       35,
@@ -1308,6 +1343,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       35,
@@ -1344,6 +1380,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       37,
@@ -1379,6 +1416,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       37,
@@ -1415,6 +1453,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       39,
@@ -1452,6 +1491,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       39,
@@ -1489,6 +1529,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       41,
@@ -1526,6 +1567,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       41,
@@ -1563,6 +1605,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       43,
@@ -1601,6 +1644,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       43,
@@ -1639,6 +1683,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       43,
@@ -1678,6 +1723,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       46,
@@ -1715,6 +1761,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       46,
@@ -1751,6 +1798,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       48,
@@ -1787,6 +1835,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       48,
@@ -1822,6 +1871,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       50,
@@ -1857,6 +1907,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       50,
@@ -1892,6 +1943,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       52,
@@ -1928,6 +1980,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       52,
@@ -1965,6 +2018,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       54,
@@ -2001,6 +2055,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       54,
@@ -2036,6 +2091,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       56,
@@ -2072,6 +2128,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       56,
@@ -2108,6 +2165,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       58,
@@ -2143,6 +2201,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       58,
@@ -2178,6 +2237,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       60,
@@ -2215,6 +2275,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       60,
@@ -2253,6 +2314,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       60,
@@ -2290,6 +2352,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       63,
@@ -2326,6 +2389,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       63,
@@ -2362,6 +2426,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       63,
@@ -2398,6 +2463,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       66,
@@ -2434,6 +2500,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       66,
@@ -2470,6 +2537,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       66,
@@ -2507,6 +2575,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       69,
@@ -2544,6 +2613,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       69,
@@ -2581,6 +2651,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       69,
@@ -2618,6 +2689,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       72,
@@ -2654,6 +2726,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       72,
@@ -2690,6 +2763,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       74,
@@ -2727,6 +2801,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       74,
@@ -2764,6 +2839,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       74,
@@ -2800,6 +2876,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       77,
@@ -2835,6 +2912,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       77,
@@ -2872,6 +2950,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       79,
@@ -2910,6 +2989,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       79,
@@ -2947,6 +3027,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       81,
@@ -2984,6 +3065,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       81,
@@ -3022,6 +3104,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       83,
@@ -3058,6 +3141,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       84,
@@ -3094,6 +3178,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       84,
@@ -3130,6 +3215,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       86,
@@ -3167,6 +3253,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       86,
@@ -3202,6 +3289,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       88,
@@ -3237,6 +3325,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       88,
@@ -3272,6 +3361,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       90,
@@ -3308,6 +3398,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       90,
@@ -3344,6 +3435,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       92,
@@ -3381,6 +3473,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       92,
@@ -3418,6 +3511,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       92,
@@ -3455,6 +3549,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       95,
@@ -3490,6 +3585,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       96,
@@ -3525,6 +3621,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       96,
@@ -3560,6 +3657,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       98,
@@ -3595,6 +3693,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       98,
@@ -3630,6 +3729,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       100,
@@ -3665,6 +3765,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       100,
@@ -3701,6 +3802,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       102,
@@ -3737,6 +3839,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       102,
@@ -3772,6 +3875,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       104,
@@ -3807,6 +3911,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       104,
@@ -3842,6 +3947,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       106,
@@ -3879,6 +3985,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       106,
@@ -3916,6 +4023,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       108,
@@ -3951,6 +4059,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       109,
@@ -3986,6 +4095,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       109,
@@ -4023,6 +4133,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       111,
@@ -4061,6 +4172,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       111,
@@ -4097,6 +4209,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       113,
@@ -4133,6 +4246,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       114,
@@ -4168,6 +4282,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       115
@@ -4203,6 +4318,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       116,
@@ -4240,6 +4356,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       116,
@@ -4276,6 +4393,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       118,
@@ -4311,6 +4429,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       118,
@@ -4346,6 +4465,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       120,
@@ -4382,6 +4502,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       120,
@@ -4418,6 +4539,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       122,
@@ -4455,6 +4577,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       123,
@@ -4492,6 +4615,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       124,
@@ -4527,6 +4651,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       125,
@@ -4563,6 +4688,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       126,
@@ -4599,6 +4725,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       127
@@ -4633,6 +4760,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       128
@@ -4668,6 +4796,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       129,
@@ -4705,6 +4834,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       129,
@@ -4742,6 +4872,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       131
@@ -4776,6 +4907,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       132
@@ -4810,6 +4942,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -4852,6 +4985,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -4894,6 +5028,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -4936,6 +5071,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -4978,6 +5114,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       137,
@@ -5016,6 +5153,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       138,
@@ -5053,6 +5191,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       138,
@@ -5090,6 +5229,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       140,
@@ -5127,6 +5267,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       140,
@@ -5163,6 +5304,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       142
@@ -5197,6 +5339,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       143,
@@ -5233,6 +5376,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       144
@@ -5268,6 +5412,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       145
@@ -5303,6 +5448,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       146
@@ -5338,6 +5484,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       147,
@@ -5375,6 +5522,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       147,
@@ -5413,6 +5561,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       147,
@@ -5449,6 +5598,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       150
@@ -5483,6 +5633,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       151
@@ -5518,6 +5669,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       152,
@@ -5555,6 +5707,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       152,
@@ -5592,6 +5745,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       152,
@@ -5628,6 +5782,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       155,
@@ -5664,6 +5819,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       155,
@@ -5700,6 +5856,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       155,
@@ -5737,6 +5894,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       158,
@@ -5774,6 +5932,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       158,
@@ -5811,6 +5970,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       158,
@@ -5847,6 +6007,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       161,
@@ -5882,6 +6043,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       161,
@@ -5918,6 +6080,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       163,
@@ -5954,6 +6117,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       163,
@@ -5990,6 +6154,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       165,
@@ -6026,6 +6191,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       165,
@@ -6062,6 +6228,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       167,
@@ -6098,6 +6265,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       167,
@@ -6134,6 +6302,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       41,
@@ -6171,6 +6340,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       170,
@@ -6207,6 +6377,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       170,
@@ -6242,6 +6413,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       25,
@@ -6278,6 +6450,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       35,
@@ -6315,6 +6488,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       39,
@@ -6351,6 +6525,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       175,
@@ -6389,6 +6564,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       175,
@@ -6426,6 +6602,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       177,
@@ -6462,6 +6639,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       177,
@@ -6498,6 +6676,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       179,
@@ -6535,6 +6714,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       179,
@@ -6572,6 +6752,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       179,
@@ -6608,6 +6789,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       43,
@@ -6647,6 +6829,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       183,
@@ -6685,6 +6868,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       183,
@@ -6721,6 +6905,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       185,
@@ -6756,6 +6941,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       60,
@@ -6795,6 +6981,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       187,
@@ -6833,6 +7020,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       187,
@@ -6871,6 +7059,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       187,
@@ -6907,6 +7096,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       190,
@@ -6942,6 +7132,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       191,
@@ -6977,6 +7168,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       191,
@@ -7013,6 +7205,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       193,
@@ -7050,6 +7243,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       194,
@@ -7088,6 +7282,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       194,
@@ -7124,6 +7319,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -7166,6 +7362,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -7209,6 +7406,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       198,
@@ -7246,6 +7444,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       79,
@@ -7282,6 +7481,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       200,
@@ -7317,6 +7517,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       201
@@ -7351,6 +7552,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       202,
@@ -7387,6 +7589,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       203,
@@ -7422,6 +7625,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       204,
@@ -7458,6 +7662,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       204,
@@ -7493,6 +7698,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       206,
@@ -7529,6 +7735,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       207,
@@ -7565,6 +7772,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       95,
@@ -7601,6 +7809,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       209,
@@ -7637,6 +7846,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       209,
@@ -7673,6 +7883,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       211,
@@ -7709,6 +7920,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       123,
@@ -7746,6 +7958,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       213
@@ -7781,6 +7994,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       214
@@ -7816,6 +8030,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       215,
@@ -7852,6 +8067,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       216,
@@ -7888,6 +8104,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       216,
@@ -7924,6 +8141,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       218,
@@ -7960,6 +8178,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       218,
@@ -7996,6 +8215,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       220,
@@ -8033,6 +8253,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       220,
@@ -8071,6 +8292,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       222,
@@ -8107,6 +8329,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       223,
@@ -8143,6 +8366,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       223,
@@ -8180,6 +8404,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       225
@@ -8215,6 +8440,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       226,
@@ -8251,6 +8477,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       227
@@ -8286,6 +8513,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       228,
@@ -8322,6 +8550,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       228,
@@ -8359,6 +8588,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       116,
@@ -8395,6 +8625,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       231,
@@ -8430,6 +8661,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       231,
@@ -8465,6 +8697,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       137,
@@ -8501,6 +8734,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       234,
@@ -8536,6 +8770,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       235
@@ -8570,6 +8805,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       106,
@@ -8607,6 +8843,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       106,
@@ -8645,6 +8882,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       124,
@@ -8680,6 +8918,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       125,
@@ -8716,6 +8955,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       126,
@@ -8752,6 +8992,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       241
@@ -8786,6 +9027,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       113,
@@ -8822,6 +9064,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       243
@@ -8856,6 +9099,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       244
@@ -8890,6 +9134,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       245
@@ -8925,6 +9170,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       246,
@@ -8962,6 +9208,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       246,
@@ -8999,6 +9246,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       246,
@@ -9036,6 +9284,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       249
@@ -9071,6 +9320,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       250
@@ -9106,6 +9356,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       251
@@ -9141,6 +9392,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       252,
@@ -9178,6 +9430,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       252,
@@ -9215,6 +9468,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       252,
@@ -9251,6 +9505,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       255,
@@ -9288,6 +9543,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       255,
@@ -9325,6 +9581,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       255,
@@ -9362,6 +9619,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       258,
@@ -9400,6 +9658,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       258,
@@ -9438,6 +9697,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       258,
@@ -9474,6 +9734,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       261,
@@ -9509,6 +9770,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       261,
@@ -9544,6 +9806,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       263,
@@ -9580,6 +9843,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       263,
@@ -9616,6 +9880,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       265,
@@ -9654,6 +9919,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       265,
@@ -9693,6 +9959,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       265,
@@ -9731,6 +9998,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       265,
@@ -9770,6 +10038,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       265,
@@ -9810,6 +10079,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       270,
@@ -9848,6 +10118,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       270,
@@ -9886,6 +10157,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       270,
@@ -9923,6 +10195,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       273,
@@ -9961,6 +10234,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       273,
@@ -9999,6 +10273,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       273,
@@ -10036,6 +10311,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       276,
@@ -10072,6 +10348,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       276,
@@ -10109,6 +10386,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       278,
@@ -10146,6 +10424,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       278,
@@ -10183,6 +10462,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       280,
@@ -10222,6 +10502,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       280,
@@ -10261,6 +10542,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       280,
@@ -10300,6 +10582,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       283,
@@ -10337,6 +10620,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       283,
@@ -10373,6 +10657,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       285,
@@ -10410,6 +10695,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       285,
@@ -10445,6 +10731,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       287,
@@ -10481,6 +10768,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       287,
@@ -10517,6 +10805,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       287,
@@ -10554,6 +10843,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       290,
@@ -10591,6 +10881,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       290,
@@ -10628,6 +10919,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       290,
@@ -10665,6 +10957,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       293,
@@ -10702,6 +10995,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       293,
@@ -10739,6 +11033,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       293,
@@ -10775,6 +11070,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       296,
@@ -10810,6 +11106,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       296,
@@ -10846,6 +11143,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       183,
@@ -10882,6 +11180,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       299,
@@ -10918,6 +11217,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       300,
@@ -10954,6 +11254,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       300,
@@ -10990,6 +11291,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       302
@@ -11026,6 +11328,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       303
@@ -11061,6 +11364,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       304,
@@ -11098,6 +11402,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       304,
@@ -11135,6 +11440,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       304,
@@ -11172,6 +11478,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       307,
@@ -11208,6 +11515,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       307,
@@ -11243,6 +11551,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       309,
@@ -11278,6 +11587,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       309,
@@ -11313,6 +11623,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       311
@@ -11347,6 +11658,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       312
@@ -11382,6 +11694,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       313
@@ -11417,6 +11730,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       314
@@ -11453,6 +11767,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       315,
@@ -11489,6 +11804,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       316,
@@ -11524,6 +11840,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       316,
@@ -11560,6 +11877,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       318,
@@ -11596,6 +11914,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       318,
@@ -11632,6 +11951,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       320,
@@ -11668,6 +11988,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       320,
@@ -11704,6 +12025,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       322,
@@ -11740,6 +12062,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       322,
@@ -11775,6 +12098,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       324
@@ -11809,6 +12133,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       325,
@@ -11844,6 +12169,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       325,
@@ -11880,6 +12206,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       327
@@ -11915,6 +12242,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       328,
@@ -11953,6 +12281,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       328,
@@ -11991,6 +12320,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       328,
@@ -12028,6 +12358,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       331,
@@ -12065,6 +12396,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       331,
@@ -12102,6 +12434,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       333,
@@ -12139,6 +12472,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       333,
@@ -12174,6 +12508,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       335
@@ -12209,6 +12544,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       336
@@ -12244,6 +12580,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       337
@@ -12279,6 +12616,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       338
@@ -12314,6 +12652,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       339,
@@ -12350,6 +12689,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       339,
@@ -12386,6 +12726,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       341,
@@ -12423,6 +12764,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       341,
@@ -12459,6 +12801,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       343,
@@ -12495,6 +12838,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       343,
@@ -12531,6 +12875,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       345,
@@ -12567,6 +12912,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       345,
@@ -12603,6 +12949,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       347,
@@ -12639,6 +12986,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       347,
@@ -12675,6 +13023,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       349,
@@ -12711,6 +13060,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       349,
@@ -12747,6 +13097,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       351
@@ -12781,6 +13132,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       352
@@ -12815,6 +13167,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       353,
@@ -12850,6 +13203,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       353,
@@ -12885,6 +13239,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       355,
@@ -12921,6 +13276,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       355,
@@ -12959,6 +13315,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       357
@@ -12993,6 +13350,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       358,
@@ -13028,6 +13386,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       359
@@ -13062,6 +13421,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       202,
@@ -13098,6 +13458,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       361,
@@ -13135,6 +13496,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       361,
@@ -13173,6 +13535,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       363,
@@ -13211,6 +13574,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       363,
@@ -13249,6 +13613,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       363,
@@ -13285,6 +13650,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       366,
@@ -13321,6 +13687,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       366,
@@ -13357,6 +13724,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       366,
@@ -13395,6 +13763,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       369
@@ -13429,6 +13798,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       370
@@ -13463,6 +13833,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       371,
@@ -13499,6 +13870,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       371,
@@ -13536,6 +13908,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       371,
@@ -13573,6 +13946,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       374,
@@ -13610,6 +13984,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       374,
@@ -13647,6 +14022,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       374,
@@ -13683,6 +14059,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       377
@@ -13717,6 +14094,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       378
@@ -13751,6 +14129,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       379
@@ -13786,6 +14165,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       380
@@ -13821,6 +14201,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       381
@@ -13855,6 +14236,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       382
@@ -13889,6 +14271,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       383
@@ -13924,6 +14307,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       384
@@ -13959,6 +14343,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       385
@@ -13993,6 +14378,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       386
@@ -14028,6 +14414,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       387,
@@ -14065,6 +14452,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       387,
@@ -14103,6 +14491,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       387,
@@ -14140,6 +14529,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       390,
@@ -14178,6 +14568,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       390,
@@ -14216,6 +14607,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       390,
@@ -14253,6 +14645,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       393,
@@ -14290,6 +14683,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       393,
@@ -14328,6 +14722,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       393,
@@ -14365,6 +14760,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       396,
@@ -14402,6 +14798,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       396,
@@ -14439,6 +14836,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       396,
@@ -14476,6 +14874,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       399,
@@ -14513,6 +14912,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       399,
@@ -14548,6 +14948,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       401,
@@ -14583,6 +14984,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       401,
@@ -14618,6 +15020,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       403,
@@ -14654,6 +15057,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       403,
@@ -14690,6 +15094,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       403,
@@ -14727,6 +15132,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       315,
@@ -14765,6 +15171,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       315,
@@ -14801,6 +15208,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       408,
@@ -14836,6 +15244,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       408,
@@ -14872,6 +15281,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       410,
@@ -14908,6 +15318,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       410,
@@ -14943,6 +15354,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       412,
@@ -14980,6 +15392,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       412,
@@ -15017,6 +15430,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       412,
@@ -15054,6 +15468,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       415,
@@ -15090,6 +15505,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       415,
@@ -15126,6 +15542,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       417
@@ -15161,6 +15578,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       418,
@@ -15197,6 +15615,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       418,
@@ -15233,6 +15652,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       420,
@@ -15269,6 +15689,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       420,
@@ -15305,6 +15726,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       422,
@@ -15342,6 +15764,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       422,
@@ -15377,6 +15800,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       190,
@@ -15413,6 +15837,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       425,
@@ -15449,6 +15874,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       425,
@@ -15485,6 +15911,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       427,
@@ -15521,6 +15948,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       427,
@@ -15556,6 +15984,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       200,
@@ -15592,6 +16021,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       198,
@@ -15627,6 +16057,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       431,
@@ -15662,6 +16093,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       431,
@@ -15697,6 +16129,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       358,
@@ -15733,6 +16166,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       434,
@@ -15769,6 +16203,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       434,
@@ -15805,6 +16240,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       436,
@@ -15841,6 +16277,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       436,
@@ -15876,6 +16313,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       185,
@@ -15912,6 +16350,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       122,
@@ -15948,6 +16387,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       113,
@@ -15985,6 +16425,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       441
@@ -16020,6 +16461,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       442
@@ -16056,6 +16498,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       443,
@@ -16094,6 +16537,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       443,
@@ -16132,6 +16576,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       443,
@@ -16168,6 +16613,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       143,
@@ -16203,6 +16649,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       447,
@@ -16240,6 +16687,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       447,
@@ -16275,6 +16723,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       449,
@@ -16310,6 +16759,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       449,
@@ -16347,6 +16797,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       451,
@@ -16384,6 +16835,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       451,
@@ -16420,6 +16872,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       453,
@@ -16456,6 +16909,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       453,
@@ -16491,6 +16945,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       455
@@ -16525,6 +16980,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       456,
@@ -16560,6 +17016,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       456,
@@ -16596,6 +17053,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       226,
@@ -16633,6 +17091,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       459,
@@ -16670,6 +17129,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       459,
@@ -16706,6 +17166,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       215,
@@ -16743,6 +17204,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       81,
@@ -16779,6 +17241,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       108,
@@ -16816,6 +17279,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       111,
@@ -16852,6 +17316,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       114,
@@ -16887,6 +17352,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       125,
@@ -16923,6 +17389,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       126,
@@ -16961,6 +17428,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       175,
@@ -16998,6 +17466,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       193,
@@ -17033,6 +17502,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -17075,6 +17545,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -17118,6 +17589,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       207,
@@ -17154,6 +17626,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       220,
@@ -17190,6 +17663,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       137,
@@ -17228,6 +17702,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       280,
@@ -17266,6 +17741,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       299,
@@ -17301,6 +17777,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       355,
@@ -17339,6 +17816,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       361,
@@ -17376,6 +17854,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       479
@@ -17410,6 +17889,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       480
@@ -17444,6 +17924,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       481
@@ -17478,6 +17959,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       482
@@ -17513,6 +17995,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       483
@@ -17548,6 +18031,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       484
@@ -17583,6 +18067,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       485
@@ -17617,6 +18102,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       486
@@ -17652,6 +18138,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       487
@@ -17686,6 +18173,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       488
@@ -17721,6 +18209,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       489,
@@ -17757,6 +18246,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       489,
@@ -17792,6 +18282,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       491
@@ -17826,6 +18317,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       492
@@ -17860,6 +18352,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       493
@@ -17895,6 +18388,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       494
@@ -17930,6 +18424,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       495,
@@ -17967,6 +18462,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       495,
@@ -18004,6 +18500,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       495,
@@ -18040,6 +18537,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       498,
@@ -18077,6 +18575,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       498,
@@ -18114,6 +18613,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       498,
@@ -18150,6 +18650,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       501,
@@ -18186,6 +18687,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       501,
@@ -18222,6 +18724,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       501,
@@ -18258,6 +18761,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       504,
@@ -18293,6 +18797,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       504,
@@ -18328,6 +18833,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       506,
@@ -18364,6 +18870,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       506,
@@ -18400,6 +18907,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       506,
@@ -18436,6 +18944,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       509,
@@ -18471,6 +18980,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       509,
@@ -18506,6 +19016,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       511,
@@ -18541,6 +19052,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       511,
@@ -18576,6 +19088,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       513,
@@ -18611,6 +19124,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       513,
@@ -18646,6 +19160,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       515,
@@ -18681,6 +19196,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       515,
@@ -18716,6 +19232,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       517,
@@ -18751,6 +19268,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       517,
@@ -18787,6 +19305,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       519,
@@ -18824,6 +19343,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       519,
@@ -18861,6 +19381,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       519,
@@ -18897,6 +19418,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       522,
@@ -18932,6 +19454,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       522,
@@ -18967,6 +19490,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       524,
@@ -19003,6 +19527,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       524,
@@ -19039,6 +19564,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       524,
@@ -19077,6 +19603,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       527,
@@ -19114,6 +19641,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       527,
@@ -19149,6 +19677,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       529,
@@ -19185,6 +19714,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       529,
@@ -19220,6 +19750,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       531
@@ -19254,6 +19785,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       532,
@@ -19290,6 +19822,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       532,
@@ -19326,6 +19859,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       532,
@@ -19362,6 +19896,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       535,
@@ -19399,6 +19934,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       535,
@@ -19436,6 +19972,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       535,
@@ -19472,6 +20009,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       538
@@ -19506,6 +20044,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       539
@@ -19541,6 +20080,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       540,
@@ -19578,6 +20118,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       540,
@@ -19615,6 +20156,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       540,
@@ -19652,6 +20194,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       543,
@@ -19689,6 +20232,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       543,
@@ -19726,6 +20270,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       543,
@@ -19764,6 +20309,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       546,
@@ -19801,6 +20347,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       546,
@@ -19836,6 +20383,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       548,
@@ -19871,6 +20419,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       548,
@@ -19906,6 +20455,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       550,
@@ -19942,6 +20492,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       551,
@@ -19979,6 +20530,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       551,
@@ -20016,6 +20568,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       551,
@@ -20052,6 +20605,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       554,
@@ -20087,6 +20641,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       554,
@@ -20122,6 +20677,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       556
@@ -20158,6 +20714,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       557,
@@ -20195,6 +20752,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       557,
@@ -20232,6 +20790,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       559,
@@ -20269,6 +20828,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       559,
@@ -20305,6 +20865,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       561
@@ -20340,6 +20901,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       562,
@@ -20377,6 +20939,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       562,
@@ -20415,6 +20978,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       564,
@@ -20452,6 +21016,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       564,
@@ -20489,6 +21054,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       566,
@@ -20526,6 +21092,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       566,
@@ -20561,6 +21128,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       568,
@@ -20596,6 +21164,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       568,
@@ -20631,6 +21200,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       570,
@@ -20666,6 +21236,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       570,
@@ -20701,6 +21272,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       572,
@@ -20736,6 +21308,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       572,
@@ -20771,6 +21344,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       574,
@@ -20807,6 +21381,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       574,
@@ -20843,6 +21418,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       574,
@@ -20879,6 +21455,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       577,
@@ -20915,6 +21492,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       577,
@@ -20951,6 +21529,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       577,
@@ -20989,6 +21568,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       580,
@@ -21026,6 +21606,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       580,
@@ -21061,6 +21642,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       582,
@@ -21097,6 +21679,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       582,
@@ -21133,6 +21716,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       582,
@@ -21170,6 +21754,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       585,
@@ -21206,6 +21791,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       585,
@@ -21242,6 +21828,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       587
@@ -21276,6 +21863,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       588,
@@ -21312,6 +21900,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       588,
@@ -21348,6 +21937,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       590,
@@ -21384,6 +21974,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       590,
@@ -21420,6 +22011,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       592,
@@ -21456,6 +22048,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       592,
@@ -21492,6 +22085,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       594
@@ -21527,6 +22121,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       595,
@@ -21563,6 +22158,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       595,
@@ -21600,6 +22196,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       597,
@@ -21637,6 +22234,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       597,
@@ -21672,6 +22270,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       599,
@@ -21708,6 +22307,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       599,
@@ -21744,6 +22344,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       599,
@@ -21780,6 +22381,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       602,
@@ -21816,6 +22418,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       602,
@@ -21852,6 +22455,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       602,
@@ -21888,6 +22492,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       605,
@@ -21923,6 +22528,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       605,
@@ -21959,6 +22565,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       607,
@@ -21996,6 +22603,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       607,
@@ -22033,6 +22641,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       607,
@@ -22070,6 +22679,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       610,
@@ -22107,6 +22717,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       610,
@@ -22144,6 +22755,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       610,
@@ -22180,6 +22792,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       613,
@@ -22215,6 +22828,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       613,
@@ -22250,6 +22864,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       615
@@ -22284,6 +22899,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       616,
@@ -22319,6 +22935,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       616,
@@ -22356,6 +22973,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       618
@@ -22391,6 +23009,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       619,
@@ -22427,6 +23046,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       619,
@@ -22463,6 +23083,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       621
@@ -22498,6 +23119,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       622,
@@ -22534,6 +23156,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       622,
@@ -22570,6 +23193,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       624,
@@ -22607,6 +23231,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       624,
@@ -22643,6 +23268,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       626
@@ -22678,6 +23304,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       627,
@@ -22714,6 +23341,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       627,
@@ -22750,6 +23378,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       629,
@@ -22786,6 +23415,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       629,
@@ -22821,6 +23451,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       631
@@ -22856,6 +23487,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       632
@@ -22891,6 +23523,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       633,
@@ -22928,6 +23561,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       633,
@@ -22965,6 +23599,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       633,
@@ -23002,6 +23637,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       636,
@@ -23038,6 +23674,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       636,
@@ -23074,6 +23711,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       638
@@ -23109,6 +23747,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       639
@@ -23144,6 +23783,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       640
@@ -23178,6 +23818,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       641
@@ -23213,6 +23854,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       642
@@ -23248,6 +23890,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       643
@@ -23283,6 +23926,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       644
@@ -23318,6 +23962,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       645
@@ -23353,6 +23998,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       646
@@ -23388,6 +24034,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       647
@@ -23423,6 +24070,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       648
@@ -23458,6 +24106,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       649
@@ -23492,6 +24141,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       650,
@@ -23528,6 +24178,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       650,
@@ -23565,6 +24216,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       650,
@@ -23601,6 +24253,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       653,
@@ -23637,6 +24290,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       653,
@@ -23674,6 +24328,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       653,
@@ -23710,6 +24365,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       656,
@@ -23746,6 +24402,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       656,
@@ -23783,6 +24440,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       656,
@@ -23819,6 +24477,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       659,
@@ -23855,6 +24514,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       659,
@@ -23891,6 +24551,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       661,
@@ -23928,6 +24589,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       661,
@@ -23965,6 +24627,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       661,
@@ -24001,6 +24664,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       664,
@@ -24037,6 +24701,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       664,
@@ -24074,6 +24739,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       664,
@@ -24111,6 +24777,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       667,
@@ -24147,6 +24814,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       667,
@@ -24182,6 +24850,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       669,
@@ -24218,6 +24887,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       669,
@@ -24254,6 +24924,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       669,
@@ -24290,6 +24961,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       672,
@@ -24325,6 +24997,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       672,
@@ -24361,6 +25034,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       674,
@@ -24398,6 +25072,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       674,
@@ -24433,6 +25108,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       676
@@ -24467,6 +25143,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       677,
@@ -24502,6 +25179,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       677,
@@ -24538,6 +25216,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       679,
@@ -24575,6 +25254,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       679,
@@ -24612,6 +25292,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       679,
@@ -24648,6 +25329,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       682,
@@ -24683,6 +25365,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       682,
@@ -24718,6 +25401,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       684,
@@ -24753,6 +25437,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       684,
@@ -24790,6 +25475,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       686,
@@ -24827,6 +25513,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       686,
@@ -24863,6 +25550,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       688,
@@ -24899,6 +25587,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       688,
@@ -24936,6 +25625,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       690,
@@ -24973,6 +25663,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       690,
@@ -25009,6 +25700,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       692,
@@ -25045,6 +25737,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       692,
@@ -25082,6 +25775,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       694,
@@ -25119,6 +25813,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       694,
@@ -25156,6 +25851,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       696,
@@ -25193,6 +25889,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       696,
@@ -25229,6 +25926,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       698,
@@ -25265,6 +25963,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       698,
@@ -25300,6 +25999,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       133,
@@ -25344,6 +26044,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       701
@@ -25380,6 +26081,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       702
@@ -25416,6 +26118,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       703
@@ -25450,6 +26153,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       704,
@@ -25486,6 +26190,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       704,
@@ -25522,6 +26227,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       704,
@@ -25559,6 +26265,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       707
@@ -25595,6 +26302,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       708,
@@ -25632,6 +26340,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       708,
@@ -25668,6 +26377,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       710,
@@ -25704,6 +26414,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       710,
@@ -25740,6 +26451,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       712,
@@ -25776,6 +26488,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       712,
@@ -25813,6 +26526,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       714,
@@ -25850,6 +26564,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       714,
@@ -25885,6 +26600,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       716
@@ -25920,6 +26636,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       717
@@ -25955,6 +26672,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       718
@@ -25990,6 +26708,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       719
@@ -26025,6 +26744,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       720
@@ -26060,6 +26780,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       721
@@ -26095,6 +26816,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       722,
@@ -26132,6 +26854,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       722,
@@ -26169,6 +26892,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       722,
@@ -26205,6 +26929,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       725,
@@ -26241,6 +26966,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       725,
@@ -26278,6 +27004,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       725,
@@ -26315,6 +27042,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       728,
@@ -26352,6 +27080,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       728,
@@ -26390,6 +27119,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       728,
@@ -26427,6 +27157,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       731,
@@ -26464,6 +27195,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       731,
@@ -26501,6 +27233,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       731,
@@ -26537,6 +27270,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       734,
@@ -26572,6 +27306,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       734,
@@ -26607,6 +27342,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       736,
@@ -26644,6 +27380,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       736,
@@ -26681,6 +27418,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       736,
@@ -26717,6 +27455,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       739,
@@ -26753,6 +27492,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       739,
@@ -26789,6 +27529,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       741
@@ -26825,6 +27566,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       742,
@@ -26862,6 +27604,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       742,
@@ -26897,6 +27640,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       744,
@@ -26932,6 +27676,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       744,
@@ -26967,6 +27712,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       746
@@ -27002,6 +27748,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       747,
@@ -27038,6 +27785,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       747,
@@ -27073,6 +27821,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       749,
@@ -27108,6 +27857,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       749,
@@ -27145,6 +27895,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       751,
@@ -27182,6 +27933,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       751,
@@ -27217,6 +27969,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       753,
@@ -27252,6 +28005,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       753,
@@ -27288,6 +28042,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       755,
@@ -27324,6 +28079,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       755,
@@ -27361,6 +28117,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       757,
@@ -27398,6 +28155,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       757,
@@ -27434,6 +28192,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       759,
@@ -27470,6 +28229,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       759,
@@ -27505,6 +28265,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       761,
@@ -27541,6 +28302,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       761,
@@ -27577,6 +28339,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       761,
@@ -27613,6 +28376,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       764
@@ -27648,6 +28412,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       765
@@ -27682,6 +28447,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       766
@@ -27718,6 +28484,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       767,
@@ -27755,6 +28522,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       767,
@@ -27791,6 +28559,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       769,
@@ -27827,6 +28596,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       769,
@@ -27862,6 +28632,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       771
@@ -27896,6 +28667,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       772,
@@ -27931,6 +28703,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       772,
@@ -27967,6 +28740,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       774
@@ -28001,6 +28775,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       775
@@ -28037,6 +28812,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       776
@@ -28073,6 +28849,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       777
@@ -28108,6 +28885,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       778
@@ -28143,6 +28921,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       779
@@ -28179,6 +28958,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       780
@@ -28214,6 +28994,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       781
@@ -28248,6 +29029,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       782,
@@ -28285,6 +29067,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       782,
@@ -28322,6 +29105,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       782,
@@ -28359,6 +29143,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       785
@@ -28394,6 +29179,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       786
@@ -28429,6 +29215,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       787
@@ -28464,6 +29251,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       788
@@ -28498,6 +29286,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       789,
@@ -28535,6 +29324,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       789,
@@ -28573,6 +29363,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       789,
@@ -28611,6 +29402,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       789,
@@ -28649,6 +29441,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       793
@@ -28684,6 +29477,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       794
@@ -28719,6 +29513,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       795
@@ -28753,6 +29548,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       796
@@ -28788,6 +29584,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       797
@@ -28823,6 +29620,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       798
@@ -28858,6 +29656,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       799
@@ -28892,6 +29691,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       800
@@ -28927,6 +29727,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       801
@@ -28962,6 +29763,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       802
@@ -28996,6 +29798,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       803,
@@ -29032,6 +29835,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       803,
@@ -29068,6 +29872,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       805
@@ -29103,6 +29908,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       806
@@ -29137,6 +29943,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       807
@@ -29171,6 +29978,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       808
@@ -29205,6 +30013,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       809
@@ -29240,6 +30049,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       810,
@@ -29277,6 +30087,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       810,
@@ -29314,6 +30125,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       810,
@@ -29351,6 +30163,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       813,
@@ -29388,6 +30201,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       813,
@@ -29425,6 +30239,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       813,
@@ -29462,6 +30277,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       816,
@@ -29499,6 +30315,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       816,
@@ -29536,6 +30353,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       816,
@@ -29572,6 +30390,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       819,
@@ -29607,6 +30426,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       819,
@@ -29642,6 +30462,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       821,
@@ -29678,6 +30499,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       821,
@@ -29715,6 +30537,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       821,
@@ -29751,6 +30574,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       824,
@@ -29788,6 +30612,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       824,
@@ -29825,6 +30650,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       824,
@@ -29861,6 +30687,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       827,
@@ -29896,6 +30723,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       827,
@@ -29931,6 +30759,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       829,
@@ -29966,6 +30795,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       829,
@@ -30001,6 +30831,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       831,
@@ -30036,6 +30867,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       831,
@@ -30072,6 +30904,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       833,
@@ -30109,6 +30942,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       833,
@@ -30144,6 +30978,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       835,
@@ -30179,6 +31014,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       835,
@@ -30214,6 +31050,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       837,
@@ -30251,6 +31088,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       837,
@@ -30288,6 +31126,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       837,
@@ -30326,6 +31165,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       840,
@@ -30366,6 +31206,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       840,
@@ -30406,6 +31247,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       840,
@@ -30445,6 +31287,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       843,
@@ -30481,6 +31324,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       843,
@@ -30518,6 +31362,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       845
@@ -30552,6 +31397,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       846,
@@ -30587,6 +31433,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       846,
@@ -30623,6 +31470,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       848,
@@ -30659,6 +31507,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       848,
@@ -30695,6 +31544,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       850,
@@ -30731,6 +31581,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       850,
@@ -30767,6 +31618,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       852,
@@ -30803,6 +31655,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       852,
@@ -30839,6 +31692,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       854,
@@ -30875,6 +31729,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       854,
@@ -30910,6 +31765,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       856,
@@ -30946,6 +31802,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       856,
@@ -30983,6 +31840,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       856,
@@ -31021,6 +31879,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       859,
@@ -31059,6 +31918,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       859,
@@ -31097,6 +31957,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       859,
@@ -31134,6 +31995,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       263,
@@ -31170,6 +32032,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       52,
@@ -31207,6 +32070,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       222,
@@ -31243,6 +32107,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       83,
@@ -31279,6 +32144,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       122,
@@ -31317,6 +32183,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       562,
@@ -31354,6 +32221,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       868,
@@ -31390,6 +32258,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       868,
@@ -31426,6 +32295,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       870
@@ -31461,6 +32331,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       871
@@ -31496,6 +32367,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       872,
@@ -31532,6 +32404,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       872,
@@ -31567,6 +32440,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       874
@@ -31602,6 +32476,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       875
@@ -31637,6 +32512,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       876
@@ -31673,6 +32549,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       877
@@ -31708,6 +32585,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       878,
@@ -31744,6 +32622,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       878,
@@ -31780,6 +32659,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       880
@@ -31815,6 +32695,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       881
@@ -31850,6 +32731,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       882
@@ -31885,6 +32767,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       883
@@ -31921,6 +32804,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       884,
@@ -31958,6 +32842,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       885,
@@ -31996,6 +32881,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       885,
@@ -32034,6 +32920,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       885,
@@ -32070,6 +32957,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       888
@@ -32104,6 +32992,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       889
@@ -32139,6 +33028,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       890
@@ -32173,6 +33063,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       891,
@@ -32209,6 +33100,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       891,
@@ -32245,6 +33137,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       893
@@ -32279,6 +33172,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       894
@@ -32313,6 +33207,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       895
@@ -32347,6 +33242,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       896
@@ -32381,6 +33277,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       897
@@ -32416,6 +33313,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       898
@@ -32451,6 +33349,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       234,
@@ -32487,6 +33386,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       123,
@@ -32524,6 +33424,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       216,
@@ -32561,6 +33462,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       550,
@@ -32597,6 +33499,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       215,
@@ -32634,6 +33537,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       211,
@@ -32670,6 +33574,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       905
@@ -32705,6 +33610,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       906,
@@ -32742,6 +33648,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       906,
@@ -32780,6 +33687,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       906,
@@ -32816,6 +33724,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       909,
@@ -32852,6 +33761,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       909,
@@ -32889,6 +33799,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       909,
@@ -32926,6 +33837,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       912,
@@ -32963,6 +33875,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       912,
@@ -33001,6 +33914,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       912,
@@ -33037,6 +33951,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       915,
@@ -33072,6 +33987,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       915,
@@ -33107,6 +34023,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       917,
@@ -33142,6 +34059,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       917,
@@ -33177,6 +34095,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       919,
@@ -33213,6 +34132,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       919,
@@ -33248,6 +34168,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       921,
@@ -33285,6 +34206,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       921,
@@ -33322,6 +34244,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       921,
@@ -33359,6 +34282,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       924,
@@ -33395,6 +34319,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       924,
@@ -33431,6 +34356,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       926,
@@ -33467,6 +34393,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       926,
@@ -33503,6 +34430,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       928,
@@ -33540,6 +34468,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       928,
@@ -33577,6 +34506,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       928,
@@ -33614,6 +34544,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       931
@@ -33648,6 +34579,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       932,
@@ -33684,6 +34616,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       932,
@@ -33720,6 +34653,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       932,
@@ -33756,6 +34690,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       935,
@@ -33793,6 +34728,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       935,
@@ -33830,6 +34766,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       935,
@@ -33866,6 +34803,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       938,
@@ -33901,6 +34839,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       938,
@@ -33938,6 +34877,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       940,
@@ -33975,6 +34915,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       940,
@@ -34010,6 +34951,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       942,
@@ -34045,6 +34987,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       942,
@@ -34081,6 +35024,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       944,
@@ -34117,6 +35061,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       944,
@@ -34153,6 +35098,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       946,
@@ -34189,6 +35135,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       946,
@@ -34225,6 +35172,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       948,
@@ -34261,6 +35209,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       948,
@@ -34296,6 +35245,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       950
@@ -34330,6 +35280,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       951,
@@ -34366,6 +35317,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       951,
@@ -34401,6 +35353,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       953,
@@ -34437,6 +35390,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       953,
@@ -34472,6 +35426,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       955,
@@ -34507,6 +35462,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       955,
@@ -34543,6 +35499,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       957,
@@ -34580,6 +35537,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       957,
@@ -34617,6 +35575,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       957,
@@ -34653,6 +35612,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       960,
@@ -34688,6 +35648,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       960,
@@ -34724,6 +35685,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       962
@@ -34759,6 +35721,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       963,
@@ -34795,6 +35758,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       963,
@@ -34831,6 +35795,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       965,
@@ -34867,6 +35832,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       965,
@@ -34903,6 +35869,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       967
@@ -34937,6 +35904,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       968
@@ -34972,6 +35940,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       969,
@@ -35008,6 +35977,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       969,
@@ -35043,6 +36013,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       971,
@@ -35078,6 +36049,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       971,
@@ -35114,6 +36086,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       973
@@ -35148,6 +36121,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       974,
@@ -35183,6 +36157,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       974,
@@ -35219,6 +36194,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       976
@@ -35253,6 +36229,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       977
@@ -35288,6 +36265,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       978
@@ -35323,6 +36301,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       56,
@@ -35361,6 +36340,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       194,
@@ -35398,6 +36378,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       203,
@@ -35433,6 +36414,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": true,
     "evolutionDepth": 2,
     "evolutionFamily": [
       206,
@@ -35469,6 +36451,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       624,
@@ -35506,6 +36489,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       984
@@ -35541,6 +36525,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       985
@@ -35576,6 +36561,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       986
@@ -35611,6 +36597,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       987
@@ -35646,6 +36633,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       988
@@ -35681,6 +36669,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       989
@@ -35716,6 +36705,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       990
@@ -35751,6 +36741,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       991
@@ -35786,6 +36777,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       992
@@ -35821,6 +36813,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       993
@@ -35856,6 +36849,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       994
@@ -35891,6 +36885,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       995
@@ -35927,6 +36922,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       996,
@@ -35965,6 +36961,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       996,
@@ -36003,6 +37000,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": true,
     "evolutionDepth": 3,
     "evolutionFamily": [
       996,
@@ -36039,6 +37037,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       999,
@@ -36075,6 +37074,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       999,
@@ -36111,6 +37111,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1001
@@ -36146,6 +37147,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1002
@@ -36181,6 +37183,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1003
@@ -36216,6 +37219,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1004
@@ -36251,6 +37255,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1005
@@ -36286,6 +37291,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1006
@@ -36321,6 +37327,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1007
@@ -36356,6 +37363,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1008
@@ -36391,6 +37399,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1009
@@ -36426,6 +37435,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1010
@@ -36462,6 +37472,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       840,
@@ -36502,6 +37513,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       1012,
@@ -36539,6 +37551,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       1012,
@@ -36575,6 +37588,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1014
@@ -36610,6 +37624,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1015
@@ -36645,6 +37660,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1016
@@ -36679,6 +37695,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1017
@@ -36715,6 +37732,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": true,
+    "isLateEvolution": false,
     "evolutionDepth": 2,
     "evolutionFamily": [
       884,
@@ -36752,6 +37770,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 3,
     "evolutionFamily": [
       840,
@@ -36791,6 +37810,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1020
@@ -36826,6 +37846,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1021
@@ -36861,6 +37882,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1022
@@ -36896,6 +37918,7 @@
     "isLegendary": false,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1023
@@ -36930,6 +37953,7 @@
     "isLegendary": true,
     "isMythical": false,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1024
@@ -36965,6 +37989,7 @@
     "isLegendary": false,
     "isMythical": true,
     "isPseudo": false,
+    "isLateEvolution": false,
     "evolutionDepth": 1,
     "evolutionFamily": [
       1025

@@ -20,6 +20,8 @@ export class UI {
         this.statLegendaryEl = document.getElementById('stat-legendary');
         this.statMythicalEl = document.getElementById('stat-mythical');
         this.statPseudoEl = document.getElementById('stat-pseudo');
+        this.statSpecialTotalEl = document.getElementById('stat-special-total');
+        this.statLateEvoEl = document.getElementById('stat-late-evo');
         this.rareTypeEl = document.getElementById('rare-type-val');
         this.commonTypeEl = document.getElementById('common-type-val');
         this.statBstEl = document.getElementById('avg-bst-val');
@@ -396,12 +398,31 @@ export class UI {
     updateDashboard() {
         const stats = this.analytics.analyze(this.dataManager.customDex);
         this.statCountEl.textContent = stats.count;
-        this.stat1StageEl.textContent = stats.evolutionDepthCounts[1] || 0;
-        this.stat2StageEl.textContent = stats.evolutionDepthCounts[2] || 0;
-        this.stat3StageEl.textContent = stats.evolutionDepthCounts[3] || 0;
+        
+        // Evolution stages with percentages
+        const stage1 = stats.evolutionDepthCounts[1] || 0;
+        const stage2 = stats.evolutionDepthCounts[2] || 0;
+        const stage3 = stats.evolutionDepthCounts[3] || 0;
+        const stage1Pct = stats.count > 0 ? Math.round((stage1 / stats.count) * 100) : 0;
+        const stage2Pct = stats.count > 0 ? Math.round((stage2 / stats.count) * 100) : 0;
+        const stage3Pct = stats.count > 0 ? Math.round((stage3 / stats.count) * 100) : 0;
+        this.stat1StageEl.textContent = `${stage1} (${stage1Pct}%)`;
+        this.stat2StageEl.textContent = `${stage2} (${stage2Pct}%)`;
+        this.stat3StageEl.textContent = `${stage3} (${stage3Pct}%)`;
+        
         this.statLegendaryEl.textContent = stats.legendaryCount || 0;
         this.statMythicalEl.textContent = stats.mythicalCount || 0;
         this.statPseudoEl.textContent = stats.pseudoCount || 0;
+        
+        // Special total (legendary + mythical + pseudo) with percentage
+        const specialTotal = (stats.legendaryCount || 0) + (stats.mythicalCount || 0) + (stats.pseudoCount || 0);
+        const specialPct = stats.count > 0 ? Math.round((specialTotal / stats.count) * 100) : 0;
+        this.statSpecialTotalEl.textContent = `${specialTotal} (${specialPct}%)`;
+        
+        // Late evo with percentage
+        const lateEvoCount = stats.lateEvolutionCount || 0;
+        const lateEvoPercent = stats.count > 0 ? Math.round((lateEvoCount / stats.count) * 100) : 0;
+        this.statLateEvoEl.textContent = `${lateEvoCount} (${lateEvoPercent}%)`;
         this.rareTypeEl.textContent = stats.rareType;
         this.commonTypeEl.textContent = stats.commonType;
         this.statBstEl.textContent = stats.avgBst;
