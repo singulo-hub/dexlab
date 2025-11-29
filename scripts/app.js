@@ -56,11 +56,6 @@ actionsDropdown.querySelectorAll('button').forEach(btn => {
     });
 });
 
-// Handle open-flyout event from PokemonListManager
-document.addEventListener('open-flyout', () => {
-    ui.openFlyout();
-});
-
 document.getElementById('export-btn').addEventListener('click', () => {
     dataManager.exportJSON();
 });

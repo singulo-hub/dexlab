@@ -27,6 +27,12 @@ export class PokemonListManager {
         this.filterDropdown = document.getElementById('filter-dropdown');
         this.viewToggle = document.getElementById('view-toggle');
         
+        // Flyout Panel Elements
+        this.flyoutPanel = document.getElementById('pokemon-flyout');
+        this.flyoutOverlay = document.getElementById('flyout-overlay');
+        this.addPokemonBtn = document.getElementById('add-pokemon-btn');
+        this.closeFlyoutBtn = document.getElementById('close-flyout-btn');
+        
         // View state
         this.isGridView = false;
         
@@ -407,8 +413,38 @@ export class PokemonListManager {
                 inDex: true
             });
             
-            // Dispatch event to open flyout (handled in app.js or ui.js)
-            document.dispatchEvent(new CustomEvent('open-flyout'));
+            // Open the flyout
+            this.openFlyout();
         });
+
+        // Flyout panel event listeners
+        this.addPokemonBtn.addEventListener('click', () => this.openFlyout());
+        this.closeFlyoutBtn.addEventListener('click', () => this.closeFlyout());
+        this.flyoutOverlay.addEventListener('click', () => this.closeFlyout());
+
+        // Escape key to close flyout
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.flyoutPanel.classList.contains('open')) {
+                this.closeFlyout();
+            }
+        });
+    }
+
+    /**
+     * Open the flyout panel
+     */
+    openFlyout() {
+        this.flyoutPanel.classList.add('open');
+        this.flyoutOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    /**
+     * Close the flyout panel
+     */
+    closeFlyout() {
+        this.flyoutPanel.classList.remove('open');
+        this.flyoutOverlay.classList.remove('open');
+        document.body.style.overflow = '';
     }
 }
