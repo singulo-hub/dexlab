@@ -260,6 +260,26 @@ document.addEventListener('filter-update', () => {
     filterAndRender();
 });
 
+// Handle type chart click - filter by type and "In Dex"
+document.addEventListener('chart-type-click', (e) => {
+    const typeName = e.detail.type;
+    
+    // Clear existing type filters and add the clicked type
+    activeFilters.types = [typeName];
+    
+    // Enable "In Dex" filter
+    activeFilters.inDex = true;
+    document.getElementById('in-dex-filter').checked = true;
+    
+    // Update UI
+    updateFilterDropdowns();
+    renderFilterChips();
+    filterAndRender();
+    
+    // Open the flyout
+    ui.openFlyout();
+});
+
 document.getElementById('export-btn').addEventListener('click', () => {
     dataManager.exportJSON();
 });

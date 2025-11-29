@@ -166,6 +166,16 @@ export class ChartManager {
                     animation: {
                         duration: 300
                     },
+                    onClick: (event, elements) => {
+                        if (elements.length > 0) {
+                            const index = elements[0].index;
+                            const typeName = this.typeChart.data.labels[index];
+                            // Dispatch custom event for app.js to handle
+                            document.dispatchEvent(new CustomEvent('chart-type-click', {
+                                detail: { type: typeName }
+                            }));
+                        }
+                    },
                     plugins: {
                         legend: {
                             display: false
