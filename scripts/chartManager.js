@@ -57,24 +57,23 @@ export class ChartManager {
             Fairy: '#D685AD'
         };
         
-        // Egg group colors (from Bulbapedia)
+        // Egg group colors
         this.eggGroupColors = {
-            Monster: '#97724C',
-            'Water 1': '#6BD1F9',
-            'Water 2': '#4B94ED',
-            'Water 3': '#2271B4',
-            Bug: '#AAC22A',
-            Flying: '#90AFF1',
-            Field: '#E5BA65',
-            Fairy: '#FF9EB9',
-            Grass: '#82D25A',
-            'Human-Like': '#47B7AE',
-            Mineral: '#979067',
-            Amorphous: '#9F82CC',
-            Ditto: '#B6AAD5',
-            Dragon: '#5E57BF',
-            'No Eggs': '#EFCF00',
-            Indeterminate: '#0090C0'
+            Monster: '#d25064',
+            'Water 1': '#97b5fd',
+            'Water 2': '#729ade',
+            'Water 3': '#5876be',
+            Bug: '#aab533',
+            Flying: '#b29afa',
+            Field: '#e0c068',
+            Fairy: '#f0b6bc',
+            Grass: '#82d25a',
+            'Human-Like': '#d29682',
+            Mineral: '#7a6252',
+            'No Gender': '#8b8b9e',
+            Dragon: '#7a42ff',
+            Ditto: '#a664bf',
+            'No Eggs': '#505050'
         };
     }
 

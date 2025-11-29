@@ -246,6 +246,9 @@ export class PokemonListManager {
                         <div class="pokemon-types">
                             ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
                         </div>
+                        <div class="egg-groups margin-top-5">
+                            ${p.eggGroups.map(eg => `<span class="egg-badge egg-${this.getEggGroupClass(eg).toLowerCase()}">${eg}</span>`).join('')}
+                        </div>
                     </div>
                 `;
                 
@@ -266,6 +269,9 @@ export class PokemonListManager {
                         <span class="pokemon-name">${p.name}</span>
                         <div class="pokemon-types">
                             ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
+                        </div>
+                        <div class="egg-groups">
+                            ${p.eggGroups.map(eg => `<span class="egg-badge egg-${this.getEggGroupClass(eg).toLowerCase()}">${eg}</span>`).join('')}
                         </div>
                     </div>
                 `;
@@ -407,6 +413,9 @@ export class PokemonListManager {
         document.addEventListener('chart-type-click', (e) => {
             const typeName = e.detail.type;
             
+            // Clear search input
+            this.searchInput.value = '';
+            
             // Set filters and trigger render
             this.setFilters({
                 types: [typeName],
@@ -446,5 +455,29 @@ export class PokemonListManager {
         this.flyoutPanel.classList.remove('open');
         this.flyoutOverlay.classList.remove('open');
         document.body.style.overflow = '';
+    }
+
+    /**
+     * Convert egg group name to CSS class name
+     */
+    getEggGroupClass(eggGroup) {
+        const classMap = {
+            'Monster': 'monster',
+            'Water 1': 'water1',
+            'Water 2': 'water2',
+            'Water 3': 'water3',
+            'Bug': 'bug',
+            'Flying': 'flying',
+            'Field': 'field',
+            'Fairy': 'fairy',
+            'Grass': 'grass',
+            'Human-Like': 'humanlike',
+            'Mineral': 'mineral',
+            'No Gender': 'nogender',
+            'Dragon': 'dragon',
+            'Ditto': 'ditto',
+            'No Eggs': 'noeggs'
+        };
+        return classMap[eggGroup] || 'noeggs';
     }
 }

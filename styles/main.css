@@ -24,6 +24,23 @@
     --type-steel: #B7B7CE;
     --type-fairy: #D685AD;
     
+    /* Egg Group Colors */
+    --egg-monster: #d25064;
+    --egg-water1: #97b5fd;
+    --egg-water2: #729ade;
+    --egg-water3: #5876be;
+    --egg-bug: #aab533;
+    --egg-flying: #b29afa;
+    --egg-field: #e0c068;
+    --egg-fairy: #f0b6bc;
+    --egg-grass: #82d25a;
+    --egg-humanlike: #d29682;
+    --egg-mineral: #7a6252;
+    --egg-nogender: #8b8b9e;
+    --egg-dragon: #7a42ff;
+    --egg-ditto: #a664bf;
+    --egg-noeggs: #505050;
+    
     /* Accent colors */
     --accent-color: #007acc;
     --success-color: #4ec9b0;

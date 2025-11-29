@@ -161,3 +161,41 @@
 .type-badge.type-steel { background-color: var(--type-steel); }
 .type-badge.type-fairy { background-color: var(--type-fairy); }
 
+/* Egg Group Badges */
+.egg-groups {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.egg-groups.margin-top-5 {
+    margin-top: 5px;
+}
+
+.egg-badge {
+    font-size: 0.6rem;
+    padding: 0 4px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid currentColor;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.egg-badge.egg-monster { color: var(--egg-monster); border-color: var(--egg-monster); }
+.egg-badge.egg-water1 { color: var(--egg-water1); border-color: var(--egg-water1); }
+.egg-badge.egg-water2 { color: var(--egg-water2); border-color: var(--egg-water2); }
+.egg-badge.egg-water3 { color: var(--egg-water3); border-color: var(--egg-water3); }
+.egg-badge.egg-bug { color: var(--egg-bug); border-color: var(--egg-bug); }
+.egg-badge.egg-flying { color: var(--egg-flying); border-color: var(--egg-flying); }
+.egg-badge.egg-field { color: var(--egg-field); border-color: var(--egg-field); }
+.egg-badge.egg-fairy { color: var(--egg-fairy); border-color: var(--egg-fairy); }
+.egg-badge.egg-grass { color: var(--egg-grass); border-color: var(--egg-grass); }
+.egg-badge.egg-humanlike { color: var(--egg-humanlike); border-color: var(--egg-humanlike); }
+.egg-badge.egg-mineral { color: var(--egg-mineral); border-color: var(--egg-mineral); }
+.egg-badge.egg-nogender { color: var(--egg-nogender); border-color: var(--egg-nogender); }
+.egg-badge.egg-dragon { color: var(--egg-dragon); border-color: var(--egg-dragon); }
+.egg-badge.egg-ditto { color: var(--egg-ditto); border-color: var(--egg-ditto); }
+.egg-badge.egg-noeggs { color: var(--egg-noeggs); border-color: var(--egg-noeggs); }
+
+
