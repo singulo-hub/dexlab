@@ -30,6 +30,8 @@ export class PokemonListManager {
         this.bstMinVal = document.getElementById('bst-min-val');
         this.bstMaxVal = document.getElementById('bst-max-val');
         this.bstRangeSelected = document.getElementById('bst-range-selected');
+        this.bstRangeLeft = document.getElementById('bst-range-left');
+        this.bstRangeRight = document.getElementById('bst-range-right');
         this.inDexFilter = document.getElementById('in-dex-filter');
         this.filterChipsContainer = document.getElementById('filter-chips');
         this.filterBtn = document.getElementById('filter-btn');
@@ -269,12 +271,19 @@ export class PokemonListManager {
         });
         
         // BST range chip (only show if not at default full range)
-        if (this.activeFilters.bstMin > 180 || this.activeFilters.bstMax < 780) {
+        const bstMin = this.activeFilters.bstMin;
+        const bstMax = this.activeFilters.bstMax;
+        const isInverted = bstMin > bstMax;
+        if (bstMin > 180 || bstMax < 780 || isInverted) {
             const chip = document.createElement('span');
             chip.className = 'filter-chip';
             chip.dataset.type = 'bst';
             chip.dataset.value = 'range';
-            chip.innerHTML = `BST ${this.activeFilters.bstMin}-${this.activeFilters.bstMax} <i class="fas fa-times"></i>`;
+            if (isInverted) {
+                chip.innerHTML = `BST ≤${bstMax} or ≥${bstMin} <i class="fas fa-times"></i>`;
+            } else {
+                chip.innerHTML = `BST ${bstMin}-${bstMax} <i class="fas fa-times"></i>`;
+            }
             this.filterChipsContainer.appendChild(chip);
         }
     }
@@ -299,8 +308,12 @@ export class PokemonListManager {
             // Must match ALL selected egg groups (AND logic)
             const matchesEgg = this.activeFilters.eggGroups.length === 0 || 
                 this.activeFilters.eggGroups.every(eg => p.eggGroups && p.eggGroups.includes(eg));
-            // Must be within BST range
-            const matchesBst = p.bst >= this.activeFilters.bstMin && p.bst <= this.activeFilters.bstMax;
+            // BST range filter - inverted when min > max (excludes middle range)
+            const bstMin = this.activeFilters.bstMin;
+            const bstMax = this.activeFilters.bstMax;
+            const matchesBst = bstMin <= bstMax 
+                ? (p.bst >= bstMin && p.bst <= bstMax)  // Normal: inside range
+                : (p.bst <= bstMax || p.bst >= bstMin); // Inverted: outside range
             // If inDex filter is active, only show Pokemon in current dex
             const matchesInDex = !this.activeFilters.inDex || 
                 this.dataManager.customDex.some(d => d.id === p.id);
@@ -486,16 +499,9 @@ export class PokemonListManager {
             this.filterAndRender();
         });
 
-        // BST range sliders
+        // BST range sliders - allow crossing for inverted range
         this.bstMinSlider.addEventListener('input', () => {
-            let minVal = parseInt(this.bstMinSlider.value);
-            let maxVal = parseInt(this.bstMaxSlider.value);
-            
-            // Ensure min doesn't exceed max
-            if (minVal > maxVal) {
-                minVal = maxVal;
-                this.bstMinSlider.value = minVal;
-            }
+            const minVal = parseInt(this.bstMinSlider.value);
             
             this.activeFilters.bstMin = minVal;
             this.bstMinVal.textContent = minVal;
@@ -505,14 +511,7 @@ export class PokemonListManager {
         });
 
         this.bstMaxSlider.addEventListener('input', () => {
-            let minVal = parseInt(this.bstMinSlider.value);
-            let maxVal = parseInt(this.bstMaxSlider.value);
-            
-            // Ensure max doesn't go below min
-            if (maxVal < minVal) {
-                maxVal = minVal;
-                this.bstMaxSlider.value = maxVal;
-            }
+            const maxVal = parseInt(this.bstMaxSlider.value);
             
             this.activeFilters.bstMax = maxVal;
             this.bstMaxVal.textContent = maxVal;
@@ -637,7 +636,30 @@ export class PokemonListManager {
         const max = parseInt(this.bstMaxSlider.value);
         const minPercent = ((min - 180) / (780 - 180)) * 100;
         const maxPercent = ((max - 180) / (780 - 180)) * 100;
-        this.bstRangeSelected.style.left = minPercent + '%';
-        this.bstRangeSelected.style.width = (maxPercent - minPercent) + '%';
+        
+        const isInverted = min > max;
+        
+        if (isInverted) {
+            // Hide main selection, show left and right segments
+            this.bstRangeSelected.style.display = 'none';
+            this.bstRangeLeft.style.display = 'block';
+            this.bstRangeRight.style.display = 'block';
+            
+            // Left segment: from 0 to max handle
+            this.bstRangeLeft.style.left = '0%';
+            this.bstRangeLeft.style.width = maxPercent + '%';
+            
+            // Right segment: from min handle to 100%
+            this.bstRangeRight.style.left = minPercent + '%';
+            this.bstRangeRight.style.width = (100 - minPercent) + '%';
+        } else {
+            // Normal range: show main selection, hide left/right
+            this.bstRangeSelected.style.display = 'block';
+            this.bstRangeLeft.style.display = 'none';
+            this.bstRangeRight.style.display = 'none';
+            
+            this.bstRangeSelected.style.left = minPercent + '%';
+            this.bstRangeSelected.style.width = (maxPercent - minPercent) + '%';
+        }
     }
 }

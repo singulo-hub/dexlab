@@ -257,6 +257,12 @@
     z-index: 2;
 }
 
+/* Left and right segments for inverted range - hidden by default */
+.range-selected-left,
+.range-selected-right {
+    display: none;
+}
+
 /* Filter Chips */
 .filter-chips {
     display: flex;
