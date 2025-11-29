@@ -42,7 +42,9 @@ export class UI {
             new: document.getElementById('modal-step-new'),
             edit: document.getElementById('modal-step-edit'),
             load: document.getElementById('modal-step-load'),
-            region: document.getElementById('modal-step-region')
+            region: document.getElementById('modal-step-region'),
+            export: document.getElementById('modal-step-export'),
+            exportGrid: document.getElementById('modal-step-export-grid')
         };
         this.savedDexListEl = document.getElementById('saved-dex-list');
         this.regionListEl = document.getElementById('region-list');
@@ -109,6 +111,31 @@ export class UI {
             this.showModalStep('menu');
         });
         
+        // Export modal buttons
+        document.getElementById('export-data-btn').addEventListener('click', () => {
+            this.dataManager.exportJSON();
+            this.closeModal();
+        });
+        
+        document.getElementById('export-grid-btn').addEventListener('click', () => {
+            this.showModalStep('exportGrid');
+        });
+        
+        document.getElementById('export-grid-back-btn').addEventListener('click', () => {
+            this.showModalStep('export');
+        });
+        
+        document.getElementById('export-grid-generate-btn').addEventListener('click', () => {
+            const imageStyle = document.querySelector('input[name="grid-image-style"]:checked').value;
+            const showNames = document.getElementById('grid-show-names').checked;
+            
+            // Dispatch event for app.js to handle
+            document.dispatchEvent(new CustomEvent('generate-grid', {
+                detail: { imageStyle, showNames }
+            }));
+            this.closeModal();
+        });
+
         // New dex start button
         document.getElementById('new-start-btn').addEventListener('click', () => {
             const name = document.getElementById('new-dex-name').value.trim() || 'Untitled Dex';
@@ -233,6 +260,12 @@ export class UI {
         } else {
             closeBtn.classList.add('hidden');
         }
+    }
+
+    showExportModal() {
+        this.modal.classList.remove('hidden');
+        this.showModalStep('export');
+        document.getElementById('modal-close-btn').classList.remove('hidden');
     }
 
     init() {

@@ -57,7 +57,7 @@ actionsDropdown.querySelectorAll('button').forEach(btn => {
 });
 
 document.getElementById('export-btn').addEventListener('click', () => {
-    dataManager.exportJSON();
+    ui.showExportModal();
 });
 
 document.getElementById('file-input').addEventListener('change', async (e) => {
@@ -78,8 +78,10 @@ document.getElementById('new-dex-btn').addEventListener('click', () => {
     ui.showModal();
 });
 
-document.getElementById('print-grid-btn').addEventListener('click', () => {
-    generatePrintGrid(dataManager.customDex);
+// Listen for grid generation event from export modal
+document.addEventListener('generate-grid', (e) => {
+    const { imageStyle, showNames } = e.detail;
+    generatePrintGrid(dataManager.customDex, { imageStyle, showNames });
 });
 
 // Theme toggle
@@ -102,12 +104,43 @@ function toggleTheme() {
 themeToggle.addEventListener('click', toggleTheme);
 initTheme();
 
+// Toast notification helpers
+const toast = document.getElementById('toast');
+const toastIcon = document.getElementById('toast-icon');
+const toastMessage = document.getElementById('toast-message');
+
+function showToast(message, icon = 'fa-spinner fa-spin') {
+    toastIcon.className = `fas ${icon}`;
+    toastMessage.textContent = message;
+    toast.classList.remove('hidden', 'hiding');
+}
+
+function updateToast(message, icon = 'fa-check') {
+    toastIcon.className = `fas ${icon}`;
+    toastMessage.textContent = message;
+}
+
+function hideToast(delay = 0) {
+    setTimeout(() => {
+        toast.classList.add('hiding');
+        setTimeout(() => {
+            toast.classList.add('hidden');
+            toast.classList.remove('hiding');
+        }, 300);
+    }, delay);
+}
+
 // Generate printable grid image
-async function generatePrintGrid(dex) {
+async function generatePrintGrid(dex, options = {}) {
+    const { imageStyle = 'artwork', showNames = false } = options;
+    
     if (!dex || dex.length === 0) {
         alert('No Pokémon in your dex to print!');
         return;
     }
+
+    // Show generating toast
+    showToast('Generating Pokémon grid image...', 'fa-spinner fa-spin');
 
     // Letter size at 300 DPI for print quality: 2550 x 3300 pixels (8.5" x 11")
     const pageWidth = 2550;
@@ -122,6 +155,9 @@ async function generatePrintGrid(dex) {
     // Determine optimal sprite size and grid
     const totalPokemon = dex.length;
     
+    // Reserve space for names if enabled
+    const nameHeight = showNames ? 40 : 0;
+    
     // Try different column counts to find best fit
     let bestCols = 10;
     let bestSize = 0;
@@ -129,7 +165,8 @@ async function generatePrintGrid(dex) {
     for (let cols = 1; cols <= 15; cols++) {
         const rows = Math.ceil(totalPokemon / cols);
         const maxSpriteWidth = Math.floor((usableWidth - (spacing * (cols - 1))) / cols);
-        const maxSpriteHeight = Math.floor((usableHeight - (spacing * (rows - 1))) / rows);
+        const maxCellHeight = Math.floor((usableHeight - (spacing * (rows - 1))) / rows);
+        const maxSpriteHeight = maxCellHeight - nameHeight;
         const spriteSize = Math.min(maxSpriteWidth, maxSpriteHeight, 475); // Cap at 475px
         
         if (spriteSize >= bestSize && spriteSize >= 48) { // Minimum 48px
@@ -141,6 +178,7 @@ async function generatePrintGrid(dex) {
     const spriteSize = bestSize;
     const cols = bestCols;
     const rows = Math.ceil(totalPokemon / cols);
+    const cellHeight = spriteSize + nameHeight;
     
     // Create canvas
     const canvas = document.createElement('canvas');
@@ -158,7 +196,7 @@ async function generatePrintGrid(dex) {
 
     // Calculate starting position to center the grid
     const gridWidth = (cols * spriteSize) + ((cols - 1) * spacing);
-    const gridHeight = (rows * spriteSize) + ((rows - 1) * spacing);
+    const gridHeight = (rows * cellHeight) + ((rows - 1) * spacing);
     const startX = margin + (usableWidth - gridWidth) / 2;
     const startY = margin + (usableHeight - gridHeight) / 2;
     
@@ -176,16 +214,29 @@ async function generatePrintGrid(dex) {
     // Sort dex by ID for consistent ordering
     const sortedDex = [...dex].sort((a, b) => a.id - b.id);
     
+    // Setup font for names
+    if (showNames) {
+        ctx.font = 'bold 24px Arial, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillStyle = '#333333';
+    }
+    
     // Draw each Pokemon
     for (let i = 0; i < sortedDex.length; i++) {
         const pokemon = sortedDex[i];
         const col = i % cols;
         const row = Math.floor(i / cols);
         const x = startX + (col * (spriteSize + spacing));
-        const y = startY + (row * (spriteSize + spacing));
+        const y = startY + (row * (cellHeight + spacing));
         
-        // Load and draw artwork (fall back to sprite if no artwork)
-        const imageSrc = pokemon.artwork || pokemon.sprite;
+        // Choose image source based on style preference
+        let imageSrc;
+        if (imageStyle === 'sprite') {
+            imageSrc = pokemon.sprite || pokemon.artwork;
+        } else {
+            imageSrc = pokemon.artwork || pokemon.sprite;
+        }
+        
         if (imageSrc) {
             const img = await loadImage(imageSrc);
             if (img) {
@@ -193,11 +244,19 @@ async function generatePrintGrid(dex) {
                 const scale = Math.min(spriteSize / img.width, spriteSize / img.height);
                 const drawWidth = img.width * scale;
                 const drawHeight = img.height * scale;
-                // Center in cell
+                // Center in cell (sprite area only)
                 const drawX = x + (spriteSize - drawWidth) / 2;
                 const drawY = y + (spriteSize - drawHeight) / 2;
                 ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
             }
+        }
+        
+        // Draw name if enabled
+        if (showNames) {
+            ctx.fillStyle = '#333333';
+            const nameY = y + spriteSize + 28; // Position below sprite
+            const nameX = x + spriteSize / 2; // Center horizontally
+            ctx.fillText(pokemon.name, nameX, nameY);
         }
     }
     
@@ -209,6 +268,10 @@ async function generatePrintGrid(dex) {
         a.download = 'pokedex-grid.png';
         a.click();
         URL.revokeObjectURL(url);
+        
+        // Update toast to show success
+        updateToast('Image created!', 'fa-check');
+        hideToast(2000);
     }, 'image/png');
 }
 

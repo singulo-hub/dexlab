@@ -281,6 +281,8 @@ export class PokemonListManager {
             chip.dataset.value = 'range';
             if (isInverted) {
                 chip.innerHTML = `BST ≤${bstMax} or ≥${bstMin} <i class="fas fa-times"></i>`;
+            } else if (bstMin === bstMax) {
+                chip.innerHTML = `BST ${bstMin} <i class="fas fa-times"></i>`;
             } else {
                 chip.innerHTML = `BST ${bstMin}-${bstMax} <i class="fas fa-times"></i>`;
             }

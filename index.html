@@ -38,7 +38,6 @@
                 <div id="actions-dropdown" class="actions-dropdown">
                     <button id="new-dex-btn"><i class="fas fa-file"></i> Change Dex</button>
                     <button id="export-btn"><i class="fas fa-file-export"></i> Export</button>
-                    <button id="print-grid-btn"><i class="fas fa-image"></i> Print Grid</button>
                 </div>
             </div>
             <input type="file" id="file-input" style="display: none;" accept=".json">
@@ -315,7 +314,65 @@
                     <!-- Region templates injected here -->
                 </div>
             </div>
+            
+            <!-- Step 5: Export Menu -->
+            <div id="modal-step-export" class="modal-step hidden">
+                <h2>Export Pokédex</h2>
+                <p class="modal-desc">Choose an export format</p>
+                <div class="modal-menu-grid modal-menu-2col">
+                    <button class="modal-menu-btn" id="export-data-btn">
+                        <i class="fas fa-database"></i>
+                        <span>Data</span>
+                        <small>Export as a JSON file</small>
+                    </button>
+                    <button class="modal-menu-btn" id="export-grid-btn">
+                        <i class="fas fa-th"></i>
+                        <span>Grid</span>
+                        <small>Save as a Pokémon grid image</small>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Step 6: Export Grid Options -->
+            <div id="modal-step-export-grid" class="modal-step hidden">
+                <button class="modal-back-btn" id="export-grid-back-btn">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <h2>Grid Image Options</h2>
+                <div class="modal-form">
+                    <div class="form-group">
+                        <label>Image Style</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="grid-image-style" value="artwork" checked>
+                                <span class="radio-label">Official Artwork</span>
+                                <small>High-quality official artwork</small>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="grid-image-style" value="sprite">
+                                <span class="radio-label">Sprites</span>
+                                <small>Pixel art game sprites</small>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" id="grid-show-names">
+                            <span>Show Pokémon names</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button id="export-grid-generate-btn" class="btn-primary"><i class="fas fa-download"></i> Generate Image</button>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <i id="toast-icon" class="fas fa-spinner fa-spin"></i>
+        <span id="toast-message">Loading...</span>
     </div>
 </body>
 </html>

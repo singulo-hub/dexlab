@@ -87,6 +87,10 @@
     gap: 12px;
 }
 
+.modal-menu-grid.modal-menu-2col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .modal-menu-btn {
     display: flex;
     flex-direction: column;
@@ -119,6 +123,7 @@
 .modal-menu-btn small {
     font-size: 0.75rem;
     color: var(--text-muted);
+    text-align: center;
 }
 
 /* Back Button */
@@ -182,6 +187,73 @@
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-color);
+}
+
+/* Radio Group */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.radio-option:hover {
+    border-color: var(--accent-color);
+}
+
+.radio-option:has(input:checked) {
+    border-color: var(--accent-color);
+    background: var(--accent-subtle-bg);
+}
+
+.radio-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.radio-option .radio-label {
+    font-weight: 500;
+    display: block;
+}
+
+.radio-option small {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+}
+
+/* Checkbox Option */
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.checkbox-option span {
+    font-size: 0.95rem;
 }
 
 .char-counter {
