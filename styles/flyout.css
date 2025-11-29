@@ -195,6 +195,7 @@
     margin: 0;
     padding: 0;
     z-index: 3;
+    border: none;
 }
 
 .range-slider input[type="range"]::-webkit-slider-runnable-track {

@@ -540,10 +540,12 @@ export class PokemonListManager {
             this.filterAndRender();
         });
 
-        // Handle chart click - filter by type or egg group and "In Dex"
+        // Handle chart click - filter by type, egg group, or BST range and "In Dex"
         document.addEventListener('chart-click', (e) => {
             const typeName = e.detail.type;
             const eggGroupName = e.detail.eggGroup;
+            const bstMin = e.detail.bstMin;
+            const bstMax = e.detail.bstMax;
             
             // Clear search input
             this.searchInput.value = '';
@@ -557,6 +559,12 @@ export class PokemonListManager {
             if (eggGroupName) {
                 filters.eggGroups = [eggGroupName];
                 filters.types = []; // Clear types when clicking egg group
+            }
+            if (bstMin !== undefined && bstMax !== undefined) {
+                filters.bstMin = bstMin;
+                filters.bstMax = bstMax;
+                filters.types = []; // Clear other filters when clicking BST
+                filters.eggGroups = [];
             }
             
             // Set filters and trigger render

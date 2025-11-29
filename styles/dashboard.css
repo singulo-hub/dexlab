@@ -145,13 +145,14 @@
     overflow: hidden;
 }
 
-/* Type chart is clickable */
 #stat-type-chart .chart-container {
+    cursor: pointer;
+} 
+#stat-egg-chart .chart-container {
     cursor: pointer;
 }
 
-/* Egg group chart is clickable */
-#stat-egg-chart .chart-container {
+#stat-bst-chart .chart-container {
     cursor: pointer;
 }
 

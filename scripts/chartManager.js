@@ -263,6 +263,28 @@ export class ChartManager {
                     mode: 'index',
                     intersect: true
                 },
+                onClick: (event, elements) => {
+                    if (elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = this.bstChart.data.labels[index];
+                        // Parse BST range from label (e.g., "< 300", "300-399", "600+")
+                        let bstMin = 180, bstMax = 780;
+                        if (label.startsWith('<')) {
+                            bstMin = 180;
+                            bstMax = parseInt(label.replace(/\D/g, '')) - 1;
+                        } else if (label.endsWith('+')) {
+                            bstMin = parseInt(label.replace(/\D/g, ''));
+                            bstMax = 780;
+                        } else if (label.includes('-')) {
+                            const [min, max] = label.split('-').map(s => parseInt(s));
+                            bstMin = min;
+                            bstMax = max;
+                        }
+                        document.dispatchEvent(new CustomEvent('chart-click', {
+                            detail: { bstMin, bstMax }
+                        }));
+                    }
+                },
                 plugins: {
                     legend: {
                         display: false
