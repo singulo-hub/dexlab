@@ -156,6 +156,19 @@
                                 <span>In Dex</span>
                             </label>
                         </div>
+                        <div class="filter-section filter-bst">
+                            <label>BST</label>
+                            <div class="bst-range-labels">
+                                <span>MIN <strong id="bst-min-val">180</strong></span>
+                                <span>MAX <strong id="bst-max-val">780</strong></span>
+                            </div>
+                            <div class="range-slider">
+                                <input type="range" id="bst-min" min="180" max="780" value="180" step="10">
+                                <input type="range" id="bst-max" min="180" max="780" value="780" step="10">
+                                <div class="range-track"></div>
+                                <div class="range-selected" id="bst-range-selected"></div>
+                            </div>
+                        </div>
                         <div class="filter-section">
                             <label>Type</label>
                             <select id="type-select">

@@ -95,7 +95,7 @@
     border: 1px solid var(--border-color);
     border-radius: 6px;
     padding: 12px;
-    min-width: 200px;
+    min-width: 300px;
     z-index: 100;
     display: none;
     box-shadow: 0 4px 12px var(--shadow-color);
@@ -150,6 +150,84 @@
 
 .filter-section select {
     width: 100%;
+}
+
+/* BST Range Slider */
+.filter-section.filter-bst {
+    padding-top: 4px;
+}
+
+.bst-range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.bst-range-labels strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.range-slider {
+    position: relative;
+    height: 20px;
+}
+
+.range-slider input[type="range"] {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: transparent;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    cursor: pointer;
+    pointer-events: auto;
+    border: 2px solid var(--panel-bg);
+    box-shadow: 0 1px 4px var(--shadow-color);
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    cursor: pointer;
+    pointer-events: auto;
+    border: 2px solid var(--panel-bg);
+    box-shadow: 0 1px 4px var(--shadow-color);
+}
+
+.range-track {
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: var(--border-color);
+    border-radius: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.range-selected {
+    position: absolute;
+    height: 6px;
+    background: var(--accent-color);
+    border-radius: 3px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Filter Chips */

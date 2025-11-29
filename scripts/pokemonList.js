@@ -13,6 +13,8 @@ export class PokemonListManager {
             gens: [],
             evos: [],
             eggGroups: [],
+            bstMin: 180,
+            bstMax: 780,
             inDex: false
         };
         
@@ -23,6 +25,11 @@ export class PokemonListManager {
         this.genSelect = document.getElementById('gen-select');
         this.evoSelect = document.getElementById('evo-select');
         this.eggSelect = document.getElementById('egg-select');
+        this.bstMinSlider = document.getElementById('bst-min');
+        this.bstMaxSlider = document.getElementById('bst-max');
+        this.bstMinVal = document.getElementById('bst-min-val');
+        this.bstMaxVal = document.getElementById('bst-max-val');
+        this.bstRangeSelected = document.getElementById('bst-range-selected');
         this.inDexFilter = document.getElementById('in-dex-filter');
         this.filterChipsContainer = document.getElementById('filter-chips');
         this.filterBtn = document.getElementById('filter-btn');
@@ -124,6 +131,15 @@ export class PokemonListManager {
             this.activeFilters.evos = this.activeFilters.evos.filter(e => e !== value);
         } else if (type === 'egg') {
             this.activeFilters.eggGroups = this.activeFilters.eggGroups.filter(eg => eg !== value);
+        } else if (type === 'bst') {
+            // Reset BST to full range
+            this.activeFilters.bstMin = 180;
+            this.activeFilters.bstMax = 780;
+            this.bstMinSlider.value = 180;
+            this.bstMaxSlider.value = 780;
+            this.bstMinVal.textContent = 180;
+            this.bstMaxVal.textContent = 780;
+            this.updateBstRangeTrack();
         } else if (type === 'inDex') {
             this.activeFilters.inDex = false;
             this.inDexFilter.checked = false;
@@ -150,12 +166,23 @@ export class PokemonListManager {
         if (filters.eggGroups !== undefined) {
             this.activeFilters.eggGroups = filters.eggGroups;
         }
+        if (filters.bstMin !== undefined) {
+            this.activeFilters.bstMin = filters.bstMin;
+            this.bstMinSlider.value = filters.bstMin;
+            this.bstMinVal.textContent = filters.bstMin;
+        }
+        if (filters.bstMax !== undefined) {
+            this.activeFilters.bstMax = filters.bstMax;
+            this.bstMaxSlider.value = filters.bstMax;
+            this.bstMaxVal.textContent = filters.bstMax;
+        }
         if (filters.inDex !== undefined) {
             this.activeFilters.inDex = filters.inDex;
             this.inDexFilter.checked = filters.inDex;
         }
         
         this.updateFilterDropdowns();
+        this.updateBstRangeTrack();
         this.renderFilterChips();
         this.filterAndRender();
     }
@@ -240,6 +267,16 @@ export class PokemonListManager {
             chip.innerHTML = `${egg} <i class="fas fa-times"></i>`;
             this.filterChipsContainer.appendChild(chip);
         });
+        
+        // BST range chip (only show if not at default full range)
+        if (this.activeFilters.bstMin > 180 || this.activeFilters.bstMax < 780) {
+            const chip = document.createElement('span');
+            chip.className = 'filter-chip';
+            chip.dataset.type = 'bst';
+            chip.dataset.value = 'range';
+            chip.innerHTML = `BST ${this.activeFilters.bstMin}-${this.activeFilters.bstMax} <i class="fas fa-times"></i>`;
+            this.filterChipsContainer.appendChild(chip);
+        }
     }
 
     /**
@@ -262,10 +299,12 @@ export class PokemonListManager {
             // Must match ALL selected egg groups (AND logic)
             const matchesEgg = this.activeFilters.eggGroups.length === 0 || 
                 this.activeFilters.eggGroups.every(eg => p.eggGroups && p.eggGroups.includes(eg));
+            // Must be within BST range
+            const matchesBst = p.bst >= this.activeFilters.bstMin && p.bst <= this.activeFilters.bstMax;
             // If inDex filter is active, only show Pokemon in current dex
             const matchesInDex = !this.activeFilters.inDex || 
                 this.dataManager.customDex.some(d => d.id === p.id);
-            return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesEgg && matchesInDex;
+            return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesEgg && matchesBst && matchesInDex;
         });
 
         this.renderPokemonList(filtered);
@@ -447,6 +486,44 @@ export class PokemonListManager {
             this.filterAndRender();
         });
 
+        // BST range sliders
+        this.bstMinSlider.addEventListener('input', () => {
+            let minVal = parseInt(this.bstMinSlider.value);
+            let maxVal = parseInt(this.bstMaxSlider.value);
+            
+            // Ensure min doesn't exceed max
+            if (minVal > maxVal) {
+                minVal = maxVal;
+                this.bstMinSlider.value = minVal;
+            }
+            
+            this.activeFilters.bstMin = minVal;
+            this.bstMinVal.textContent = minVal;
+            this.updateBstRangeTrack();
+            this.renderFilterChips();
+            this.filterAndRender();
+        });
+
+        this.bstMaxSlider.addEventListener('input', () => {
+            let minVal = parseInt(this.bstMinSlider.value);
+            let maxVal = parseInt(this.bstMaxSlider.value);
+            
+            // Ensure max doesn't go below min
+            if (maxVal < minVal) {
+                maxVal = minVal;
+                this.bstMaxSlider.value = maxVal;
+            }
+            
+            this.activeFilters.bstMax = maxVal;
+            this.bstMaxVal.textContent = maxVal;
+            this.updateBstRangeTrack();
+            this.renderFilterChips();
+            this.filterAndRender();
+        });
+
+        // Initialize BST range track
+        this.updateBstRangeTrack();
+
         // Filter chips click to remove
         this.filterChipsContainer.addEventListener('click', (e) => {
             const chip = e.target.closest('.filter-chip');
@@ -542,5 +619,17 @@ export class PokemonListManager {
             'No Eggs': 'noeggs'
         };
         return classMap[eggGroup] || 'noeggs';
+    }
+
+    /**
+     * Update BST range slider track visual
+     */
+    updateBstRangeTrack() {
+        const min = parseInt(this.bstMinSlider.value);
+        const max = parseInt(this.bstMaxSlider.value);
+        const minPercent = ((min - 180) / (780 - 180)) * 100;
+        const maxPercent = ((max - 180) / (780 - 180)) * 100;
+        this.bstRangeSelected.style.left = minPercent + '%';
+        this.bstRangeSelected.style.width = (maxPercent - minPercent) + '%';
     }
 }
