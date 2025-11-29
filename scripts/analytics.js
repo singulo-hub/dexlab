@@ -145,7 +145,7 @@ export class Analytics {
         const avgBst = Math.round(totalBst / count);
 
         // Alerts
-        if (legendaryCount > count * 0.08 && count > 15) {
+        if (legendaryCount > count * 0.1 && count > 15) {
             const pct = Math.round((legendaryCount / count) * 100);
             this.alerts.push(`High Legendary count (${legendaryCount}, ${pct}%)`);
         }

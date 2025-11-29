@@ -1,10 +1,12 @@
 import { DataManager } from './dataManager.js';
 import { UI } from './ui.js';
 import { Analytics } from './analytics.js';
+import { PokemonListManager } from './pokemonList.js';
 
 const dataManager = new DataManager();
 const analytics = new Analytics();
 const ui = new UI(dataManager, analytics);
+let pokemonListManager = null;
 
 // Initialize
 async function init() {
@@ -14,8 +16,10 @@ async function init() {
         return;
     }
 
-    // Populate Filters
-    populateFilters();
+    // Initialize Pokemon List Manager
+    pokemonListManager = new PokemonListManager(dataManager);
+    pokemonListManager.setRenderCallback((filtered) => ui.renderPokemonList(filtered));
+    pokemonListManager.populateFilters();
 
     // Check for saved data
     if (dataManager.loadFromStorage()) {
@@ -27,159 +31,7 @@ async function init() {
     }
 
     // Initial Render of Source List
-    filterAndRender();
-}
-
-// Filter State
-const activeFilters = {
-    types: [],
-    gens: [],
-    evos: [],
-    inDex: false
-};
-
-// Filter Logic
-function populateFilters() {
-    const typeSelect = document.getElementById('type-select');
-    const genSelect = document.getElementById('gen-select');
-    
-    const types = new Set();
-    const gens = new Set();
-
-    dataManager.allPokemon.forEach(p => {
-        p.types.forEach(t => types.add(t));
-        gens.add(p.gen);
-    });
-
-    Array.from(types).sort().forEach(t => {
-        const opt = document.createElement('option');
-        opt.value = t;
-        opt.textContent = t;
-        typeSelect.appendChild(opt);
-    });
-
-    Array.from(gens).sort((a, b) => a - b).forEach(g => {
-        const opt = document.createElement('option');
-        opt.value = g;
-        opt.textContent = `Gen ${g}`;
-        genSelect.appendChild(opt);
-    });
-}
-
-function addFilter(type, value, label) {
-    if (type === 'type' && !activeFilters.types.includes(value)) {
-        activeFilters.types.push(value);
-        updateFilterDropdowns();
-        renderFilterChips();
-        filterAndRender();
-    } else if (type === 'gen' && !activeFilters.gens.includes(value)) {
-        activeFilters.gens.push(value);
-        updateFilterDropdowns();
-        renderFilterChips();
-        filterAndRender();
-    } else if (type === 'evo' && !activeFilters.evos.includes(value)) {
-        activeFilters.evos.push(value);
-        updateFilterDropdowns();
-        renderFilterChips();
-        filterAndRender();
-    }
-}
-
-function removeFilter(type, value) {
-    if (type === 'type') {
-        activeFilters.types = activeFilters.types.filter(t => t !== value);
-    } else if (type === 'gen') {
-        activeFilters.gens = activeFilters.gens.filter(g => g !== value);
-    } else if (type === 'evo') {
-        activeFilters.evos = activeFilters.evos.filter(e => e !== value);
-    } else if (type === 'inDex') {
-        activeFilters.inDex = false;
-        document.getElementById('in-dex-filter').checked = false;
-    }
-    updateFilterDropdowns();
-    renderFilterChips();
-    filterAndRender();
-}
-
-function updateFilterDropdowns() {
-    const typeSelect = document.getElementById('type-select');
-    const genSelect = document.getElementById('gen-select');
-    const evoSelect = document.getElementById('evo-select');
-    
-    // Hide/show type options based on active filters
-    Array.from(typeSelect.options).forEach(opt => {
-        if (opt.value === '') return; // Skip placeholder
-        opt.hidden = activeFilters.types.includes(opt.value);
-    });
-    
-    // Hide/show gen options based on active filters
-    Array.from(genSelect.options).forEach(opt => {
-        if (opt.value === '') return; // Skip placeholder
-        opt.hidden = activeFilters.gens.includes(opt.value);
-    });
-    
-    // Hide/show evo options based on active filters
-    Array.from(evoSelect.options).forEach(opt => {
-        if (opt.value === '') return; // Skip placeholder
-        opt.hidden = activeFilters.evos.includes(opt.value);
-    });
-}
-
-function renderFilterChips() {
-    const container = document.getElementById('filter-chips');
-    container.innerHTML = '';
-    
-    // In Dex chip
-    if (activeFilters.inDex) {
-        const chip = document.createElement('span');
-        chip.className = 'filter-chip';
-        chip.innerHTML = `In Dex <span class="chip-remove" data-type="inDex" data-value="true"><i class="fas fa-times"></i></span>`;
-        container.appendChild(chip);
-    }
-    
-    activeFilters.types.forEach(type => {
-        const chip = document.createElement('span');
-        chip.className = 'filter-chip';
-        chip.innerHTML = `${type} <span class="chip-remove" data-type="type" data-value="${type}"><i class="fas fa-times"></i></span>`;
-        container.appendChild(chip);
-    });
-    
-    activeFilters.gens.forEach(gen => {
-        const chip = document.createElement('span');
-        chip.className = 'filter-chip';
-        chip.innerHTML = `Gen ${gen} <span class="chip-remove" data-type="gen" data-value="${gen}"><i class="fas fa-times"></i></span>`;
-        container.appendChild(chip);
-    });
-    
-    activeFilters.evos.forEach(evo => {
-        const chip = document.createElement('span');
-        chip.className = 'filter-chip';
-        chip.innerHTML = `${evo}-Stage <span class="chip-remove" data-type="evo" data-value="${evo}"><i class="fas fa-times"></i></span>`;
-        container.appendChild(chip);
-    });
-}
-
-function filterAndRender() {
-    const searchVal = document.getElementById('search-input').value.toLowerCase();
-
-    const filtered = dataManager.allPokemon.filter(p => {
-        const matchesSearch = p.name.toLowerCase().includes(searchVal);
-        // Must match ALL selected types (AND logic)
-        const matchesTypes = activeFilters.types.length === 0 || 
-            activeFilters.types.every(t => p.types.includes(t));
-        // Must match ANY selected gen (OR logic for gens)
-        const matchesGen = activeFilters.gens.length === 0 || 
-            activeFilters.gens.includes(String(p.gen));
-        // Must match ANY selected evolution stage (OR logic)
-        const matchesEvo = activeFilters.evos.length === 0 || 
-            activeFilters.evos.includes(String(p.evolutionDepth));
-        // If inDex filter is active, only show Pokemon in current dex
-        const matchesInDex = !activeFilters.inDex || 
-            dataManager.customDex.some(d => d.id === p.id);
-        return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesInDex;
-    });
-
-    ui.renderPokemonList(filtered);
+    pokemonListManager.filterAndRender();
 }
 
 // Actions Dropdown
@@ -204,79 +56,8 @@ actionsDropdown.querySelectorAll('button').forEach(btn => {
     });
 });
 
-// Filter Event Listeners
-const filterBtn = document.getElementById('filter-btn');
-const filterDropdown = document.getElementById('filter-dropdown');
-
-filterBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    filterDropdown.classList.toggle('open');
-});
-
-document.addEventListener('click', (e) => {
-    if (!filterDropdown.contains(e.target) && e.target !== filterBtn) {
-        filterDropdown.classList.remove('open');
-    }
-});
-
-document.getElementById('type-select').addEventListener('change', (e) => {
-    if (e.target.value) {
-        addFilter('type', e.target.value);
-        e.target.value = '';
-    }
-});
-
-document.getElementById('gen-select').addEventListener('change', (e) => {
-    if (e.target.value) {
-        addFilter('gen', e.target.value);
-        e.target.value = '';
-    }
-});
-
-document.getElementById('in-dex-filter').addEventListener('change', (e) => {
-    activeFilters.inDex = e.target.checked;
-    renderFilterChips();
-    filterAndRender();
-});
-
-document.getElementById('evo-select').addEventListener('change', (e) => {
-    if (e.target.value) {
-        addFilter('evo', e.target.value);
-        e.target.value = '';
-    }
-});
-
-document.getElementById('filter-chips').addEventListener('click', (e) => {
-    const removeBtn = e.target.closest('.chip-remove');
-    if (removeBtn) {
-        removeFilter(removeBtn.dataset.type, removeBtn.dataset.value);
-    }
-});
-
-// Event Listeners
-document.getElementById('search-input').addEventListener('input', filterAndRender);
-
-document.addEventListener('filter-update', () => {
-    filterAndRender();
-});
-
-// Handle type chart click - filter by type and "In Dex"
-document.addEventListener('chart-type-click', (e) => {
-    const typeName = e.detail.type;
-    
-    // Clear existing type filters and add the clicked type
-    activeFilters.types = [typeName];
-    
-    // Enable "In Dex" filter
-    activeFilters.inDex = true;
-    document.getElementById('in-dex-filter').checked = true;
-    
-    // Update UI
-    updateFilterDropdowns();
-    renderFilterChips();
-    filterAndRender();
-    
-    // Open the flyout
+// Handle open-flyout event from PokemonListManager
+document.addEventListener('open-flyout', () => {
     ui.openFlyout();
 });
 
