@@ -5,7 +5,7 @@
 export class PokemonListManager {
     constructor(dataManager) {
         this.dataManager = dataManager;
-        this.renderCallback = null;
+        this.updateDashboardCallback = null;
         
         // Filter State
         this.activeFilters = {
@@ -16,6 +16,7 @@ export class PokemonListManager {
         };
         
         // DOM Elements
+        this.pokemonListEl = document.getElementById('pokemon-list');
         this.searchInput = document.getElementById('search-input');
         this.typeSelect = document.getElementById('type-select');
         this.genSelect = document.getElementById('gen-select');
@@ -24,15 +25,24 @@ export class PokemonListManager {
         this.filterChipsContainer = document.getElementById('filter-chips');
         this.filterBtn = document.getElementById('filter-btn');
         this.filterDropdown = document.getElementById('filter-dropdown');
+        this.viewToggle = document.getElementById('view-toggle');
+        
+        // View state
+        this.isGridView = false;
+        
+        // Drag selection state for list view
+        this.isDragging = false;
+        this.dragAction = null; // 'add' or 'remove' - determined by first item's state
+        this.draggedIds = new Set(); // Track which IDs have been toggled this drag
         
         this.setupEventListeners();
     }
 
     /**
-     * Set the callback function to render the filtered list
+     * Set the callback function to update dashboard after changes
      */
-    setRenderCallback(callback) {
-        this.renderCallback = callback;
+    setUpdateDashboardCallback(callback) {
+        this.updateDashboardCallback = callback;
     }
 
     /**
@@ -184,7 +194,7 @@ export class PokemonListManager {
     }
 
     /**
-     * Filter the Pokemon list and trigger render
+     * Filter the Pokemon list and render
      */
     filterAndRender() {
         const searchVal = this.searchInput.value.toLowerCase();
@@ -206,8 +216,104 @@ export class PokemonListManager {
             return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesInDex;
         });
 
-        if (this.renderCallback) {
-            this.renderCallback(filtered);
+        this.renderPokemonList(filtered);
+    }
+
+    /**
+     * Render the Pokemon list
+     */
+    renderPokemonList(pokemonList) {
+        this.pokemonListEl.innerHTML = '';
+        pokemonList.forEach(p => {
+            const isAdded = this.dataManager.customDex.some(d => d.id === p.id);
+            const item = document.createElement('div');
+            
+            if (this.isGridView) {
+                item.className = `pokemon-card ${isAdded ? 'added' : ''}`;
+                item.innerHTML = `
+                    <div class="card-img-container">
+                        <div class="pokemon-sprite" style="background-position: ${-p.spriteX * 96}px ${-p.spriteY * 96}px;"></div>
+                    </div>
+                    <div class="card-info">
+                        <span class="pokemon-id">#${p.id}</span>
+                        <span class="pokemon-name">${p.name}</span>
+                        <div class="pokemon-types">
+                            ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+                
+                // Grid view: simple click toggle
+                item.addEventListener('click', () => {
+                    if (isAdded) {
+                        this.dataManager.removeFromDex(p.id);
+                    } else {
+                        this.dataManager.addToDex(p.id);
+                    }
+                    this.onPokemonToggled();
+                });
+            } else {
+                item.className = `pokemon-item ${isAdded ? 'added' : ''}`;
+                item.innerHTML = `
+                    <div class="pokemon-info">
+                        <span class="pokemon-id">#${p.id}</span>
+                        <span class="pokemon-name">${p.name}</span>
+                        <div class="pokemon-types">
+                            ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
+                        </div>
+                    </div>
+                `;
+                
+                // List view: drag selection support
+                item.addEventListener('mousedown', (e) => {
+                    e.preventDefault(); // Prevent text selection
+                    this.isDragging = true;
+                    this.draggedIds.clear();
+                    
+                    // Determine action based on first item's current state
+                    const currentlyAdded = this.dataManager.customDex.some(d => d.id === p.id);
+                    this.dragAction = currentlyAdded ? 'remove' : 'add';
+                    
+                    // Toggle this first item
+                    this.togglePokemonDrag(p.id);
+                });
+                
+                item.addEventListener('mouseenter', () => {
+                    if (this.isDragging && !this.draggedIds.has(p.id)) {
+                        this.togglePokemonDrag(p.id);
+                    }
+                });
+            }
+            
+            this.pokemonListEl.appendChild(item);
+        });
+    }
+
+    /**
+     * Toggle Pokemon during drag operation
+     */
+    togglePokemonDrag(pokemonId) {
+        this.draggedIds.add(pokemonId);
+        
+        if (this.dragAction === 'add') {
+            this.dataManager.addToDex(pokemonId);
+        } else {
+            this.dataManager.removeFromDex(pokemonId);
+        }
+        
+        this.onPokemonToggled();
+    }
+
+    /**
+     * Called when a Pokemon is added or removed from the dex
+     */
+    onPokemonToggled() {
+        // Re-render the list to update added/removed state
+        this.filterAndRender();
+        
+        // Update dashboard via callback
+        if (this.updateDashboardCallback) {
+            this.updateDashboardCallback();
         }
     }
 
@@ -215,6 +321,23 @@ export class PokemonListManager {
      * Set up all event listeners for filtering
      */
     setupEventListeners() {
+        // View toggle (list/grid)
+        this.viewToggle.addEventListener('click', () => {
+            this.isGridView = !this.isGridView;
+            this.viewToggle.classList.toggle('grid-active', this.isGridView);
+            this.pokemonListEl.classList.toggle('grid-view', this.isGridView);
+            this.filterAndRender();
+        });
+
+        // Global mouseup listener to end drag
+        document.addEventListener('mouseup', () => {
+            if (this.isDragging) {
+                this.isDragging = false;
+                this.dragAction = null;
+                this.draggedIds.clear();
+            }
+        });
+
         // Filter dropdown toggle
         this.filterBtn.addEventListener('click', (e) => {
             e.stopPropagation();

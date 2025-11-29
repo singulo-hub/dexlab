@@ -18,13 +18,13 @@ async function init() {
 
     // Initialize Pokemon List Manager
     pokemonListManager = new PokemonListManager(dataManager);
-    pokemonListManager.setRenderCallback((filtered) => ui.renderPokemonList(filtered));
+    pokemonListManager.setUpdateDashboardCallback(() => ui.updateDashboard());
     pokemonListManager.populateFilters();
 
     // Check for saved data
     if (dataManager.loadFromStorage()) {
         ui.closeModal();
-        ui.updateAll();
+        ui.updateDashboard();
         ui.updateDexTitle();
     } else {
         ui.init(); // Shows template modal

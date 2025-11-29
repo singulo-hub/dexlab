@@ -9,7 +9,6 @@ export class UI {
         this.chartManager = new ChartManager();
 
         // Elements
-        this.pokemonListEl = document.getElementById('pokemon-list');
         this.dexNameEl = document.getElementById('dex-name');
         
         // Dashboard Elements
@@ -62,32 +61,6 @@ export class UI {
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && this.flyoutPanel.classList.contains('open')) {
                 this.closeFlyout();
-            }
-        });
-        
-        this.isGridView = false;
-        this.viewToggle = document.getElementById('view-toggle');
-        
-        this.viewToggle.addEventListener('click', () => {
-            this.isGridView = !this.isGridView;
-            this.viewToggle.classList.toggle('grid-active', this.isGridView);
-            this.pokemonListEl.classList.toggle('grid-view', this.isGridView);
-            // Re-trigger render
-            const event = new CustomEvent('filter-update');
-            document.dispatchEvent(event);
-        });
-        
-        // Drag selection state for list view
-        this.isDragging = false;
-        this.dragAction = null; // 'add' or 'remove' - determined by first item's state
-        this.draggedIds = new Set(); // Track which IDs have been toggled this drag
-        
-        // Global mouseup listener to end drag
-        document.addEventListener('mouseup', () => {
-            if (this.isDragging) {
-                this.isDragging = false;
-                this.dragAction = null;
-                this.draggedIds.clear();
             }
         });
         
@@ -398,85 +371,6 @@ export class UI {
         this.flyoutPanel.classList.remove('open');
         this.flyoutOverlay.classList.remove('open');
         document.body.style.overflow = '';
-    }
-
-    renderPokemonList(pokemonList) {
-        this.pokemonListEl.innerHTML = '';
-        pokemonList.forEach(p => {
-            const isAdded = this.dataManager.customDex.some(d => d.id === p.id);
-            const item = document.createElement('div');
-            
-            if (this.isGridView) {
-                item.className = `pokemon-card ${isAdded ? 'added' : ''}`;
-                item.innerHTML = `
-                    <div class="card-img-container">
-                        <div class="pokemon-sprite" style="background-position: ${-p.spriteX * 96}px ${-p.spriteY * 96}px;"></div>
-                    </div>
-                    <div class="card-info">
-                        <span class="pokemon-id">#${p.id}</span>
-                        <span class="pokemon-name">${p.name}</span>
-                        <div class="pokemon-types">
-                            ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
-                        </div>
-                    </div>
-                `;
-                
-                // Grid view: simple click toggle
-                item.addEventListener('click', () => {
-                    if (isAdded) {
-                        this.dataManager.removeFromDex(p.id);
-                    } else {
-                        this.dataManager.addToDex(p.id);
-                    }
-                    this.updateAll();
-                });
-            } else {
-                item.className = `pokemon-item ${isAdded ? 'added' : ''}`;
-                item.innerHTML = `
-                    <div class="pokemon-info">
-                        <span class="pokemon-id">#${p.id}</span>
-                        <span class="pokemon-name">${p.name}</span>
-                        <div class="pokemon-types">
-                            ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
-                        </div>
-                    </div>
-                `;
-                
-                // List view: drag selection support
-                item.addEventListener('mousedown', (e) => {
-                    e.preventDefault(); // Prevent text selection
-                    this.isDragging = true;
-                    this.draggedIds.clear();
-                    
-                    // Determine action based on first item's current state
-                    const currentlyAdded = this.dataManager.customDex.some(d => d.id === p.id);
-                    this.dragAction = currentlyAdded ? 'remove' : 'add';
-                    
-                    // Toggle this first item
-                    this.togglePokemonDrag(p.id);
-                });
-                
-                item.addEventListener('mouseenter', () => {
-                    if (this.isDragging && !this.draggedIds.has(p.id)) {
-                        this.togglePokemonDrag(p.id);
-                    }
-                });
-            }
-            
-            this.pokemonListEl.appendChild(item);
-        });
-    }
-    
-    togglePokemonDrag(pokemonId) {
-        this.draggedIds.add(pokemonId);
-        
-        if (this.dragAction === 'add') {
-            this.dataManager.addToDex(pokemonId);
-        } else {
-            this.dataManager.removeFromDex(pokemonId);
-        }
-        
-        this.updateAll();
     }
 
     updateDashboard() {
