@@ -150,6 +150,11 @@
     cursor: pointer;
 }
 
+/* Egg group chart is clickable */
+#stat-egg-chart .chart-container {
+    cursor: pointer;
+}
+
 .chart-header {
     display: flex;
     justify-content: space-between;

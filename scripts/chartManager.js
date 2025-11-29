@@ -170,7 +170,7 @@ export class ChartManager {
                             const index = elements[0].index;
                             const typeName = this.typeChart.data.labels[index];
                             // Dispatch custom event for app.js to handle
-                            document.dispatchEvent(new CustomEvent('chart-type-click', {
+                            document.dispatchEvent(new CustomEvent('chart-click', {
                                 detail: { type: typeName }
                             }));
                         }
@@ -575,6 +575,16 @@ export class ChartManager {
                     interaction: {
                         mode: 'y',
                         intersect: true
+                    },
+                    onClick: (event, elements) => {
+                        if (elements.length > 0) {
+                            const index = elements[0].index;
+                            const eggGroupName = this.eggChart.data.labels[index];
+                            // Dispatch custom event for pokemonList.js to handle
+                            document.dispatchEvent(new CustomEvent('chart-click', {
+                                detail: { eggGroup: eggGroupName }
+                            }));
+                        }
                     },
                     plugins: {
                         legend: {

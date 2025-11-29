@@ -453,18 +453,27 @@ export class PokemonListManager {
             this.filterAndRender();
         });
 
-        // Handle type chart click - filter by type and "In Dex"
-        document.addEventListener('chart-type-click', (e) => {
+        // Handle chart click - filter by type or egg group and "In Dex"
+        document.addEventListener('chart-click', (e) => {
             const typeName = e.detail.type;
+            const eggGroupName = e.detail.eggGroup;
             
             // Clear search input
             this.searchInput.value = '';
             
+            // Build filters based on what was clicked
+            const filters = { inDex: true };
+            if (typeName) {
+                filters.types = [typeName];
+                filters.eggGroups = []; // Clear egg groups when clicking type
+            }
+            if (eggGroupName) {
+                filters.eggGroups = [eggGroupName];
+                filters.types = []; // Clear types when clicking egg group
+            }
+            
             // Set filters and trigger render
-            this.setFilters({
-                types: [typeName],
-                inDex: true
-            });
+            this.setFilters(filters);
             
             // Open the flyout
             this.openFlyout();
