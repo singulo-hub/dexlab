@@ -12,6 +12,7 @@ export class PokemonListManager {
             types: [],
             gens: [],
             evos: [],
+            eggGroups: [],
             inDex: false
         };
         
@@ -21,6 +22,7 @@ export class PokemonListManager {
         this.typeSelect = document.getElementById('type-select');
         this.genSelect = document.getElementById('gen-select');
         this.evoSelect = document.getElementById('evo-select');
+        this.eggSelect = document.getElementById('egg-select');
         this.inDexFilter = document.getElementById('in-dex-filter');
         this.filterChipsContainer = document.getElementById('filter-chips');
         this.filterBtn = document.getElementById('filter-btn');
@@ -57,10 +59,14 @@ export class PokemonListManager {
     populateFilters() {
         const types = new Set();
         const gens = new Set();
+        const eggGroups = new Set();
 
         this.dataManager.allPokemon.forEach(p => {
             p.types.forEach(t => types.add(t));
             gens.add(p.gen);
+            if (p.eggGroups) {
+                p.eggGroups.forEach(eg => eggGroups.add(eg));
+            }
         });
 
         Array.from(types).sort().forEach(t => {
@@ -76,6 +82,13 @@ export class PokemonListManager {
             opt.textContent = `Gen ${g}`;
             this.genSelect.appendChild(opt);
         });
+
+        Array.from(eggGroups).sort().forEach(eg => {
+            const opt = document.createElement('option');
+            opt.value = eg;
+            opt.textContent = eg;
+            this.eggSelect.appendChild(opt);
+        });
     }
 
     /**
@@ -88,6 +101,8 @@ export class PokemonListManager {
             this.activeFilters.gens.push(value);
         } else if (type === 'evo' && !this.activeFilters.evos.includes(value)) {
             this.activeFilters.evos.push(value);
+        } else if (type === 'egg' && !this.activeFilters.eggGroups.includes(value)) {
+            this.activeFilters.eggGroups.push(value);
         } else {
             return; // No change needed
         }
@@ -107,6 +122,8 @@ export class PokemonListManager {
             this.activeFilters.gens = this.activeFilters.gens.filter(g => g !== value);
         } else if (type === 'evo') {
             this.activeFilters.evos = this.activeFilters.evos.filter(e => e !== value);
+        } else if (type === 'egg') {
+            this.activeFilters.eggGroups = this.activeFilters.eggGroups.filter(eg => eg !== value);
         } else if (type === 'inDex') {
             this.activeFilters.inDex = false;
             this.inDexFilter.checked = false;
@@ -129,6 +146,9 @@ export class PokemonListManager {
         }
         if (filters.evos !== undefined) {
             this.activeFilters.evos = filters.evos;
+        }
+        if (filters.eggGroups !== undefined) {
+            this.activeFilters.eggGroups = filters.eggGroups;
         }
         if (filters.inDex !== undefined) {
             this.activeFilters.inDex = filters.inDex;
@@ -160,6 +180,12 @@ export class PokemonListManager {
         Array.from(this.evoSelect.options).forEach(opt => {
             if (opt.value === '') return; // Skip placeholder
             opt.hidden = this.activeFilters.evos.includes(opt.value);
+        });
+        
+        // Hide/show egg group options based on active filters
+        Array.from(this.eggSelect.options).forEach(opt => {
+            if (opt.value === '') return; // Skip placeholder
+            opt.hidden = this.activeFilters.eggGroups.includes(opt.value);
         });
     }
 
@@ -197,6 +223,13 @@ export class PokemonListManager {
             chip.innerHTML = `${evo}-Stage <span class="chip-remove" data-type="evo" data-value="${evo}"><i class="fas fa-times"></i></span>`;
             this.filterChipsContainer.appendChild(chip);
         });
+        
+        this.activeFilters.eggGroups.forEach(egg => {
+            const chip = document.createElement('span');
+            chip.className = 'filter-chip';
+            chip.innerHTML = `${egg} <span class="chip-remove" data-type="egg" data-value="${egg}"><i class="fas fa-times"></i></span>`;
+            this.filterChipsContainer.appendChild(chip);
+        });
     }
 
     /**
@@ -216,10 +249,13 @@ export class PokemonListManager {
             // Must match ANY selected evolution stage (OR logic)
             const matchesEvo = this.activeFilters.evos.length === 0 || 
                 this.activeFilters.evos.includes(String(p.evolutionDepth));
+            // Must match ALL selected egg groups (AND logic)
+            const matchesEgg = this.activeFilters.eggGroups.length === 0 || 
+                this.activeFilters.eggGroups.every(eg => p.eggGroups && p.eggGroups.includes(eg));
             // If inDex filter is active, only show Pokemon in current dex
             const matchesInDex = !this.activeFilters.inDex || 
                 this.dataManager.customDex.some(d => d.id === p.id);
-            return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesInDex;
+            return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesEgg && matchesInDex;
         });
 
         this.renderPokemonList(filtered);
@@ -382,6 +418,14 @@ export class PokemonListManager {
         this.evoSelect.addEventListener('change', (e) => {
             if (e.target.value) {
                 this.addFilter('evo', e.target.value);
+                e.target.value = '';
+            }
+        });
+
+        // Egg group select
+        this.eggSelect.addEventListener('change', (e) => {
+            if (e.target.value) {
+                this.addFilter('egg', e.target.value);
                 e.target.value = '';
             }
         });
