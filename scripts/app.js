@@ -34,6 +34,7 @@ async function init() {
 const activeFilters = {
     types: [],
     gens: [],
+    evos: [],
     inDex: false
 };
 
@@ -76,6 +77,11 @@ function addFilter(type, value, label) {
         updateFilterDropdowns();
         renderFilterChips();
         filterAndRender();
+    } else if (type === 'evo' && !activeFilters.evos.includes(value)) {
+        activeFilters.evos.push(value);
+        updateFilterDropdowns();
+        renderFilterChips();
+        filterAndRender();
     }
 }
 
@@ -84,6 +90,8 @@ function removeFilter(type, value) {
         activeFilters.types = activeFilters.types.filter(t => t !== value);
     } else if (type === 'gen') {
         activeFilters.gens = activeFilters.gens.filter(g => g !== value);
+    } else if (type === 'evo') {
+        activeFilters.evos = activeFilters.evos.filter(e => e !== value);
     } else if (type === 'inDex') {
         activeFilters.inDex = false;
         document.getElementById('in-dex-filter').checked = false;
@@ -96,6 +104,7 @@ function removeFilter(type, value) {
 function updateFilterDropdowns() {
     const typeSelect = document.getElementById('type-select');
     const genSelect = document.getElementById('gen-select');
+    const evoSelect = document.getElementById('evo-select');
     
     // Hide/show type options based on active filters
     Array.from(typeSelect.options).forEach(opt => {
@@ -107,6 +116,12 @@ function updateFilterDropdowns() {
     Array.from(genSelect.options).forEach(opt => {
         if (opt.value === '') return; // Skip placeholder
         opt.hidden = activeFilters.gens.includes(opt.value);
+    });
+    
+    // Hide/show evo options based on active filters
+    Array.from(evoSelect.options).forEach(opt => {
+        if (opt.value === '') return; // Skip placeholder
+        opt.hidden = activeFilters.evos.includes(opt.value);
     });
 }
 
@@ -135,6 +150,13 @@ function renderFilterChips() {
         chip.innerHTML = `Gen ${gen} <span class="chip-remove" data-type="gen" data-value="${gen}"><i class="fas fa-times"></i></span>`;
         container.appendChild(chip);
     });
+    
+    activeFilters.evos.forEach(evo => {
+        const chip = document.createElement('span');
+        chip.className = 'filter-chip';
+        chip.innerHTML = `${evo}-Stage <span class="chip-remove" data-type="evo" data-value="${evo}"><i class="fas fa-times"></i></span>`;
+        container.appendChild(chip);
+    });
 }
 
 function filterAndRender() {
@@ -148,10 +170,13 @@ function filterAndRender() {
         // Must match ANY selected gen (OR logic for gens)
         const matchesGen = activeFilters.gens.length === 0 || 
             activeFilters.gens.includes(String(p.gen));
+        // Must match ANY selected evolution stage (OR logic)
+        const matchesEvo = activeFilters.evos.length === 0 || 
+            activeFilters.evos.includes(String(p.evolutionDepth));
         // If inDex filter is active, only show Pokemon in current dex
         const matchesInDex = !activeFilters.inDex || 
             dataManager.customDex.some(d => d.id === p.id);
-        return matchesSearch && matchesTypes && matchesGen && matchesInDex;
+        return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesInDex;
     });
 
     ui.renderPokemonList(filtered);
@@ -190,6 +215,13 @@ document.getElementById('in-dex-filter').addEventListener('change', (e) => {
     activeFilters.inDex = e.target.checked;
     renderFilterChips();
     filterAndRender();
+});
+
+document.getElementById('evo-select').addEventListener('change', (e) => {
+    if (e.target.value) {
+        addFilter('evo', e.target.value);
+        e.target.value = '';
+    }
 });
 
 document.getElementById('filter-chips').addEventListener('click', (e) => {
