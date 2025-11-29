@@ -29,7 +29,7 @@
 }
 
 .pokemon-item.added {
-    background-color: rgba(0, 122, 204, 0.2);
+    background-color: var(--accent-selected-bg);
 }
 
 /* Pokemon Card (Grid View) */
@@ -52,7 +52,7 @@
 }
 
 .pokemon-card.added {
-    background-color: rgba(0, 122, 204, 0.2);
+    background-color: var(--accent-selected-bg);
     border-color: var(--accent-color);
 }
 
@@ -93,7 +93,7 @@
 .pokemon-info .pokemon-id,
 .card-info .pokemon-id {
     font-size: 0.7rem;
-    color: #888;
+    color: var(--text-muted);
     margin-bottom: 2px;
 }
 

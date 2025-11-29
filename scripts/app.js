@@ -215,6 +215,26 @@ document.getElementById('print-grid-btn').addEventListener('click', () => {
     generatePrintGrid(dataManager.customDex);
 });
 
+// Theme toggle
+const themeToggle = document.getElementById('theme-toggle');
+const THEME_KEY = 'dexlab_theme';
+
+function initTheme() {
+    // Check for saved preference, default to dark
+    const savedTheme = localStorage.getItem(THEME_KEY) || 'dark';
+    document.body.setAttribute('data-theme', savedTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.body.getAttribute('data-theme') || 'dark';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    document.body.setAttribute('data-theme', newTheme);
+    localStorage.setItem(THEME_KEY, newTheme);
+}
+
+themeToggle.addEventListener('click', toggleTheme);
+initTheme();
+
 // Generate printable grid image
 async function generatePrintGrid(dex) {
     if (!dex || dex.length === 0) {

@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     transition: right 0.3s ease-in-out;
-    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: -5px 0 20px var(--shadow-color);
 }
 
 .flyout-panel.open {
@@ -98,7 +98,7 @@
     min-width: 200px;
     z-index: 100;
     display: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 .filter-dropdown.open {
@@ -116,7 +116,7 @@
 .filter-section label {
     display: block;
     font-size: 0.75rem;
-    color: #888;
+    color: var(--text-muted);
     margin-bottom: 4px;
     text-transform: uppercase;
 }
@@ -176,7 +176,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--overlay-bg);
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
@@ -206,7 +206,7 @@
 
 .view-toggle i {
     font-size: 0.85rem;
-    color: #888;
+    color: var(--text-muted);
     z-index: 1;
     width: 16px;
     text-align: center;
@@ -218,7 +218,7 @@
 }
 
 .view-toggle.grid-active i:first-of-type {
-    color: #888;
+    color: var(--text-muted);
 }
 
 .view-toggle.grid-active i:last-of-type {

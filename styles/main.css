@@ -4,17 +4,6 @@
    =========================================== */
 
 :root {
-    /* Base Theme Colors */
-    --bg-color: #1e1e1e;
-    --panel-bg: #252526;
-    --text-color: #d4d4d4;
-    --accent-color: #007acc;
-    --border-color: #3e3e42;
-    --hover-color: #2a2d2e;
-    --success-color: #4ec9b0;
-    --warning-color: #ce9178;
-    --danger-color: #f44336;
-    
     /* Pokemon Type Colors */
     --type-normal: #A8A77A;
     --type-fire: #EE8130;
@@ -34,6 +23,47 @@
     --type-dark: #705746;
     --type-steel: #B7B7CE;
     --type-fairy: #D685AD;
+    
+    /* Accent colors */
+    --accent-color: #007acc;
+    --success-color: #4ec9b0;
+    --warning-color: #ce9178;
+    --danger-color: #f44336;
+}
+
+body, body[data-theme="dark"] {
+    --bg-color: #1e1e1e;
+    --panel-bg: #252526;
+    --text-color: #d4d4d4;
+    --border-color: #3e3e42;
+    --hover-color: #2a2d2e;
+    --text-muted: #888;
+    --text-dim: #666;
+    --text-separator: #555;
+    --overlay-bg: rgba(0, 0, 0, 0.8);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --accent-hover-bg: rgba(0, 122, 204, 0.1);
+    --accent-subtle-bg: rgba(0, 122, 204, 0.05);
+    --accent-selected-bg: rgba(0, 122, 204, 0.2);
+    --tooltip-bg: #1e1e1e;
+}
+
+/* Light Theme */
+body[data-theme="light"] {
+    --bg-color: #f5f5f5;
+    --panel-bg: #ffffff;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+    --hover-color: #eeeeee;
+    --text-muted: #666666;
+    --text-dim: #999999;
+    --text-separator: #cccccc;
+    --overlay-bg: rgba(0, 0, 0, 0.5);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --accent-hover-bg: rgba(0, 122, 204, 0.1);
+    --accent-subtle-bg: rgba(0, 122, 204, 0.05);
+    --accent-selected-bg: rgba(0, 122, 204, 0.15);
+    --tooltip-bg: #ffffff;
 }
 
 /* Reset */
@@ -76,14 +106,14 @@ h1 {
 }
 
 .title-separator {
-    color: #555;
+    color: var(--text-separator);
     font-size: 1.2rem;
     font-weight: 300;
 }
 
 .dex-name {
     font-size: 1rem;
-    color: #888;
+    color: var(--text-muted);
     max-width: 300px;
     white-space: nowrap;
     overflow: hidden;
@@ -165,7 +195,7 @@ button.secondary {
 
 #dex-count {
     font-size: 0.9rem;
-    color: #888;
+    color: var(--text-muted);
 }
 
 /* Filters */
@@ -180,5 +210,64 @@ button.secondary {
     color: var(--text-color);
     padding: 5px;
     border-radius: 4px;
+}
+
+/* Theme Toggle Switch */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 4px 8px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    height: 32px;
+    box-sizing: border-box;
+    margin-left: 8px;
+}
+
+.theme-toggle i {
+    font-size: 0.85rem;
+    z-index: 1;
+    width: 16px;
+    text-align: center;
+    transition: color 0.2s;
+}
+
+.theme-toggle i.fa-moon {
+    color: var(--text-color);
+}
+
+.theme-toggle i.fa-sun {
+    color: var(--text-muted);
+}
+
+body[data-theme="light"] .theme-toggle i.fa-moon {
+    color: var(--text-muted);
+}
+
+body[data-theme="light"] .theme-toggle i.fa-sun {
+    color: var(--text-color);
+}
+
+.theme-slider {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 32px;
+    background: var(--accent-color);
+    border-radius: 16px 8px 8px 16px;
+    transition: left 0.25s ease;
+    opacity: 0.3;
+}
+
+body[data-theme="light"] .theme-slider {
+    left: calc(100% - 28px);
+    border-radius: 8px 16px 16px 8px;
 }
 
