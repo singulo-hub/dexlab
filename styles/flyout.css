@@ -154,7 +154,13 @@
 
 /* BST Range Slider */
 .filter-section.filter-bst {
-    padding-top: 4px;
+    padding: 4px 0 10px 0;
+    border-bottom: 1px solid var(--border-color);
+
+}
+
+.filter-section.filter-bst label {
+    text-align: center;
 }
 
 .bst-range-labels {
@@ -173,6 +179,7 @@
 .range-slider {
     position: relative;
     height: 20px;
+    margin: 0 8px;
 }
 
 .range-slider input[type="range"] {
@@ -185,6 +192,14 @@
     appearance: none;
     top: 50%;
     transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+}
+
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+    background: transparent;
+    height: 6px;
 }
 
 .range-slider input[type="range"]::-webkit-slider-thumb {
@@ -198,6 +213,13 @@
     pointer-events: auto;
     border: 2px solid var(--panel-bg);
     box-shadow: 0 1px 4px var(--shadow-color);
+    position: relative;
+    z-index: 3;
+}
+
+.range-slider input[type="range"]::-moz-range-track {
+    background: transparent;
+    height: 6px;
 }
 
 .range-slider input[type="range"]::-moz-range-thumb {
@@ -219,6 +241,8 @@
     border-radius: 3px;
     top: 50%;
     transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .range-selected {
@@ -228,6 +252,8 @@
     border-radius: 3px;
     top: 50%;
     transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 2;
 }
 
 /* Filter Chips */
