@@ -158,6 +158,10 @@
     margin-bottom: 0;
 }
 
+.form-group .image-style-label {
+    color: var(--text-muted);
+}
+
 .form-group label {
     display: block;
     margin-bottom: 6px;

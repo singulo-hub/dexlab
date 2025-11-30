@@ -1,4 +1,5 @@
-import { ChartManager } from './chartManager.js';
+import { ChartManager } from './managers/chartManager.js';
+import { ModalManager } from './managers/modalManager.js';
 
 export class UI {
     constructor(dataManager, analytics) {
@@ -7,6 +8,9 @@ export class UI {
         
         // Chart manager for all dashboard charts
         this.chartManager = new ChartManager();
+        
+        // Modal manager - pass callback for when dex changes
+        this.modalManager = new ModalManager(dataManager, () => this.updateAll());
 
         // Elements
         this.dexNameEl = document.getElementById('dex-name');
@@ -34,349 +38,46 @@ export class UI {
         this.statQ3CrEl = document.getElementById('q3-cr-val');
         this.statMaxCrEl = document.getElementById('max-cr-val');
         this.alertListEl = document.getElementById('alert-list');
-
-        // Modal
-        this.modal = document.getElementById('template-modal');
-        this.modalSteps = {
-            menu: document.getElementById('modal-step-menu'),
-            new: document.getElementById('modal-step-new'),
-            edit: document.getElementById('modal-step-edit'),
-            load: document.getElementById('modal-step-load'),
-            region: document.getElementById('modal-step-region'),
-            export: document.getElementById('modal-step-export'),
-            exportGrid: document.getElementById('modal-step-export-grid')
-        };
-        this.savedDexListEl = document.getElementById('saved-dex-list');
-        this.regionListEl = document.getElementById('region-list');
-        
-        // Setup modal navigation
-        this.setupModalNavigation();
     }
 
-    setupModalNavigation() {
-        // Close button
-        document.getElementById('modal-close-btn').addEventListener('click', () => {
-            this.closeModal();
-        });
-        
-        // Main menu buttons
-        document.getElementById('menu-new-btn').addEventListener('click', () => {
-            this.showModalStep('new');
-            document.getElementById('new-dex-name').value = '';
-            document.getElementById('new-dex-desc').value = '';
-            document.getElementById('new-dex-name').focus();
-        });
-        
-        document.getElementById('menu-load-btn').addEventListener('click', () => {
-            this.renderSavedDexList();
-            this.showModalStep('load');
-        });
-        
-        document.getElementById('menu-region-btn').addEventListener('click', () => {
-            this.renderRegionList();
-            this.showModalStep('region');
-        });
-        
-        document.getElementById('menu-import-btn').addEventListener('click', () => {
-            document.getElementById('file-input').click();
-        });
-        
-        // Edit button in header - opens edit modal directly
-        document.getElementById('edit-dex-btn').addEventListener('click', () => {
-            document.getElementById('edit-dex-name').value = this.dataManager.currentDexName;
-            document.getElementById('edit-dex-desc').value = this.dataManager.currentDexDesc || '';
-            // Update character counters
-            document.getElementById('edit-name-char-count').textContent = this.dataManager.currentDexName.length;
-            document.getElementById('edit-desc-char-count').textContent = (this.dataManager.currentDexDesc || '').length;
-            this.modal.classList.remove('hidden');
-            document.getElementById('modal-close-btn').classList.remove('hidden');
-            this.showModalStep('edit');
-            document.getElementById('edit-dex-name').focus();
-        });
-        
-        // Back buttons
-        document.getElementById('new-back-btn').addEventListener('click', () => {
-            this.showModalStep('menu');
-        });
-        
-        document.getElementById('edit-back-btn').addEventListener('click', () => {
-            this.closeModal();
-        });
-        
-        document.getElementById('load-back-btn').addEventListener('click', () => {
-            this.showModalStep('menu');
-        });
-        
-        document.getElementById('region-back-btn').addEventListener('click', () => {
-            this.showModalStep('menu');
-        });
-        
-        // Export modal buttons
-        document.getElementById('export-data-btn').addEventListener('click', () => {
-            this.dataManager.exportJSON();
-            this.closeModal();
-        });
-        
-        document.getElementById('export-grid-btn').addEventListener('click', () => {
-            this.showModalStep('exportGrid');
-        });
-        
-        document.getElementById('export-grid-back-btn').addEventListener('click', () => {
-            this.showModalStep('export');
-        });
-        
-        document.getElementById('export-grid-generate-btn').addEventListener('click', () => {
-            const imageStyle = document.querySelector('input[name="grid-image-style"]:checked').value;
-            const showNames = document.getElementById('grid-show-names').checked;
-            
-            // Dispatch event for app.js to handle
-            document.dispatchEvent(new CustomEvent('generate-grid', {
-                detail: { imageStyle, showNames }
-            }));
-            this.closeModal();
-        });
-
-        // New dex start button
-        document.getElementById('new-start-btn').addEventListener('click', () => {
-            const name = document.getElementById('new-dex-name').value.trim() || 'Untitled Dex';
-            const desc = document.getElementById('new-dex-desc').value.trim();
-            
-            this.dataManager.createNewDex(name, desc);
-            this.closeModal();
-            this.updateAll();
-            this.updateDexTitle();
-        });
-        
-        // Edit dex save button
-        document.getElementById('edit-save-btn').addEventListener('click', () => {
-            const name = document.getElementById('edit-dex-name').value.trim() || 'Untitled Dex';
-            const desc = document.getElementById('edit-dex-desc').value.trim();
-            
-            this.dataManager.updateDexMeta(name, desc);
-            this.closeModal();
-            this.updateDexTitle();
-        });
-        
-        // Enter key on name input starts the dex
-        document.getElementById('new-dex-name').addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                document.getElementById('new-start-btn').click();
-            }
-        });
-        
-        // Enter key on edit name input saves
-        document.getElementById('edit-dex-name').addEventListener('keydown', (e) => {
-            if (e.key === 'Enter') {
-                document.getElementById('edit-save-btn').click();
-            }
-        });
-        
-        // Character counter for name
-        const nameInput = document.getElementById('new-dex-name');
-        const nameCharCounter = document.getElementById('name-char-count');
-        const nameCounterContainer = nameCharCounter.parentElement;
-        
-        nameInput.addEventListener('input', () => {
-            const count = nameInput.value.length;
-            nameCharCounter.textContent = count;
-            
-            // Update styling based on count
-            nameCounterContainer.classList.remove('near-limit', 'at-limit');
-            if (count >= 50) {
-                nameCounterContainer.classList.add('at-limit');
-            } else if (count >= 40) {
-                nameCounterContainer.classList.add('near-limit');
-            }
-        });
-        
-        // Character counter for description
-        const descTextarea = document.getElementById('new-dex-desc');
-        const descCharCounter = document.getElementById('desc-char-count');
-        const descCounterContainer = descCharCounter.parentElement;
-        
-        descTextarea.addEventListener('input', () => {
-            const count = descTextarea.value.length;
-            descCharCounter.textContent = count;
-            
-            // Update styling based on count
-            descCounterContainer.classList.remove('near-limit', 'at-limit');
-            if (count >= 100) {
-                descCounterContainer.classList.add('at-limit');
-            } else if (count >= 80) {
-                descCounterContainer.classList.add('near-limit');
-            }
-        });
-        
-        // Character counter for edit name
-        const editNameInput = document.getElementById('edit-dex-name');
-        const editNameCharCounter = document.getElementById('edit-name-char-count');
-        const editNameCounterContainer = editNameCharCounter.parentElement;
-        
-        editNameInput.addEventListener('input', () => {
-            const count = editNameInput.value.length;
-            editNameCharCounter.textContent = count;
-            
-            editNameCounterContainer.classList.remove('near-limit', 'at-limit');
-            if (count >= 50) {
-                editNameCounterContainer.classList.add('at-limit');
-            } else if (count >= 40) {
-                editNameCounterContainer.classList.add('near-limit');
-            }
-        });
-        
-        // Character counter for edit description
-        const editDescTextarea = document.getElementById('edit-dex-desc');
-        const editDescCharCounter = document.getElementById('edit-desc-char-count');
-        const editDescCounterContainer = editDescCharCounter.parentElement;
-        
-        editDescTextarea.addEventListener('input', () => {
-            const count = editDescTextarea.value.length;
-            editDescCharCounter.textContent = count;
-            
-            editDescCounterContainer.classList.remove('near-limit', 'at-limit');
-            if (count >= 100) {
-                editDescCounterContainer.classList.add('at-limit');
-            } else if (count >= 80) {
-                editDescCounterContainer.classList.add('near-limit');
-            }
-        });
-    }
-
-    showModalStep(stepName) {
-        Object.values(this.modalSteps).forEach(step => {
-            step.classList.add('hidden');
-        });
-        this.modalSteps[stepName].classList.remove('hidden');
-    }
-
+    /**
+     * Show the main modal menu
+     */
     showModal() {
-        this.modal.classList.remove('hidden');
-        this.showModalStep('menu');
-        
-        // Show close button if a dex is already loaded
-        const closeBtn = document.getElementById('modal-close-btn');
-        if (this.dataManager.currentDexId) {
-            closeBtn.classList.remove('hidden');
-        } else {
-            closeBtn.classList.add('hidden');
-        }
+        this.modalManager.show();
     }
 
+    /**
+     * Show the export modal
+     */
     showExportModal() {
-        this.modal.classList.remove('hidden');
-        this.showModalStep('export');
-        document.getElementById('modal-close-btn').classList.remove('hidden');
+        this.modalManager.showExport();
     }
 
+    /**
+     * Close the modal
+     */
+    closeModal() {
+        this.modalManager.close();
+    }
+
+    /**
+     * Initialize UI
+     */
     init() {
-        this.showModalStep('menu');
+        this.modalManager.init();
     }
 
-    renderSavedDexList() {
-        const saves = this.dataManager.getSavesList();
-        
-        if (saves.length === 0) {
-            this.savedDexListEl.innerHTML = `
-                <div class="saved-dex-empty">
-                    <i class="fas fa-folder-open"></i>
-                    <p>No saved Pokédexes yet</p>
-                </div>
-            `;
-            return;
-        }
-        
-        this.savedDexListEl.innerHTML = '';
-        saves.forEach(save => {
-            const item = document.createElement('div');
-            item.className = 'saved-dex-item';
-            item.innerHTML = `
-                <div class="saved-dex-info">
-                    <div class="saved-dex-name">${this.escapeHtml(save.name)}</div>
-                    <div class="saved-dex-meta">
-                        ${save.count} Pokémon${save.description ? ' • ' + this.escapeHtml(save.description) : ''}
-                    </div>
-                </div>
-                <div class="saved-dex-actions">
-                    <button class="delete-btn" data-id="${save.id}" title="Delete">
-                        <i class="fas fa-trash"></i>
-                    </button>
-                </div>
-            `;
-            
-            // Click to load
-            item.addEventListener('click', (e) => {
-                if (!e.target.closest('.delete-btn')) {
-                    this.dataManager.loadDex(save.id);
-                    this.closeModal();
-                    this.updateAll();
-                    this.updateDexTitle();
-                }
-            });
-            
-            // Delete button
-            const deleteBtn = item.querySelector('.delete-btn');
-            deleteBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
-                if (confirm(`Delete "${save.name}"?`)) {
-                    this.dataManager.deleteDex(save.id);
-                    this.renderSavedDexList();
-                }
-            });
-            
-            this.savedDexListEl.appendChild(item);
-        });
-    }
-
-    renderRegionList() {
-        this.regionListEl.innerHTML = '';
-        
-        // Filter templates to only show regional ones (exclude "Empty")
-        const regions = this.dataManager.templates.filter(t => t.name !== 'Empty');
-        
-        regions.forEach(template => {
-            const item = document.createElement('div');
-            item.className = 'saved-dex-item region-item';
-            item.innerHTML = `
-                <div class="saved-dex-info">
-                    <div class="saved-dex-name">${template.name}</div>
-                    <div class="saved-dex-meta">
-                        ${template.pokemonIds.length} Pokémon • ${template.description}
-                    </div>
-                </div>
-                <div class="saved-dex-actions">
-                    <button class="load-btn">
-                        <i class="fas fa-download"></i> Use
-                    </button>
-                </div>
-            `;
-            
-            item.addEventListener('click', () => {
-                // Create a new dex with the region name
-                this.dataManager.createNewDex(template.name, template.description);
-                this.dataManager.loadTemplate(template.name);
-                this.closeModal();
-                this.updateAll();
-                this.updateDexTitle();
-            });
-            
-            this.regionListEl.appendChild(item);
-        });
-    }
-
-    escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-    }
-
+    /**
+     * Update the dex title in the header
+     */
     updateDexTitle() {
         this.dexNameEl.textContent = this.dataManager.currentDexName;
     }
 
-    closeModal() {
-        this.modal.classList.add('hidden');
-    }
-
+    /**
+     * Update the dashboard with current stats
+     */
     updateDashboard() {
         const stats = this.analytics.analyze(this.dataManager.customDex);
         this.statCountEl.textContent = stats.count;
@@ -429,6 +130,9 @@ export class UI {
         this.chartManager.updateCharts(stats);
     }
 
+    /**
+     * Update all UI components
+     */
     updateAll() {
         // Update dex title
         this.updateDexTitle();

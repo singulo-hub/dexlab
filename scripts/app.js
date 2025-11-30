@@ -1,7 +1,7 @@
-import { DataManager } from './dataManager.js';
+import { DataManager } from './managers/dataManager.js';
 import { UI } from './ui.js';
 import { Analytics } from './analytics.js';
-import { PokemonListManager } from './pokemonList.js';
+import { PokemonListManager } from './managers/pokemonList.js';
 
 const dataManager = new DataManager();
 const analytics = new Analytics();
