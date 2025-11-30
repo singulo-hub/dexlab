@@ -159,7 +159,7 @@
 
 }
 
-.filter-section.filter-bst label {
+.filter-section.filter-bst, .filter-section.filter-cr label {
     text-align: center;
 }
 
@@ -172,6 +172,19 @@
 }
 
 .bst-range-labels strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.cr-range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.cr-range-labels strong {
     color: var(--text-color);
     font-weight: 600;
 }

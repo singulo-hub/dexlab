@@ -145,17 +145,6 @@
     overflow: hidden;
 }
 
-#stat-type-chart .chart-container {
-    cursor: pointer;
-} 
-#stat-egg-chart .chart-container {
-    cursor: pointer;
-}
-
-#stat-bst-chart .chart-container {
-    cursor: pointer;
-}
-
 .chart-header {
     display: flex;
     justify-content: space-between;

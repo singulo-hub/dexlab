@@ -194,6 +194,9 @@ export class ChartManager {
                     animation: {
                         duration: 300
                     },
+                    onHover: (event, elements) => {
+                        event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                    },
                     onClick: (event, elements) => {
                         if (elements.length > 0) {
                             const index = elements[0].index;
@@ -291,6 +294,9 @@ export class ChartManager {
                 interaction: {
                     mode: 'index',
                     intersect: true
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
                 },
                 onClick: (event, elements) => {
                     if (elements.length > 0) {
@@ -632,6 +638,9 @@ export class ChartManager {
                         mode: 'y',
                         intersect: true
                     },
+                    onHover: (event, elements) => {
+                        event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                    },
                     onClick: (event, elements) => {
                         if (elements.length > 0) {
                             const index = elements[0].index;
@@ -757,6 +766,25 @@ export class ChartManager {
                 interaction: {
                     mode: 'index',
                     intersect: true
+                },
+                onHover: (event, elements) => {
+                    event.native.target.style.cursor = elements.length > 0 ? 'pointer' : 'default';
+                },
+                onClick: (event, elements) => {
+                    if (elements.length > 0) {
+                        const index = elements[0].index;
+                        const label = this.captureChart.data.labels[index];
+                        // Parse CR range from label (e.g., "3-45", "46-100", "201-255")
+                        let crMin = 3, crMax = 255;
+                        if (label.includes('-')) {
+                            const [min, max] = label.split('-').map(s => parseInt(s));
+                            crMin = min;
+                            crMax = max;
+                        }
+                        document.dispatchEvent(new CustomEvent('chart-click', {
+                            detail: { crMin, crMax }
+                        }));
+                    }
                 },
                 plugins: {
                     legend: {

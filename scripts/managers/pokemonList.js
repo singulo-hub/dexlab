@@ -15,6 +15,8 @@ export class PokemonListManager {
             eggGroups: [],
             bstMin: 180,
             bstMax: 780,
+            crMin: 3,
+            crMax: 255,
             inDex: false
         };
         
@@ -32,6 +34,11 @@ export class PokemonListManager {
         this.bstRangeSelected = document.getElementById('bst-range-selected');
         this.bstRangeLeft = document.getElementById('bst-range-left');
         this.bstRangeRight = document.getElementById('bst-range-right');
+        this.crMinSlider = document.getElementById('cr-min');
+        this.crMaxSlider = document.getElementById('cr-max');
+        this.crMinVal = document.getElementById('cr-min-val');
+        this.crMaxVal = document.getElementById('cr-max-val');
+        this.crRangeSelected = document.getElementById('cr-range-selected');
         this.inDexFilter = document.getElementById('in-dex-filter');
         this.filterChipsContainer = document.getElementById('filter-chips');
         this.filterBtn = document.getElementById('filter-btn');
@@ -142,6 +149,15 @@ export class PokemonListManager {
             this.bstMinVal.textContent = 180;
             this.bstMaxVal.textContent = 780;
             this.updateBstRangeTrack();
+        } else if (type === 'cr') {
+            // Reset CR to full range
+            this.activeFilters.crMin = 3;
+            this.activeFilters.crMax = 255;
+            this.crMinSlider.value = 3;
+            this.crMaxSlider.value = 255;
+            this.crMinVal.textContent = 3;
+            this.crMaxVal.textContent = 255;
+            this.updateCrRangeTrack();
         } else if (type === 'inDex') {
             this.activeFilters.inDex = false;
             this.inDexFilter.checked = false;
@@ -182,9 +198,20 @@ export class PokemonListManager {
             this.activeFilters.inDex = filters.inDex;
             this.inDexFilter.checked = filters.inDex;
         }
+        if (filters.crMin !== undefined) {
+            this.activeFilters.crMin = filters.crMin;
+            this.crMinSlider.value = filters.crMin;
+            this.crMinVal.textContent = filters.crMin;
+        }
+        if (filters.crMax !== undefined) {
+            this.activeFilters.crMax = filters.crMax;
+            this.crMaxSlider.value = filters.crMax;
+            this.crMaxVal.textContent = filters.crMax;
+        }
         
         this.updateFilterDropdowns();
         this.updateBstRangeTrack();
+        this.updateCrRangeTrack();
         this.renderFilterChips();
         this.filterAndRender();
     }
@@ -288,6 +315,18 @@ export class PokemonListManager {
             }
             this.filterChipsContainer.appendChild(chip);
         }
+        
+        // CR range chip (only show if not at default full range)
+        const crMin = this.activeFilters.crMin;
+        const crMax = this.activeFilters.crMax;
+        if (crMin > 3 || crMax < 255) {
+            const chip = document.createElement('span');
+            chip.className = 'filter-chip';
+            chip.dataset.type = 'cr';
+            chip.dataset.value = 'range';
+            chip.innerHTML = `CR ${crMin}-${crMax} <i class="fas fa-times"></i>`;
+            this.filterChipsContainer.appendChild(chip);
+        }
     }
 
     /**
@@ -316,10 +355,15 @@ export class PokemonListManager {
             const matchesBst = bstMin <= bstMax 
                 ? (p.bst >= bstMin && p.bst <= bstMax)  // Normal: inside range
                 : (p.bst <= bstMax || p.bst >= bstMin); // Inverted: outside range
+            // CR range filter
+            const crMin = this.activeFilters.crMin;
+            const crMax = this.activeFilters.crMax;
+            const matchesCr = (crMin === 3 && crMax === 255) || 
+                (p.captureRate >= crMin && p.captureRate <= crMax);
             // If inDex filter is active, only show Pokemon in current dex
             const matchesInDex = !this.activeFilters.inDex || 
                 this.dataManager.customDex.some(d => d.id === p.id);
-            return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesEgg && matchesBst && matchesInDex;
+            return matchesSearch && matchesTypes && matchesGen && matchesEvo && matchesEgg && matchesBst && matchesCr && matchesInDex;
         });
 
         this.renderPokemonList(filtered);
@@ -533,6 +577,30 @@ export class PokemonListManager {
         // Initialize BST range track
         this.updateBstRangeTrack();
 
+        // CR range sliders
+        this.crMinSlider.addEventListener('input', () => {
+            const minVal = parseInt(this.crMinSlider.value);
+            
+            this.activeFilters.crMin = minVal;
+            this.crMinVal.textContent = minVal;
+            this.updateCrRangeTrack();
+            this.renderFilterChips();
+            this.filterAndRender();
+        });
+
+        this.crMaxSlider.addEventListener('input', () => {
+            const maxVal = parseInt(this.crMaxSlider.value);
+            
+            this.activeFilters.crMax = maxVal;
+            this.crMaxVal.textContent = maxVal;
+            this.updateCrRangeTrack();
+            this.renderFilterChips();
+            this.filterAndRender();
+        });
+
+        // Initialize CR range track
+        this.updateCrRangeTrack();
+
         // Filter chips click to remove
         this.filterChipsContainer.addEventListener('click', (e) => {
             const chip = e.target.closest('.filter-chip');
@@ -555,6 +623,8 @@ export class PokemonListManager {
             const eggGroupName = e.detail.eggGroup;
             const bstMin = e.detail.bstMin;
             const bstMax = e.detail.bstMax;
+            const crMin = e.detail.crMin;
+            const crMax = e.detail.crMax;
             
             // Clear search input
             this.searchInput.value = '';
@@ -567,7 +637,9 @@ export class PokemonListManager {
                 gens: [],
                 evos: [],
                 bstMin: 180,
-                bstMax: 780
+                bstMax: 780,
+                crMin: 3,
+                crMax: 255
             };
             
             // Set the specific filter based on what was clicked
@@ -580,6 +652,10 @@ export class PokemonListManager {
             if (bstMin !== undefined && bstMax !== undefined) {
                 filters.bstMin = bstMin;
                 filters.bstMax = bstMax;
+            }
+            if (crMin !== undefined && crMax !== undefined) {
+                filters.crMin = crMin;
+                filters.crMax = crMax;
             }
             
             // Set filters and trigger render
@@ -677,5 +753,18 @@ export class PokemonListManager {
             this.bstRangeSelected.style.left = minPercent + '%';
             this.bstRangeSelected.style.width = (maxPercent - minPercent) + '%';
         }
+    }
+
+    /**
+     * Update CR range slider track visual
+     */
+    updateCrRangeTrack() {
+        const min = parseInt(this.crMinSlider.value);
+        const max = parseInt(this.crMaxSlider.value);
+        const minPercent = ((min - 3) / (255 - 3)) * 100;
+        const maxPercent = ((max - 3) / (255 - 3)) * 100;
+        
+        this.crRangeSelected.style.left = minPercent + '%';
+        this.crRangeSelected.style.width = (maxPercent - minPercent) + '%';
     }
 }
