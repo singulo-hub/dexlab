@@ -551,21 +551,27 @@ export class PokemonListManager {
             // Clear search input
             this.searchInput.value = '';
             
-            // Build filters based on what was clicked
-            const filters = { inDex: true };
+            // Build filters - start with clean slate plus inDex
+            const filters = {
+                inDex: true,
+                types: [],
+                eggGroups: [],
+                gens: [],
+                evos: [],
+                bstMin: 180,
+                bstMax: 780
+            };
+            
+            // Set the specific filter based on what was clicked
             if (typeName) {
                 filters.types = [typeName];
-                filters.eggGroups = []; // Clear egg groups when clicking type
             }
             if (eggGroupName) {
                 filters.eggGroups = [eggGroupName];
-                filters.types = []; // Clear types when clicking egg group
             }
             if (bstMin !== undefined && bstMax !== undefined) {
                 filters.bstMin = bstMin;
                 filters.bstMax = bstMax;
-                filters.types = []; // Clear other filters when clicking BST
-                filters.eggGroups = [];
             }
             
             // Set filters and trigger render
