@@ -340,6 +340,11 @@ export class ChartManager {
                         },
                         grid: {
                             color: '#3e3e42'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Base Stat Total',
+                            color: '#888'
                         }
                     },
                     x: {
@@ -494,7 +499,7 @@ export class ChartManager {
                         },
                         title: {
                             display: true,
-                            text: 'BST',
+                            text: 'Base Stat Total',
                             color: '#888'
                         }
                     }
@@ -779,6 +784,11 @@ export class ChartManager {
                         },
                         grid: {
                             color: '#3e3e42'
+                        },
+                        title: {
+                            display: true,
+                            text: 'Capture Rate',
+                            color: '#888'
                         }
                     },
                     x: {
@@ -933,7 +943,7 @@ export class ChartManager {
                         },
                         title: {
                             display: true,
-                            text: 'Rate',
+                            text: 'Capture Rate',
                             color: '#888'
                         }
                     }

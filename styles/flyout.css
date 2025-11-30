@@ -2,8 +2,8 @@
 .flyout-panel {
     position: fixed;
     top: 0;
-    right: -600px;
-    width: 600px;
+    right: -650px;
+    width: 650px;
     height: 100vh;
     background-color: var(--panel-bg);
     border-left: 1px solid var(--border-color);

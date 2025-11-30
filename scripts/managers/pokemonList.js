@@ -346,8 +346,12 @@ export class PokemonListManager {
                         <div class="pokemon-types">
                             ${p.types.map(t => `<span class="type-badge type-${t.toLowerCase()}">${t}</span>`).join('')}
                         </div>
-                        <div class="egg-groups margin-top-5">
+                        <div class="egg-groups">
                             ${p.eggGroups.map(eg => `<span class="egg-badge egg-${this.getEggGroupClass(eg).toLowerCase()}">${eg}</span>`).join('')}
+                        </div>
+                        <div class="pokemon-stats">
+                            <span class="stat-badge">BST ${p.bst}</span>
+                            <span class="stat-badge">CR ${p.captureRate}</span>
                         </div>
                     </div>
                 `;
@@ -372,6 +376,10 @@ export class PokemonListManager {
                         </div>
                         <div class="egg-groups">
                             ${p.eggGroups.map(eg => `<span class="egg-badge egg-${this.getEggGroupClass(eg).toLowerCase()}">${eg}</span>`).join('')}
+                        </div>
+                        <div class="pokemon-stats">
+                            <span class="stat-badge">BST ${p.bst}</span>
+                            <span class="stat-badge">CR ${p.captureRate}</span>
                         </div>
                     </div>
                 `;

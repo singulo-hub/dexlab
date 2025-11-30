@@ -88,6 +88,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
 }
 
 .pokemon-info .pokemon-id,
@@ -101,7 +102,6 @@
 .card-info .pokemon-name {
     font-weight: bold;
     font-size: 0.9rem;
-    margin-bottom: 5px;
 }
 
 .pokemon-info .pokemon-types,
@@ -109,7 +109,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 5px;
 }
 
 .pokemon-info .pokemon-types span,
@@ -122,7 +122,7 @@
 .pokemon-item .pokemon-info {
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .pokemon-item .pokemon-info .pokemon-id,
@@ -165,11 +165,7 @@
 .egg-groups {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
-}
-
-.egg-groups.margin-top-5 {
-    margin-top: 5px;
+    gap: 5px;
 }
 
 .egg-badge {
@@ -197,5 +193,24 @@
 .egg-badge.egg-dragon { color: var(--egg-dragon); border-color: var(--egg-dragon); }
 .egg-badge.egg-ditto { color: var(--egg-ditto); border-color: var(--egg-ditto); }
 .egg-badge.egg-noeggs { color: var(--egg-noeggs); border-color: var(--egg-noeggs); }
+
+/* Pokemon stats row (BST + CR) */
+.pokemon-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+}
+
+/* Stat Badge (BST, CR) */
+.stat-badge {
+    font-size: 0.6rem;
+    padding: 0 4px;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted);
+    white-space: nowrap;
+}
 
 
