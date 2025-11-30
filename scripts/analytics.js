@@ -27,6 +27,13 @@ export class Analytics {
                 medianCaptureRate: 0,
                 q3CaptureRate: 0,
                 captureRateBoxPlot: null,
+                captureRateDistribution: {
+                    '3-30': 0,
+                    '31-59': 0,
+                    '60-150': 0,
+                    '151-200': 0,
+                    '201-255': 0
+                },
                 alerts: [],
                 typeCounts: {},
                 eggGroupCounts: {},
@@ -250,6 +257,23 @@ export class Analytics {
         const whiskerMin = sortedCaptureRates.find(v => v >= lowerFence) || minCaptureRate;
         const whiskerMax = [...sortedCaptureRates].reverse().find(v => v <= upperFence) || maxCaptureRate;
 
+        // Capture Rate Distribution buckets
+        const captureRateBuckets = {
+            '3-30': 0,
+            '31-59': 0,
+            '60-150': 0,
+            '151-200': 0,
+            '201-255': 0
+        };
+        dex.forEach(p => {
+            const cr = p.captureRate || 0;
+            if (cr <= 30) captureRateBuckets['3-30']++;
+            else if (cr <= 59) captureRateBuckets['31-59']++;
+            else if (cr <= 150) captureRateBuckets['60-150']++;
+            else if (cr <= 200) captureRateBuckets['151-200']++;
+            else captureRateBuckets['201-255']++;
+        });
+
         return {
             count,
             evolutionDepthCounts,
@@ -278,6 +302,7 @@ export class Analytics {
                 max: whiskerMax,
                 outliers: outlierPokemon
             },
+            captureRateDistribution: captureRateBuckets,
             alerts: this.alerts,
             typeCounts,
             eggGroupCounts,

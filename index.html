@@ -86,7 +86,14 @@
                 </div>
             </div>
             <div class="stat-card chart-card span-2-cols span-2-rows" id="stat-capture-chart">
-                <h3>Capture Rate Distribution</h3>
+                <div class="chart-header">
+                    <h3>Capture Rate Distribution</h3>
+                    <div class="icon-toggle chart-view-toggle" id="capture-chart-toggle" title="Toggle chart view">
+                        <i class="fas fa-chart-column"></i>
+                        <div class="toggle-slider"></div>
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                </div>
                 <div class="chart-container">
                     <canvas id="capture-chart"></canvas>
                 </div>

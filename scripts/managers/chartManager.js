@@ -28,12 +28,18 @@ export class ChartManager {
         // BST chart view mode: 'histogram' or 'boxplot'
         this.bstChartMode = 'histogram';
         
+        // Capture Rate chart view mode: 'histogram' or 'boxplot' (default to boxplot)
+        this.captureChartMode = 'boxplot';
+        
         // Store latest data for toggling
         this.bstDistribution = null;
         this.bstBoxPlotData = null;
+        this.captureRateDistribution = null;
+        this.captureRateBoxPlotData = null;
         
-        // Set up BST chart toggle
+        // Set up chart toggles
         this.setupBstChartToggle();
+        this.setupCaptureChartToggle();
         
         // Type colors
         this.typeColors = {
@@ -98,13 +104,36 @@ export class ChartManager {
     }
 
     /**
+     * Set up toggle between histogram and box plot for Capture Rate chart
+     */
+    setupCaptureChartToggle() {
+        const toggle = document.getElementById('capture-chart-toggle');
+        if (!toggle) return;
+        
+        // Set initial state to boxplot active
+        toggle.classList.add('boxplot-active');
+        
+        toggle.addEventListener('click', () => {
+            this.captureChartMode = this.captureChartMode === 'histogram' ? 'boxplot' : 'histogram';
+            toggle.classList.toggle('boxplot-active', this.captureChartMode === 'boxplot');
+            
+            // Re-render the chart with current data
+            if (this.captureChartMode === 'histogram' && this.captureRateDistribution) {
+                this.renderCaptureHistogram(this.captureRateDistribution);
+            } else if (this.captureChartMode === 'boxplot' && this.captureRateBoxPlotData) {
+                this.renderCaptureBoxPlot(this.captureRateBoxPlotData);
+            }
+        });
+    }
+
+    /**
      * Update all charts with stats data
      */
     updateCharts(stats) {
         this.updateTypeChart(stats.typeCounts);
         this.updateBstChart(stats.bstDistribution, stats.bstBoxPlot);
         this.updateEggChart(stats.eggGroupCounts);
-        this.updateCaptureChart(stats.captureRateBoxPlot);
+        this.updateCaptureChart(stats.captureRateDistribution, stats.captureRateBoxPlot);
     }
 
     /**
@@ -654,10 +683,19 @@ export class ChartManager {
     }
 
     /**
-     * Update the Capture Rate box and whisker plot
+     * Update the Capture Rate Distribution chart (histogram or box plot)
      */
-    updateCaptureChart(boxPlotData) {
-        if (!boxPlotData) {
+    updateCaptureChart(captureRateDistribution, captureRateBoxPlotData) {
+        // Store data for toggle
+        this.captureRateDistribution = captureRateDistribution;
+        this.captureRateBoxPlotData = captureRateBoxPlotData;
+        
+        if (!captureRateDistribution) { return; }
+        
+        const data = Object.values(captureRateDistribution);
+        const hasData = data.some(v => v > 0);
+        
+        if (!hasData) {
             if (this.captureChart) {
                 this.captureChart.destroy();
                 this.captureChart = null;
@@ -665,10 +703,111 @@ export class ChartManager {
             return;
         }
         
+        // Render based on current mode (default is boxplot)
+        if (this.captureChartMode === 'histogram') {
+            this.renderCaptureHistogram(captureRateDistribution);
+        } else if (captureRateBoxPlotData) {
+            this.renderCaptureBoxPlot(captureRateBoxPlotData);
+        }
+    }
+
+    /**
+     * Render Capture Rate as histogram bar chart
+     */
+    renderCaptureHistogram(captureRateDistribution) {
+        const labels = Object.keys(captureRateDistribution);
+        const data = Object.values(captureRateDistribution);
+        
+        // Gradient colors from rare (purple) to common (green)
+        const captureColors = [
+            '#9c27b0',  // 3-45 - purple (rare)
+            '#3f51b5',  // 46-100 - indigo
+            '#2196f3',  // 101-150 - blue
+            '#4caf50',  // 151-200 - green
+            '#8bc34a'   // 201-255 - light green (common)
+        ];
+        
+        if (this.captureChart) {
+            this.captureChart.destroy();
+            this.captureChart = null;
+        }
+        
+        this.captureChart = new Chart(this.captureChartCanvas, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: data,
+                    backgroundColor: captureColors,
+                    borderColor: '#1e1e1e',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: {
+                    duration: 300
+                },
+                interaction: {
+                    mode: 'index',
+                    intersect: true
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: true,
+                        callbacks: {
+                            label: function(context) {
+                                const count = context.raw;
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const percentage = total > 0 ? ((count / total) * 100).toFixed(1) : 0;
+                                return `${count} Pokémon (${percentage}%)`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#888',
+                            stepSize: 5
+                        },
+                        grid: {
+                            color: '#3e3e42'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: '#888',
+                            font: {
+                                size: 11
+                            }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    /**
+     * Render Capture Rate as box and whisker plot
+     */
+    renderCaptureBoxPlot(boxPlotData) {
+        if (!boxPlotData) return;
+        
         const { min, q1, median, q3, max, outliers } = boxPlotData;
         
         if (this.captureChart) {
             this.captureChart.destroy();
+            this.captureChart = null;
         }
         
         // Create a custom plugin for drawing box and whisker plot
