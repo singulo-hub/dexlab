@@ -49,6 +49,28 @@
     align-items: center;
 }
 
+/* Search bar takes full width on its own row */
+.filter-row-search {
+    display: flex;
+}
+
+.filter-row-search input {
+    flex: 1;
+}
+
+/* Controls row: filter button on left, toggles on right */
+.filter-row-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-row-toggles {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 .flyout-filters input,
 .flyout-filters select {
     background-color: var(--bg-color);
@@ -282,7 +304,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    min-height: 40px;
+}
+
+.filter-chips:empty {
+    display: none;
 }
 
 .filter-chip {
@@ -349,5 +374,41 @@
 
 .view-toggle.grid-active i:last-of-type {
     color: var(--text-color);
+}
+
+/* Egg Toggle - single icon toggle */
+.egg-toggle {
+    padding: 8px 10px;
+    gap: 0;
+}
+
+.egg-toggle i {
+    color: var(--text-muted);
+}
+
+.egg-toggle.active {
+    background-color: var(--accent-color-bg);
+}
+
+.egg-toggle .toggle-slider {
+    display: none;
+}
+
+/* Stats Toggle - single icon toggle */
+.stats-toggle {
+    padding: 8px 10px;
+    gap: 0;
+}
+
+.stats-toggle i {
+    color: var(--text-muted);
+}
+
+.stats-toggle.active {
+    background-color: var(--accent-color-bg);
+}
+
+.stats-toggle .toggle-slider {
+    display: none;
 }
 

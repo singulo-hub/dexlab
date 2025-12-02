@@ -98,9 +98,6 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    margin-top: 8px;
-    padding-top: 8px;
-    border-top: 1px solid var(--border-color);
 }
 
 .stat-breakdown-row .stat-breakdown {
@@ -143,6 +140,26 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+}
+
+/* Position evolution card at bottom-left */
+#stat-evolution {
+    grid-column: 1 / 2;
+    grid-row: 4;
+}
+
+/* Position special pokemon card next to evolution */
+#stat-special {
+    grid-column: 2 / 3;
+    grid-row: 4;
+}
+
+/* These cards have stat-breakdown directly inside, remove extra spacing */
+#stat-evolution .stat-breakdown,
+#stat-special .stat-breakdown {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
 }
 
 .chart-header {

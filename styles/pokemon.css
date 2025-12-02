@@ -168,6 +168,16 @@
     gap: 5px;
 }
 
+/* Hide egg groups when toggle is off */
+.pokemon-list.hide-egg-groups .egg-groups {
+    display: none;
+}
+
+/* Hide stats when toggle is off */
+.pokemon-list.hide-stats .pokemon-stats {
+    display: none;
+}
+
 .egg-badge {
     font-size: 0.6rem;
     padding: 0 4px;

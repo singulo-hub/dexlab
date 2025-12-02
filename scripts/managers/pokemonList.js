@@ -44,6 +44,8 @@ export class PokemonListManager {
         this.filterBtn = document.getElementById('filter-btn');
         this.filterDropdown = document.getElementById('filter-dropdown');
         this.viewToggle = document.getElementById('view-toggle');
+        this.eggToggle = document.getElementById('egg-toggle');
+        this.statsToggle = document.getElementById('stats-toggle');
         
         // Flyout Panel Elements
         this.flyoutPanel = document.getElementById('pokemon-flyout');
@@ -53,6 +55,8 @@ export class PokemonListManager {
         
         // View state
         this.isGridView = false;
+        this.showEggGroups = true;
+        this.showStats = true;
         
         // Drag selection state for list view
         this.isDragging = false;
@@ -491,6 +495,20 @@ export class PokemonListManager {
             this.viewToggle.classList.toggle('grid-active', this.isGridView);
             this.pokemonListEl.classList.toggle('grid-view', this.isGridView);
             this.filterAndRender();
+        });
+
+        // Egg group visibility toggle
+        this.eggToggle.addEventListener('click', () => {
+            this.showEggGroups = !this.showEggGroups;
+            this.eggToggle.classList.toggle('active', this.showEggGroups);
+            this.pokemonListEl.classList.toggle('hide-egg-groups', !this.showEggGroups);
+        });
+
+        // Stats visibility toggle (BST/CR)
+        this.statsToggle.addEventListener('click', () => {
+            this.showStats = !this.showStats;
+            this.statsToggle.classList.toggle('active', this.showStats);
+            this.pokemonListEl.classList.toggle('hide-stats', !this.showStats);
         });
 
         // Global mouseup listener to end drag

@@ -46,6 +46,7 @@
     --success-color: #4ec9b0;
     --warning-color: #ce9178;
     --danger-color: #f44336;
+    --accent-color-bg: #143a53;
 }
 
 body, body[data-theme="dark"] {
@@ -90,9 +91,8 @@ body[data-theme="light"] {
     padding: 0;
 }
 
-/* Base font size - increase for larger text across the app */
 html {
-    font-size: 24px;
+    font-size: 1vw;
 }
 
 /* Base Body */
@@ -227,8 +227,13 @@ button.secondary {
 }
 
 #dex-count {
-    font-size: 0.9rem;
     color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-left: 8px;
+}
+
+#dex-count #stat-total-count {
+    font-weight: 600;
 }
 
 /* Filters */
