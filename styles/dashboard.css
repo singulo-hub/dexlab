@@ -60,9 +60,9 @@
 .help-icon::after {
     content: attr(data-tooltip);
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 100%;
-    transform: translateX(-50%);
+    transform: none;
     background: var(--tooltip-bg);
     border: 1px solid var(--border-color);
     color: var(--text-color);

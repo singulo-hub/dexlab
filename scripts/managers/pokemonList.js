@@ -123,6 +123,14 @@ export class PokemonListManager {
             this.activeFilters.evos.push(value);
         } else if (type === 'egg' && !this.activeFilters.eggGroups.includes(value)) {
             this.activeFilters.eggGroups.push(value);
+            // Ensure egg groups are visible when filtering by egg group
+            if (!this.showEggGroups) {
+                this.showEggGroups = true;
+                this.eggToggle.classList.add('active');
+                this.pokemonListEl.classList.remove('hide-egg-groups');
+            }
+            // Disable the toggle while egg filter is active
+            this.eggToggle.classList.add('disabled');
         } else {
             return; // No change needed
         }
@@ -144,6 +152,10 @@ export class PokemonListManager {
             this.activeFilters.evos = this.activeFilters.evos.filter(e => e !== value);
         } else if (type === 'egg') {
             this.activeFilters.eggGroups = this.activeFilters.eggGroups.filter(eg => eg !== value);
+            // Re-enable toggle if no more egg filters
+            if (this.activeFilters.eggGroups.length === 0) {
+                this.eggToggle.classList.remove('disabled');
+            }
         } else if (type === 'bst') {
             // Reset BST to full range
             this.activeFilters.bstMin = 180;
@@ -153,6 +165,10 @@ export class PokemonListManager {
             this.bstMinVal.textContent = 180;
             this.bstMaxVal.textContent = 780;
             this.updateBstRangeTrack();
+            // Re-enable stats toggle if CR filter is also not active
+            if (this.activeFilters.crMin === 3 && this.activeFilters.crMax === 255) {
+                this.statsToggle.classList.remove('disabled');
+            }
         } else if (type === 'cr') {
             // Reset CR to full range
             this.activeFilters.crMin = 3;
@@ -162,6 +178,10 @@ export class PokemonListManager {
             this.crMinVal.textContent = 3;
             this.crMaxVal.textContent = 255;
             this.updateCrRangeTrack();
+            // Re-enable stats toggle if BST filter is also not active
+            if (this.activeFilters.bstMin === 180 && this.activeFilters.bstMax === 780) {
+                this.statsToggle.classList.remove('disabled');
+            }
         } else if (type === 'inDex') {
             this.activeFilters.inDex = false;
             this.inDexFilter.checked = false;
@@ -187,6 +207,14 @@ export class PokemonListManager {
         }
         if (filters.eggGroups !== undefined) {
             this.activeFilters.eggGroups = filters.eggGroups;
+            // Ensure egg groups are visible when filtering by egg group
+            if (filters.eggGroups.length > 0 && !this.showEggGroups) {
+                this.showEggGroups = true;
+                this.eggToggle.classList.add('active');
+                this.pokemonListEl.classList.remove('hide-egg-groups');
+            }
+            // Disable/enable toggle based on whether egg filter is active
+            this.eggToggle.classList.toggle('disabled', filters.eggGroups.length > 0);
         }
         if (filters.bstMin !== undefined) {
             this.activeFilters.bstMin = filters.bstMin;
@@ -197,6 +225,18 @@ export class PokemonListManager {
             this.activeFilters.bstMax = filters.bstMax;
             this.bstMaxSlider.value = filters.bstMax;
             this.bstMaxVal.textContent = filters.bstMax;
+        }
+        // Check if BST filter is active (not at default range)
+        const bstFilterActive = (filters.bstMin !== undefined && filters.bstMin > 180) || 
+                                (filters.bstMax !== undefined && filters.bstMax < 780);
+        if (bstFilterActive) {
+            // Ensure stats are visible when filtering by BST
+            if (!this.showStats) {
+                this.showStats = true;
+                this.statsToggle.classList.add('active');
+                this.pokemonListEl.classList.remove('hide-stats');
+            }
+            this.statsToggle.classList.add('disabled');
         }
         if (filters.inDex !== undefined) {
             this.activeFilters.inDex = filters.inDex;
@@ -211,6 +251,18 @@ export class PokemonListManager {
             this.activeFilters.crMax = filters.crMax;
             this.crMaxSlider.value = filters.crMax;
             this.crMaxVal.textContent = filters.crMax;
+        }
+        // Check if CR filter is active (not at default range)
+        const crFilterActive = (filters.crMin !== undefined && filters.crMin > 3) || 
+                               (filters.crMax !== undefined && filters.crMax < 255);
+        if (crFilterActive) {
+            // Ensure stats are visible when filtering by CR
+            if (!this.showStats) {
+                this.showStats = true;
+                this.statsToggle.classList.add('active');
+                this.pokemonListEl.classList.remove('hide-stats');
+            }
+            this.statsToggle.classList.add('disabled');
         }
         
         this.updateFilterDropdowns();

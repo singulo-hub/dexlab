@@ -394,6 +394,14 @@
     display: none;
 }
 
+/* Disabled state for toggles (when filter is active) */
+.egg-toggle.disabled,
+.stats-toggle.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 /* Stats Toggle - single icon toggle */
 .stats-toggle {
     padding: 8px 10px;
