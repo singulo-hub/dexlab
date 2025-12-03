@@ -16,7 +16,8 @@ export class ModalManager {
             load: document.getElementById('modal-step-load'),
             region: document.getElementById('modal-step-region'),
             export: document.getElementById('modal-step-export'),
-            exportGrid: document.getElementById('modal-step-export-grid')
+            exportGrid: document.getElementById('modal-step-export-grid'),
+            credits: document.getElementById('modal-step-credits')
         };
         this.savedDexListEl = document.getElementById('saved-dex-list');
         this.regionListEl = document.getElementById('region-list');
@@ -65,6 +66,11 @@ export class ModalManager {
             document.getElementById('modal-close-btn').classList.remove('hidden');
             this.showStep('edit');
             document.getElementById('edit-dex-name').focus();
+        });
+        
+        // Credits button in actions dropdown
+        document.getElementById('credits-btn').addEventListener('click', () => {
+            this.showCredits();
         });
         
         // Back buttons
@@ -203,6 +209,15 @@ export class ModalManager {
     showExport() {
         this.modal.classList.remove('hidden');
         this.showStep('export');
+        document.getElementById('modal-close-btn').classList.remove('hidden');
+    }
+
+    /**
+     * Show the credits modal
+     */
+    showCredits() {
+        this.modal.classList.remove('hidden');
+        this.showStep('credits');
         document.getElementById('modal-close-btn').classList.remove('hidden');
     }
 
