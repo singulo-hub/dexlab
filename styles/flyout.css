@@ -362,17 +362,17 @@
     visibility: visible;
 }
 
-/* View Toggle - uses grid-active class instead of generic active */
-.view-toggle.grid-active .toggle-slider {
+/* View Toggle */
+.view-toggle.active .toggle-slider {
     left: calc(100% - 38px);
     border-radius: 8px 16px 16px 8px;
 }
 
-.view-toggle.grid-active i:first-of-type {
+.view-toggle.active i:first-of-type {
     color: var(--text-muted);
 }
 
-.view-toggle.grid-active i:last-of-type {
+.view-toggle.active i:last-of-type {
     color: var(--text-color);
 }
 

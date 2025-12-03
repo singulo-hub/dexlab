@@ -544,7 +544,7 @@ export class PokemonListManager {
         // View toggle (list/grid)
         this.viewToggle.addEventListener('click', () => {
             this.isGridView = !this.isGridView;
-            this.viewToggle.classList.toggle('grid-active', this.isGridView);
+            this.viewToggle.classList.toggle('active', this.isGridView);
             this.pokemonListEl.classList.toggle('grid-view', this.isGridView);
             this.filterAndRender();
         });

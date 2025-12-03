@@ -92,6 +92,14 @@ function initTheme() {
     // Check for saved preference, default to dark
     const savedTheme = localStorage.getItem(THEME_KEY) || 'dark';
     document.body.setAttribute('data-theme', savedTheme);
+    // Set toggle active state based on theme (light = active)
+    if (themeToggle) {
+        if (savedTheme === 'light') {
+            themeToggle.classList.add('active');
+        } else {
+            themeToggle.classList.remove('active');
+        }
+    }
 }
 
 function toggleTheme() {
@@ -99,9 +107,19 @@ function toggleTheme() {
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     document.body.setAttribute('data-theme', newTheme);
     localStorage.setItem(THEME_KEY, newTheme);
+    // Toggle active class (light = active)
+    if (themeToggle) {
+        if (newTheme === 'light') {
+            themeToggle.classList.add('active');
+        } else {
+            themeToggle.classList.remove('active');
+        }
+    }
 }
 
-themeToggle.addEventListener('click', toggleTheme);
+if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+}
 initTheme();
 
 // Toast notification helpers

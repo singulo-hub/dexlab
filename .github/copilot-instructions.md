@@ -52,10 +52,10 @@ Font Awesome icons are used throughout. Vendored in `libs/fontawesome/`.
 ```
 
 ### Toggle Buttons
-Use `.icon-toggle` class with specific state classes:
-- `.active` - Single-icon toggles (egg, stats visibility)
-- `.grid-active` - View toggle (list/grid)
-- `.boxplot-active` - Chart view toggles (histogram/boxplot)
+Use `.icon-toggle` class with state classes:
+- `.active` - Two-icon slider toggles (theme, chart view, list/grid view)
+- `.egg-active` - Egg toggle (single icon)
+- `.stats-active` - Stats toggle (single icon)
 - `.disabled` - Prevents interaction when filter forces visibility
 
 ### Chart Click → Filter Pattern

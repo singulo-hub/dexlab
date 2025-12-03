@@ -379,19 +379,6 @@ button.secondary {
     color: var(--text-muted);
 }
 
-body[data-theme="light"] .theme-toggle i:first-of-type {
-    color: var(--text-muted);
-}
-
-body[data-theme="light"] .theme-toggle i:last-of-type {
-    color: var(--text-color);
-}
-
-body[data-theme="light"] .theme-toggle .toggle-slider {
-    left: calc(100% - 38px);
-    border-radius: 8px 16px 16px 8px;
-}
-
 /* Toast Notification */
 .toast {
     position: fixed;

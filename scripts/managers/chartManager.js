@@ -92,7 +92,7 @@ export class ChartManager {
         
         toggle.addEventListener('click', () => {
             this.bstChartMode = this.bstChartMode === 'histogram' ? 'boxplot' : 'histogram';
-            toggle.classList.toggle('boxplot-active', this.bstChartMode === 'boxplot');
+            toggle.classList.toggle('active', this.bstChartMode === 'boxplot');
             
             // Re-render the chart with current data
             if (this.bstChartMode === 'histogram' && this.bstDistribution) {
@@ -111,11 +111,11 @@ export class ChartManager {
         if (!toggle) return;
         
         // Set initial state to boxplot active
-        toggle.classList.add('boxplot-active');
+        toggle.classList.add('active');
         
         toggle.addEventListener('click', () => {
             this.captureChartMode = this.captureChartMode === 'histogram' ? 'boxplot' : 'histogram';
-            toggle.classList.toggle('boxplot-active', this.captureChartMode === 'boxplot');
+            toggle.classList.toggle('active', this.captureChartMode === 'boxplot');
             
             // Re-render the chart with current data
             if (this.captureChartMode === 'histogram' && this.captureRateDistribution) {

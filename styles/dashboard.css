@@ -173,18 +173,18 @@
     margin-bottom: 0;
 }
 
-/* Chart View Toggle - uses boxplot-active class instead of generic active */
-.chart-view-toggle.boxplot-active .toggle-slider {
+/* Chart View Toggle */
+.chart-view-toggle.active .toggle-slider {
     left: calc(100% - 38px);
     border-radius: 8px 16px 16px 8px;
 }
 
-/* When boxplot is active: first icon muted, last icon highlighted */
-.chart-view-toggle.boxplot-active > :first-child {
+/* When active: first icon muted, last icon highlighted */
+.chart-view-toggle.active > :first-child {
     color: var(--text-muted);
 }
 
-.chart-view-toggle.boxplot-active > :last-child {
+.chart-view-toggle.active > :last-child {
     color: var(--text-color);
 }
 
