@@ -211,6 +211,12 @@ async function generatePrintGrid(dex, options = {}) {
         });
     };
     
+    // Load sprite sheet for sprite mode
+    let spriteSheet = null;
+    if (imageStyle === 'sprite') {
+        spriteSheet = await loadImage('data/spritesheet.png');
+    }
+    
     // Sort dex by ID for consistent ordering
     const sortedDex = [...dex].sort((a, b) => a.id - b.id);
     
@@ -230,24 +236,37 @@ async function generatePrintGrid(dex, options = {}) {
         const y = startY + (row * (cellHeight + spacing));
         
         // Choose image source based on style preference
-        let imageSrc;
-        if (imageStyle === 'sprite') {
-            imageSrc = pokemon.sprite || pokemon.artwork;
+        if (imageStyle === 'sprite' && spriteSheet && pokemon.spriteX !== undefined && pokemon.spriteY !== undefined) {
+            // Draw from sprite sheet
+            const srcX = pokemon.spriteX * 96;
+            const srcY = pokemon.spriteY * 96;
+            const srcSize = 96;
+            
+            // Center in cell
+            const drawX = x + (spriteSize - spriteSize) / 2;
+            const drawY = y + (spriteSize - spriteSize) / 2;
+            
+            // Disable smoothing for pixel art
+            ctx.imageSmoothingEnabled = false;
+            ctx.drawImage(spriteSheet, srcX, srcY, srcSize, srcSize, x, y, spriteSize, spriteSize);
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = 'high';
         } else {
-            imageSrc = pokemon.artwork || pokemon.sprite;
-        }
-        
-        if (imageSrc) {
-            const img = await loadImage(imageSrc);
-            if (img) {
-                // Scale image to fit cell while maintaining aspect ratio
-                const scale = Math.min(spriteSize / img.width, spriteSize / img.height);
-                const drawWidth = img.width * scale;
-                const drawHeight = img.height * scale;
-                // Center in cell (sprite area only)
-                const drawX = x + (spriteSize - drawWidth) / 2;
-                const drawY = y + (spriteSize - drawHeight) / 2;
-                ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
+            // Use artwork
+            const imageSrc = pokemon.artwork;
+            
+            if (imageSrc) {
+                const img = await loadImage(imageSrc);
+                if (img) {
+                    // Scale image to fit cell while maintaining aspect ratio
+                    const scale = Math.min(spriteSize / img.width, spriteSize / img.height);
+                    const drawWidth = img.width * scale;
+                    const drawHeight = img.height * scale;
+                    // Center in cell (sprite area only)
+                    const drawX = x + (spriteSize - drawWidth) / 2;
+                    const drawY = y + (spriteSize - drawHeight) / 2;
+                    ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
+                }
             }
         }
         
