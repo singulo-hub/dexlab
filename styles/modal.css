@@ -71,6 +71,21 @@
     margin-bottom: 20px;
 }
 
+.modal-step .modal-note {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+    padding: 10px 12px;
+    background: var(--bg-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.modal-step .modal-note i {
+    color: var(--accent-color);
+    margin-right: 6px;
+}
+
 .modal-step.hidden {
     display: none;
 }
