@@ -390,6 +390,10 @@
     background-color: var(--accent-color-bg);
 }
 
+.egg-toggle.egg-active i {
+    color: var(--text-color);
+}
+
 .egg-toggle .toggle-slider {
     display: none;
 }
@@ -416,7 +420,17 @@
     background-color: var(--accent-color-bg);
 }
 
+.stats-toggle.stats-active i {
+    color: var(--text-color);
+}
+
 .stats-toggle .toggle-slider {
     display: none;
+}
+
+/* Light mode overrides for single-icon toggles */
+body[data-theme="light"] .egg-toggle.egg-active,
+body[data-theme="light"] .stats-toggle.stats-active {
+    background-color: #aacfe8;
 }
 

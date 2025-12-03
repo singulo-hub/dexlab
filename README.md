@@ -82,10 +82,7 @@ Modern browsers with ES6+ support (Chrome, Firefox, Safari, Edge).
 
 ## Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+Submit an issue if you are having problems with the app and I will take a look, thanks!
 
 ## License
 
