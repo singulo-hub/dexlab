@@ -43,26 +43,18 @@
 }
 
 .help-icon {
-    color: var(--text-dim);
+    color: var(--text-muted);
     font-size: 0.75rem;
     cursor: help;
-    position: relative;
 }
 
 .help-icon:hover {
     color: var(--accent-color);
 }
 
-.help-icon[data-tooltip] {
-    position: relative;
-}
-
-.help-icon::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    left: 0;
-    top: 100%;
-    transform: none;
+/* Global Tooltip */
+.global-tooltip {
+    position: fixed;
     background: var(--tooltip-bg);
     border: 1px solid var(--border-color);
     color: var(--text-color);
@@ -70,20 +62,19 @@
     border-radius: 4px;
     font-size: 0.75rem;
     font-weight: normal;
-    text-transform: none;
     white-space: normal;
     width: 250px;
+    max-width: 90vw;
     line-height: 1.4;
-    z-index: 100;
+    z-index: 10000;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.2s, visibility 0.2s;
     pointer-events: none;
-    margin-top: 6px;
     box-shadow: 0 4px 12px var(--shadow-color);
 }
 
-.help-icon:hover::after {
+.global-tooltip.visible {
     opacity: 1;
     visibility: visible;
 }

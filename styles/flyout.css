@@ -386,7 +386,7 @@
     color: var(--text-muted);
 }
 
-.egg-toggle.active {
+.egg-toggle.egg-active {
     background-color: var(--accent-color-bg);
 }
 
@@ -416,7 +416,7 @@
     color: var(--text-muted);
 }
 
-.stats-toggle.active {
+.stats-toggle.stats-active {
     background-color: var(--accent-color-bg);
 }
 

@@ -26,7 +26,7 @@
             <span id="dex-count" class="dex-count"><span id="stat-total-count">0</span> Total</span>
         </div>
         <div class="header-controls">
-            <button id="add-pokemon-btn"><i class="fas fa-plus"></i> Add Pokémon</button>
+            <button id="add-pokemon-btn"></i>Pokémon List</button>
             <div class="actions-dropdown-container">
                 <button id="actions-btn" class="actions-btn"><i class="fas fa-ellipsis-v"></i></button>
                 <div id="actions-dropdown" class="actions-dropdown">
@@ -116,15 +116,31 @@
                     <span>1-Stage: <strong id="stat-1stage">-</strong></span>
                     <span>2-Stage: <strong id="stat-2stage">-</strong></span>
                     <span>3-Stage: <strong id="stat-3stage">-</strong></span>
-                    <span>Late: <strong id="stat-late-evo">-</strong></span>
+                    <span>Late: <strong id="stat-late-evo">-</strong>
+                        <span class="help-icon" data-tooltip="Pokémon that evolve at level 40+, by item, trade, special location, or other special method.">
+                            <i class="fas fa-question-circle"></i>
+                        </span>
+                    </span>
                 </div>
             </div>
             <div class="stat-card" id="stat-special">
                 <div class="stat-breakdown">
                     <h3>Special Pokemon</h3>
-                    <span>Legendary: <strong id="stat-legendary">-</strong></span>
-                    <span>Mythical: <strong id="stat-mythical">-</strong></span>
-                    <span>Pseudo: <strong id="stat-pseudo">-</strong></span>
+                    <span>Legendary: <strong id="stat-legendary">-</strong>
+                        <span class="help-icon" data-tooltip="Rare and often powerful Pokémon, typically central to a game's story or lore.">
+                            <i class="fas fa-question-circle"></i>
+                        </span>
+                    </span>
+                    <span>Mythical: <strong id="stat-mythical">-</strong>
+                        <span class="help-icon" data-tooltip="Extremely rare Pokémon usually only obtainable through special events or distributions.">
+                            <i class="fas fa-question-circle"></i>
+                        </span>
+                    </span>
+                    <span>Pseudo: <strong id="stat-pseudo">-</strong>
+                        <span class="help-icon" data-tooltip="Non-legendary Pokémon with base stat totals of 600, making them as strong as most legendaries.">
+                            <i class="fas fa-question-circle"></i>
+                        </span>
+                    </span>
                     <span>Total: <strong id="stat-special-total">-</strong></span>
                 </div>
             </div>
@@ -134,7 +150,7 @@
     <!-- Pokemon List Flyout Panel -->
     <div id="pokemon-flyout" class="flyout-panel">
         <div class="flyout-header">
-            <h2>Add Pokémon</h2>
+            <h2>Pokémon List</h2>
             <button id="close-flyout-btn" class="icon-btn" title="Close">
                 <i class="fas fa-times"></i>
             </button>
@@ -411,5 +427,8 @@
         <i id="toast-icon" class="fas fa-spinner fa-spin"></i>
         <span id="toast-message">Loading...</span>
     </div>
+
+    <!-- Global Tooltip -->
+    <div id="global-tooltip" class="global-tooltip"></div>
 </body>
 </html>

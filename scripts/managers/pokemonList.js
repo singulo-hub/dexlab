@@ -126,7 +126,7 @@ export class PokemonListManager {
             // Ensure egg groups are visible when filtering by egg group
             if (!this.showEggGroups) {
                 this.showEggGroups = true;
-                this.eggToggle.classList.add('active');
+                this.eggToggle.classList.add('egg-active');
                 this.pokemonListEl.classList.remove('hide-egg-groups');
             }
             // Disable the toggle while egg filter is active
@@ -210,7 +210,7 @@ export class PokemonListManager {
             // Ensure egg groups are visible when filtering by egg group
             if (filters.eggGroups.length > 0 && !this.showEggGroups) {
                 this.showEggGroups = true;
-                this.eggToggle.classList.add('active');
+                this.eggToggle.classList.add('egg-active');
                 this.pokemonListEl.classList.remove('hide-egg-groups');
             }
             // Disable/enable toggle based on whether egg filter is active
@@ -233,7 +233,7 @@ export class PokemonListManager {
             // Ensure stats are visible when filtering by BST
             if (!this.showStats) {
                 this.showStats = true;
-                this.statsToggle.classList.add('active');
+                this.statsToggle.classList.add('stats-active');
                 this.pokemonListEl.classList.remove('hide-stats');
             }
             this.statsToggle.classList.add('disabled');
@@ -259,7 +259,7 @@ export class PokemonListManager {
             // Ensure stats are visible when filtering by CR
             if (!this.showStats) {
                 this.showStats = true;
-                this.statsToggle.classList.add('active');
+                this.statsToggle.classList.add('stats-active');
                 this.pokemonListEl.classList.remove('hide-stats');
             }
             this.statsToggle.classList.add('disabled');
@@ -552,14 +552,14 @@ export class PokemonListManager {
         // Egg group visibility toggle
         this.eggToggle.addEventListener('click', () => {
             this.showEggGroups = !this.showEggGroups;
-            this.eggToggle.classList.toggle('active', this.showEggGroups);
+            this.eggToggle.classList.toggle('egg-active', this.showEggGroups);
             this.pokemonListEl.classList.toggle('hide-egg-groups', !this.showEggGroups);
         });
 
         // Stats visibility toggle (BST/CR)
         this.statsToggle.addEventListener('click', () => {
             this.showStats = !this.showStats;
-            this.statsToggle.classList.toggle('active', this.showStats);
+            this.statsToggle.classList.toggle('stats-active', this.showStats);
             this.pokemonListEl.classList.toggle('hide-stats', !this.showStats);
         });
 

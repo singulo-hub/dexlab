@@ -312,5 +312,35 @@ async function generatePrintGrid(dex, options = {}) {
     }, 'image/png');
 }
 
+// Global Tooltip for help icons
+const globalTooltip = document.getElementById('global-tooltip');
+
+document.addEventListener('mouseover', (e) => {
+    const helpIcon = e.target.closest('.help-icon[data-tooltip]');
+    if (helpIcon && globalTooltip) {
+        const tooltipText = helpIcon.getAttribute('data-tooltip');
+        globalTooltip.textContent = tooltipText;
+        
+        // Position tooltip below the icon
+        const rect = helpIcon.getBoundingClientRect();
+        const tooltipWidth = 250;
+        
+        // Center horizontally, but keep within viewport
+        let left = rect.left + (rect.width / 2) - (tooltipWidth / 2);
+        left = Math.max(10, Math.min(left, window.innerWidth - tooltipWidth - 10));
+        
+        globalTooltip.style.left = `${left}px`;
+        globalTooltip.style.top = `${rect.bottom + 6}px`;
+        globalTooltip.classList.add('visible');
+    }
+});
+
+document.addEventListener('mouseout', (e) => {
+    const helpIcon = e.target.closest('.help-icon[data-tooltip]');
+    if (helpIcon && globalTooltip) {
+        globalTooltip.classList.remove('visible');
+    }
+});
+
 // Start
 init();
